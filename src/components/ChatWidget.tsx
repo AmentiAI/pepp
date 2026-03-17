@@ -1,6 +1,9 @@
 'use client'
 import { useState, useRef, useEffect, useCallback } from 'react'
-import { MessageCircle, X, Send, Bot, User, Loader2, Minimize2 } from 'lucide-react'
+import { MessageCircle, X, Send, Bot, User, Loader2, Minimize2, ExternalLink } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { products, type Product, AFFILIATE_PRODUCT } from '@/lib/products'
 
 interface Message {
   role: 'user' | 'assistant'
@@ -14,6 +17,65 @@ const SUGGESTIONS = [
   'Retatrutide vs Semaglutide?',
   'How to reconstitute peptides?',
 ]
+
+const slugSet = new Set(products.map(p => p.slug))
+
+function extractProducts(text: string): Product[] {
+  const found: Product[] = []
+  const seen = new Set<string>()
+  const matches = text.matchAll(/\/products\/([a-z0-9-]+)/g)
+  for (const match of matches) {
+    const slug = match[1]
+    if (slugSet.has(slug) && !seen.has(slug)) {
+      seen.add(slug)
+      const p = products.find(q => q.slug === slug)
+      if (p) found.push(p)
+    }
+  }
+  return found
+}
+
+function ProductCard({ p }: { p: Product }) {
+  return (
+    <Link
+      href={`/products/${p.slug}`}
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.625rem',
+        padding: '0.5rem 0.625rem',
+        background: '#ffffff',
+        border: '1px solid rgba(212,168,67,0.25)',
+        borderRadius: 12,
+        textDecoration: 'none',
+        transition: 'border-color 0.15s, box-shadow 0.15s',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.6)'; e.currentTarget.style.boxShadow = '0 2px 12px rgba(212,168,67,0.15)' }}
+      onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.25)'; e.currentTarget.style.boxShadow = 'none' }}
+    >
+      <div style={{ width: 48, height: 48, borderRadius: 8, background: '#f3f4f8', flexShrink: 0, position: 'relative', overflow: 'hidden' }}>
+        <Image src={p.image} alt={p.shortName} fill style={{ objectFit: 'contain', padding: 4 }} sizes="48px" />
+      </div>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#0a0a14', lineHeight: 1.2, marginBottom: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{p.shortName}</div>
+        <div style={{ fontSize: '0.7rem', color: '#9090a8', marginBottom: 2 }}>{p.category}</div>
+        <div style={{ fontSize: '0.8rem', fontWeight: 900, color: '#d4a843' }}>${p.price.toFixed(2)}</div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 4, flexShrink: 0 }}>
+        <span style={{ fontSize: '0.65rem', fontWeight: 700, color: '#666688', background: '#f3f4f8', padding: '2px 6px', borderRadius: 6 }}>View</span>
+        <a
+          href={AFFILIATE_PRODUCT(p.slug)}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={e => e.stopPropagation()}
+          style={{ fontSize: '0.65rem', fontWeight: 700, color: '#000', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', padding: '2px 6px', borderRadius: 6, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 3 }}
+        >
+          Buy <ExternalLink size={8} />
+        </a>
+      </div>
+    </Link>
+  )
+}
 
 export default function ChatWidget() {
   const [open, setOpen] = useState(false)
@@ -138,7 +200,7 @@ export default function ChatWidget() {
           display: 'flex',
           flexDirection: 'column',
           overflow: 'hidden',
-          maxHeight: minimized ? 64 : 560,
+          maxHeight: minimized ? 64 : 580,
           transition: 'max-height 0.3s cubic-bezier(0.4,0,0.2,1)',
         }}>
 
@@ -181,33 +243,48 @@ export default function ChatWidget() {
             <>
               {/* Messages */}
               <div style={{ flex: 1, overflowY: 'auto', padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
-                {messages.map((msg, i) => (
-                  <div key={i} style={{ display: 'flex', gap: '0.625rem', alignItems: 'flex-start', flexDirection: msg.role === 'user' ? 'row-reverse' : 'row' }}>
-                    <div style={{
-                      width: 28, height: 28, borderRadius: '50%', flexShrink: 0,
-                      background: msg.role === 'user' ? 'linear-gradient(135deg, #d4a843, #a07c2e)' : '#f3f4f8',
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    }}>
-                      {msg.role === 'user'
-                        ? <User size={13} color="#000" />
-                        : <Bot size={13} color="#666688" />
-                      }
+                {messages.map((msg, i) => {
+                  const recommended = msg.role === 'assistant' ? extractProducts(msg.content) : []
+                  // Clean URLs from display text
+                  const displayText = msg.content
+                    .replace(/https:\/\/stackspeptide\.com\/products\/[a-z0-9-]+/g, '')
+                    .replace(/\/products\/[a-z0-9-]+/g, '')
+                    .trim()
+
+                  return (
+                    <div key={i} style={{ display: 'flex', gap: '0.625rem', alignItems: 'flex-start', flexDirection: msg.role === 'user' ? 'row-reverse' : 'row' }}>
+                      <div style={{
+                        width: 28, height: 28, borderRadius: '50%', flexShrink: 0,
+                        background: msg.role === 'user' ? 'linear-gradient(135deg, #d4a843, #a07c2e)' : '#f3f4f8',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      }}>
+                        {msg.role === 'user'
+                          ? <User size={13} color="#000" />
+                          : <Bot size={13} color="#666688" />
+                        }
+                      </div>
+                      <div style={{ maxWidth: '80%', display: 'flex', flexDirection: 'column', gap: 6 }}>
+                        <div style={{
+                          padding: '0.625rem 0.875rem',
+                          borderRadius: msg.role === 'user' ? '14px 14px 4px 14px' : '14px 14px 14px 4px',
+                          background: msg.role === 'user' ? 'linear-gradient(135deg, #d4a843, #a07c2e)' : '#f3f4f8',
+                          color: msg.role === 'user' ? '#000' : '#1a1a2a',
+                          fontSize: '0.875rem',
+                          lineHeight: 1.6,
+                          whiteSpace: 'pre-wrap',
+                          wordBreak: 'break-word',
+                        }}>
+                          {displayText}
+                        </div>
+                        {recommended.length > 0 && (
+                          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                            {recommended.map(p => <ProductCard key={p.slug} p={p} />)}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                    <div style={{
-                      maxWidth: '80%',
-                      padding: '0.625rem 0.875rem',
-                      borderRadius: msg.role === 'user' ? '14px 14px 4px 14px' : '14px 14px 14px 4px',
-                      background: msg.role === 'user' ? 'linear-gradient(135deg, #d4a843, #a07c2e)' : '#f3f4f8',
-                      color: msg.role === 'user' ? '#000' : '#1a1a2a',
-                      fontSize: '0.875rem',
-                      lineHeight: 1.6,
-                      whiteSpace: 'pre-wrap',
-                      wordBreak: 'break-word',
-                    }}>
-                      {msg.content}
-                    </div>
-                  </div>
-                ))}
+                  )
+                })}
 
                 {/* Streaming response */}
                 {streamingText && (
@@ -216,7 +293,7 @@ export default function ChatWidget() {
                       <Bot size={13} color="#666688" />
                     </div>
                     <div style={{ maxWidth: '80%', padding: '0.625rem 0.875rem', borderRadius: '14px 14px 14px 4px', background: '#f3f4f8', color: '#1a1a2a', fontSize: '0.875rem', lineHeight: 1.6, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
-                      {streamingText}
+                      {streamingText.replace(/https:\/\/stackspeptide\.com\/products\/[a-z0-9-]+/g, '').replace(/\/products\/[a-z0-9-]+/g, '').trim()}
                       <span style={{ display: 'inline-block', width: 2, height: '1em', background: '#d4a843', marginLeft: 2, animation: 'blink 1s step-end infinite', verticalAlign: 'text-bottom' }} />
                     </div>
                   </div>
@@ -308,13 +385,6 @@ export default function ChatWidget() {
                 >
                   <Send size={15} color={input.trim() && !loading ? '#000' : '#9090a8'} />
                 </button>
-              </div>
-
-              {/* Disclaimer */}
-              <div style={{ padding: '0.4rem 1rem 0.6rem', background: '#fafafa', borderTop: '1px solid rgba(0,0,0,0.04)' }}>
-                <p style={{ fontSize: '0.65rem', color: '#b0b0c8', textAlign: 'center', margin: 0 }}>
-                  For lab use only. Not medical advice. Powered by GPT-4o.
-                </p>
               </div>
             </>
           )}

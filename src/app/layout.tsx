@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: 'StacksPeptide',
     title: 'StacksPeptide — #1 Peptide Guide for Peak Human Optimization',
     description:
-      'Independent reviews of 24+ premium peptides. GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3 — all third-party tested with CoA documentation.',
+      'Shop 24+ premium peptides. GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3 — all third-party tested with CoA documentation.',
     images: [
       {
         url: '/og-image.jpg',
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'StacksPeptide — Premium Peptides for Peak Human Optimization',
     description:
-      '24+ independently reviewed peptides. GHK-Cu, BPC-157, Retatrutide, Epithalon & more. Third-party HPLC tested.',
+      'Shop 24+ premium peptides. GHK-Cu, BPC-157, Retatrutide, Epithalon & more. Third-party HPLC tested.',
     images: ['/og-image.jpg'],
   },
   robots: {

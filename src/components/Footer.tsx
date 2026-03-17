@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { ExternalLink } from 'lucide-react'
-import { AFFILIATE_BASE, categories } from '@/lib/products'
+import { AFFILIATE_BASE } from '@/lib/products'
 
 const topProducts = [
   { label: 'GHK-Cu Copper Peptide', slug: 'ghk-cu' },
@@ -24,6 +24,15 @@ const catLinks = [
   { label: 'All Products', href: '/products' },
 ]
 
+const sitemapLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'All Peptides', href: '/products' },
+  { label: 'Stacks', href: '/stacks' },
+  { label: 'LooksMaxing', href: '/looksmaxxing' },
+  { label: 'Guide', href: '/guide' },
+  { label: 'FAQ', href: '/faq' },
+]
+
 export default function Footer() {
   return (
     <footer style={{ background: '#050508', borderTop: '1px solid rgba(255,255,255,0.05)', marginTop: 0 }}>
@@ -38,7 +47,7 @@ export default function Footer() {
                 STACKS<span style={{ color: '#d4a843' }}>PEPTIDE</span>
               </span>
             </div>
-            <p style={{ fontSize: '1.05rem', color: '#44445a', lineHeight: 1.75, marginBottom: '1.5rem' }}>
+            <p style={{ fontSize: '1.05rem', color: '#ffffff', lineHeight: 1.75, marginBottom: '1.5rem' }}>
               The most comprehensive peptide resource — powered by Apollo Peptide Sciences. Third-party tested, premium grade, shipped fast.
             </p>
             <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer"
@@ -54,9 +63,9 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               {catLinks.map(c => (
                 <li key={c.href}>
-                  <Link href={c.href} style={{ fontSize: '1.05rem', color: '#44445a', textDecoration: 'none', transition: 'color 0.15s' }}
+                  <Link href={c.href} style={{ fontSize: '1.05rem', color: '#ffffff', textDecoration: 'none', transition: 'color 0.15s' }}
                     onMouseEnter={e => (e.currentTarget.style.color = '#d4a843')}
-                    onMouseLeave={e => (e.currentTarget.style.color = '#44445a')}
+                    onMouseLeave={e => (e.currentTarget.style.color = '#ffffff')}
                   >
                     {c.label}
                   </Link>
@@ -71,9 +80,9 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               {topProducts.map(p => (
                 <li key={p.slug}>
-                  <Link href={`/products/${p.slug}`} style={{ fontSize: '1.05rem', color: '#44445a', textDecoration: 'none', transition: 'color 0.15s' }}
+                  <Link href={`/products/${p.slug}`} style={{ fontSize: '1.05rem', color: '#ffffff', textDecoration: 'none', transition: 'color 0.15s' }}
                     onMouseEnter={e => (e.currentTarget.style.color = '#d4a843')}
-                    onMouseLeave={e => (e.currentTarget.style.color = '#44445a')}
+                    onMouseLeave={e => (e.currentTarget.style.color = '#ffffff')}
                   >
                     {p.label}
                   </Link>
@@ -82,26 +91,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Disclaimer */}
+          {/* Sitemap */}
           <div>
-            <h4 style={{ fontSize: '1rem', fontWeight: 700, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.14em', marginBottom: '1.25rem' }}>Disclaimer</h4>
-            <div style={{ padding: '1.25rem', background: '#0a0a12', border: '1px solid rgba(255,255,255,0.05)', borderRadius: 12 }}>
-              <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#d4a843', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.6rem' }}>For Lab Use Only</div>
-              <p style={{ fontSize: '0.97rem', color: '#6a6a7a', lineHeight: 1.7 }}>
-                All products are intended for laboratory lab purposes only. Not approved by the FDA for human consumption. Not for use on humans or animals. For educational and lab purposes only.
-              </p>
-            </div>
+            <h4 style={{ fontSize: '1rem', fontWeight: 700, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.14em', marginBottom: '1.25rem' }}>Sitemap</h4>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+              {sitemapLinks.map(l => (
+                <li key={l.href}>
+                  <Link href={l.href} style={{ fontSize: '1.05rem', color: '#ffffff', textDecoration: 'none', transition: 'color 0.15s' }}
+                    onMouseEnter={e => (e.currentTarget.style.color = '#d4a843')}
+                    onMouseLeave={e => (e.currentTarget.style.color = '#ffffff')}
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
+
         </div>
 
         {/* Bottom bar */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.04)', paddingTop: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
-          <p style={{ fontSize: '0.97rem', color: '#6a6a7a' }}>
+          <p style={{ fontSize: '0.97rem', color: '#ffffff' }}>
             © {new Date().getFullYear()} StacksPeptide. Products sourced from Apollo Peptide Sciences.
           </p>
-          <span style={{ fontSize: '0.97rem', color: '#6a6a7a' }}>
-            Affiliate Disclosure: We earn a commission on qualifying purchases.
-          </span>
         </div>
       </div>
     </footer>
