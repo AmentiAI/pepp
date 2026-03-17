@@ -159,15 +159,6 @@ export default function Navbar() {
                             </Link>
                           ))}
                         </div>
-                        <div style={{ padding: '1rem', background: 'linear-gradient(135deg, #fffbf0, #f7f8fc)', border: '1px solid rgba(212,168,67,0.15)', borderRadius: 12 }}>
-                          <div style={{ fontSize: '1.05rem', fontWeight: 700, color: '#d4a843', marginBottom: '0.25rem' }}>APOLLO PEPTIDE SCIENCES</div>
-                          <div style={{ fontSize: '0.87rem', color: '#666688', marginBottom: '0.6rem' }}>3rd-party tested · CoA included</div>
-                          <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer"
-                            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5, padding: '7px 14px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 700, fontSize: '0.87rem', borderRadius: 8, textDecoration: 'none' }}
-                          >
-                            Shop Now <ExternalLink size={11} />
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>
