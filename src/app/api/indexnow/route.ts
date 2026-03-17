@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { products } from '@/lib/products'
 
-const BASE_URL = 'https://stackspeptide.com'
+const BASE_URL = 'https://www.stackspeptide.com'
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY || ''
 
 export async function POST() {

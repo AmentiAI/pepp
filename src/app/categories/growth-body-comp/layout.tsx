@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       'IGF-1 LR3 triggers satellite cell activation for muscle hyperplasia. CJC-1295/Ipamorelin amplifies GH pulses 4–8× with zero cortisol. Elite body composition peptides.',
   },
-  alternates: { canonical: 'https://stackspeptide.com/categories/growth-body-comp' },
+  alternates: { canonical: 'https://www.stackspeptide.com/categories/growth-body-comp' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

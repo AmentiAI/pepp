@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'Triple receptor agonism. Retatrutide produced the highest pharmacological weight loss ever recorded in a clinical trial. Compare all GLP agonist generations.',
   },
-  alternates: { canonical: 'https://stackspeptide.com/categories/metabolic-fat-loss' },
+  alternates: { canonical: 'https://www.stackspeptide.com/categories/metabolic-fat-loss' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

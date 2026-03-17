@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'body recomposition stack',
     'peptide combination guide',
   ],
-  alternates: { canonical: 'https://stackspeptide.com/stacks' },
+  alternates: { canonical: 'https://www.stackspeptide.com/stacks' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

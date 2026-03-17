@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'peptide shipping',
     'peptide reconstitution faq',
   ],
-  alternates: { canonical: 'https://stackspeptide.com/faq' },
+  alternates: { canonical: 'https://www.stackspeptide.com/faq' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

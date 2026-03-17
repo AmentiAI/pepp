@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import { products, categories } from '@/lib/products'
 import { stacks } from '@/lib/stacks'
 
-const baseUrl = 'https://stackspeptide.com'
+const baseUrl = 'https://www.stackspeptide.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()

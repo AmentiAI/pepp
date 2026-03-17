@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: stack.seoTitle,
     description: stack.seoDescription,
-    alternates: { canonical: `https://stackspeptide.com/stacks/${stack.id}` },
+    alternates: { canonical: `https://www.stackspeptide.com/stacks/${stack.id}` },
     openGraph: {
       title: stack.seoTitle,
       description: stack.seoDescription,
       type: 'website',
-      url: `https://stackspeptide.com/stacks/${stack.id}`,
+      url: `https://www.stackspeptide.com/stacks/${stack.id}`,
     },
   }
 }
@@ -48,9 +48,9 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stackspeptide.com' },
-      { '@type': 'ListItem', position: 2, name: 'Stacks', item: 'https://stackspeptide.com/stacks' },
-      { '@type': 'ListItem', position: 3, name: stack.name, item: `https://stackspeptide.com/stacks/${stack.id}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stackspeptide.com' },
+      { '@type': 'ListItem', position: 2, name: 'Stacks', item: 'https://www.stackspeptide.com/stacks' },
+      { '@type': 'ListItem', position: 3, name: stack.name, item: `https://www.stackspeptide.com/stacks/${stack.id}` },
     ],
   }
 

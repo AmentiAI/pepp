@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'peptide lab protocols',
     'what are peptides',
   ],
-  alternates: { canonical: 'https://stackspeptide.com/guide' },
+  alternates: { canonical: 'https://www.stackspeptide.com/guide' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

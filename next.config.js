@@ -12,6 +12,21 @@ const nextConfig = {
         destination: '/products/glp-1s-5mg',
         permanent: true,
       },
+      {
+        source: '/stacks/body-recomposition',
+        destination: '/stacks/body-recomp',
+        permanent: true,
+      },
+      {
+        source: '/stacks/metabolic-shred',
+        destination: '/stacks/fat-loss',
+        permanent: true,
+      },
+      {
+        source: '/stacks/recovery-repair',
+        destination: '/stacks/recovery',
+        permanent: true,
+      },
     ]
   },
   images: {

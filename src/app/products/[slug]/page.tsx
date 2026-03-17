@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProductBySlug(params.slug)
   if (!product) return {}
   const title = `${product.shortName}: ${product.headline}`
-  const canonical = `https://stackspeptide.com/products/${product.slug}`
+  const canonical = `https://www.stackspeptide.com/products/${product.slug}`
   return {
     title,
     description: `${product.summary} Third-party HPLC tested >98% purity. Certificate of Analysis included. Sourced from Apollo Peptide Sciences.`,
@@ -81,9 +81,9 @@ export default function ProductPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stackspeptide.com' },
-      { '@type': 'ListItem', position: 2, name: 'Peptides', item: 'https://stackspeptide.com/products' },
-      { '@type': 'ListItem', position: 3, name: product.shortName, item: `https://stackspeptide.com/products/${product.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stackspeptide.com' },
+      { '@type': 'ListItem', position: 2, name: 'Peptides', item: 'https://www.stackspeptide.com/products' },
+      { '@type': 'ListItem', position: 3, name: product.shortName, item: `https://www.stackspeptide.com/products/${product.slug}` },
     ],
   }
 

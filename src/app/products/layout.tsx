@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       '24+ independently tested peptides — GHK-Cu, BPC-157, Retatrutide, Tirzepatide & more. All HPLC verified >98% purity with CoA documentation.',
   },
-  alternates: { canonical: 'https://stackspeptide.com/products' },
+  alternates: { canonical: 'https://www.stackspeptide.com/products' },
 }
 
 export default function ProductsLayout({ children }: { children: React.ReactNode }) {

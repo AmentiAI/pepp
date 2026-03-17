@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'Epithalon activates telomerase. NAD+ restores sirtuin pathways. The two most validated longevity compounds backed by 40+ years of published data.',
   },
-  alternates: { canonical: 'https://stackspeptide.com/categories/longevity' },
+  alternates: { canonical: 'https://www.stackspeptide.com/categories/longevity' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

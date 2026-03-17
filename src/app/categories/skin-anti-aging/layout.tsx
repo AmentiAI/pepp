@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       'The most clinically documented skin and anti-aging peptides. GHK-Cu resets aging gene expression. Epithalon elongates telomeres. SNAP-8 blocks wrinkle-forming muscle contractions.',
   },
-  alternates: { canonical: 'https://stackspeptide.com/categories/skin-anti-aging' },
+  alternates: { canonical: 'https://www.stackspeptide.com/categories/skin-anti-aging' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

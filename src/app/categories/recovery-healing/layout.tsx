@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       'The most studied healing peptides on the planet. BPC-157 repairs tendons, gut, and nerves. TB-500 accelerates systemic tissue regeneration. All third-party verified.',
   },
-  alternates: { canonical: 'https://stackspeptide.com/categories/recovery-healing' },
+  alternates: { canonical: 'https://www.stackspeptide.com/categories/recovery-healing' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -20,7 +20,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'AhrefsBot',    allow: '/' },
       { userAgent: 'SemrushBot',   allow: '/' },
     ],
-    sitemap: 'https://stackspeptide.com/sitemap.xml',
-    host: 'https://stackspeptide.com',
+    sitemap: 'https://www.stackspeptide.com/sitemap.xml',
+    host: 'https://www.stackspeptide.com',
   }
 }

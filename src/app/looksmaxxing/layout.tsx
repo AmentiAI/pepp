@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'muscle growth peptides',
     'peptide protocol guide',
   ],
-  alternates: { canonical: 'https://stackspeptide.com/looksmaxxing' },
+  alternates: { canonical: 'https://www.stackspeptide.com/looksmaxxing' },
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
