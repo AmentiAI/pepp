@@ -12,7 +12,7 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const siteUrl = 'https://stackspeptide.com'
+const siteUrl = 'https://www.stackspeptide.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -89,7 +89,7 @@ const orgSchema = {
   name: 'StacksPeptide',
   url: siteUrl,
   description:
-    'Independent peptide review and sourcing guide. Covering GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3, and 24+ more compounds.',
+    'Premium peptide supplier guide. Covering GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3, and 24+ more compounds.',
   sameAs: [],
 }
 
