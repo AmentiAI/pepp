@@ -23,8 +23,9 @@ const slugSet = new Set(products.map(p => p.slug))
 function extractProducts(text: string): Product[] {
   const found: Product[] = []
   const seen = new Set<string>()
-  const matches = text.matchAll(/\/products\/([a-z0-9-]+)/g)
-  for (const match of matches) {
+  const re = /\/products\/([a-z0-9-]+)/g
+  let match: RegExpExecArray | null
+  while ((match = re.exec(text)) !== null) {
     const slug = match[1]
     if (slugSet.has(slug) && !seen.has(slug)) {
       seen.add(slug)
