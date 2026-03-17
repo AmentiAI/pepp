@@ -37,8 +37,8 @@ const stacks: Stack[] = [
     tagline: 'Maximum skin quality + overnight GH optimization with minimal complexity',
     compounds: [
       { name: 'GHK-Cu', role: 'Skin regeneration & collagen', dose: '1–2mg/day topical or subQ', href: '/products/ghk-cu' },
-      { name: 'CJC-1295', role: 'GHRH analog — GH pulse', dose: '100mcg pre-sleep', href: '/products/cjc-1295' },
-      { name: 'Ipamorelin', role: 'GHRP — GH release', dose: '200mcg pre-sleep', href: '/products/ipamorelin' },
+      { name: 'CJC-1295', role: 'GHRH analog — GH pulse', dose: '100mcg pre-sleep', href: '/products/cjc1295-ipamorelin' },
+      { name: 'Ipamorelin', role: 'GHRP — GH release', dose: '200mcg pre-sleep', href: '/products/cjc1295-ipamorelin' },
     ],
     benefits: [
       'Improved skin texture and tone within 4–6 weeks',
@@ -59,10 +59,10 @@ const stacks: Stack[] = [
     goal: 'Maximum Fat Oxidation',
     tagline: 'Triple-receptor GLP-1 agonism + GH axis for maximum fat oxidation',
     compounds: [
-      { name: 'Retatrutide', role: 'GLP-1/GIP/Glucagon tri-agonist', dose: '2–12mg/week escalating', href: '/products/retatrutide' },
-      { name: 'CJC-1295', role: 'GH axis preservation', dose: '100mcg 2× daily', href: '/products/cjc-1295' },
-      { name: 'Ipamorelin', role: 'Lean mass protection', dose: '200mcg 2× daily', href: '/products/ipamorelin' },
-      { name: 'BPC-157', role: 'Gut health during deficit', dose: '250mcg 2× daily', href: '/products/bpc-157' },
+      { name: 'Retatrutide', role: 'GLP-1/GIP/Glucagon tri-agonist', dose: '2–12mg/week escalating', href: '/products/glp-3r-10mg' },
+      { name: 'CJC-1295', role: 'GH axis preservation', dose: '100mcg 2× daily', href: '/products/cjc1295-ipamorelin' },
+      { name: 'Ipamorelin', role: 'Lean mass protection', dose: '200mcg 2× daily', href: '/products/cjc1295-ipamorelin' },
+      { name: 'BPC-157', role: 'Gut health during deficit', dose: '250mcg 2× daily', href: '/products/bpc157-10mg' },
     ],
     benefits: [
       'Up to 24.2% total body weight reduction (NEJM Phase 2)',
@@ -83,10 +83,10 @@ const stacks: Stack[] = [
     goal: 'Muscle & Body Recomp',
     tagline: 'True muscle hyperplasia + GH amplification + accelerated recovery',
     compounds: [
-      { name: 'IGF-1 LR3', role: 'Satellite cell activation / hyperplasia', dose: '50–100mcg post-training', href: '/products/igf-1-lr3' },
-      { name: 'CJC-1295', role: 'Sustained GH elevation', dose: '100mcg 2× daily', href: '/products/cjc-1295' },
-      { name: 'Ipamorelin', role: 'GH pulse amplification', dose: '200mcg 2× daily', href: '/products/ipamorelin' },
-      { name: 'BPC-157', role: 'Recovery & joint protection', dose: '250–500mcg daily', href: '/products/bpc-157' },
+      { name: 'IGF-1 LR3', role: 'Satellite cell activation / hyperplasia', dose: '50–100mcg post-training', href: '/products/igf-1lr3' },
+      { name: 'CJC-1295', role: 'Sustained GH elevation', dose: '100mcg 2× daily', href: '/products/cjc1295-ipamorelin' },
+      { name: 'Ipamorelin', role: 'GH pulse amplification', dose: '200mcg 2× daily', href: '/products/cjc1295-ipamorelin' },
+      { name: 'BPC-157', role: 'Recovery & joint protection', dose: '250–500mcg daily', href: '/products/bpc157-10mg' },
     ],
     benefits: [
       'Muscle hyperplasia — new fiber creation beyond normal hypertrophy',
@@ -107,8 +107,8 @@ const stacks: Stack[] = [
     goal: 'Tissue Repair & Healing',
     tagline: 'Systemic tissue repair, angiogenesis, and tendon/joint healing',
     compounds: [
-      { name: 'BPC-157', role: 'Tendon, joint & gut healing', dose: '250–500mcg daily', href: '/products/bpc-157' },
-      { name: 'TB-500', role: 'Systemic tissue repair', dose: '2–5mg 2× per week', href: '/products/tb-500' },
+      { name: 'BPC-157', role: 'Tendon, joint & gut healing', dose: '250–500mcg daily', href: '/products/bpc157-10mg' },
+      { name: 'TB-500', role: 'Systemic tissue repair', dose: '2–5mg 2× per week', href: '/products/tb500-10mg' },
     ],
     benefits: [
       '2× faster tendon healing vs control groups',
@@ -129,7 +129,7 @@ const stacks: Stack[] = [
     goal: 'Anti-Aging & Lifespan',
     tagline: 'Telomere extension, epigenetic reset, and cellular rejuvenation',
     compounds: [
-      { name: 'Epithalon', role: 'Telomerase activation / lifespan', dose: '5–10mg daily × 10 days', href: '/products/epithalon' },
+      { name: 'Epithalon', role: 'Telomerase activation / lifespan', dose: '5–10mg daily × 10 days', href: '/products/epithalon-50mg' },
       { name: 'GHK-Cu', role: 'Gene expression reset', dose: '1–2mg daily', href: '/products/ghk-cu' },
     ],
     benefits: [
@@ -151,11 +151,11 @@ const stacks: Stack[] = [
     goal: 'Full-Spectrum Optimization',
     tagline: 'Total physical optimization — fat loss, growth, skin, recovery, and longevity',
     compounds: [
-      { name: 'Retatrutide', role: 'Fat loss & metabolic optimization', dose: '4–8mg/week', href: '/products/retatrutide' },
-      { name: 'IGF-1 LR3', role: 'Muscle hyperplasia', dose: '50–100mcg post-training', href: '/products/igf-1-lr3' },
+      { name: 'Retatrutide', role: 'Fat loss & metabolic optimization', dose: '4–8mg/week', href: '/products/glp-3r-10mg' },
+      { name: 'IGF-1 LR3', role: 'Muscle hyperplasia', dose: '50–100mcg post-training', href: '/products/igf-1lr3' },
       { name: 'GHK-Cu', role: 'Skin & gene expression', dose: '1–2mg daily', href: '/products/ghk-cu' },
-      { name: 'BPC-157', role: 'Recovery & gut health', dose: '250–500mcg daily', href: '/products/bpc-157' },
-      { name: 'Epithalon', role: 'Longevity & telomeres', dose: '5–10mg daily × 10 days', href: '/products/epithalon' },
+      { name: 'BPC-157', role: 'Recovery & gut health', dose: '250–500mcg daily', href: '/products/bpc157-10mg' },
+      { name: 'Epithalon', role: 'Longevity & telomeres', dose: '5–10mg daily × 10 days', href: '/products/epithalon-50mg' },
     ],
     benefits: [
       'Simultaneous fat loss + muscle gain + skin improvement',

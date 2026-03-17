@@ -118,9 +118,6 @@ export default function TopImageBanner() {
               <Link href={s.ctaHref} className="btn-primary" style={{ background: `linear-gradient(135deg, ${s.ctaColor}, ${s.ctaColor}aa)` }}>
                 {s.cta} <ArrowRight size={15} />
               </Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                Shop Apollo <ExternalLink size={13} />
-              </a>
             </div>
           </div>
         </div>

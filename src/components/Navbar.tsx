@@ -106,9 +106,8 @@ export default function Navbar() {
                 </button>
 
                 {dropOpen && (
+                  <div style={{ position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)', paddingTop: 8, width: 720 }}>
                   <div style={{
-                    position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)',
-                    marginTop: 8, width: 720,
                     background: '#ffffff',
                     border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20,
                     padding: '1.5rem', boxShadow: '0 32px 80px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04)',
@@ -171,6 +170,7 @@ export default function Navbar() {
                         </div>
                       </div>
                     </div>
+                  </div>
                   </div>
                 )}
               </div>
