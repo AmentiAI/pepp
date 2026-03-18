@@ -115,6 +115,12 @@ export default function Footer() {
           <p style={{ fontSize: '0.97rem', color: '#ffffff' }}>
             © {new Date().getFullYear()} StacksPeptide. Products sourced from Apollo Peptide Sciences.
           </p>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.97rem', color: '#ffffff', textDecoration: 'none', opacity: 0.6, transition: 'opacity 0.15s' }}
+            onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+            onMouseLeave={e => (e.currentTarget.style.opacity = '0.6')}
+          >
+            Sitemap
+          </a>
         </div>
       </div>
     </footer>
