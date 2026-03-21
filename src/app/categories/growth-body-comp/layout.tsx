@@ -19,9 +19,17 @@ export const metadata: Metadata = {
     'body recomposition peptide',
   ],
   openGraph: {
-    title: 'Growth & Body Comp Peptides: IGF-1 LR3, CJC-1295/Ipamorelin Stack | StacksPeptide',
+    title: 'Growth & Body Comp Peptides: IGF-1 LR3, CJC-1295/Ipamorelin | StacksPeptide',
     description:
-      'IGF-1 LR3 triggers satellite cell activation for muscle hyperplasia. CJC-1295/Ipamorelin amplifies GH pulses 4–8× with zero cortisol. Elite body composition peptides.',
+      'IGF-1 LR3 triggers satellite cell activation for muscle hyperplasia. CJC-1295/Ipamorelin amplifies GH pulses 4–8×. Shop body composition peptides.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Growth & Body Composition Peptides' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Growth & Body Comp Peptides — IGF-1 LR3 & CJC-1295',
+    description: 'IGF-1 LR3: 3× native IGF-1 potency for muscle hyperplasia. CJC-1295/Ipamorelin: 4–8× GH amplification.',
+    images: ['/og-image.jpg'],
   },
   alternates: { canonical: 'https://www.stackspeptide.com/categories/growth-body-comp' },
 }

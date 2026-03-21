@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ExternalLink, ChevronRight, CheckCircle, FlaskConical, ArrowRight, Zap, Shield } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
+import RelatedLinks from '@/components/RelatedLinks'
 import { products, getProductBySlug, getRelatedProducts, AFFILIATE_PRODUCT, AFFILIATE_BASE } from '@/lib/products'
 
 interface Props { params: { slug: string } }
@@ -82,7 +83,7 @@ export default function ProductPage({ params }: Props) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.stackspeptide.com' },
-      { '@type': 'ListItem', position: 2, name: 'Peptides', item: 'https://www.stackspeptide.com/products' },
+      { '@type': 'ListItem', position: 2, name: 'All Research Peptides', item: 'https://www.stackspeptide.com/products' },
       { '@type': 'ListItem', position: 3, name: product.shortName, item: `https://www.stackspeptide.com/products/${product.slug}` },
     ],
   }
@@ -97,7 +98,7 @@ export default function ProductPage({ params }: Props) {
         <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.87rem', color: '#9090a8' }}>
           <Link href="/" className="hover-gold" style={{ color: '#9090a8', textDecoration: 'none', transition: 'color 0.15s' }}>Home</Link>
           <ChevronRight size={11} />
-          <Link href="/products" className="hover-gold" style={{ color: '#9090a8', textDecoration: 'none', transition: 'color 0.15s' }}>Peptides</Link>
+          <Link href="/products" className="hover-gold" style={{ color: '#9090a8', textDecoration: 'none', transition: 'color 0.15s' }}>All Research Peptides</Link>
           <ChevronRight size={11} />
           <span style={{ color: '#555570' }}>{product.shortName}</span>
         </div>
@@ -112,7 +113,7 @@ export default function ProductPage({ params }: Props) {
           <div>
             <div style={{ position: 'relative', aspectRatio: '1', background: '#f3f4f8', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 24, overflow: 'hidden', marginBottom: '1rem' }}>
               <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 50%, rgba(212,168,67,0.04) 0%, transparent 65%)' }} />
-              <Image src={product.image} alt={product.name} fill style={{ objectFit: 'contain', padding: '3rem' }} sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              <Image src={product.image} alt={`${product.name} — ${product.category} research peptide, ≥98% purity, third-party HPLC tested`} fill style={{ objectFit: 'contain', padding: '3rem' }} sizes="(max-width: 1024px) 100vw, 50vw" priority />
               {product.tag && (
                 <div style={{ position: 'absolute', top: 16, left: 16 }}>
                   <span className={`badge badge-${product.tagColor || 'gold'}`}>{product.tag}</span>
@@ -320,6 +321,11 @@ export default function ProductPage({ params }: Props) {
             </div>
           </div>
         )}
+
+        {/* Internal links */}
+        <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '2.5rem' }}>
+          <RelatedLinks currentPath={`/products/${product.slug}`} />
+        </div>
       </div>
     </div>
   )

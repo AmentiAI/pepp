@@ -21,7 +21,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'BPC-157 & TB-500 Recovery Peptides — 120+ Published Studies | StacksPeptide',
     description:
-      'The most studied healing peptides on the planet. BPC-157 repairs tendons, gut, and nerves. TB-500 accelerates systemic tissue regeneration. All third-party verified.',
+      'BPC-157 repairs tendons, gut, and nerves. TB-500 accelerates systemic tissue regeneration. Shop the most studied healing peptides — third-party verified.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Recovery & Healing Peptides — BPC-157 & TB-500' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Recovery Peptides — BPC-157 & TB-500 (120+ Studies)',
+    description: 'BPC-157 for tendon, gut and neural repair. TB-500 for systemic tissue regeneration. 120+ published studies.',
+    images: ['/og-image.jpg'],
   },
   alternates: { canonical: 'https://www.stackspeptide.com/categories/recovery-healing' },
 }

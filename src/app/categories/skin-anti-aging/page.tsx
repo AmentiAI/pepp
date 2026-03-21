@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight, ExternalLink, CheckCircle } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
+import RelatedLinks from '@/components/RelatedLinks'
 import { products, AFFILIATE_BASE } from '@/lib/products'
 
 const catProducts = products.filter(p => p.categorySlug === 'skin-anti-aging')
@@ -694,6 +695,10 @@ export default function AntiAgingPage() {
           </div>
         </div>
       </div>
+
+      <section style={{ padding: '1.5rem 2rem 0' }}>
+        <RelatedLinks currentPath="/categories/skin-anti-aging" />
+      </section>
 
     </div>
   )

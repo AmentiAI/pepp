@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { ArrowRight, ExternalLink, CheckCircle, BookOpen, Beaker, Shield, Zap, Clock, AlertCircle } from 'lucide-react'
 import { AFFILIATE_BASE } from '@/lib/products'
+import RelatedLinks from '@/components/RelatedLinks'
 
 const sections = [
   {
@@ -124,7 +125,7 @@ export default function GuidePage() {
           <div style={{ maxWidth: 820 }}>
             <div className="section-label">Peptide Education</div>
             <h1 className="heading-xl" style={{ color: '#0a0a14', marginBottom: '1.25rem' }}>
-              The Complete<br /><span className="gold-text">Peptide Guide</span>
+              The Complete Peptide<br /><span className="gold-text">Stacking & Protocol Guide</span>
             </h1>
             <p style={{ fontSize: '1.2rem', color: '#555570', lineHeight: 1.8, marginBottom: '2.5rem', maxWidth: 700 }}>
               Everything you need to understand peptides — what they are, how they work at the molecular level, how to assess quality, and how to design effective lab protocols. Beginner to advanced.
@@ -212,6 +213,11 @@ export default function GuidePage() {
               </Link>
             ))}
           </div>
+        </section>
+
+        {/* Internal links */}
+        <section style={{ padding: '0 0 1rem' }}>
+          <RelatedLinks currentPath="/guide" />
         </section>
 
         {/* CTA */}

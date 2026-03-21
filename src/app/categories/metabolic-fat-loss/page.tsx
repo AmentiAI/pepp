@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { ExternalLink, ArrowRight } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
+import RelatedLinks from '@/components/RelatedLinks'
 import { products, AFFILIATE_BASE } from '@/lib/products'
 
 const catProducts = products.filter(p => p.categorySlug === 'metabolic-fat-loss')
@@ -793,6 +794,10 @@ export default function FatLossPage() {
             </div>
           </div>
         </section>
+
+      <section style={{ padding: '1.5rem 2rem 0' }}>
+        <RelatedLinks currentPath="/categories/metabolic-fat-loss" />
+      </section>
 
       </div>
     </div>

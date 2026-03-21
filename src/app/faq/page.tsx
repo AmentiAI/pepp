@@ -3,10 +3,11 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react'
 import { AFFILIATE_BASE } from '@/lib/products'
+import RelatedLinks from '@/components/RelatedLinks'
 
 const faqs = [
   {
-    category: 'Quality & Purity',
+    category: 'Quality & Purity Standards',
     color: '#d4a843',
     questions: [
       {
@@ -28,7 +29,7 @@ const faqs = [
     ],
   },
   {
-    category: 'Storage & Reconstitution',
+    category: 'Peptide Storage & Reconstitution',
     color: '#22d3ee',
     questions: [
       {
@@ -54,7 +55,7 @@ const faqs = [
     ],
   },
   {
-    category: 'Shipping & Ordering',
+    category: 'Peptide Shipping & Ordering',
     color: '#fb923c',
     questions: [
       {
@@ -72,7 +73,7 @@ const faqs = [
     ],
   },
   {
-    category: 'Compound Selection',
+    category: 'Peptide Compound Selection',
     color: '#a78bfa',
     questions: [
       {
@@ -98,7 +99,7 @@ const faqs = [
     ],
   },
   {
-    category: 'Lab Basics',
+    category: 'Lab Basics for Peptide Research',
     color: '#a78bfa',
     questions: [
       {
@@ -191,6 +192,11 @@ export default function FAQPage() {
             </section>
           ))}
         </div>
+
+        {/* Internal links */}
+        <section style={{ padding: '0 0 1rem' }}>
+          <RelatedLinks currentPath="/faq" />
+        </section>
 
         {/* CTA */}
         <section style={{ padding: '2rem 0 5rem' }}>

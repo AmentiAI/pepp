@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ArrowRight, ExternalLink, CheckCircle, ArrowLeft } from 'lucide-react'
 import { stacks, getStackById } from '@/lib/stacks'
 import { AFFILIATE_BASE, AFFILIATE_PRODUCT } from '@/lib/products'
+import RelatedLinks from '@/components/RelatedLinks'
 
 export async function generateStaticParams() {
   return stacks.map(s => ({ slug: s.id }))
@@ -16,12 +17,27 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: stack.seoTitle,
     description: stack.seoDescription,
+    keywords: [
+      'peptide stack',
+      'peptide protocol',
+      stack.level.toLowerCase(),
+      ...stack.compounds.map(c => `${c.name.toLowerCase()} peptide`),
+      'third-party tested peptide',
+      'peptide stacking guide',
+    ],
     alternates: { canonical: `https://www.stackspeptide.com/stacks/${stack.id}` },
     openGraph: {
       title: stack.seoTitle,
       description: stack.seoDescription,
-      type: 'website',
+      type: 'article',
       url: `https://www.stackspeptide.com/stacks/${stack.id}`,
+      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: `${stack.name} — StacksPeptide` }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: stack.seoTitle,
+      description: stack.seoDescription,
+      images: ['/og-image.jpg'],
     },
   }
 }
@@ -36,11 +52,13 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
     '@type': 'HowTo',
     name: stack.name,
     description: stack.description,
+    totalTime: `P${stack.duration.replace(/\s/g, '')}`,
     step: stack.compounds.map((c, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
       name: c.name,
-      text: `${c.role} — ${c.dose}`,
+      text: `${c.role} — Dose: ${c.dose}`,
+      description: `${c.name}: ${c.role}. Protocol dose: ${c.dose}.`,
     })),
   }
 
@@ -153,6 +171,11 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
               </Link>
             ))}
           </div>
+        </section>
+
+        {/* Internal links */}
+        <section style={{ padding: '0 0 2rem' }}>
+          <RelatedLinks currentPath={`/stacks/${stack.id}`} />
         </section>
 
         {/* CTA */}

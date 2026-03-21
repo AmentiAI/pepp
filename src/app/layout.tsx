@@ -17,7 +17,7 @@ const siteUrl = 'https://www.stackspeptide.com'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'StacksPeptide — #1 Peptide Stacking Guide: GHK-Cu, BPC-157, Retatrutide & More',
+    default: 'StacksPeptide — Peptide Stacking Guide & Protocols',
     template: '%s | StacksPeptide',
   },
   description:
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
     type: 'website',
     url: siteUrl,
     siteName: 'StacksPeptide',
-    title: 'StacksPeptide — #1 Peptide Guide for Peak Human Optimization',
+    title: 'StacksPeptide — Peptide Stacking Guide & Protocols',
     description:
-      'Shop 24+ premium peptides. GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3 — all third-party tested with CoA documentation.',
+      'StacksPeptide is the #1 peptide stacking guide. GHK-Cu, BPC-157, Retatrutide, Epithalon & 24+ compounds — third-party tested, CoA included.',
     images: [
       {
         url: '/og-image.jpg',

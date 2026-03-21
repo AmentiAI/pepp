@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight, ExternalLink } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
+import RelatedLinks from '@/components/RelatedLinks'
 import { products, AFFILIATE_BASE } from '@/lib/products'
 
 const catProducts = products.filter(p => p.categorySlug === 'longevity')
@@ -766,6 +767,10 @@ export default function LongevityPage() {
           </p>
         </div>
       </div>
+
+      <section style={{ padding: '1.5rem 2rem 0' }}>
+        <RelatedLinks currentPath="/categories/longevity" />
+      </section>
 
     </div>
   )

@@ -18,9 +18,17 @@ export const metadata: Metadata = {
     'copper peptide skin studies',
   ],
   openGraph: {
-    title: 'Anti-Aging Peptides: GHK-Cu (4,000+ Genes), Epithalon & SNAP-8 Science | StacksPeptide',
+    title: 'Anti-Aging Peptides: GHK-Cu (4,000+ Genes), Epithalon & SNAP-8 | StacksPeptide',
     description:
-      'The most clinically documented skin and anti-aging peptides. GHK-Cu resets aging gene expression. Epithalon elongates telomeres. SNAP-8 blocks wrinkle-forming muscle contractions.',
+      'GHK-Cu resets aging skin biology at the gene level. Epithalon elongates telomeres. SNAP-8 blocks expression wrinkles. Shop third-party tested compounds.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Skin & Anti-Aging Peptides' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Skin & Anti-Aging Peptides — GHK-Cu, SNAP-8 & Epithalon',
+    description: 'GHK-Cu modulates 4,000+ genes. Epithalon elongates telomeres. SNAP-8 reduces expression wrinkles. Third-party tested.',
+    images: ['/og-image.jpg'],
   },
   alternates: { canonical: 'https://www.stackspeptide.com/categories/skin-anti-aging' },
 }

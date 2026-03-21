@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowRight, ExternalLink, CheckCircle, Sparkles, Zap, Activity, TrendingUp } from 'lucide-react'
 import { AFFILIATE_BASE } from '@/lib/products'
+import RelatedLinks from '@/components/RelatedLinks'
 
 const pillars = [
   {
@@ -648,6 +649,11 @@ export default function LooksMaxingPage() {
               </div>
             ))}
           </div>
+        </section>
+
+        {/* Internal links */}
+        <section style={{ padding: '0 0 1rem' }}>
+          <RelatedLinks currentPath="/looksmaxxing" />
         </section>
 
         {/* ── CTA ──────────────────────────────────────────────────── */}

@@ -44,6 +44,67 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.82,
     },
+    // High-value keyword landing pages
+    {
+      url: `${baseUrl}/peptide-stacking-guide-beginners`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
+      url: `${baseUrl}/looksmaxxing-peptides-guide`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: `${baseUrl}/semaglutide-vs-tirzepatide-vs-retatrutide`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: `${baseUrl}/wolverine-stack-bpc-157-tb-500`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/cjc-1295-with-dac-vs-without-dac`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/peptide-stack-body-recomposition`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
+      url: `${baseUrl}/ghk-cu-results-timeline`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
+      url: `${baseUrl}/epithalon-protocol-longevity-cycle`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.83,
+    },
+    {
+      url: `${baseUrl}/peptide-dosing-chart`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.83,
+    },
+    {
+      url: `${baseUrl}/how-to-store-peptides`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.82,
+    },
   ]
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map(cat => ({
@@ -57,7 +118,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/products/${product.slug}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
-    priority: 0.75,
+    // Top Sellers and featured products get higher crawl priority
+    priority: product.tag === 'Top Seller' ? 0.88 : product.tag ? 0.80 : 0.75,
   }))
 
   const stackRoutes: MetadataRoute.Sitemap = stacks.map(s => ({

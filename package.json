@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build-links": "npx tsx scripts/build-links.ts",
+    "prebuild": "npm run build-links",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

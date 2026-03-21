@@ -1,0 +1,902 @@
+{
+  "/products/ghk-cu": [
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/snap-8-2-pack",
+      "title": "SNAP-8 2-Pack"
+    },
+    {
+      "path": "/products/snap-8",
+      "title": "SNAP-8"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    }
+  ],
+  "/products/snap-8": [
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/snap-8-2-pack",
+      "title": "SNAP-8 2-Pack"
+    },
+    {
+      "path": "/products/ghk-cu",
+      "title": "GHK-Cu"
+    },
+    {
+      "path": "/products/epithalon-50mg",
+      "title": "Epithalon 50mg"
+    }
+  ],
+  "/products/snap-8-2-pack": [
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/snap-8",
+      "title": "SNAP-8"
+    },
+    {
+      "path": "/products/ghk-cu",
+      "title": "GHK-Cu"
+    },
+    {
+      "path": "/products/glp-2t-20mg-5-pack",
+      "title": "Tirzepatide 5-Pack"
+    }
+  ],
+  "/products/epithalon-50mg": [
+    {
+      "path": "/categories/longevity",
+      "title": "Longevity Peptides"
+    },
+    {
+      "path": "/products/nad",
+      "title": "NAD+ 500mg"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/products/ghk-cu",
+      "title": "GHK-Cu"
+    }
+  ],
+  "/products/nad": [
+    {
+      "path": "/categories/longevity",
+      "title": "Longevity Peptides"
+    },
+    {
+      "path": "/products/epithalon-50mg",
+      "title": "Epithalon 50mg"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/products/igf-1lr3",
+      "title": "IGF-1 LR3"
+    }
+  ],
+  "/products/bpc157-10mg": [
+    {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
+      "path": "/products/tb500-10mg",
+      "title": "TB-500"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
+    },
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    }
+  ],
+  "/products/tb500-10mg": [
+    {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
+      "path": "/products/bpc157-10mg",
+      "title": "BPC-157"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
+    },
+    {
+      "path": "/products/ghk-cu",
+      "title": "GHK-Cu"
+    }
+  ],
+  "/products/igf-1lr3": [
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/products/cjc1295-ipamorelin",
+      "title": "CJC-1295 / Ipamorelin"
+    },
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    },
+    {
+      "path": "/looksmaxxing",
+      "title": "Looksmaxxing with Peptides"
+    }
+  ],
+  "/products/cjc1295-ipamorelin": [
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/products/igf-1lr3",
+      "title": "IGF-1 LR3"
+    },
+    {
+      "path": "/products/bpc157-10mg",
+      "title": "BPC-157"
+    },
+    {
+      "path": "/products/tb500-10mg",
+      "title": "TB-500"
+    }
+  ],
+  "/products/glp-1s-5mg": [
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/glp-1cglp-1s-5mg",
+      "title": "Cagri + Sema Combo"
+    },
+    {
+      "path": "/products/glp-2t-15m",
+      "title": "Tirzepatide 15mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    }
+  ],
+  "/products/glp-1s-10mg": [
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/glp-3r-15mg",
+      "title": "Retatrutide 15mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    },
+    {
+      "path": "/products/glp-2t-30mg",
+      "title": "Tirzepatide 30mg"
+    }
+  ],
+  "/products/glp-1s-15mg": [
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/glp-2-t-60mg",
+      "title": "Tirzepatide 60mg"
+    },
+    {
+      "path": "/products/glp-3-r-60mg",
+      "title": "Retatrutide 60mg"
+    },
+    {
+      "path": "/products/glp-1s-10mg",
+      "title": "Semaglutide 10mg"
+    }
+  ],
+  "/products/glp-2t-15m": [
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/glp-1cglp-1s-5mg",
+      "title": "Cagri + Sema Combo"
+    },
+    {
+      "path": "/products/glp-2t-30mg",
+      "title": "Tirzepatide 30mg"
+    },
+    {
+      "path": "/products/glp-3r-10mg",
+      "title": "Retatrutide 10mg"
+    }
+  ],
+  "/products/glp-2t-30mg": [
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/glp-3-r-30mg",
+      "title": "Retatrutide 30mg"
+    },
+    {
+      "path": "/products/glp-2t-15m",
+      "title": "Tirzepatide 15mg"
+    },
+    {
+      "path": "/products/glp-1s-10mg",
+      "title": "Semaglutide 10mg"
+    }
+  ],
+  "/products/glp-2-t-60mg": [
+    {
+      "path": "/products/glp-3-r-60mg",
+      "title": "Retatrutide 60mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    },
+    {
+      "path": "/products/glp-3-r-30mg",
+      "title": "Retatrutide 30mg"
+    },
+    {
+      "path": "/products/glp-1s-10mg",
+      "title": "Semaglutide 10mg"
+    }
+  ],
+  "/products/glp-3r-10mg": [
+    {
+      "path": "/products/glp-2t-15m",
+      "title": "Tirzepatide 15mg"
+    },
+    {
+      "path": "/products/glp-3r-15mg",
+      "title": "Retatrutide 15mg"
+    },
+    {
+      "path": "/products/glp-3-r-60mg",
+      "title": "Retatrutide 60mg"
+    },
+    {
+      "path": "/products/glp-1cglp-1s-5mg",
+      "title": "Cagri + Sema Combo"
+    }
+  ],
+  "/products/glp-3r-15mg": [
+    {
+      "path": "/products/glp-1s-10mg",
+      "title": "Semaglutide 10mg"
+    },
+    {
+      "path": "/products/glp-3r-10mg",
+      "title": "Retatrutide 10mg"
+    },
+    {
+      "path": "/products/glp-2t-15m",
+      "title": "Tirzepatide 15mg"
+    },
+    {
+      "path": "/products/glp-2t-30mg",
+      "title": "Tirzepatide 30mg"
+    }
+  ],
+  "/products/glp-3-r-30mg": [
+    {
+      "path": "/products/glp-2t-30mg",
+      "title": "Tirzepatide 30mg"
+    },
+    {
+      "path": "/products/glp-2-t-60mg",
+      "title": "Tirzepatide 60mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    },
+    {
+      "path": "/products/glp-3-r-60mg",
+      "title": "Retatrutide 60mg"
+    }
+  ],
+  "/products/glp-3-r-60mg": [
+    {
+      "path": "/products/glp-2-t-60mg",
+      "title": "Tirzepatide 60mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    },
+    {
+      "path": "/products/glp-3-r-30mg",
+      "title": "Retatrutide 30mg"
+    },
+    {
+      "path": "/products/glp-2t-15m",
+      "title": "Tirzepatide 15mg"
+    }
+  ],
+  "/products/glp-1cglp-1s-5mg": [
+    {
+      "path": "/products/glp-1s-5mg",
+      "title": "Semaglutide 5mg"
+    },
+    {
+      "path": "/products/glp-2t-15m",
+      "title": "Tirzepatide 15mg"
+    },
+    {
+      "path": "/products/glp-3r-10mg",
+      "title": "Retatrutide 10mg"
+    },
+    {
+      "path": "/products/glp-3-r-60mg",
+      "title": "Retatrutide 60mg"
+    }
+  ],
+  "/products/glp-2t-20mg-5-pack": [
+    {
+      "path": "/products/glp-2t-15mg-4-pack",
+      "title": "Tirzepatide 4-Pack"
+    },
+    {
+      "path": "/products/glp-2t-15mg-10-pack",
+      "title": "Tirzepatide 10-Pack"
+    },
+    {
+      "path": "/products/glp-2-t-60mg",
+      "title": "Tirzepatide 60mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    }
+  ],
+  "/products/glp-2t-15mg-4-pack": [
+    {
+      "path": "/products/glp-2t-20mg-5-pack",
+      "title": "Tirzepatide 5-Pack"
+    },
+    {
+      "path": "/products/glp-2t-15mg-10-pack",
+      "title": "Tirzepatide 10-Pack"
+    },
+    {
+      "path": "/products/glp-2-t-60mg",
+      "title": "Tirzepatide 60mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    }
+  ],
+  "/products/glp-2t-15mg-10-pack": [
+    {
+      "path": "/products/glp-2t-20mg-5-pack",
+      "title": "Tirzepatide 5-Pack"
+    },
+    {
+      "path": "/products/glp-2t-15mg-4-pack",
+      "title": "Tirzepatide 4-Pack"
+    },
+    {
+      "path": "/products/glp-2-t-60mg",
+      "title": "Tirzepatide 60mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    }
+  ],
+  "/products/bacteriostatic-water-reconstitution-solution-10ml": [
+    {
+      "path": "/products/glp-1s-10mg",
+      "title": "Semaglutide 10mg"
+    },
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    },
+    {
+      "path": "/products/glp-2-t-60mg",
+      "title": "Tirzepatide 60mg"
+    },
+    {
+      "path": "/products/glp-3-r-60mg",
+      "title": "Retatrutide 60mg"
+    }
+  ],
+  "/categories/skin-anti-aging": [
+    {
+      "path": "/products/snap-8",
+      "title": "SNAP-8"
+    },
+    {
+      "path": "/products/snap-8-2-pack",
+      "title": "SNAP-8 2-Pack"
+    },
+    {
+      "path": "/products/ghk-cu",
+      "title": "GHK-Cu"
+    },
+    {
+      "path": "/looksmaxxing",
+      "title": "Looksmaxxing with Peptides"
+    }
+  ],
+  "/categories/longevity": [
+    {
+      "path": "/products/nad",
+      "title": "NAD+ 500mg"
+    },
+    {
+      "path": "/products/epithalon-50mg",
+      "title": "Epithalon 50mg"
+    },
+    {
+      "path": "/stacks/longevity",
+      "title": "The Longevity & Anti-Aging Stack"
+    },
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    }
+  ],
+  "/categories/recovery-healing": [
+    {
+      "path": "/products/bpc157-10mg",
+      "title": "BPC-157"
+    },
+    {
+      "path": "/products/tb500-10mg",
+      "title": "TB-500"
+    },
+    {
+      "path": "/wolverine-stack-bpc-157-tb-500",
+      "title": "Wolverine Stack: BPC-157 + TB-500"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
+    }
+  ],
+  "/categories/growth-body-comp": [
+    {
+      "path": "/products/igf-1lr3",
+      "title": "IGF-1 LR3"
+    },
+    {
+      "path": "/products/cjc1295-ipamorelin",
+      "title": "CJC-1295 / Ipamorelin"
+    },
+    {
+      "path": "/peptide-stack-body-recomposition",
+      "title": "Peptide Stack for Body Recomposition"
+    },
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    }
+  ],
+  "/categories/metabolic-fat-loss": [
+    {
+      "path": "/products/glp-1s-15mg",
+      "title": "Semaglutide 15mg"
+    },
+    {
+      "path": "/products/glp-2t-30mg",
+      "title": "Tirzepatide 30mg"
+    },
+    {
+      "path": "/products/glp-1s-10mg",
+      "title": "Semaglutide 10mg"
+    },
+    {
+      "path": "/products/glp-2t-15m",
+      "title": "Tirzepatide 15mg"
+    }
+  ],
+  "/stacks/aesthetic-starter": [
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    },
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    },
+    {
+      "path": "/stacks/longevity",
+      "title": "The Longevity & Anti-Aging Stack"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    }
+  ],
+  "/stacks/fat-loss": [
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
+    }
+  ],
+  "/stacks/body-recomp": [
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
+    }
+  ],
+  "/stacks/recovery": [
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    },
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/stacks/longevity",
+      "title": "The Longevity & Anti-Aging Stack"
+    }
+  ],
+  "/stacks/longevity": [
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
+    },
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    }
+  ],
+  "/stacks/elite-optimization": [
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    },
+    {
+      "path": "/stacks/longevity",
+      "title": "The Longevity & Anti-Aging Stack"
+    },
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    }
+  ],
+  "/stacks": [
+    {
+      "path": "/peptide-stacking-guide-beginners",
+      "title": "Peptide Stacking Guide for Beginners"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    },
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    },
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    }
+  ],
+  "/guide": [
+    {
+      "path": "/faq",
+      "title": "Peptide FAQ"
+    },
+    {
+      "path": "/products",
+      "title": "All Peptides"
+    },
+    {
+      "path": "/peptide-stacking-guide-beginners",
+      "title": "Peptide Stacking Guide for Beginners"
+    },
+    {
+      "path": "/peptide-dosing-chart",
+      "title": "Peptide Dosing Chart"
+    }
+  ],
+  "/faq": [
+    {
+      "path": "/guide",
+      "title": "Peptide Science Guide"
+    },
+    {
+      "path": "/products",
+      "title": "All Peptides"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    },
+    {
+      "path": "/products/bacteriostatic-water-reconstitution-solution-10ml",
+      "title": "Bacteriostatic Water"
+    }
+  ],
+  "/looksmaxxing": [
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/looksmaxxing-peptides-guide",
+      "title": "Looksmaxxing Peptides Guide"
+    },
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    },
+    {
+      "path": "/products/igf-1lr3",
+      "title": "IGF-1 LR3"
+    }
+  ],
+  "/products": [
+    {
+      "path": "/guide",
+      "title": "Peptide Science Guide"
+    },
+    {
+      "path": "/faq",
+      "title": "Peptide FAQ"
+    },
+    {
+      "path": "/products/bacteriostatic-water-reconstitution-solution-10ml",
+      "title": "Bacteriostatic Water"
+    },
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    }
+  ],
+  "/peptide-stacking-guide-beginners": [
+    {
+      "path": "/stacks",
+      "title": "Peptide Stacks & Protocols"
+    },
+    {
+      "path": "/guide",
+      "title": "Peptide Science Guide"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    },
+    {
+      "path": "/peptide-stack-body-recomposition",
+      "title": "Peptide Stack for Body Recomposition"
+    }
+  ],
+  "/looksmaxxing-peptides-guide": [
+    {
+      "path": "/looksmaxxing",
+      "title": "Looksmaxxing with Peptides"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/peptide-stack-body-recomposition",
+      "title": "Peptide Stack for Body Recomposition"
+    },
+    {
+      "path": "/products/glp-1s-5mg",
+      "title": "Semaglutide 5mg"
+    }
+  ],
+  "/semaglutide-vs-tirzepatide-vs-retatrutide": [
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/glp-1s-5mg",
+      "title": "Semaglutide 5mg"
+    },
+    {
+      "path": "/products/glp-2t-15m",
+      "title": "Tirzepatide 15mg"
+    },
+    {
+      "path": "/products/glp-3r-10mg",
+      "title": "Retatrutide 10mg"
+    }
+  ],
+  "/wolverine-stack-bpc-157-tb-500": [
+    {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
+    },
+    {
+      "path": "/products/bpc157-10mg",
+      "title": "BPC-157"
+    },
+    {
+      "path": "/products/tb500-10mg",
+      "title": "TB-500"
+    }
+  ],
+  "/cjc-1295-with-dac-vs-without-dac": [
+    {
+      "path": "/products/cjc1295-ipamorelin",
+      "title": "CJC-1295 / Ipamorelin"
+    },
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    },
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    }
+  ],
+  "/peptide-stack-body-recomposition": [
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/stacks/fat-loss",
+      "title": "The Fat Loss & Vascularity Stack"
+    },
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    }
+  ],
+  "/ghk-cu-results-timeline": [
+    {
+      "path": "/products/ghk-cu",
+      "title": "GHK-Cu"
+    },
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/stacks/aesthetic-starter",
+      "title": "The Aesthetic Starter Stack"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    }
+  ],
+  "/epithalon-protocol-longevity-cycle": [
+    {
+      "path": "/categories/longevity",
+      "title": "Longevity Peptides"
+    },
+    {
+      "path": "/products/epithalon-50mg",
+      "title": "Epithalon 50mg"
+    },
+    {
+      "path": "/stacks/longevity",
+      "title": "The Longevity & Anti-Aging Stack"
+    },
+    {
+      "path": "/stacks/elite-optimization",
+      "title": "The Elite Optimization Stack"
+    }
+  ],
+  "/peptide-dosing-chart": [
+    {
+      "path": "/guide",
+      "title": "Peptide Science Guide"
+    },
+    {
+      "path": "/products/bacteriostatic-water-reconstitution-solution-10ml",
+      "title": "Bacteriostatic Water"
+    },
+    {
+      "path": "/how-to-store-peptides",
+      "title": "How to Store Peptides"
+    },
+    {
+      "path": "/peptide-stacking-guide-beginners",
+      "title": "Peptide Stacking Guide for Beginners"
+    }
+  ],
+  "/how-to-store-peptides": [
+    {
+      "path": "/products/bacteriostatic-water-reconstitution-solution-10ml",
+      "title": "Bacteriostatic Water"
+    },
+    {
+      "path": "/guide",
+      "title": "Peptide Science Guide"
+    },
+    {
+      "path": "/peptide-dosing-chart",
+      "title": "Peptide Dosing Chart"
+    },
+    {
+      "path": "/peptide-stacking-guide-beginners",
+      "title": "Peptide Stacking Guide for Beginners"
+    }
+  ]
+}

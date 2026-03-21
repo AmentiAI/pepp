@@ -18,9 +18,17 @@ export const metadata: Metadata = {
     'weight loss compounds',
   ],
   openGraph: {
-    title: 'Fat Loss Peptides: Retatrutide Achieved 24.2% Weight Reduction — NEJM 2023 | StacksPeptide',
+    title: 'Fat Loss Peptides: Retatrutide 24.2% Weight Loss — NEJM 2023 | StacksPeptide',
     description:
-      'Triple receptor agonism. Retatrutide produced the highest pharmacological weight loss ever recorded in a clinical trial. Compare all GLP agonist generations.',
+      'Retatrutide produced the highest pharmacological weight loss ever recorded. Compare all GLP agonist generations and shop third-party tested compounds.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Metabolic & Fat Loss Peptides' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fat Loss Peptides — Retatrutide, Tirzepatide & Semaglutide',
+    description: 'Retatrutide: 24.2% weight loss (NEJM 2023). Compare all GLP agonist generations.',
+    images: ['/og-image.jpg'],
   },
   alternates: { canonical: 'https://www.stackspeptide.com/categories/metabolic-fat-loss' },
 }
