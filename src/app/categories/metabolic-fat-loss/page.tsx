@@ -193,7 +193,7 @@ export default function FatLossPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-primary"
               >
                 Shop GLP-1 Peptides <ExternalLink size={14} />
@@ -649,11 +649,11 @@ export default function FatLossPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-primary"
               style={{ fontSize: '0.92rem', padding: '0.65rem 1.2rem' }}
             >
-              Shop All at Apollo <ExternalLink size={13} />
+              Shop Now <ExternalLink size={13} />
             </a>
           </div>
 
@@ -730,7 +730,7 @@ export default function FatLossPage() {
                   lineHeight: 1.6,
                 }}
               >
-                Source Retatrutide, Tirzepatide, and Semaglutide from Apollo Peptide Sciences —
+                Source Retatrutide, Tirzepatide, and Semaglutide from our supplier —
                 third-party tested, pharmaceutical-grade, with fast domestic shipping.
               </p>
 
@@ -738,7 +738,7 @@ export default function FatLossPage() {
                 <a
                   href={AFFILIATE_BASE}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -762,7 +762,7 @@ export default function FatLossPage() {
                     ;(e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(0)'
                   }}
                 >
-                  Shop Apollo Peptide Sciences <ExternalLink size={15} />
+                  Shop Now <ExternalLink size={15} />
                 </a>
 
                 <Link

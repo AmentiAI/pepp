@@ -12,7 +12,7 @@ const faqs = [
     questions: [
       {
         q: 'What purity standard should I look for in peptides?',
-        a: 'The minimum acceptable standard for premium peptides is ≥98% purity as measured by High Performance Liquid Chromatography (HPLC). Below 98%, impurities — truncated sequences, residual solvents, or incorrect stereoisomers — may affect experimental integrity. Apollo Peptide Sciences meets or exceeds 98% purity on all compounds.',
+        a: 'The minimum acceptable standard for premium peptides is ≥98% purity as measured by High Performance Liquid Chromatography (HPLC). Below 98%, impurities — truncated sequences, residual solvents, or incorrect stereoisomers — may affect experimental integrity. our supplier meets or exceeds 98% purity on all compounds.',
       },
       {
         q: 'What is a Certificate of Analysis (CoA) and why does it matter?',
@@ -20,7 +20,7 @@ const faqs = [
       },
       {
         q: 'What is the difference between in-house testing and third-party testing?',
-        a: 'In-house testing means the supplier runs their own purity tests — creating an obvious conflict of interest. Third-party testing means an independent laboratory with no financial relationship to the supplier verifies the batch. Third-party testing provides objective verification. Apollo Peptide Sciences uses independent third-party labs for all CoA documentation.',
+        a: 'In-house testing means the supplier runs their own purity tests — creating an obvious conflict of interest. Third-party testing means an independent laboratory with no financial relationship to the supplier verifies the batch. Third-party testing provides objective verification. our supplier uses independent third-party labs for all CoA documentation.',
       },
       {
         q: 'What is HPLC and why is it the standard for purity testing?',
@@ -64,7 +64,7 @@ const faqs = [
       },
       {
         q: 'How are peptides shipped and will they degrade in transit?',
-        a: 'Lyophilized peptides are stable at room temperature for 30–90 days depending on the compound, making standard shipping well within safe parameters. Quality suppliers ship with appropriate temperature indicators. Cold packs are occasionally used for more sensitive compounds or during extreme weather. Apollo Peptide Sciences packages orders to maintain integrity during transit.',
+        a: 'Lyophilized peptides are stable at room temperature for 30–90 days depending on the compound, making standard shipping well within safe parameters. Quality suppliers ship with appropriate temperature indicators. Cold packs are occasionally used for more sensitive compounds or during extreme weather. our supplier packages orders to maintain integrity during transit.',
       },
       {
         q: 'What should I check when my order arrives?',
@@ -155,7 +155,7 @@ export default function FAQPage() {
               <Link href="/guide" className="btn-primary">
                 Read Full Guide <ArrowRight size={14} />
               </Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary">
                 Shop Compounds <ExternalLink size={14} />
               </a>
             </div>
@@ -202,13 +202,13 @@ export default function FAQPage() {
         <section style={{ padding: '2rem 0 5rem' }}>
           <div style={{ background: 'linear-gradient(135deg, #fffbf0, #f7f8fc)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 24, padding: '3.5rem', textAlign: 'center' }}>
             <div className="section-label" style={{ justifyContent: 'center', display: 'flex' }}>Still Have Questions?</div>
-            <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>Shop Premium Grade Compounds at Apollo Peptide Sciences</h2>
+            <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>Shop Premium Grade Compounds at our supplier</h2>
             <p style={{ color: '#555570', marginBottom: '2rem', fontSize: '1rem', maxWidth: 540, margin: '0 auto 2rem' }}>
               Every compound independently tested, every batch documented with a full CoA. The highest purity standard in peptides.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
-                Shop Apollo Peptide Sciences <ExternalLink size={16} />
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+                Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/guide" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 Read the Peptide Guide <ArrowRight size={16} />

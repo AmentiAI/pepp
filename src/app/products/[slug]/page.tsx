@@ -7,20 +7,21 @@ import ProductCard from '@/components/ProductCard'
 import RelatedLinks from '@/components/RelatedLinks'
 import { products, getProductBySlug, getRelatedProducts, AFFILIATE_PRODUCT, AFFILIATE_BASE } from '@/lib/products'
 
-interface Props { params: { slug: string } }
+interface Props { params: Promise<{ slug: string }> }
 
 export async function generateStaticParams() {
   return products.map(p => ({ slug: p.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const product = getProductBySlug(params.slug)
+  const { slug } = await params
+  const product = getProductBySlug(slug)
   if (!product) return {}
   const title = `${product.shortName}: ${product.headline}`
   const canonical = `https://www.stackspeptide.com/products/${product.slug}`
   return {
     title,
-    description: `${product.summary} Third-party HPLC tested >98% purity. Certificate of Analysis included. Sourced from Apollo Peptide Sciences.`,
+    description: `${product.summary} Third-party HPLC tested >98% purity. Certificate of Analysis included.`,
     keywords: [
       ...product.keywords,
       `${product.shortName} science`,
@@ -46,8 +47,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function ProductPage({ params }: Props) {
-  const product = getProductBySlug(params.slug)
+export default async function ProductPage({ params }: Props) {
+  const { slug } = await params
+  const product = getProductBySlug(slug)
   if (!product) notFound()
 
   const related = getRelatedProducts(product.relatedSlugs)
@@ -59,7 +61,7 @@ export default function ProductPage({ params }: Props) {
     name: product.name,
     description: product.summary,
     image: product.image,
-    brand: { '@type': 'Brand', name: 'Apollo Peptide Sciences' },
+    brand: { '@type': 'Brand', name: 'StacksPeptide' },
     category: product.category,
     ...(product.casNumber ? { identifier: product.casNumber } : {}),
     offers: {
@@ -68,7 +70,7 @@ export default function ProductPage({ params }: Props) {
       price: product.price.toFixed(2),
       availability: 'https://schema.org/InStock',
       url: buyUrl,
-      seller: { '@type': 'Organization', name: 'Apollo Peptide Sciences' },
+      seller: { '@type': 'Organization', name: 'StacksPeptide' },
     },
     additionalProperty: [
       { '@type': 'PropertyValue', name: 'Purity', value: '>98% (HPLC verified)' },
@@ -164,12 +166,12 @@ export default function ProductPage({ params }: Props) {
                   <span style={{ fontSize: '1.05rem', fontWeight: 600, color: '#34d399' }}>In Stock</span>
                 </div>
               </div>
-              <a href={buyUrl} target="_blank" rel="noopener noreferrer" className="hover-dim hover-lift"
+              <a href={buyUrl} target="_blank" rel="nofollow noopener noreferrer" className="hover-dim hover-lift"
                 style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '1rem', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 900, fontSize: '1rem', borderRadius: 12, textDecoration: 'none', transition: 'opacity 0.15s, transform 0.15s', boxShadow: '0 6px 24px rgba(212,168,67,0.3)', marginBottom: '0.75rem' }}
               >
-                Buy at Apollo Peptide Sciences <ExternalLink size={16} />
+                Buy Now <ExternalLink size={16} />
               </a>
-              <p style={{ fontSize: '1.05rem', color: '#9090a8', textAlign: 'center' }}>Secure checkout · Third-party tested · Affiliate link</p>
+              <p style={{ fontSize: '1.05rem', color: '#9090a8', textAlign: 'center' }}>Secure checkout · Third-party tested</p>
             </div>
 
             {/* Quick specs */}
@@ -278,15 +280,14 @@ export default function ProductPage({ params }: Props) {
 
             {/* Sticky buy box */}
             <div style={{ background: 'linear-gradient(135deg, #fffbf0 0%, #f9f9fd 100%)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 18, padding: '1.5rem' }}>
-              <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#d4a843', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '0.3rem' }}>Source From</div>
-              <div style={{ fontSize: '1rem', fontWeight: 800, color: '#0a0a14', marginBottom: '0.25rem' }}>Apollo Peptide Sciences</div>
+              <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#d4a843', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '0.3rem' }}>Research Grade</div>
               <div style={{ fontSize: '2.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.04em', lineHeight: 1, marginBottom: '1.25rem' }}>${product.price.toFixed(2)}</div>
-              <a href={buyUrl} target="_blank" rel="noopener noreferrer" className="hover-dim"
+              <a href={buyUrl} target="_blank" rel="nofollow noopener noreferrer" className="hover-dim"
                 style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0.85rem', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 700, fontSize: '1rem', borderRadius: 10, textDecoration: 'none', marginBottom: '0.6rem', transition: 'opacity 0.15s' }}
               >
                 Buy Now <ExternalLink size={13} />
               </a>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="hover-gold-border"
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="hover-gold-border"
                 style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0.75rem', background: 'transparent', border: '1px solid rgba(0,0,0,0.12)', color: '#555570', fontSize: '1.05rem', fontWeight: 600, borderRadius: 10, textDecoration: 'none', transition: 'border-color 0.15s, color 0.15s' }}
               >
                 Shop All Products

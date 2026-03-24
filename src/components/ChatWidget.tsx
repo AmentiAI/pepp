@@ -67,7 +67,7 @@ function ProductCard({ p }: { p: Product }) {
         <a
           href={AFFILIATE_PRODUCT(p.slug)}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
           onClick={e => e.stopPropagation()}
           style={{ fontSize: '0.65rem', fontWeight: 700, color: '#000', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', padding: '2px 6px', borderRadius: 6, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 3 }}
         >

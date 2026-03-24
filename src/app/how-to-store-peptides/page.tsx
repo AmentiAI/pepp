@@ -216,7 +216,7 @@ export default function HowToStorePeptidesPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-secondary"
             >
               Shop Peptides <ExternalLink size={15} />
@@ -772,7 +772,7 @@ export default function HowToStorePeptidesPage() {
           </h2>
           <p style={{ color: '#555570', marginBottom: '2rem', lineHeight: 1.7 }}>
             Now that you know how to store peptides correctly, check the dosing reference chart
-            or browse research-grade compounds from Apollo Peptide Sciences.
+            or browse research-grade compounds from our supplier.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/peptide-dosing-chart" className="btn-primary">
@@ -781,10 +781,10 @@ export default function HowToStorePeptidesPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-secondary"
             >
-              Shop Apollo Peptide Sciences <ExternalLink size={15} />
+              Shop Now <ExternalLink size={15} />
             </a>
           </div>
           <p style={{ marginTop: '2rem', fontSize: '0.78rem', color: '#b0b0c8', lineHeight: 1.6 }}>

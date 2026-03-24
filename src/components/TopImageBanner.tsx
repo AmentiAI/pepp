@@ -13,7 +13,7 @@ const slides = [
     eyebrow: 'Looksmaxing Compounds',
     title: 'Reach Your',
     accent: 'Physical Peak',
-    body: 'The most advanced peptides for body recomposition, muscle hyperplasia, and aesthetic optimization — sourced from Apollo Peptide Sciences.',
+    body: 'The most advanced peptides for body recomposition, muscle hyperplasia, and aesthetic optimization — sourced from our supplier.',
     cta: 'Growth Peptides',
     ctaHref: '/categories/growth-body-comp',
     ctaColor: '#d4a843',

@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'What is the difference between 5mg and 10mg dosing?',
-    a: 'Both doses appear in published research. The 5mg dose is considered appropriate for an initial 10-day cycle, particularly for researchers working with Epithalon for the first time. The 10mg dose has been used in advanced clinical research contexts and in the extended 20-day protocol format. The practical difference in terms of total cycle dose: a standard 10-day cycle at 5mg/day equals 50mg total; at 10mg/day it equals 100mg total. Apollo Peptide Sciences supplies Epithalon in 50mg vials — one vial covers a full 10-day cycle at 5mg/day.',
+    a: 'Both doses appear in published research. The 5mg dose is considered appropriate for an initial 10-day cycle, particularly for researchers working with Epithalon for the first time. The 10mg dose has been used in advanced clinical research contexts and in the extended 20-day protocol format. The practical difference in terms of total cycle dose: a standard 10-day cycle at 5mg/day equals 50mg total; at 10mg/day it equals 100mg total. our supplier supplies Epithalon in 50mg vials — one vial covers a full 10-day cycle at 5mg/day.',
   },
 ]
 
@@ -521,8 +521,8 @@ export default function EpithalonProtocolPage() {
               <Link href="/products/epithalon-50mg" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View Product <ArrowRight size={16} />
               </Link>
-              <a href={AFFILIATE_PRODUCT('epithalon-50mg')} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
-                Buy at Apollo <ExternalLink size={12} />
+              <a href={AFFILIATE_PRODUCT('epithalon-50mg')} target="_blank" rel="nofollow noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
+                Buy Now <ExternalLink size={12} />
               </a>
             </div>
           </div>
@@ -537,13 +537,13 @@ export default function EpithalonProtocolPage() {
         <section style={{ padding: '2rem 0 5rem' }}>
           <div style={{ background: 'linear-gradient(135deg, #fffbf0, #f7f8fc)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 24, padding: '3.5rem', textAlign: 'center' }}>
             <div className="section-label" style={{ justifyContent: 'center', display: 'flex' }}>40+ Years of Research</div>
-            <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>Source Epithalon at Apollo Peptide Sciences</h2>
+            <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>Source Epithalon at our supplier</h2>
             <p style={{ color: '#555570', marginBottom: '2rem', fontSize: '1rem', maxWidth: 560, margin: '0 auto 2rem' }}>
               Third-party tested. Certificate of Analysis on every order. The benchmark source for research-grade longevity peptides.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
-                Shop Apollo Peptide Sciences <ExternalLink size={16} />
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+                Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/guide" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 Read the Protocol Guide <BookOpen size={16} />

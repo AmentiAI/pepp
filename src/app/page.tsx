@@ -34,9 +34,9 @@ const scienceCards = [
 ]
 
 const testimonials = [
-  { name: 'Dr. Marcus R.', role: 'Lab Scientist', text: 'Apollo\'s CoA documentation is the most rigorous I\'ve seen in the peptide space. HPLC chromatograms and mass spec on every single batch. This is how it should be done.', stars: 5 },
+  { name: 'Dr. Marcus R.', role: 'Lab Scientist', text: 'Their CoA documentation is the most rigorous I\'ve seen in the peptide space. HPLC chromatograms and mass spec on every single batch. This is how it should be done.', stars: 5 },
   { name: 'Thomas K.', role: 'Metabolic Investigator', text: 'Retatrutide molecular weight confirms perfectly against published NEJM data. Best price per mg for triple agonist material I\'ve found anywhere. Reordering immediately.', stars: 5 },
-  { name: 'Alex V.', role: 'Protocol Developer', text: 'Been sourcing GHK-Cu and Epithalon from Apollo for over a year. Perfectly consistent quality across every batch. The educational content on StacksPeptide helped me design a smarter protocol.', stars: 5 },
+  { name: 'Alex V.', role: 'Protocol Developer', text: 'Been sourcing GHK-Cu and Epithalon from our supplier for over a year. Perfectly consistent quality across every batch. The educational content on StacksPeptide helped me design a smarter protocol.', stars: 5 },
 ]
 
 // ── Shared style helpers ──
@@ -101,7 +101,7 @@ export default function HomePage() {
               'Third-party HPLC and mass spectrometry verified',
               'Certificate of Analysis with every order',
               '24 premium grade compounds in one catalog',
-              'Sourced exclusively from Apollo Peptide Sciences',
+              'Sourced exclusively from our supplier',
             ].map(pt => (
               <div key={pt} style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', marginBottom: '0.875rem' }}>
                 <div style={{ width: 20, height: 20, borderRadius: '50%', background: 'rgba(212,168,67,0.12)', border: '1px solid rgba(212,168,67,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
@@ -112,7 +112,7 @@ export default function HomePage() {
             ))}
             <div style={{ display: 'flex', gap: 14, marginTop: '3rem', flexWrap: 'wrap' }}>
               <Link href="/products" className="btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Browse All 24 Compounds <ArrowRight size={16} /></Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Shop Apollo <ExternalLink size={14} /></a>
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Shop Now <ExternalLink size={14} /></a>
             </div>
           </div>
 
@@ -228,7 +228,7 @@ export default function HomePage() {
                         onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.08)'; e.currentTarget.style.color = '#0a0a14'; }}
                         onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.04)'; e.currentTarget.style.color = '#555570'; }}
                       >Info</Link>
-                      <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="noopener noreferrer"
+                      <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="nofollow noopener noreferrer"
                         style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '9px 16px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 700, fontSize: '1.05rem', borderRadius: 9, textDecoration: 'none', transition: 'opacity 0.15s' }}
                         onMouseEnter={e => (e.currentTarget.style.opacity = '0.88')}
                         onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
@@ -355,7 +355,7 @@ export default function HomePage() {
           <div>
             <div style={S.eyebrow}>
               <span style={{ width: 24, height: 1.5, background: '#d4a843', display: 'block' }} />
-              Apollo Peptide Sciences
+              our supplier
             </div>
             <h2 style={S.h2white}>
               Purity &gt;98% Isn&apos;t<br />
@@ -364,7 +364,7 @@ export default function HomePage() {
               </span>
             </h2>
             <p style={{ ...S.bodyCopy, marginBottom: '1.5rem' }}>
-              Apollo Peptide Sciences maintains the strictest independent analytical standards in the peptide market. Every compound is third-party verified — not self-certified. You receive actual lab documentation with every single order.
+              our supplier maintains the strictest independent analytical standards in the peptide market. Every compound is third-party verified — not self-certified. You receive actual lab documentation with every single order.
             </p>
             <p style={{ ...S.bodyCopy, marginBottom: '3rem' }}>
               HPLC chromatograms. Mass spectrometry molecular weight confirmation. Endotoxin testing. The complete analytical package that professional investigators require — and rarely get anywhere else.
@@ -385,8 +385,8 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>
-              Shop Apollo Peptide Sciences <ExternalLink size={16} />
+            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>
+              Shop Now <ExternalLink size={16} />
             </a>
           </div>
 
@@ -486,12 +486,12 @@ export default function HomePage() {
                 </span>
               </h2>
               <p style={{ fontSize: '1.2rem', color: '#555570', lineHeight: 1.85, maxWidth: 600, margin: '0 auto 3.5rem' }}>
-                Every compound in this catalog is independently HPLC tested, documented with a Certificate of Analysis, and sourced exclusively from Apollo Peptide Sciences — the most analytically rigorous supplier in the peptide space.
+                Every compound in this catalog is independently HPLC tested, documented with a Certificate of Analysis, and sourced exclusively from our supplier — the most analytically rigorous supplier in the peptide space.
               </p>
 
               <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '1.25rem', marginBottom: '3.5rem' }}>
-                <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '1.15rem', padding: '1.1rem 2.75rem' }}>
-                  Shop Apollo Peptide Sciences <ExternalLink size={17} />
+                <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1.15rem', padding: '1.1rem 2.75rem' }}>
+                  Shop Now <ExternalLink size={17} />
                 </a>
                 <Link href="/products" className="btn-secondary" style={{ fontSize: '1.15rem', padding: '1.1rem 2.75rem' }}>
                   Browse All Peptides <ArrowRight size={17} />
@@ -517,7 +517,7 @@ export default function HomePage() {
       {/* Disclaimer */}
       <div style={{ background: '#f3f4f8', borderTop: '1px solid rgba(0,0,0,0.06)', padding: '2rem' }}>
         <p style={{ maxWidth: 860, margin: '0 auto', fontSize: '1.05rem', color: '#888898', textAlign: 'center', lineHeight: 1.8 }}>
-          <strong style={{ color: '#555570' }}>For Lab Use Only:</strong> All products are intended for laboratory lab purposes only. Not approved by the FDA for human consumption. Not for use on humans or animals. StacksPeptide is an affiliate of Apollo Peptide Sciences and earns commission on qualifying purchases.
+          <strong style={{ color: '#555570' }}>For Lab Use Only:</strong> All products are intended for laboratory lab purposes only. Not approved by the FDA for human consumption. Not for use on humans or animals. 
         </p>
       </div>
     </div>

@@ -685,7 +685,7 @@ export default function StacksPage() {
                     <a
                       href={AFFILIATE_BASE}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       style={{
                         display: 'inline-flex', alignItems: 'center', gap: 5,
                         fontSize: '0.75rem', fontWeight: 700,
@@ -839,7 +839,7 @@ export default function StacksPage() {
               letterSpacing: '-0.02em',
               marginBottom: '0.75rem',
             }}>
-              All Stack Compounds at Apollo Peptide Sciences
+              All Stack Compounds at our supplier
             </h2>
 
             <p style={{
@@ -853,7 +853,7 @@ export default function StacksPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   fontSize: '0.95rem', fontWeight: 800,
@@ -865,7 +865,7 @@ export default function StacksPage() {
                   boxShadow: '0 4px 16px rgba(212,168,67,0.3)',
                 }}
               >
-                Shop Apollo Peptide Sciences <ExternalLink size={15} />
+                Shop Now <ExternalLink size={15} />
               </a>
               <Link
                 href="/guide"

@@ -46,7 +46,6 @@ export const metadata: Metadata = {
     'looksmaxxing peptides',
     'peptide compounds',
     'third-party tested peptides',
-    'apollo peptide sciences',
   ],
   authors: [{ name: 'StacksPeptide Editorial Team' }],
   creator: 'StacksPeptide',

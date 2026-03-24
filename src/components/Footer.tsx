@@ -48,12 +48,12 @@ export default function Footer() {
               </span>
             </div>
             <p style={{ fontSize: '1.05rem', color: '#ffffff', lineHeight: 1.75, marginBottom: '1.5rem' }}>
-              The most comprehensive peptide resource — powered by Apollo Peptide Sciences. Third-party tested, premium grade, shipped fast.
+              The most comprehensive peptide research resource. Third-party tested, premium grade, shipped fast.
             </p>
-            <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer"
+            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '8px 16px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 700, fontSize: '1rem', borderRadius: 8, textDecoration: 'none' }}
             >
-              Shop Apollo <ExternalLink size={11} />
+              Shop Now <ExternalLink size={11} />
             </a>
           </div>
 
@@ -113,9 +113,9 @@ export default function Footer() {
         {/* Bottom bar */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.04)', paddingTop: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
           <p style={{ fontSize: '0.97rem', color: '#ffffff' }}>
-            © {new Date().getFullYear()} StacksPeptide. Products sourced from Apollo Peptide Sciences.
+            © {new Date().getFullYear()} StacksPeptide. Products sourced from our supplier.
           </p>
-          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.97rem', color: '#ffffff', textDecoration: 'none', opacity: 0.6, transition: 'opacity 0.15s' }}
+          <a href="/sitemap.xml" target="_blank" rel="nofollow noopener noreferrer" style={{ fontSize: '0.97rem', color: '#ffffff', textDecoration: 'none', opacity: 0.6, transition: 'opacity 0.15s' }}
             onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
             onMouseLeave={e => (e.currentTarget.style.opacity = '0.6')}
           >

@@ -102,7 +102,7 @@ export default function LooksmaxxingGuide() {
               <Link href="/stacks" className="btn-primary">
                 View All Protocols <ArrowRight size={14} />
               </Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-secondary"
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary"
                 style={{ color: '#e0e0f0', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
                 Shop Compounds <ExternalLink size={14} />
               </a>
@@ -717,14 +717,14 @@ export default function LooksmaxxingGuide() {
           }}>
             <div className="section-label" style={{ justifyContent: 'center', display: 'flex' }}>Source Premium Grade Compounds</div>
             <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>
-              Every Compound in This Guide Available at Apollo
+              Every Compound in This Guide Available at our supplier
             </h2>
             <p style={{ color: '#555570', marginBottom: '2rem', fontSize: '1rem', maxWidth: 560, margin: '0 auto 2rem' }}>
               Third-party HPLC tested, ≥98% purity, with full Certificate of Analysis documentation on every order. The benchmark for peptide purity in the scientific community.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
-                Shop Apollo Peptide Sciences <ExternalLink size={16} />
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+                Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/stacks" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View All Protocols <ArrowRight size={16} />

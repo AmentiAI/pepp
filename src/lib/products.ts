@@ -655,7 +655,7 @@ export const products: Product[] = [
     summary:
       'The 15mg format represents the highest single-vial yield of GLP-1 S Semaglutide available — designed for lab use institutions, large-cohort studies, or advanced investigators conducting comprehensive long-duration metabolic lab protocols.',
     description:
-      'Research programs that demand maximum material per acquisition will find the GLP-1 S 15mg vial offers the greatest value and convenience for sustained, high-volume investigation. At 15mg, this vial supports multi-phase studies, allows precise dose titration across a full escalation protocol from 0.25mg to 2.4mg lab equivalents, and eliminates the logistical overhead of frequent reordering. As with all Apollo Peptide Sciences products, each vial is backed by third-party analytical testing confirming identity, purity, and potency.',
+      'Research programs that demand maximum material per acquisition will find the GLP-1 S 15mg vial offers the greatest value and convenience for sustained, high-volume investigation. At 15mg, this vial supports multi-phase studies, allows precise dose titration across a full escalation protocol from 0.25mg to 2.4mg lab equivalents, and eliminates the logistical overhead of frequent reordering. As with all our supplier products, each vial is backed by third-party analytical testing confirming identity, purity, and potency.',
     benefits: [
       { title: 'Highest Single-Vial Yield', detail: 'Maximum peptide per vial for the most efficient large-scale or long-duration programs.' },
       { title: 'Full Protocol Design Flexibility', detail: 'Sufficient for complete dose-escalation study designs from starting dose through maximum study dose without supply changes.' },
@@ -1138,7 +1138,7 @@ export const products: Product[] = [
     summary:
       'Bacteriostatic Water is the required reconstitution solution for all lyophilized peptide science preparations. This pharmaceutical-grade 0.9% benzyl alcohol solution maintains sterility across multiple draws, making it the gold-standard reconstitution medium for peptides.',
     description:
-      'Bacteriostatic Water (0.9% Benzyl Alcohol in Water for Injection, WFI) is the universally recommended reconstitution medium for lyophilized peptides. The benzyl alcohol preservative inhibits bacterial growth across multiple needle-punctures of the septum, maintaining sterility throughout a lab protocol — unlike sterile water which becomes contaminated after first use. This 10ml multi-use vial is sufficient for reconstituting multiple peptide preparations and is matched specifically to the vial volumes used in Apollo\'s peptide catalog.',
+      'Bacteriostatic Water (0.9% Benzyl Alcohol in Water for Injection, WFI) is the universally recommended reconstitution medium for lyophilized peptides. The benzyl alcohol preservative inhibits bacterial growth across multiple needle-punctures of the septum, maintaining sterility throughout a lab protocol — unlike sterile water which becomes contaminated after first use. This 10ml multi-use vial is sufficient for reconstituting multiple peptide preparations and is matched specifically to the vial volumes used in our supplier\'s peptide catalog.',
     benefits: [
       { title: 'Multi-Draw Sterility Maintenance', detail: '0.9% benzyl alcohol preservative maintains bacterial inhibition across all needle punctures of the vial — standard for multi-use reconstitution.' },
       { title: 'Peptide Compatibility', detail: 'Optimal pH and osmolality for lyophilized peptide dissolution without denaturation or loss of biological activity.' },
@@ -1149,7 +1149,7 @@ export const products: Product[] = [
       'Bacteriostatic water serves as a physiologically compatible aqueous vehicle for peptide reconstitution. The 0.9% benzyl alcohol acts as a bacteriostatic agent by disrupting bacterial cell membranes, preventing colonization in the multi-use vial. Water for Injection (WFI) base ensures ultra-low endotoxin and particulate levels appropriate for lab use.',
     researchHighlights: [
       'Standard reconstitution medium recommended for all lyophilized peptide preparations',
-      'Compatible with all peptides in the Apollo Peptide Sciences catalog',
+      'Compatible with all peptides in the our supplier catalog',
       '10ml volume appropriate for single or multiple peptide reconstitution protocols',
       'Pharmaceutical-grade production ensures absence of pyrogens and endotoxins',
     ],

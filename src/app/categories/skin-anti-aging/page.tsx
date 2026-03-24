@@ -68,7 +68,7 @@ export default function AntiAgingPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   padding: '0.8rem 1.75rem',
@@ -608,7 +608,7 @@ export default function AntiAgingPage() {
           <a
             href={AFFILIATE_BASE}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 7,
               padding: '0.65rem 1.2rem',
@@ -620,7 +620,7 @@ export default function AntiAgingPage() {
             onMouseEnter={e => { e.currentTarget.style.opacity = '0.85'; }}
             onMouseLeave={e => { e.currentTarget.style.opacity = '1'; }}
           >
-            Shop at Apollo <ExternalLink size={13} />
+            Shop Now <ExternalLink size={13} />
           </a>
         </div>
 
@@ -671,13 +671,13 @@ export default function AntiAgingPage() {
               Begin Your Anti-Aging Research
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '2.25rem', fontSize: '0.95rem', lineHeight: 1.65, maxWidth: 520, margin: '0 auto 2.25rem' }}>
-              Source GHK-Cu, Epithalon, and SNAP-8 from Apollo Peptide Sciences — the most studied
+              Source GHK-Cu, Epithalon, and SNAP-8 from our supplier — the most studied
               anti-aging peptides, batch-tested for identity and purity, with full documentation.
             </p>
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 9,
                 padding: '1rem 2.5rem',
@@ -690,7 +690,7 @@ export default function AntiAgingPage() {
               onMouseEnter={e => { e.currentTarget.style.opacity = '0.92'; e.currentTarget.style.transform = 'translateY(-2px)'; setHoveredCta(true); }}
               onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'translateY(0)'; setHoveredCta(false); }}
             >
-              Shop Apollo Peptide Sciences <ExternalLink size={16} />
+              Shop Now <ExternalLink size={16} />
             </a>
           </div>
         </div>

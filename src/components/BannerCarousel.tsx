@@ -105,10 +105,10 @@ export default function BannerCarousel() {
           <a
             href={AFFILIATE_BASE}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-gray-400 border border-[#1a1a2e] hover:border-[#c9a84c]/30 hover:text-[#c9a84c] transition-all text-sm"
           >
-            Visit Apollo
+            Shop Now
           </a>
         </div>
       </div>

@@ -506,8 +506,8 @@ export default function CjcDacPage() {
               <Link href="/products/cjc1295-ipamorelin" className="btn-primary">
                 View Product Details <ArrowRight size={14} />
               </Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                Shop on Apollo Peptide Sciences <ExternalLink size={14} />
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary">
+                Shop Now <ExternalLink size={14} />
               </a>
             </div>
           </div>
@@ -537,7 +537,7 @@ export default function CjcDacPage() {
                 fontSize: '0.65rem', fontWeight: 800, color: '#d4a843',
                 textTransform: 'uppercase', letterSpacing: '0.16em', marginBottom: '1.25rem',
               }}>
-                Apollo Peptide Sciences
+                our supplier
               </div>
               <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.75rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.2, letterSpacing: '-0.03em', marginBottom: '1rem' }}>
                 Source Research-Grade{' '}
@@ -556,11 +556,11 @@ export default function CjcDacPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-primary"
                 style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}
               >
-                Shop Apollo Peptide Sciences <ExternalLink size={15} />
+                Shop Now <ExternalLink size={15} />
               </a>
             </div>
           </div>

@@ -27,7 +27,7 @@ The industry standard for premium peptides is ≥98% purity as measured by HPLC 
 
 A Certificate of Analysis (CoA) is the documentation that proves a batch has been independently tested and meets purity standards. Every reputable supplier provides a CoA with each order. The CoA should include: HPLC purity percentage, MS data confirming molecular weight, batch number, and the testing laboratory's name.
 
-Apollo Peptide Sciences provides third-party tested CoA documentation on every order — not in-house testing, but independent third-party verification.`,
+our supplier provides third-party tested CoA documentation on every order — not in-house testing, but independent third-party verification.`,
   },
   {
     id: 'reconstitution',
@@ -224,13 +224,13 @@ export default function GuidePage() {
         <section style={{ padding: '2rem 0 5rem' }}>
           <div style={{ background: 'linear-gradient(135deg, #fffbf0, #f7f8fc)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 24, padding: '3.5rem', textAlign: 'center' }}>
             <div className="section-label" style={{ justifyContent: 'center', display: 'flex' }}>Source Premium Grade Compounds</div>
-            <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>Every Compound Covered in This Guide Available at Apollo</h2>
+            <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>Every Compound Covered in This Guide Available at our supplier</h2>
             <p style={{ color: '#555570', marginBottom: '2rem', fontSize: '1rem', maxWidth: 560, margin: '0 auto 2rem' }}>
               Third-party tested, premium grade, with full CoA documentation. The benchmark for peptide purity in the scientific community.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
-                Shop Apollo Peptide Sciences <ExternalLink size={16} />
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+                Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/faq" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 Read the FAQ <ArrowRight size={16} />

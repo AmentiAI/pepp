@@ -175,7 +175,7 @@ export default function GlpComparisonPage() {
             <Link href="/categories/metabolic-fat-loss" className="btn-primary">
               View Metabolic Compounds <ArrowRight size={16} />
             </Link>
-            <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-secondary"
+            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary"
               style={{ color: 'rgba(255,255,255,0.7)', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
               Shop Research Peptides <ExternalLink size={15} />
             </a>
@@ -545,7 +545,7 @@ export default function GlpComparisonPage() {
           <a
             href={AFFILIATE_PRODUCT('glp-3r-10mg')}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="btn-primary"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}
           >
@@ -767,7 +767,7 @@ export default function GlpComparisonPage() {
             Ready to Explore GLP-1 Compounds?
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.55)', marginBottom: '2rem', lineHeight: 1.7 }}>
-            Browse the full metabolic and fat loss category, or visit Apollo Peptide Sciences
+            Browse the full metabolic and fat loss category, or visit our supplier
             to source research-grade compounds for your protocol.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -777,7 +777,7 @@ export default function GlpComparisonPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-secondary"
               style={{
                 color: 'rgba(255,255,255,0.65)',
@@ -785,7 +785,7 @@ export default function GlpComparisonPage() {
                 background: 'rgba(255,255,255,0.05)',
               }}
             >
-              Apollo Peptide Sciences <ExternalLink size={15} />
+              our supplier <ExternalLink size={15} />
             </a>
           </div>
           <p style={{ marginTop: '2rem', fontSize: '0.78rem', color: 'rgba(255,255,255,0.3)', lineHeight: 1.6 }}>

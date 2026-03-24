@@ -162,7 +162,7 @@ export default function BodyRecompPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-secondary"
                 style={{ color: '#e0e0f0', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}
               >
@@ -516,7 +516,7 @@ export default function BodyRecompPage() {
                   <a
                     href={AFFILIATE_PRODUCT(p.slug)}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: 5,
                       color: '#9090a8', textDecoration: 'none', fontWeight: 600, fontSize: '0.86rem',
@@ -576,13 +576,12 @@ export default function BodyRecompPage() {
               Source Research-Grade Peptides
             </h2>
             <p style={{ color: '#9090a8', fontSize: '1rem', marginBottom: '2rem', maxWidth: 500, margin: '0 auto 2rem' }}>
-              All compounds referenced in these protocols are available through our affiliate partner.
-              Third-party tested, research-grade purity.
+              All compounds referenced in these protocols are third-party tested, research-grade purity.
             </p>
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="btn-primary"
             >
               Shop All Compounds <ExternalLink size={14} />

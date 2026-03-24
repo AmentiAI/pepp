@@ -174,7 +174,7 @@ export default function RecoveryPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   padding: '0.75rem 1.6rem',
@@ -468,7 +468,7 @@ export default function RecoveryPage() {
               Complete healing coverage: localized fibroblast repair + systemic cell migration + angiogenesis
             </span>
             <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.9rem' }}>·</span>
-            <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" style={{
+            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" style={{
               display: 'inline-flex', alignItems: 'center', gap: 5,
               background: 'rgba(255,255,255,0.15)', color: '#fff',
               padding: '0.4rem 1rem', borderRadius: 8, fontWeight: 700,
@@ -598,7 +598,7 @@ export default function RecoveryPage() {
           <a
             href={AFFILIATE_BASE}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 6,
               padding: '0.6rem 1.2rem',
@@ -607,7 +607,7 @@ export default function RecoveryPage() {
               borderRadius: 9, textDecoration: 'none',
             }}
           >
-            Shop at Apollo <ExternalLink size={13} />
+            Shop Now <ExternalLink size={13} />
           </a>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem' }}>
@@ -657,13 +657,13 @@ export default function RecoveryPage() {
               color: 'rgba(255,255,255,0.8)', marginBottom: '2rem',
               fontSize: '0.95rem', maxWidth: 520, margin: '0 auto 2rem',
             }}>
-              BPC-157 and TB-500 sourced from Apollo Peptide Sciences — COA-verified,
+              BPC-157 and TB-500 sourced from our supplier — COA-verified,
               independently tested, fast domestic shipping.
             </p>
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               onMouseEnter={() => setHoverCta(true)}
               onMouseLeave={() => setHoverCta(false)}
               style={{
@@ -677,7 +677,7 @@ export default function RecoveryPage() {
                 transform: hoverCta ? 'translateY(-2px)' : 'translateY(0)',
               }}
             >
-              Shop Apollo Peptide Sciences <ExternalLink size={16} />
+              Shop Now <ExternalLink size={16} />
             </a>
           </div>
         </div>

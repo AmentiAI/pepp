@@ -224,7 +224,7 @@ export default function PeptideDosingChart() {
               <a href="#chart" className="btn-primary">
                 Jump to Chart <ArrowRight size={14} />
               </a>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary">
                 Shop Compounds <ExternalLink size={14} />
               </a>
             </div>
@@ -619,11 +619,11 @@ export default function PeptideDosingChart() {
               gap: '1rem',
             }}>
               <div className="section-label" style={{ marginBottom: 0 }}>Source Compounds</div>
-              <h3 className="heading-md" style={{ color: '#0a0a14' }}>Shop Apollo Peptide Sciences</h3>
+              <h3 className="heading-md" style={{ color: '#0a0a14' }}>Shop Now</h3>
               <p style={{ color: '#555570', fontSize: '0.97rem', lineHeight: 1.7 }}>
                 Every compound in this reference guide is available with third-party verified purity documentation and full CoA on every order.
               </p>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ alignSelf: 'flex-start' }}>
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ alignSelf: 'flex-start' }}>
                 Shop Now <ExternalLink size={14} />
               </a>
             </div>

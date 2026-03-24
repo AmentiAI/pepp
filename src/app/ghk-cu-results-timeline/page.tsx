@@ -546,8 +546,8 @@ export default function GHKCuResultsTimelinePage() {
               <Link href="/products/ghk-cu" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View Product <ArrowRight size={16} />
               </Link>
-              <a href={AFFILIATE_PRODUCT('ghk-cu')} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.45)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
-                Buy at Apollo <ExternalLink size={12} />
+              <a href={AFFILIATE_PRODUCT('ghk-cu')} target="_blank" rel="nofollow noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.45)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
+                Buy Now <ExternalLink size={12} />
               </a>
             </div>
           </div>
@@ -562,13 +562,13 @@ export default function GHKCuResultsTimelinePage() {
         <section style={{ padding: '2rem 0 5rem' }}>
           <div style={{ background: 'linear-gradient(135deg, #fffbf0, #f7f8fc)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 24, padding: '3.5rem', textAlign: 'center' }}>
             <div className="section-label" style={{ justifyContent: 'center', display: 'flex' }}>Premium Grade Source</div>
-            <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>Source GHK-Cu from Apollo Peptide Sciences</h2>
+            <h2 className="heading-md" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>Source GHK-Cu from our supplier</h2>
             <p style={{ color: '#555570', marginBottom: '2rem', fontSize: '1rem', maxWidth: 560, margin: '0 auto 2rem' }}>
               Third-party tested. Certificate of Analysis on every order. The reference standard for research-grade copper peptides.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
-                Shop Apollo Peptide Sciences <ExternalLink size={16} />
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+                Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/products/ghk-cu" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View GHK-Cu Profile <ArrowRight size={16} />

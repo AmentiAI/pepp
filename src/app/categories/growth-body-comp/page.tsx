@@ -84,7 +84,7 @@ export default function GrowthPage() {
                 <strong style={{ color: '#fb923c' }}>genuine myofiber hyperplasia</strong> and accelerated lipolysis. Zero cortisol elevation. Maximum tissue remodeling.
               </p>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-                <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary"
+                <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary"
                   style={{ background: 'linear-gradient(135deg, #fb923c, #ea580c)' }}>
                   Shop Growth Stack <ExternalLink size={14} />
                 </a>
@@ -416,9 +416,9 @@ export default function GrowthPage() {
               <div className="section-label" style={{ color: '#fb923c' }}>Growth Catalog</div>
               <h2 className="heading-lg" style={{ color: '#0a0a14' }}>Shop Growth Peptides</h2>
             </div>
-            <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary"
+            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary"
               style={{ background: 'linear-gradient(135deg, #fb923c, #ea580c)', fontSize: '1.05rem', padding: '0.65rem 1.2rem' }}>
-              Shop at Apollo <ExternalLink size={13} />
+              Shop Now <ExternalLink size={13} />
             </a>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '1.25rem' }}>
@@ -445,15 +445,15 @@ export default function GrowthPage() {
                 Source Your Complete Growth Stack
               </h2>
               <p style={{ color: 'rgba(255,255,255,0.85)', marginBottom: '2rem', fontSize: '1rem', maxWidth: 520, margin: '0 auto 2rem' }}>
-                IGF-1 LR3, CJC-1295, and Ipamorelin from Apollo Peptide Sciences — certificate of analysis on every batch, pharmaceutical-grade synthesis, discreet fast shipping.
+                IGF-1 LR3, CJC-1295, and Ipamorelin from our supplier — certificate of analysis on every batch, pharmaceutical-grade synthesis, discreet fast shipping.
               </p>
               <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer"
+                <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '0.9rem 2.25rem', background: '#ffffff', color: '#ea580c', fontWeight: 800, fontSize: '1rem', borderRadius: 10, textDecoration: 'none', transition: 'opacity 0.15s' }}
                   onMouseEnter={e => (e.currentTarget.style.opacity = '0.9')}
                   onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
                 >
-                  Shop Apollo Peptide Sciences <ExternalLink size={15} />
+                  Shop Now <ExternalLink size={15} />
                 </a>
                 <Link href="/products/igf-1lr3"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '0.9rem 1.75rem', background: 'rgba(255,255,255,0.15)', color: '#ffffff', fontWeight: 700, fontSize: '0.95rem', borderRadius: 10, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.35)', transition: 'background 0.15s' }}

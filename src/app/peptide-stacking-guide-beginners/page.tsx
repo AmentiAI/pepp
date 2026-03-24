@@ -767,7 +767,7 @@ export default function BeginnerStackingGuide() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="btn-primary"
                 style={{ alignSelf: 'flex-start' }}
               >

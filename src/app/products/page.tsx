@@ -6,7 +6,7 @@ import ProductCard from '@/components/ProductCard'
 import { products, categories } from '@/lib/products'
 
 const allCategories = [
-  { name: 'All Peptides', slug: 'all', description: 'The complete Apollo Peptide Sciences catalog — third-party tested, premium grade.' },
+  { name: 'All Peptides', slug: 'all', description: 'The complete our supplier catalog — third-party tested, premium grade.' },
   ...categories,
 ]
 
@@ -48,7 +48,7 @@ function ProductsContent() {
           </h1>
           <p style={{ color: '#666688', fontSize: '0.875rem', maxWidth: 680 }}>
             {activeCat?.slug === 'all'
-              ? 'The complete independently-reviewed peptide catalog. Every compound is third-party HPLC tested for >98% purity with a Certificate of Analysis. Sourced from Apollo Peptide Sciences.'
+              ? 'The complete independently-reviewed peptide catalog. Every compound is third-party HPLC tested for >98% purity with a Certificate of Analysis. Sourced from our supplier.'
               : (activeCat?.description || 'Peptides independently tested for purity and identity.')}
           </p>
         </div>

@@ -164,7 +164,7 @@ export default function LongevityPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   padding: '0.75rem 1.75rem',
@@ -651,7 +651,7 @@ export default function LongevityPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 padding: '0.65rem 1.25rem',
@@ -660,7 +660,7 @@ export default function LongevityPage() {
                 borderRadius: 10, textDecoration: 'none',
               }}
             >
-              Shop at Apollo <ExternalLink size={13} />
+              Shop Now <ExternalLink size={13} />
             </a>
           </div>
 
@@ -708,7 +708,7 @@ export default function LongevityPage() {
             textTransform: 'uppercase', color: '#34d399', marginBottom: '1.25rem',
             position: 'relative',
           }}>
-            Longevity Protocol · Apollo Peptide Sciences
+            Longevity Protocol · our supplier
           </div>
 
           <h2 style={{
@@ -723,14 +723,14 @@ export default function LongevityPage() {
             fontSize: '1rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.7,
             maxWidth: 540, margin: '0 auto 2rem', position: 'relative',
           }}>
-            Epithalon, NAD+ precursors, and GHK-Cu from Apollo Peptide Sciences — pharmaceutical-grade purity, independent CoA testing, and the complete Khavinson Protocol stack. Telomerase activation. Sirtuin pathway restoration. Epigenetic reprogramming.
+            Epithalon, NAD+ precursors, and GHK-Cu from our supplier — pharmaceutical-grade purity, independent CoA testing, and the complete Khavinson Protocol stack. Telomerase activation. Sirtuin pathway restoration. Epigenetic reprogramming.
           </p>
 
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', position: 'relative' }}>
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 padding: '0.9rem 2.25rem',
@@ -741,7 +741,7 @@ export default function LongevityPage() {
                 letterSpacing: '-0.01em',
               }}
             >
-              Shop Apollo Peptide Sciences <ExternalLink size={15} />
+              Shop Now <ExternalLink size={15} />
             </a>
             <Link
               href="/products/epithalon-50mg"

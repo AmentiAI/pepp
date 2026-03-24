@@ -207,7 +207,7 @@ export default function LooksMaxingPage() {
             </p>
 
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary">
                 Shop All Compounds <ExternalLink size={14} />
               </a>
               <Link href="/stacks" className="btn-secondary">
@@ -689,7 +689,7 @@ export default function LooksMaxingPage() {
                 fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 900, color: '#ffffff',
                 letterSpacing: '-0.03em', marginBottom: '0.875rem',
               }}>
-                Source Every Compound from Apollo Peptide Sciences
+                Source Every Compound from our supplier
               </h2>
               <p style={{
                 color: 'rgba(255,255,255,0.6)', marginBottom: '2.25rem',
@@ -699,8 +699,8 @@ export default function LooksMaxingPage() {
                 Every peptide in this guide is available — independently tested, pharmaceutical-grade, with CoA documentation on every order. The most complete research peptide catalog available.
               </p>
               <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={AFFILIATE_BASE} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
-                  Shop Apollo Peptide Sciences <ExternalLink size={15} />
+                <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+                  Shop Now <ExternalLink size={15} />
                 </a>
                 <Link href="/stacks" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                   Compare All Stacks <ArrowRight size={15} />
