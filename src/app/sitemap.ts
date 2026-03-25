@@ -105,6 +105,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.82,
     },
+    {
+      url: `${baseUrl}/jawline-peptides-looksmaxxing`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
+      url: `${baseUrl}/snap-8-vs-botox-looksmaxxing`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: `${baseUrl}/looksmaxxing-peptide-stack-protocol`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.88,
+    },
   ]
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map(cat => ({
