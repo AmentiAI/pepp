@@ -685,7 +685,7 @@ export default function StacksPage() {
                     <a
                       href={AFFILIATE_BASE}
                       target="_blank"
-                      rel="nofollow noopener noreferrer"
+                      rel="sponsored noopener noreferrer"
                       style={{
                         display: 'inline-flex', alignItems: 'center', gap: 5,
                         fontSize: '0.75rem', fontWeight: 700,
@@ -853,7 +853,7 @@ export default function StacksPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   fontSize: '0.95rem', fontWeight: 800,

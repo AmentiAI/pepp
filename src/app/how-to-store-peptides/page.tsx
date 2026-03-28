@@ -216,7 +216,7 @@ export default function HowToStorePeptidesPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className="btn-secondary"
             >
               Shop Peptides <ExternalLink size={15} />
@@ -781,7 +781,7 @@ export default function HowToStorePeptidesPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className="btn-secondary"
             >
               Shop Now <ExternalLink size={15} />

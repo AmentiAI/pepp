@@ -224,7 +224,7 @@ export default function PeptideDosingChart() {
               <a href="#chart" className="btn-primary">
                 Jump to Chart <ArrowRight size={14} />
               </a>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary">
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary">
                 Shop Compounds <ExternalLink size={14} />
               </a>
             </div>
@@ -623,7 +623,7 @@ export default function PeptideDosingChart() {
               <p style={{ color: '#555570', fontSize: '0.97rem', lineHeight: 1.7 }}>
                 Every compound in this reference guide is available with third-party verified purity documentation and full CoA on every order.
               </p>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ alignSelf: 'flex-start' }}>
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ alignSelf: 'flex-start' }}>
                 Shop Now <ExternalLink size={14} />
               </a>
             </div>

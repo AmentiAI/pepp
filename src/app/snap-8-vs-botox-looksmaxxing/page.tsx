@@ -173,7 +173,7 @@ export default function Snap8VsBotoxPage() {
               <a
                 href={AFFILIATE_PRODUCT('snap-8')}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className="btn-primary"
               >
                 View SNAP-8 <ExternalLink size={14} />
@@ -549,7 +549,7 @@ export default function Snap8VsBotoxPage() {
               <a
                 href={AFFILIATE_PRODUCT('snap-8')}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className="btn-primary"
               >
                 SNAP-8 <ExternalLink size={14} />
@@ -557,7 +557,7 @@ export default function Snap8VsBotoxPage() {
               <a
                 href={AFFILIATE_PRODUCT('ghk-cu')}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 6,
                   padding: '10px 20px', borderRadius: 100,

@@ -102,7 +102,7 @@ export default function LooksmaxxingGuide() {
               <Link href="/stacks" className="btn-primary">
                 View All Protocols <ArrowRight size={14} />
               </Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary"
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary"
                 style={{ color: '#e0e0f0', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
                 Shop Compounds <ExternalLink size={14} />
               </a>
@@ -723,7 +723,7 @@ export default function LooksmaxxingGuide() {
               Third-party HPLC tested, ≥98% purity, with full Certificate of Analysis documentation on every order. The benchmark for peptide purity in the scientific community.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
                 Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/stacks" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>

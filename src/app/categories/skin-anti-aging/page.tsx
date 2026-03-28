@@ -68,7 +68,7 @@ export default function AntiAgingPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   padding: '0.8rem 1.75rem',
@@ -608,7 +608,7 @@ export default function AntiAgingPage() {
           <a
             href={AFFILIATE_BASE}
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored noopener noreferrer"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 7,
               padding: '0.65rem 1.2rem',
@@ -677,7 +677,7 @@ export default function AntiAgingPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 9,
                 padding: '1rem 2.5rem',

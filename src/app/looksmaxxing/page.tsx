@@ -207,7 +207,7 @@ export default function LooksMaxingPage() {
             </p>
 
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary">
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary">
                 Shop All Compounds <ExternalLink size={14} />
               </a>
               <Link href="/stacks" className="btn-secondary">
@@ -699,7 +699,7 @@ export default function LooksMaxingPage() {
                 Every peptide in this guide is available — independently tested, pharmaceutical-grade, with CoA documentation on every order. The most complete research peptide catalog available.
               </p>
               <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+                <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
                   Shop Now <ExternalLink size={15} />
                 </a>
                 <Link href="/stacks" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>

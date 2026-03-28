@@ -546,7 +546,7 @@ export default function GHKCuResultsTimelinePage() {
               <Link href="/products/ghk-cu" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View Product <ArrowRight size={16} />
               </Link>
-              <a href={AFFILIATE_PRODUCT('ghk-cu')} target="_blank" rel="nofollow noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.45)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
+              <a href={AFFILIATE_PRODUCT('ghk-cu')} target="_blank" rel="sponsored noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.45)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
                 Buy Now <ExternalLink size={12} />
               </a>
             </div>
@@ -567,7 +567,7 @@ export default function GHKCuResultsTimelinePage() {
               Third-party tested. Certificate of Analysis on every order. The reference standard for research-grade copper peptides.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
                 Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/products/ghk-cu" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>

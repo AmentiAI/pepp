@@ -506,7 +506,7 @@ export default function CjcDacPage() {
               <Link href="/products/cjc1295-ipamorelin" className="btn-primary">
                 View Product Details <ArrowRight size={14} />
               </Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary">
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary">
                 Shop Now <ExternalLink size={14} />
               </a>
             </div>
@@ -556,7 +556,7 @@ export default function CjcDacPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className="btn-primary"
                 style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}
               >

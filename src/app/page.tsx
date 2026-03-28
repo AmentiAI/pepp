@@ -112,7 +112,7 @@ export default function HomePage() {
             ))}
             <div style={{ display: 'flex', gap: 14, marginTop: '3rem', flexWrap: 'wrap' }}>
               <Link href="/products" className="btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Browse All 24 Compounds <ArrowRight size={16} /></Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Shop Now <ExternalLink size={14} /></a>
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Shop Now <ExternalLink size={14} /></a>
             </div>
           </div>
 
@@ -228,7 +228,7 @@ export default function HomePage() {
                         onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.08)'; e.currentTarget.style.color = '#0a0a14'; }}
                         onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.04)'; e.currentTarget.style.color = '#555570'; }}
                       >Info</Link>
-                      <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="nofollow noopener noreferrer"
+                      <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="sponsored noopener noreferrer"
                         style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '9px 16px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 700, fontSize: '1.05rem', borderRadius: 9, textDecoration: 'none', transition: 'opacity 0.15s' }}
                         onMouseEnter={e => (e.currentTarget.style.opacity = '0.88')}
                         onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
@@ -385,7 +385,7 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>
+            <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>
               Shop Now <ExternalLink size={16} />
             </a>
           </div>
@@ -490,7 +490,7 @@ export default function HomePage() {
               </p>
 
               <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '1.25rem', marginBottom: '3.5rem' }}>
-                <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1.15rem', padding: '1.1rem 2.75rem' }}>
+                <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1.15rem', padding: '1.1rem 2.75rem' }}>
                   Shop Now <ExternalLink size={17} />
                 </a>
                 <Link href="/products" className="btn-secondary" style={{ fontSize: '1.15rem', padding: '1.1rem 2.75rem' }}>

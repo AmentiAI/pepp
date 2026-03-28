@@ -174,7 +174,7 @@ export default function RecoveryPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   padding: '0.75rem 1.6rem',
@@ -468,7 +468,7 @@ export default function RecoveryPage() {
               Complete healing coverage: localized fibroblast repair + systemic cell migration + angiogenesis
             </span>
             <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.9rem' }}>·</span>
-            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" style={{
+            <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" style={{
               display: 'inline-flex', alignItems: 'center', gap: 5,
               background: 'rgba(255,255,255,0.15)', color: '#fff',
               padding: '0.4rem 1rem', borderRadius: 8, fontWeight: 700,
@@ -598,7 +598,7 @@ export default function RecoveryPage() {
           <a
             href={AFFILIATE_BASE}
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored noopener noreferrer"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 6,
               padding: '0.6rem 1.2rem',
@@ -663,7 +663,7 @@ export default function RecoveryPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               onMouseEnter={() => setHoverCta(true)}
               onMouseLeave={() => setHoverCta(false)}
               style={{

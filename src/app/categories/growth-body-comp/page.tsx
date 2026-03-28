@@ -84,7 +84,7 @@ export default function GrowthPage() {
                 <strong style={{ color: '#fb923c' }}>genuine myofiber hyperplasia</strong> and accelerated lipolysis. Zero cortisol elevation. Maximum tissue remodeling.
               </p>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-                <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary"
+                <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary"
                   style={{ background: 'linear-gradient(135deg, #fb923c, #ea580c)' }}>
                   Shop Growth Stack <ExternalLink size={14} />
                 </a>
@@ -416,7 +416,7 @@ export default function GrowthPage() {
               <div className="section-label" style={{ color: '#fb923c' }}>Growth Catalog</div>
               <h2 className="heading-lg" style={{ color: '#0a0a14' }}>Shop Growth Peptides</h2>
             </div>
-            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary"
+            <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary"
               style={{ background: 'linear-gradient(135deg, #fb923c, #ea580c)', fontSize: '1.05rem', padding: '0.65rem 1.2rem' }}>
               Shop Now <ExternalLink size={13} />
             </a>
@@ -448,7 +448,7 @@ export default function GrowthPage() {
                 IGF-1 LR3, CJC-1295, and Ipamorelin from our supplier — certificate of analysis on every batch, pharmaceutical-grade synthesis, discreet fast shipping.
               </p>
               <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer"
+                <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '0.9rem 2.25rem', background: '#ffffff', color: '#ea580c', fontWeight: 800, fontSize: '1rem', borderRadius: 10, textDecoration: 'none', transition: 'opacity 0.15s' }}
                   onMouseEnter={e => (e.currentTarget.style.opacity = '0.9')}
                   onMouseLeave={e => (e.currentTarget.style.opacity = '1')}

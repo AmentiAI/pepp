@@ -193,7 +193,7 @@ export default function FatLossPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className="btn-primary"
               >
                 Shop GLP-1 Peptides <ExternalLink size={14} />
@@ -649,7 +649,7 @@ export default function FatLossPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className="btn-primary"
               style={{ fontSize: '0.92rem', padding: '0.65rem 1.2rem' }}
             >
@@ -738,7 +738,7 @@ export default function FatLossPage() {
                 <a
                   href={AFFILIATE_BASE}
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="sponsored noopener noreferrer"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',

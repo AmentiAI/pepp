@@ -120,7 +120,7 @@ export default function WolverineStackPage() {
             <a href="#protocol" className="btn-primary">
               View Protocol <ArrowRight size={14} />
             </a>
-            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary" style={{ color: '#22d3ee', borderColor: 'rgba(34,211,238,0.4)' }}>
+            <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary" style={{ color: '#22d3ee', borderColor: 'rgba(34,211,238,0.4)' }}>
               Shop Both Compounds <ExternalLink size={14} />
             </a>
           </div>
@@ -684,7 +684,7 @@ export default function WolverineStackPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className="btn-primary"
                 style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}
               >

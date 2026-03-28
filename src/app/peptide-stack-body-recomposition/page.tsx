@@ -162,7 +162,7 @@ export default function BodyRecompPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className="btn-secondary"
                 style={{ color: '#e0e0f0', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}
               >
@@ -516,7 +516,7 @@ export default function BodyRecompPage() {
                   <a
                     href={AFFILIATE_PRODUCT(p.slug)}
                     target="_blank"
-                    rel="nofollow noopener noreferrer"
+                    rel="sponsored noopener noreferrer"
                     style={{
                       display: 'inline-flex', alignItems: 'center', gap: 5,
                       color: '#9090a8', textDecoration: 'none', fontWeight: 600, fontSize: '0.86rem',
@@ -581,7 +581,7 @@ export default function BodyRecompPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className="btn-primary"
             >
               Shop All Compounds <ExternalLink size={14} />

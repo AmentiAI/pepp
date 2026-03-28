@@ -182,7 +182,7 @@ export default function Navbar() {
           {/* Right side */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             {!isMobile && (
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer"
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '8px 18px', background: 'linear-gradient(135deg, #d4a843 0%, #a07c2e 100%)', color: '#000', fontWeight: 700, fontSize: '1.05rem', borderRadius: 8, textDecoration: 'none', transition: 'opacity 0.15s, transform 0.15s, box-shadow 0.15s', boxShadow: '0 4px 16px rgba(212,168,67,0.25)' }}
                 onMouseEnter={e => { e.currentTarget.style.opacity = '0.9'; e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(212,168,67,0.35)'; }}
                 onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(212,168,67,0.25)'; }}
@@ -222,7 +222,7 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer"
+            <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer"
               style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, width: '100%', padding: '12px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 700, fontSize: '0.875rem', borderRadius: 10, textDecoration: 'none' }}
             >
               Shop Now <ExternalLink size={14} />

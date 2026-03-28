@@ -164,7 +164,7 @@ export default function LongevityPage() {
               <a
                 href={AFFILIATE_BASE}
                 target="_blank"
-                rel="nofollow noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   padding: '0.75rem 1.75rem',
@@ -651,7 +651,7 @@ export default function LongevityPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 padding: '0.65rem 1.25rem',
@@ -730,7 +730,7 @@ export default function LongevityPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 padding: '0.9rem 2.25rem',

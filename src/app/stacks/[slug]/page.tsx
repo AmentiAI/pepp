@@ -92,7 +92,7 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
           <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.03em', lineHeight: 1.05, marginBottom: '0.75rem' }}>{stack.name}</h1>
           <p style={{ fontSize: '1.15rem', color: '#555570', lineHeight: 1.75, maxWidth: 700, marginBottom: '2rem', fontStyle: 'italic' }}>{stack.tagline}</p>
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary">
+            <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary">
               Source All Compounds <ExternalLink size={14} />
             </a>
             <Link href="/stacks" className="btn-secondary">All Protocols <ArrowRight size={14} /></Link>
@@ -130,7 +130,7 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
                 </div>
                 <div style={{ textAlign: 'right', flexShrink: 0 }}>
                   <div style={{ fontSize: '0.9rem', color: '#9090a8', fontWeight: 600 }}>{c.dose}</div>
-                  <a href={AFFILIATE_PRODUCT(c.slug)} target="_blank" rel="nofollow noopener noreferrer"
+                  <a href={AFFILIATE_PRODUCT(c.slug)} target="_blank" rel="sponsored noopener noreferrer"
                     style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginTop: 4, fontSize: '0.8rem', fontWeight: 700, color: stack.color, textDecoration: 'none' }}
                   >
                     Buy <ExternalLink size={11} />
@@ -185,7 +185,7 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
             <p style={{ color: '#555570', fontSize: '1rem', maxWidth: 500, margin: '0 auto 1.75rem' }}>
               Every compound in this stack — independently third-party tested, premium grade, with CoA documentation.
             </p>
-            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+            <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
               Shop Now <ExternalLink size={16} />
             </a>
           </div>

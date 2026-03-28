@@ -175,7 +175,7 @@ export default function GlpComparisonPage() {
             <Link href="/categories/metabolic-fat-loss" className="btn-primary">
               View Metabolic Compounds <ArrowRight size={16} />
             </Link>
-            <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary"
+            <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary"
               style={{ color: 'rgba(255,255,255,0.7)', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
               Shop Research Peptides <ExternalLink size={15} />
             </a>
@@ -545,7 +545,7 @@ export default function GlpComparisonPage() {
           <a
             href={AFFILIATE_PRODUCT('glp-3r-10mg')}
             target="_blank"
-            rel="nofollow noopener noreferrer"
+            rel="sponsored noopener noreferrer"
             className="btn-primary"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}
           >
@@ -777,7 +777,7 @@ export default function GlpComparisonPage() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className="btn-secondary"
               style={{
                 color: 'rgba(255,255,255,0.65)',

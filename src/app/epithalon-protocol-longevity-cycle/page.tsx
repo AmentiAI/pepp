@@ -521,7 +521,7 @@ export default function EpithalonProtocolPage() {
               <Link href="/products/epithalon-50mg" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View Product <ArrowRight size={16} />
               </Link>
-              <a href={AFFILIATE_PRODUCT('epithalon-50mg')} target="_blank" rel="nofollow noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
+              <a href={AFFILIATE_PRODUCT('epithalon-50mg')} target="_blank" rel="sponsored noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
                 Buy Now <ExternalLink size={12} />
               </a>
             </div>
@@ -542,7 +542,7 @@ export default function EpithalonProtocolPage() {
               Third-party tested. Certificate of Analysis on every order. The benchmark source for research-grade longevity peptides.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
                 Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/guide" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>

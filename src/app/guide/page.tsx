@@ -229,7 +229,7 @@ export default function GuidePage() {
               Third-party tested, premium grade, with full CoA documentation. The benchmark for peptide purity in the scientific community.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
                 Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/faq" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>

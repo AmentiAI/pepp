@@ -155,7 +155,7 @@ export default function FAQPage() {
               <Link href="/guide" className="btn-primary">
                 Read Full Guide <ArrowRight size={14} />
               </Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-secondary">
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary">
                 Shop Compounds <ExternalLink size={14} />
               </a>
             </div>
@@ -207,7 +207,7 @@ export default function FAQPage() {
               Every compound independently tested, every batch documented with a full CoA. The highest purity standard in peptides.
             </p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
                 Shop Now <ExternalLink size={16} />
               </a>
               <Link href="/guide" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>

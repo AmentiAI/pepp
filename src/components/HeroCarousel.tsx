@@ -201,7 +201,7 @@ export default function HeroCarousel() {
             <a
               href={AFFILIATE_BASE}
               target="_blank"
-              rel="nofollow noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-gray-300 border border-[#1a1a2e] hover:border-[#c9a84c]/30 hover:text-[#c9a84c] transition-all"
             >
               {slide.ctaSecondary}

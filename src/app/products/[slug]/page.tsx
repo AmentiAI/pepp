@@ -166,7 +166,7 @@ export default async function ProductPage({ params }: Props) {
                   <span style={{ fontSize: '1.05rem', fontWeight: 600, color: '#34d399' }}>In Stock</span>
                 </div>
               </div>
-              <a href={buyUrl} target="_blank" rel="nofollow noopener noreferrer" className="hover-dim hover-lift"
+              <a href={buyUrl} target="_blank" rel="sponsored noopener noreferrer" className="hover-dim hover-lift"
                 style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '1rem', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 900, fontSize: '1rem', borderRadius: 12, textDecoration: 'none', transition: 'opacity 0.15s, transform 0.15s', boxShadow: '0 6px 24px rgba(212,168,67,0.3)', marginBottom: '0.75rem' }}
               >
                 Buy Now <ExternalLink size={16} />
@@ -282,12 +282,12 @@ export default async function ProductPage({ params }: Props) {
             <div style={{ background: 'linear-gradient(135deg, #fffbf0 0%, #f9f9fd 100%)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 18, padding: '1.5rem' }}>
               <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#d4a843', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '0.3rem' }}>Research Grade</div>
               <div style={{ fontSize: '2.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.04em', lineHeight: 1, marginBottom: '1.25rem' }}>${product.price.toFixed(2)}</div>
-              <a href={buyUrl} target="_blank" rel="nofollow noopener noreferrer" className="hover-dim"
+              <a href={buyUrl} target="_blank" rel="sponsored noopener noreferrer" className="hover-dim"
                 style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0.85rem', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 700, fontSize: '1rem', borderRadius: 10, textDecoration: 'none', marginBottom: '0.6rem', transition: 'opacity 0.15s' }}
               >
                 Buy Now <ExternalLink size={13} />
               </a>
-              <a href={AFFILIATE_BASE} target="_blank" rel="nofollow noopener noreferrer" className="hover-gold-border"
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="hover-gold-border"
                 style={{ display: 'flex', width: '100%', alignItems: 'center', justifyContent: 'center', gap: 6, padding: '0.75rem', background: 'transparent', border: '1px solid rgba(0,0,0,0.12)', color: '#555570', fontSize: '1.05rem', fontWeight: 600, borderRadius: 10, textDecoration: 'none', transition: 'border-color 0.15s, color 0.15s' }}
               >
                 Shop All Products

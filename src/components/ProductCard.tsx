@@ -63,7 +63,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>${product.price.toFixed(2)}</span>
           </div>
 
-          <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="nofollow noopener noreferrer"
+          <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="sponsored noopener noreferrer"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 5, padding: '7px 14px', background: 'linear-gradient(135deg, #d4a843, #b8912e)', color: '#000', fontWeight: 700, fontSize: '0.87rem', borderRadius: 8, textDecoration: 'none', transition: 'opacity 0.15s, transform 0.15s' }}
             onMouseEnter={e => { e.currentTarget.style.opacity = '0.88'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
             onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'translateY(0)'; }}
