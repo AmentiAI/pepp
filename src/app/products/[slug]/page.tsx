@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { ExternalLink, ChevronRight, CheckCircle, FlaskConical, ArrowRight, Zap, Shield } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
 import RelatedLinks from '@/components/RelatedLinks'
+import ResearchCard from '@/components/ResearchCard'
 import { products, getProductBySlug, getRelatedProducts, AFFILIATE_PRODUCT, AFFILIATE_BASE } from '@/lib/products'
 
 interface Props { params: Promise<{ slug: string }> }
@@ -304,6 +305,113 @@ export default async function ProductPage({ params }: Props) {
             </div>
           </div>
         </div>
+
+        {/* Research Findings Section */}
+        {product.researchHighlights.length > 0 && (
+          <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '4rem', marginBottom: '4rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+              <div>
+                <div className="section-label">Published Evidence</div>
+                <h2 style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.03em', marginBottom: '0.75rem' }}>
+                  What the Research Shows
+                </h2>
+                <p style={{ fontSize: '1rem', color: '#666688', lineHeight: 1.8, marginBottom: '2rem' }}>
+                  The following data points are derived from peer-reviewed preclinical and clinical studies on {product.shortName}.
+                  All studies cited in compound profiles are indexed in PubMed or published in peer-reviewed journals.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {product.researchHighlights.map((highlight, i) => {
+                    const colors = ['#d4a843', '#a78bfa', '#22d3ee', '#34d399', '#fb923c', '#60a5fa']
+                    const color = colors[i % colors.length]
+                    return (
+                      <div
+                        key={highlight}
+                        style={{
+                          display: 'flex',
+                          gap: '1rem',
+                          padding: '1rem 1.25rem',
+                          background: '#f9f9fd',
+                          border: '1px solid rgba(0,0,0,0.07)',
+                          borderRadius: 14,
+                          alignItems: 'flex-start',
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: 24,
+                            height: 24,
+                            borderRadius: '50%',
+                            background: `${color}12`,
+                            border: `1.5px solid ${color}35`,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontSize: '0.7rem',
+                            fontWeight: 900,
+                            color,
+                            flexShrink: 0,
+                            marginTop: 2,
+                          }}
+                        >
+                          {i + 1}
+                        </div>
+                        <p style={{ fontSize: '0.92rem', color: '#444458', lineHeight: 1.7 }}>{highlight}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <div className="section-label">Quality Assurance</div>
+                <h2 style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.03em', marginBottom: '0.75rem' }}>
+                  Third-Party Verified Every Batch
+                </h2>
+                <p style={{ fontSize: '1rem', color: '#666688', lineHeight: 1.8, marginBottom: '2rem' }}>
+                  Each vial of {product.shortName} is independently tested by a third-party laboratory before fulfillment.
+                  You receive the actual CoA (Certificate of Analysis) documentation with your order.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                  {[
+                    { label: 'Purity Standard', value: '≥98% HPLC', color: '#d4a843' },
+                    { label: 'Identity Confirm', value: 'Mass Spec (MS)', color: '#a78bfa' },
+                    { label: 'Documentation', value: 'CoA Every Order', color: '#22d3ee' },
+                    { label: 'Testing Type', value: 'Third-Party Lab', color: '#34d399' },
+                  ].map((spec) => (
+                    <div
+                      key={spec.label}
+                      style={{
+                        padding: '1.25rem',
+                        background: '#f9f9fd',
+                        border: '1px solid rgba(0,0,0,0.07)',
+                        borderRadius: 16,
+                        position: 'relative',
+                        overflow: 'hidden',
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          height: 2,
+                          background: `linear-gradient(90deg, ${spec.color}, transparent)`,
+                        }}
+                      />
+                      <div style={{ fontSize: '1.1rem', fontWeight: 900, color: spec.color, marginBottom: '0.3rem' }}>
+                        {spec.value}
+                      </div>
+                      <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#888898', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                        {spec.label}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Related products */}
         {related.length > 0 && (
