@@ -10,7 +10,7 @@ import { products, getProductBySlug, getRelatedProducts, AFFILIATE_PRODUCT, AFFI
 
 interface Props { params: Promise<{ slug: string }> }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return products.map(p => ({ slug: p.slug }))
 }
 
@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const product = getProductBySlug(slug)
   if (!product) return {}
-  const title = `${product.shortName}: ${product.headline}`
+  const titleStr = `${product.shortName}: ${product.headline} | StacksPeptide`
   const canonical = `https://www.stackspeptide.com/products/${product.slug}`
   return {
-    title,
+    title: { absolute: titleStr },
     description: `${product.summary} Third-party HPLC tested >98% purity. Certificate of Analysis included.`,
     keywords: [
       ...product.keywords,
@@ -34,14 +34,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'premium grade peptide',
     ],
     openGraph: {
-      title: `${product.shortName}: ${product.headline}`,
+      title: titleStr,
       description: product.summary,
+      url: canonical,
+      siteName: 'StacksPeptide',
+      type: 'website',
       images: [{ url: product.image, alt: product.name }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${product.shortName}: ${product.headline}`,
-      description: product.summary,
+      title: titleStr,
+      description: product.summary.slice(0, 155),
       images: [product.image],
     },
     alternates: { canonical },
@@ -70,7 +73,7 @@ export default async function ProductPage({ params }: Props) {
       priceCurrency: 'USD',
       price: product.price.toFixed(2),
       availability: 'https://schema.org/InStock',
-      url: buyUrl,
+      url: `https://www.stackspeptide.com/products/${slug}`,
       seller: { '@type': 'Organization', name: 'StacksPeptide' },
     },
     additionalProperty: [
@@ -97,7 +100,7 @@ export default async function ProductPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Breadcrumb */}
-      <div style={{ background: '#f7f8fc', borderBottom: '1px solid rgba(0,0,0,0.07)', padding: '0.85rem 2rem' }}>
+      <nav aria-label="Breadcrumb" style={{ background: '#f7f8fc', borderBottom: '1px solid rgba(0,0,0,0.07)', padding: '0.85rem 2rem' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.87rem', color: '#9090a8' }}>
           <Link href="/" className="hover-gold" style={{ color: '#9090a8', textDecoration: 'none', transition: 'color 0.15s' }}>Home</Link>
           <ChevronRight size={11} />
@@ -105,7 +108,7 @@ export default async function ProductPage({ params }: Props) {
           <ChevronRight size={11} />
           <span style={{ color: '#555570' }}>{product.shortName}</span>
         </div>
-      </div>
+      </nav>
 
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '3.5rem 2rem' }}>
 

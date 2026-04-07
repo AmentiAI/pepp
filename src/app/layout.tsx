@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -25,27 +26,14 @@ export const metadata: Metadata = {
   keywords: [
     'stackspeptide',
     'stacks peptide',
-    'peptide stacks',
     'peptide stacking protocols',
-    'peptides',
-    'buy peptides',
-    'ghk-cu copper peptide',
-    'bpc-157 science',
-    'retatrutide science',
-    'tirzepatide peptide',
-    'semaglutide peptide',
-    'epithalon telomere peptide',
-    'igf-1 lr3 science',
-    'cjc-1295 ipamorelin stack',
-    'tb-500 healing peptide',
-    'snap-8 anti-aging peptide',
-    'anti-aging peptides',
-    'fat loss peptides',
-    'body recomposition peptides',
-    'longevity peptides',
+    'peptide stacks 2026',
     'looksmaxxing peptides',
-    'peptide compounds',
+    'ghk-cu stackspeptide',
+    'bpc-157 peptide stack',
+    'retatrutide stackspeptide',
     'third-party tested peptides',
+    'cjc-1295 ipamorelin stack',
   ],
   authors: [{ name: 'StacksPeptide Editorial Team' }],
   creator: 'StacksPeptide',
@@ -121,6 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main style={{ flex: 1 }}>{children}</main>
         <Footer />
         <ChatWidget />
+        <Analytics />
       </body>
     </html>
   )
