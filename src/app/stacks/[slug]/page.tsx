@@ -103,7 +103,7 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
       <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 2rem' }}>
 
         {/* Stat + description */}
-        <section style={{ padding: '3rem 0', display: 'grid', gridTemplateColumns: '1fr 3fr', gap: '3rem', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
+        <section className="rg-stack-hero" style={{ padding: '3rem 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ textAlign: 'center', padding: '2rem', background: `${stack.color}08`, border: `1px solid ${stack.color}20`, borderRadius: 20 }}>
             <div style={{ fontSize: '3.5rem', fontWeight: 900, color: stack.color, letterSpacing: '-0.05em', lineHeight: 1 }}>{stack.stat}</div>
             <div style={{ fontSize: '0.9rem', color: '#666688', marginTop: 8, fontWeight: 600 }}>{stack.statLabel}</div>
@@ -144,7 +144,7 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
         {/* Benefits */}
         <section style={{ padding: '3rem 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', marginBottom: '1.5rem' }}>Documented Outcomes</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className="rg-2col" style={{ gap: '1rem' }}>
             {stack.benefits.map(b => (
               <div key={b} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', padding: '1.25rem', background: '#f9f9fd', borderRadius: 14, border: '1px solid rgba(0,0,0,0.07)' }}>
                 <CheckCircle size={16} style={{ color: stack.color, flexShrink: 0, marginTop: 2 }} />
@@ -157,7 +157,7 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
         {/* Other stacks */}
         <section style={{ padding: '3rem 0' }}>
           <h2 style={{ fontSize: '1.3rem', fontWeight: 900, color: '#0a0a14', marginBottom: '1.25rem' }}>Other Protocols</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
+          <div className="rg-3col" style={{ gap: '1rem' }}>
             {otherStacks.map(s => (
               <Link key={s.id} href={`/stacks/${s.id}`}
                 style={{ padding: '1.5rem', background: '#f9f9fd', border: '1px solid rgba(0,0,0,0.07)', borderRadius: 16, textDecoration: 'none' }}

@@ -62,7 +62,7 @@ export default function Navbar() {
   return (
     <>
       {/* Ticker */}
-      <div style={{ background: '#0a0a14', borderBottom: '1px solid rgba(212,168,67,0.15)', overflow: 'hidden', height: '30px', display: 'flex', alignItems: 'center' }}>
+      <div style={{ background: '#0a0a14', borderBottom: '1px solid rgba(212,168,67,0.15)', overflow: 'hidden', height: '26px', display: 'flex', alignItems: 'center' }}>
         <div className="ticker-track" style={{ display: 'flex', gap: '3rem' }}>
           {doubled.map((t, i) => (
             <span key={i} style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.15em', color: '#d4a843', whiteSpace: 'nowrap', opacity: 0.85 }}>

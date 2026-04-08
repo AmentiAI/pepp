@@ -113,7 +113,7 @@ export default async function ProductPage({ params }: Props) {
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '3.5rem 2rem' }}>
 
         {/* Hero grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', marginBottom: '5rem', alignItems: 'start' }}>
+        <div className="rg-2col" style={{ gap: '4rem', marginBottom: '5rem', alignItems: 'start' }}>
 
           {/* Image panel */}
           <div>
@@ -126,7 +126,7 @@ export default async function ProductPage({ params }: Props) {
                 </div>
               )}
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem' }}>
+            <div className="rg-3col" style={{ gap: '0.75rem' }}>
               {[
                 { icon: <FlaskConical size={14} />, label: 'HPLC Tested' },
                 { icon: <Shield size={14} />, label: 'CoA Included' },
@@ -179,7 +179,7 @@ export default async function ProductPage({ params }: Props) {
             </div>
 
             {/* Quick specs */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem' }}>
+            <div className="rg-2col" style={{ gap: '0.6rem' }}>
               {[
                 { label: 'Size', value: product.size },
                 { label: 'Purity', value: '>98% (HPLC)' },
@@ -198,7 +198,7 @@ export default async function ProductPage({ params }: Props) {
         </div>
 
         {/* Content + sidebar */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: '4rem', marginBottom: '5rem', alignItems: 'start' }}>
+        <div className="rg-product-content" style={{ marginBottom: '5rem', alignItems: 'start' }}>
 
           {/* Main content */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
@@ -312,7 +312,7 @@ export default async function ProductPage({ params }: Props) {
         {/* Research Findings Section */}
         {product.researchHighlights.length > 0 && (
           <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '4rem', marginBottom: '4rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+            <div className="rg-2col" style={{ gap: '4rem', alignItems: 'start' }}>
               <div>
                 <div className="section-label">Published Evidence</div>
                 <h2 style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.03em', marginBottom: '0.75rem' }}>
@@ -374,7 +374,7 @@ export default async function ProductPage({ params }: Props) {
                   Each vial of {product.shortName} is independently tested by a third-party laboratory before fulfillment.
                   You receive the actual CoA (Certificate of Analysis) documentation with your order.
                 </p>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div className="rg-2col" style={{ gap: '1rem' }}>
                   {[
                     { label: 'Purity Standard', value: '≥98% HPLC', color: '#d4a843' },
                     { label: 'Identity Confirm', value: 'Mass Spec (MS)', color: '#a78bfa' },
@@ -428,7 +428,7 @@ export default async function ProductPage({ params }: Props) {
                 View All <ArrowRight size={14} />
               </Link>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }}>
+            <div className="rg-3col" style={{ gap: '1.25rem' }}>
               {related.map(p => <ProductCard key={p.slug} product={p} />)}
             </div>
           </div>

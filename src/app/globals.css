@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
   font-size: 18px;
   line-height: 1.65;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* ── Scrollbar ────────────────────────────────────────── */
@@ -215,6 +217,67 @@ body {
 .hover-lift:hover { transform: translateY(-2px) !important; }
 .hover-card-border:hover { border-color: rgba(212,168,67,0.2) !important; }
 .hover-right:hover { transform: translateX(5px) !important; }
+
+/* ── Responsive grid utilities ───────────────────────────── */
+.rg-trust  { display: grid; grid-template-columns: repeat(4,1fr); }
+.rg-2hero  { display: grid; grid-template-columns: 1fr 1fr; gap: 7rem; align-items: center; }
+.rg-5col   { display: grid; grid-template-columns: repeat(5,1fr); gap: 1.5rem; }
+.rg-4col   { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.75rem; }
+.rg-stats4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; }
+.rg-3col   { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+.rg-2col   { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; }
+.rg-footer { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
+.rg-product-content { display: grid; grid-template-columns: 1fr 360px; gap: 4rem; }
+.rg-stack-hero { display: grid; grid-template-columns: 1fr 3fr; gap: 3rem; }
+
+/* ── Responsive section padding ──────────────────────────── */
+.sec-pad      { padding: 7rem 2rem; }
+.sec-pad-hero { padding: 8rem 2rem; }
+.sec-pad-sm   { padding: 4rem 2rem; }
+.sec-cta      { padding: 2rem 2rem 7rem; }
+.cta-box      { padding: 6rem 4rem; }
+
+@media (max-width: 900px) {
+  .rg-2hero  { grid-template-columns: 1fr; gap: 2.5rem; }
+  .rg-5col   { grid-template-columns: repeat(2,1fr); gap: 1rem; }
+  .rg-4col   { grid-template-columns: repeat(2,1fr); gap: 1rem; }
+  .rg-stats4 { grid-template-columns: repeat(2,1fr); gap: 1rem; }
+  .rg-trust  { grid-template-columns: repeat(2,1fr); }
+  .rg-3col   { grid-template-columns: repeat(2,1fr); gap: 1rem; }
+  .rg-footer { grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem; }
+  .rg-product-content { grid-template-columns: 1fr; gap: 2rem; }
+  .rg-stack-hero { grid-template-columns: 1fr; gap: 1.5rem; }
+
+  .sec-pad      { padding: 3.5rem 1.25rem; }
+  .sec-pad-hero { padding: 4rem 1.25rem; }
+  .sec-pad-sm   { padding: 2rem 1.25rem; }
+  .sec-cta      { padding: 1.5rem 1.25rem 3.5rem; }
+  .cta-box      { padding: 3rem 1.75rem; }
+
+  body { font-size: 16px; }
+}
+
+@media (max-width: 580px) {
+  .rg-2col   { grid-template-columns: 1fr; gap: 1.25rem; }
+  .rg-3col   { grid-template-columns: 1fr; }
+  .rg-5col   { grid-template-columns: 1fr; }
+  .rg-4col   { grid-template-columns: 1fr 1fr; }
+  .rg-footer { grid-template-columns: 1fr; gap: 1.5rem; }
+  .sec-pad-sm { padding: 1.5rem 1rem; }
+  .sec-cta    { padding: 1.25rem 1rem 2.5rem; }
+  .cta-box    { padding: 2.5rem 1.25rem; border-radius: 20px; }
+}
+
+/* ── Mobile content helpers ─────────────────────────────── */
+@media (max-width: 768px) {
+  /* Ensure images don't overflow on mobile */
+  img { max-width: 100%; }
+  /* Reduce large section top margins on content pages */
+  section { word-break: break-word; }
+  /* Trust bar cells: remove right border when wrapping */
+  .rg-trust > * { border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.06); }
+  .rg-trust > *:last-child { border-bottom: none; }
+}
 
 /* ── Table ────────────────────────────────────────────────── */
 .data-table {

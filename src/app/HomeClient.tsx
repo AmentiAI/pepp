@@ -10,6 +10,10 @@ const heroProducts = [
   products.find(p => p.slug === 'ghk-cu')!,
   products.find(p => p.slug === 'cjc1295-ipamorelin')!,
   products.find(p => p.slug === 'bpc157-10mg')!,
+  products.find(p => p.slug === 'epithalon-50mg')!,
+  products.find(p => p.slug === 'tb500-10mg')!,
+  products.find(p => p.slug === 'igf-1lr3')!,
+  products.find(p => p.slug === 'snap-8')!,
 ]
 
 const cats = [
@@ -59,7 +63,7 @@ export default function HomePage() {
 
       {/* ────────────── 2. TRUST BAR ─────────────────  */}
       <div style={{ background: '#f7f8fc', borderBottom: '1px solid rgba(0,0,0,0.07)' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4,1fr)' }}>
+        <div className="rg-trust" style={{ maxWidth: 1280, margin: '0 auto' }}>
           {[
             { icon: <FlaskConical size={22} />, n: '>98%', l: 'Purity Guaranteed' },
             { icon: <Shield size={22} />, n: '3rd Party', l: 'Lab Tested' },
@@ -78,8 +82,8 @@ export default function HomePage() {
       </div>
 
       {/* ────────────── 3. HERO EDITORIAL ────────────── */}
-      <section style={{ ...S.section(), padding: '8rem 2rem' }}>
-        <div style={{ ...S.inner, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '7rem', alignItems: 'center' }}>
+      <section className="sec-pad-hero" style={{ background: '#ffffff' }}>
+        <div className="rg-2hero" style={S.inner}>
           <div>
             <div style={S.eyebrow}>
               <span style={{ width: 24, height: 1.5, background: '#d4a843', display: 'block' }} />
@@ -117,7 +121,7 @@ export default function HomePage() {
           </div>
 
           {/* Stat cards grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+          <div className="rg-2col" style={{ gap: '1.25rem' }}>
             {[
               { n: '24.2%', l: 'Weight Reduction', c: '#d4a843', sub: 'Retatrutide — NEJM Phase 2' },
               { n: '4,000+', l: 'Genes Modulated', c: '#a78bfa', sub: 'GHK-Cu genomic data' },
@@ -136,7 +140,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────── 4. CATEGORIES ────────────────── */}
-      <section style={{ background: '#f7f8fc', borderTop: '1px solid rgba(0,0,0,0.06)', borderBottom: '1px solid rgba(0,0,0,0.06)', padding: '7rem 2rem' }}>
+      <section className="sec-pad" style={{ background: '#f7f8fc', borderTop: '1px solid rgba(0,0,0,0.06)', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
         <div style={S.inner}>
           <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
             <div style={{ ...S.eyebrow, justifyContent: 'center' }}>
@@ -150,7 +154,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1.5rem' }}>
+          <div className="rg-5col">
             {cats.map(cat => (
               <Link key={cat.label} href={cat.href}
                 style={{ display: 'flex', flexDirection: 'column', padding: '2rem 1.75rem', background: cat.bg, border: `1px solid ${cat.border}`, borderRadius: 22, textDecoration: 'none', transition: 'transform 0.25s, box-shadow 0.25s, border-color 0.25s' }}
@@ -173,7 +177,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────── 5. FEATURED PRODUCTS ─────────── */}
-      <section style={{ ...S.section(), padding: '7rem 2rem' }}>
+      <section className="sec-pad" style={{ background: '#ffffff' }}>
         <div style={S.inner}>
           <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '4rem', flexWrap: 'wrap', gap: '1.5rem' }}>
             <div>
@@ -181,9 +185,9 @@ export default function HomePage() {
                 <span style={{ width: 24, height: 1.5, background: '#d4a843', display: 'block' }} />
                 Top Picks
               </div>
-              <h2 style={{ ...S.h2white, marginBottom: '0.75rem' }}>The 4 Most Impactful Peptides</h2>
+              <h2 style={{ ...S.h2white, marginBottom: '0.75rem' }}>8 Most Impactful Peptides</h2>
               <p style={{ fontSize: '1.1rem', color: '#6a6a8a', maxWidth: 520 }}>
-                Handpicked for clinical significance across fat loss, skin regeneration, healing, and growth — all independently verified by third-party labs.
+                Handpicked for clinical significance across fat loss, skin regeneration, healing, longevity, and growth — all independently verified by third-party labs.
               </p>
             </div>
             <Link href="/products" className="btn-secondary" style={{ fontSize: '1.05rem', padding: '0.9rem 1.75rem', flexShrink: 0 }}>
@@ -191,7 +195,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.75rem' }}>
+          <div className="rg-4col">
             {heroProducts.map(product => (
               <div key={product.slug} style={{ ...S.card, display: 'flex', flexDirection: 'column', overflow: 'hidden', transition: 'transform 0.25s, box-shadow 0.25s, border-color 0.25s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 24px 70px rgba(0,0,0,0.12), 0 0 0 1px rgba(212,168,67,0.15)'; e.currentTarget.style.borderColor = 'rgba(212,168,67,0.25)'; }}
@@ -243,8 +247,8 @@ export default function HomePage() {
       </section>
 
       {/* ────────────── 6. BIG STATS BANNER ──────────── */}
-      <div style={{ background: 'linear-gradient(135deg, #fdf9f0 0%, #f7f8fc 50%, #f8f0ff 100%)', borderTop: '1px solid rgba(212,168,67,0.12)', borderBottom: '1px solid rgba(212,168,67,0.12)', padding: '4rem 2rem' }}>
-        <div style={{ ...S.inner, display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '2rem' }}>
+      <div className="sec-pad-sm" style={{ background: 'linear-gradient(135deg, #fdf9f0 0%, #f7f8fc 50%, #f8f0ff 100%)', borderTop: '1px solid rgba(212,168,67,0.12)', borderBottom: '1px solid rgba(212,168,67,0.12)' }}>
+        <div className="rg-stats4" style={S.inner}>
           {[
             { n: '24', l: 'Compounds', sub: 'Complete catalog' },
             { n: '>98%', l: 'Purity Standard', sub: 'Every batch, every time' },
@@ -261,8 +265,8 @@ export default function HomePage() {
       </div>
 
       {/* ────────────── 7. GLP TIER BREAKDOWN ────────── */}
-      <section style={{ background: '#f7f8fc', borderBottom: '1px solid rgba(0,0,0,0.06)', padding: '7rem 2rem' }}>
-        <div style={{ ...S.inner, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '7rem', alignItems: 'center' }}>
+      <section className="sec-pad" style={{ background: '#f7f8fc', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
+        <div className="rg-2hero" style={S.inner}>
           <div>
             <div style={S.eyebrow}>
               <span style={{ width: 24, height: 1.5, background: '#d4a843', display: 'block' }} />
@@ -318,7 +322,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────── 8. SCIENCE SECTION ──────────── */}
-      <section style={{ ...S.section(), padding: '7rem 2rem' }}>
+      <section className="sec-pad" style={{ background: '#ffffff' }}>
         <div style={S.inner}>
           <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
             <div style={{ ...S.eyebrow, justifyContent: 'center' }}>
@@ -332,7 +336,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.75rem' }}>
+          <div className="rg-2col">
             {scienceCards.map(sc => (
               <div key={sc.title} style={{ ...S.card, padding: '2.5rem', display: 'flex', gap: '1.5rem', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, ${sc.color}, transparent)` }} />
@@ -350,8 +354,8 @@ export default function HomePage() {
       </section>
 
       {/* ────────────── 9. QUALITY + TESTIMONIALS ───── */}
-      <section style={{ background: '#f7f8fc', borderTop: '1px solid rgba(0,0,0,0.06)', padding: '7rem 2rem' }}>
-        <div style={{ ...S.inner, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '7rem', alignItems: 'start' }}>
+      <section className="sec-pad" style={{ background: '#f7f8fc', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
+        <div className="rg-2hero" style={{ ...S.inner, alignItems: 'start' }}>
           <div>
             <div style={S.eyebrow}>
               <span style={{ width: 24, height: 1.5, background: '#d4a843', display: 'block' }} />
@@ -369,7 +373,7 @@ export default function HomePage() {
             <p style={{ ...S.bodyCopy, marginBottom: '3rem' }}>
               HPLC chromatograms. Mass spectrometry molecular weight confirmation. Endotoxin testing. The complete analytical package that professional investigators require — and rarely get anywhere else.
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '3rem' }}>
+            <div className="rg-2col" style={{ gap: '1rem', marginBottom: '3rem' }}>
               {[
                 { icon: <FlaskConical size={18} />, label: 'HPLC Purity Testing', sub: 'Independent lab verification' },
                 { icon: <Shield size={18} />, label: 'Mass Spec Identity', sub: 'Molecular weight confirmed' },
@@ -408,7 +412,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────── 10. CATEGORY DEEP LINKS ──────── */}
-      <section style={{ ...S.section(), padding: '7rem 2rem' }}>
+      <section className="sec-pad" style={{ background: '#ffffff' }}>
         <div style={S.inner}>
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <div style={{ ...S.eyebrow, justifyContent: 'center' }}>
@@ -420,7 +424,7 @@ export default function HomePage() {
             <p style={{ fontSize: '1.1rem', color: '#6a6a8a' }}>Deep-dive guides, compound comparisons, mechanism breakdowns, and evidence-backed protocols for every goal.</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.5rem', marginBottom: '1.5rem' }}>
+          <div className="rg-3col" style={{ marginBottom: '1.5rem' }}>
             {[cats[0], cats[1], cats[2]].map(cat => (
               <Link key={cat.label} href={cat.href}
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '2rem', background: `${cat.color}08`, border: `1px solid ${cat.border}`, borderRadius: 18, textDecoration: 'none', transition: 'transform 0.2s, border-color 0.2s' }}
@@ -441,7 +445,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '1.5rem' }}>
+          <div className="rg-2col" style={{ gap: '1.5rem' }}>
             {[cats[3], cats[4]].map(cat => (
               <Link key={cat.label} href={cat.href}
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '2rem', background: `${cat.color}08`, border: `1px solid ${cat.border}`, borderRadius: 18, textDecoration: 'none', transition: 'transform 0.2s, border-color 0.2s' }}
@@ -465,9 +469,9 @@ export default function HomePage() {
       </section>
 
       {/* ────────────── 11. FINAL CTA ────────────────── */}
-      <section style={{ padding: '2rem 2rem 7rem' }}>
-        <div style={{ ...S.inner }}>
-          <div style={{ position: 'relative', background: 'linear-gradient(135deg, #fffbf0 0%, #f8f8ff 55%, #f7f8fc 100%)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 32, padding: '6rem 4rem', textAlign: 'center', overflow: 'hidden' }}>
+      <section className="sec-cta">
+        <div style={S.inner}>
+          <div className="cta-box" style={{ position: 'relative', background: 'linear-gradient(135deg, #fffbf0 0%, #f8f8ff 55%, #f7f8fc 100%)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 32, textAlign: 'center', overflow: 'hidden' }}>
             {/* Glow */}
             <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: 700, height: 700, background: 'radial-gradient(circle, rgba(212,168,67,0.06) 0%, transparent 60%)', borderRadius: '50%', pointerEvents: 'none' }} />
             {/* Top line */}

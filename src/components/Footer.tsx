@@ -37,7 +37,7 @@ export default function Footer() {
   return (
     <footer style={{ background: '#050508', borderTop: '1px solid rgba(255,255,255,0.05)', marginTop: 0 }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '5rem 2rem 3rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr 1fr 1fr', gap: '3rem', marginBottom: '4rem' }}>
+        <div className="rg-footer">
 
           {/* Brand */}
           <div>
