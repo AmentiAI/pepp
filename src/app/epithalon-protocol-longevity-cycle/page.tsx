@@ -53,7 +53,7 @@ export default function EpithalonProtocolPage() {
               <a href="#protocol" className="btn-primary">
                 View Protocol <ArrowRight size={14} />
               </a>
-              <Link href="/products/epithalon-50mg" className="btn-secondary" style={{ color: 'rgba(255,255,255,0.75)', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
+              <Link href="/products/epitalon-50mg" className="btn-secondary" style={{ color: 'rgba(255,255,255,0.75)', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
                 Shop Epithalon <ExternalLink size={14} />
               </Link>
             </div>
@@ -374,7 +374,7 @@ export default function EpithalonProtocolPage() {
               <strong style={{ color: '#fff' }}>Suggested stacking protocol:</strong> Run Epithalon 10-day cycle as the first intervention. Upon completion, begin a 30-day NAD+ protocol. The rationale: Epithalon\'s telomere protection is best established before the metabolic reprogramming from NAD+ restoration adds additional cellular stress from upregulated repair processes.
             </div>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              <Link href="/products/epithalon-50mg" className="btn-primary">
+              <Link href="/products/epitalon-50mg" className="btn-primary">
                 View Epithalon <ArrowRight size={14} />
               </Link>
               <Link href="/products/nad" className="btn-secondary" style={{ color: 'rgba(255,255,255,0.7)', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
@@ -518,7 +518,7 @@ export default function EpithalonProtocolPage() {
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'flex-start' }}>
-              <Link href="/products/epithalon-50mg" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
+              <Link href="/products/epitalon-50mg" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View Product <ArrowRight size={16} />
               </Link>
               <a href={AFFILIATE_PRODUCT('epithalon-50mg')} target="_blank" rel="sponsored noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>

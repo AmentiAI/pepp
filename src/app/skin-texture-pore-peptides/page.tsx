@@ -139,7 +139,7 @@ export default function SkinTexturePorePeptidesPage() {
               Pores are a structural problem — caused by weakening collagen scaffolding, not surface cleanliness. GHK-Cu and BPC-157 address the dermis where pore size is actually determined.
             </p>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: '2rem' }}>
-              <Link href="/products/ghk-cu" className="btn-primary">
+              <Link href="/products/ghk-cu-50mg" className="btn-primary">
                 View GHK-Cu <ArrowRight size={14} />
               </Link>
               <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary" style={{ color: 'rgba(255,255,255,0.75)', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
@@ -289,7 +289,7 @@ export default function SkinTexturePorePeptidesPage() {
                 <Link href="/ghk-cu-results-timeline" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: '#d4a843', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
                   GHK-Cu Timeline <ArrowRight size={14} />
                 </Link>
-                <Link href="/products/ghk-cu" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: '#a78bfa', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
+                <Link href="/products/ghk-cu-50mg" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: '#a78bfa', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}>
                   Product Page <ArrowRight size={14} />
                 </Link>
               </div>

@@ -6,15 +6,15 @@ import TopImageBanner from '@/components/TopImageBanner'
 import { AFFILIATE_BASE, AFFILIATE_PRODUCT, products } from '@/lib/products'
 
 const heroProducts = [
-  products.find(p => p.slug === 'glp-3r-10mg')!,
-  products.find(p => p.slug === 'ghk-cu')!,
-  products.find(p => p.slug === 'cjc1295-ipamorelin')!,
-  products.find(p => p.slug === 'bpc157-10mg')!,
-  products.find(p => p.slug === 'epithalon-50mg')!,
-  products.find(p => p.slug === 'tb500-10mg')!,
-  products.find(p => p.slug === 'igf-1lr3')!,
-  products.find(p => p.slug === 'snap-8')!,
-]
+  products.find(p => p.slug === 'retatrutide-10mg')!,
+  products.find(p => p.slug === 'ghk-cu-50mg')!,
+  products.find(p => p.slug === 'ipamorelin-cjc-1295-blend-10mg')!,
+  products.find(p => p.slug === 'bpc-157-10mg')!,
+  products.find(p => p.slug === 'epitalon-50mg')!,
+  products.find(p => p.slug === 'tb-500-10mg')!,
+  products.find(p => p.slug === 'igf-1-lr3-1mg')!,
+  products.find(p => p.slug === 'snap-8-10mg')!,
+].filter(Boolean)
 
 const cats = [
   { label: 'Fat Loss', href: '/categories/metabolic-fat-loss', color: '#d4a843', bg: 'rgba(212,168,67,0.07)', border: 'rgba(212,168,67,0.2)', icon: <TrendingUp size={24} />, stat: '24.2%', statLabel: 'Body Weight Reduction', sub: 'Phase 2 — NEJM 2023', desc: 'Triple receptor agonism. Retatrutide produced the highest pharmacological weight loss ever recorded in a clinical trial.' },
@@ -25,9 +25,9 @@ const cats = [
 ]
 
 const agonists = [
-  { name: 'Semaglutide', gen: 'First Generation', type: 'GLP-1 Mono-Agonist', receptors: 1, loss: '~15%', color: '#60a5fa', slug: 'glp-1s-5mg' },
-  { name: 'Tirzepatide', gen: 'Second Generation', type: 'Dual GIP + GLP-1', receptors: 2, loss: '~21%', color: '#a78bfa', slug: 'glp-2t-15m' },
-  { name: 'Retatrutide', gen: 'Third Generation', type: 'Triple GIP + GLP-1 + GCG', receptors: 3, loss: '24.2%', color: '#d4a843', slug: 'glp-3r-10mg', best: true },
+  { name: 'Semaglutide', gen: 'First Generation', type: 'GLP-1 Mono-Agonist', receptors: 1, loss: '~15%', color: '#60a5fa', slug: 'semaglutide-6mg' },
+  { name: 'Tirzepatide', gen: 'Second Generation', type: 'Dual GIP + GLP-1', receptors: 2, loss: '~21%', color: '#a78bfa', slug: 'tirzepatide-15mg' },
+  { name: 'Retatrutide', gen: 'Third Generation', type: 'Triple GIP + GLP-1 + GCG', receptors: 3, loss: '24.2%', color: '#d4a843', slug: 'retatrutide-10mg', best: true },
 ]
 
 const scienceCards = [

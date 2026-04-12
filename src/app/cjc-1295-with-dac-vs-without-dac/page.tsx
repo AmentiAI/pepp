@@ -106,7 +106,7 @@ export default function CjcDacPage() {
           </p>
 
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <Link href="/products/cjc1295-ipamorelin" className="btn-primary">
+            <Link href="/products/ipamorelin-cjc-1295-blend-10mg" className="btn-primary">
               View CJC-1295 / Ipamorelin <ArrowRight size={14} />
             </Link>
             <a href="#comparison" className="btn-secondary">
@@ -503,7 +503,7 @@ export default function CjcDacPage() {
               </p>
             </div>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              <Link href="/products/cjc1295-ipamorelin" className="btn-primary">
+              <Link href="/products/ipamorelin-cjc-1295-blend-10mg" className="btn-primary">
                 View Product Details <ArrowRight size={14} />
               </Link>
               <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary">

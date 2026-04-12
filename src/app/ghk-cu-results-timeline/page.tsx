@@ -117,7 +117,7 @@ export default function GHKCuResultsTimelinePage() {
               What peer-reviewed data says to expect — week by week — from GHK-Cu copper peptide research. From first gene activation to measurable collagen density changes.
             </p>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: '2rem' }}>
-              <Link href="/products/ghk-cu" className="btn-primary">
+              <Link href="/products/ghk-cu-50mg" className="btn-primary">
                 View GHK-Cu <ArrowRight size={14} />
               </Link>
               <a href="#timeline" className="btn-secondary" style={{ color: 'rgba(255,255,255,0.75)', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>
@@ -424,7 +424,7 @@ export default function GHKCuResultsTimelinePage() {
               <p style={{ color: '#444458', lineHeight: 1.85, marginBottom: '2rem', fontSize: '1.05rem' }}>
                 Timeline for follicle effects runs longer than skin effects: <strong style={{ color: '#0a0a14' }}>3–6 months for follicle enlargement</strong> and documented thickness improvements. Follicle enlargement from miniaturized to terminal caliber takes time — the follicle must complete full growth cycles.
               </p>
-              <Link href="/products/ghk-cu" className="btn-primary">
+              <Link href="/products/ghk-cu-50mg" className="btn-primary">
                 View GHK-Cu <ArrowRight size={14} />
               </Link>
             </div>
@@ -543,7 +543,7 @@ export default function GHKCuResultsTimelinePage() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'flex-start' }}>
               <div style={{ fontSize: '2.2rem', fontWeight: 900, color: '#d4a843', letterSpacing: '-0.04em', lineHeight: 1 }}>$50.00</div>
-              <Link href="/products/ghk-cu" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
+              <Link href="/products/ghk-cu-50mg" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View Product <ArrowRight size={16} />
               </Link>
               <a href={AFFILIATE_PRODUCT('ghk-cu')} target="_blank" rel="sponsored noopener noreferrer" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.45)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6 }}>
@@ -570,7 +570,7 @@ export default function GHKCuResultsTimelinePage() {
               <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.5rem' }}>
                 Shop Now <ExternalLink size={16} />
               </a>
-              <Link href="/products/ghk-cu" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
+              <Link href="/products/ghk-cu-50mg" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.9rem 2rem' }}>
                 View GHK-Cu Profile <ArrowRight size={16} />
               </Link>
             </div>

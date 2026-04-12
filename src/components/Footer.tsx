@@ -5,14 +5,14 @@ import { ExternalLink } from 'lucide-react'
 import { AFFILIATE_BASE } from '@/lib/products'
 
 const topProducts = [
-  { label: 'GHK-Cu Copper Peptide', slug: 'ghk-cu' },
-  { label: 'BPC-157 Recovery', slug: 'bpc157-10mg' },
-  { label: 'Epithalon Longevity', slug: 'epithalon-50mg' },
-  { label: 'CJC-1295 / Ipamorelin', slug: 'cjc1295-ipamorelin' },
-  { label: 'Retatrutide Triple Agonist', slug: 'glp-3r-10mg' },
-  { label: 'Tirzepatide Dual Agonist', slug: 'glp-2t-15m' },
-  { label: 'Semaglutide GLP-1', slug: 'glp-1s-5mg' },
-  { label: 'IGF-1 LR3', slug: 'igf-1lr3' },
+  { label: 'GHK-Cu Copper Peptide', slug: 'ghk-cu-50mg' },
+  { label: 'BPC-157 Recovery', slug: 'bpc-157-10mg' },
+  { label: 'Epithalon Longevity', slug: 'epitalon-50mg' },
+  { label: 'CJC-1295 / Ipamorelin', slug: 'ipamorelin-cjc-1295-blend-10mg' },
+  { label: 'Retatrutide Triple Agonist', slug: 'retatrutide-10mg' },
+  { label: 'Tirzepatide Dual Agonist', slug: 'tirzepatide-15mg' },
+  { label: 'Semaglutide GLP-1', slug: 'semaglutide-6mg' },
+  { label: 'IGF-1 LR3', slug: 'igf-1-lr3-1mg' },
 ]
 
 const catLinks = [

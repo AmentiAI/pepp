@@ -68,7 +68,7 @@ const compounds = [
     color: '#d4a843',
     bgColor: 'rgba(212,168,67,0.06)',
     borderColor: 'rgba(212,168,67,0.35)',
-    link: '/products/glp-3r-10mg',
+    link: '/products/retatrutide-10mg',
     badge: 'Third Generation — Record Holder',
     badgeColor: '#d4a843',
   },
@@ -766,7 +766,7 @@ export default function FatLossPage() {
                 </a>
 
                 <Link
-                  href="/products/glp-3r-10mg"
+                  href="/products/retatrutide-10mg"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',

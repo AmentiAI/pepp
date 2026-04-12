@@ -20,7 +20,7 @@ AVAILABLE COMPOUNDS:
 ${products.map(p => `- ${p.shortName || p.name} (slug: ${p.slug}, ${p.category}): ${p.summary?.slice(0, 120) ?? ''}`).join('\n')}
 
 When recommending specific products, ALWAYS link to the StacksPeptide product page in this format: https://www.stackspeptide.com/products/[slug]
-Example: For BPC-157, link to https://www.stackspeptide.com/products/bpc157-10mg
+Example: For BPC-157, link to https://www.stackspeptide.com/products/bpc-157-10mg
 NEVER link to apollopeptidesciences.com directly.`
 
 export async function POST(req: Request) {

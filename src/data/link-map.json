@@ -1,524 +1,2576 @@
 {
-  "/products/ghk-cu": [
+  "/products/ghk-cu-50mg": [
     {
-      "path": "/categories/skin-anti-aging",
-      "title": "Skin & Anti-Aging Peptides"
-    },
-    {
-      "path": "/products/snap-8-2-pack",
-      "title": "SNAP-8 2-Pack"
-    },
-    {
-      "path": "/products/snap-8",
-      "title": "SNAP-8"
-    },
-    {
-      "path": "/stacks/aesthetic-starter",
-      "title": "The Aesthetic Starter Stack"
-    }
-  ],
-  "/products/snap-8": [
-    {
-      "path": "/categories/skin-anti-aging",
-      "title": "Skin & Anti-Aging Peptides"
-    },
-    {
-      "path": "/products/snap-8-2-pack",
-      "title": "SNAP-8 2-Pack"
-    },
-    {
-      "path": "/products/ghk-cu",
+      "path": "/products/ghk-cu-100mg",
       "title": "GHK-Cu"
     },
     {
-      "path": "/products/epithalon-50mg",
-      "title": "Epithalon 50mg"
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/ru-58841-50mg-x-30ml",
+      "title": "RU-58841"
+    },
+    {
+      "path": "/products/snap-8-10mg",
+      "title": "SNAP-8"
     }
   ],
-  "/products/snap-8-2-pack": [
+  "/products/ghk-cu-100mg": [
+    {
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
+    },
     {
       "path": "/categories/skin-anti-aging",
       "title": "Skin & Anti-Aging Peptides"
     },
     {
-      "path": "/products/snap-8",
-      "title": "SNAP-8"
+      "path": "/products/glow-blend-50mg",
+      "title": "GLOW Blend"
     },
     {
-      "path": "/products/ghk-cu",
+      "path": "/products/ru-58841-50mg-x-60ml",
+      "title": "RU-58841"
+    }
+  ],
+  "/products/snap-8-10mg": [
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/ghk-cu-50mg",
       "title": "GHK-Cu"
     },
     {
-      "path": "/products/glp-2t-20mg-5-pack",
-      "title": "Tirzepatide 5-Pack"
+      "path": "/products/ru-58841-50mg-x-30ml",
+      "title": "RU-58841"
+    },
+    {
+      "path": "/products/melanotan-1-10mg",
+      "title": "Melanotan I"
     }
   ],
-  "/products/epithalon-50mg": [
+  "/products/melanotan-1-10mg": [
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/melanotan-2-10mg",
+      "title": "Melanotan II"
+    },
+    {
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
+    },
+    {
+      "path": "/products/snap-8-10mg",
+      "title": "SNAP-8"
+    }
+  ],
+  "/products/melanotan-2-10mg": [
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/pt-141-10mg",
+      "title": "PT-141"
+    },
+    {
+      "path": "/products/melanotan-1-10mg",
+      "title": "Melanotan I"
+    },
+    {
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
+    }
+  ],
+  "/products/ru-58841-50mg-x-30ml": [
+    {
+      "path": "/products/ru-58841-50mg-x-60ml",
+      "title": "RU-58841"
+    },
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
+    },
+    {
+      "path": "/products/snap-8-10mg",
+      "title": "SNAP-8"
+    }
+  ],
+  "/products/ru-58841-50mg-x-60ml": [
+    {
+      "path": "/products/ru-58841-50mg-x-30ml",
+      "title": "RU-58841"
+    },
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/ghk-cu-100mg",
+      "title": "GHK-Cu"
+    },
+    {
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
+    }
+  ],
+  "/products/pt-141-10mg": [
+    {
+      "path": "/products/melanotan-2-10mg",
+      "title": "Melanotan II"
+    },
+    {
+      "path": "/categories/skin-anti-aging",
+      "title": "Skin & Anti-Aging Peptides"
+    },
+    {
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
+    },
+    {
+      "path": "/products/snap-8-10mg",
+      "title": "SNAP-8"
+    }
+  ],
+  "/products/epitalon-10mg": [
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    },
     {
       "path": "/categories/longevity",
       "title": "Longevity Peptides"
     },
     {
-      "path": "/products/nad",
-      "title": "NAD+ 500mg"
+      "path": "/products/na-epitalon-10mg",
+      "title": "NA-Epitalon"
     },
     {
-      "path": "/stacks/elite-optimization",
-      "title": "The Elite Optimization Stack"
-    },
-    {
-      "path": "/products/ghk-cu",
-      "title": "GHK-Cu"
+      "path": "/products/pinealon-20mg",
+      "title": "Pinealon"
     }
   ],
-  "/products/nad": [
+  "/products/epitalon-50mg": [
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/na-epitalon-10mg",
+      "title": "NA-Epitalon"
+    },
     {
       "path": "/categories/longevity",
       "title": "Longevity Peptides"
     },
     {
-      "path": "/products/epithalon-50mg",
-      "title": "Epithalon 50mg"
-    },
-    {
-      "path": "/stacks/elite-optimization",
-      "title": "The Elite Optimization Stack"
-    },
-    {
-      "path": "/products/igf-1lr3",
-      "title": "IGF-1 LR3"
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
     }
   ],
-  "/products/bpc157-10mg": [
+  "/products/na-epitalon-10mg": [
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/glutathione-200mg",
+      "title": "Glutathione"
+    }
+  ],
+  "/products/nad-500mg": [
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/methylene-blue-10mg-ml-50ml",
+      "title": "Methylene Blue"
+    },
+    {
+      "path": "/categories/longevity",
+      "title": "Longevity Peptides"
+    },
+    {
+      "path": "/products/glutathione-200mg",
+      "title": "Glutathione"
+    }
+  ],
+  "/products/nad-1000mg": [
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/glutathione-1500mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/pinealon-20mg",
+      "title": "Pinealon"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    }
+  ],
+  "/products/glutathione-200mg": [
+    {
+      "path": "/products/glutathione-1500mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/glutathione-600mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/categories/longevity",
+      "title": "Longevity Peptides"
+    }
+  ],
+  "/products/glutathione-600mg": [
+    {
+      "path": "/products/glutathione-200mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/glutathione-1500mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/categories/longevity",
+      "title": "Longevity Peptides"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    }
+  ],
+  "/products/glutathione-1500mg": [
+    {
+      "path": "/products/glutathione-200mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/glutathione-600mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    }
+  ],
+  "/products/foxo4-dri-10mg": [
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    }
+  ],
+  "/products/abaloparatide-3mg": [
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    }
+  ],
+  "/products/ace-031-1mg": [
+    {
+      "path": "/products/foxo4-dri-10mg",
+      "title": "FOXO4-DRI"
+    },
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    }
+  ],
+  "/products/methylene-blue-10mg-ml-50ml": [
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/pinealon-20mg",
+      "title": "Pinealon"
+    },
+    {
+      "path": "/products/glutathione-200mg",
+      "title": "Glutathione"
+    }
+  ],
+  "/products/p21-10mg": [
+    {
+      "path": "/products/na-selank-amidate-10mg",
+      "title": "NA-Selank"
+    },
+    {
+      "path": "/products/methylene-blue-10mg-ml-50ml",
+      "title": "Methylene Blue"
+    },
+    {
+      "path": "/products/n-acetyl-semax-amidate-30mg",
+      "title": "Semax"
+    },
+    {
+      "path": "/products/adamax-10mg",
+      "title": "Adamax"
+    }
+  ],
+  "/products/pnc-27-30mg": [
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/pinealon-20mg",
+      "title": "Pinealon"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/na-epitalon-10mg",
+      "title": "NA-Epitalon"
+    }
+  ],
+  "/products/adamax-10mg": [
+    {
+      "path": "/products/n-acetyl-semax-amidate-30mg",
+      "title": "Semax"
+    },
+    {
+      "path": "/products/methylene-blue-10mg-ml-50ml",
+      "title": "Methylene Blue"
+    },
+    {
+      "path": "/products/selank-10mg",
+      "title": "Selank"
+    },
+    {
+      "path": "/products/na-selank-amidate-10mg",
+      "title": "NA-Selank"
+    }
+  ],
+  "/products/dsip-5mg": [
+    {
+      "path": "/products/dsip-10mg",
+      "title": "DSIP"
+    },
+    {
+      "path": "/products/dsip-15mg",
+      "title": "DSIP"
+    },
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/pinealon-20mg",
+      "title": "Pinealon"
+    }
+  ],
+  "/products/dsip-10mg": [
+    {
+      "path": "/products/dsip-5mg",
+      "title": "DSIP"
+    },
+    {
+      "path": "/products/dsip-15mg",
+      "title": "DSIP"
+    },
+    {
+      "path": "/products/glutathione-1500mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    }
+  ],
+  "/products/dsip-15mg": [
+    {
+      "path": "/products/dsip-10mg",
+      "title": "DSIP"
+    },
+    {
+      "path": "/products/dsip-5mg",
+      "title": "DSIP"
+    },
+    {
+      "path": "/products/glutathione-1500mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/pinealon-20mg",
+      "title": "Pinealon"
+    }
+  ],
+  "/products/na-selank-amidate-10mg": [
+    {
+      "path": "/products/selank-10mg",
+      "title": "Selank"
+    },
+    {
+      "path": "/products/na-selank-amidate-30mg",
+      "title": "NA-Selank"
+    },
+    {
+      "path": "/products/p21-10mg",
+      "title": "P21"
+    },
+    {
+      "path": "/products/methylene-blue-10mg-ml-50ml",
+      "title": "Methylene Blue"
+    }
+  ],
+  "/products/na-selank-amidate-30mg": [
+    {
+      "path": "/products/na-selank-amidate-10mg",
+      "title": "NA-Selank"
+    },
+    {
+      "path": "/products/selank-10mg",
+      "title": "Selank"
+    },
+    {
+      "path": "/products/glutathione-1500mg",
+      "title": "Glutathione"
+    },
+    {
+      "path": "/products/pinealon-20mg",
+      "title": "Pinealon"
+    }
+  ],
+  "/products/n-acetyl-semax-amidate-30mg": [
+    {
+      "path": "/products/adamax-10mg",
+      "title": "Adamax"
+    },
+    {
+      "path": "/products/methylene-blue-10mg-ml-50ml",
+      "title": "Methylene Blue"
+    },
+    {
+      "path": "/products/selank-10mg",
+      "title": "Selank"
+    },
+    {
+      "path": "/products/p21-10mg",
+      "title": "P21"
+    }
+  ],
+  "/products/pe-22-28-10mg": [
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/glutathione-200mg",
+      "title": "Glutathione"
+    }
+  ],
+  "/products/pinealon-10mg": [
+    {
+      "path": "/products/pinealon-20mg",
+      "title": "Pinealon"
+    },
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/methylene-blue-10mg-ml-50ml",
+      "title": "Methylene Blue"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    }
+  ],
+  "/products/pinealon-20mg": [
+    {
+      "path": "/products/pinealon-10mg",
+      "title": "Pinealon"
+    },
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    }
+  ],
+  "/products/selank-10mg": [
+    {
+      "path": "/products/na-selank-amidate-10mg",
+      "title": "NA-Selank"
+    },
+    {
+      "path": "/products/na-selank-amidate-30mg",
+      "title": "NA-Selank"
+    },
+    {
+      "path": "/products/adamax-10mg",
+      "title": "Adamax"
+    },
+    {
+      "path": "/products/n-acetyl-semax-amidate-30mg",
+      "title": "Semax"
+    }
+  ],
+  "/products/bpc-157-10mg": [
     {
       "path": "/categories/recovery-healing",
       "title": "Recovery & Healing Peptides"
     },
     {
-      "path": "/products/tb500-10mg",
-      "title": "TB-500"
-    },
-    {
-      "path": "/stacks/recovery",
-      "title": "The Recovery & Healing Stack"
-    },
-    {
-      "path": "/stacks/fat-loss",
-      "title": "The Fat Loss & Vascularity Stack"
-    }
-  ],
-  "/products/tb500-10mg": [
-    {
-      "path": "/categories/recovery-healing",
-      "title": "Recovery & Healing Peptides"
-    },
-    {
-      "path": "/products/bpc157-10mg",
-      "title": "BPC-157"
-    },
-    {
-      "path": "/stacks/recovery",
-      "title": "The Recovery & Healing Stack"
-    },
-    {
-      "path": "/products/ghk-cu",
-      "title": "GHK-Cu"
-    }
-  ],
-  "/products/igf-1lr3": [
-    {
-      "path": "/categories/growth-body-comp",
-      "title": "Growth & Body Composition"
-    },
-    {
-      "path": "/products/cjc1295-ipamorelin",
-      "title": "CJC-1295 / Ipamorelin"
+      "path": "/products/bpc-157-capsules-500mcg-x60",
+      "title": "BPC-157 Caps"
     },
     {
       "path": "/stacks/body-recomp",
       "title": "The Body Recomposition Stack"
     },
     {
-      "path": "/looksmaxxing",
-      "title": "Looksmaxxing with Peptides"
+      "path": "/products/bpc-157-tb-500-blend-10mg",
+      "title": "Wolverine Stack"
     }
   ],
-  "/products/cjc1295-ipamorelin": [
+  "/products/bpc-157-capsules-500mcg-x60": [
+    {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
+      "path": "/products/bpc-157-10mg",
+      "title": "BPC-157"
+    },
+    {
+      "path": "/products/kpv-5mg",
+      "title": "KPV"
+    },
+    {
+      "path": "/products/kpv-10mg",
+      "title": "KPV"
+    }
+  ],
+  "/products/tb-500-10mg": [
+    {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
+    },
+    {
+      "path": "/products/oxytocin-10mg",
+      "title": "Oxytocin"
+    },
+    {
+      "path": "/products/bpc-157-tb-500-blend-10mg",
+      "title": "Wolverine Stack"
+    }
+  ],
+  "/products/kpv-5mg": [
+    {
+      "path": "/products/kpv-10mg",
+      "title": "KPV"
+    },
+    {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
+      "path": "/products/bpc-157-capsules-500mcg-x60",
+      "title": "BPC-157 Caps"
+    },
+    {
+      "path": "/products/oxytocin-8mg",
+      "title": "Oxytocin"
+    }
+  ],
+  "/products/kpv-10mg": [
+    {
+      "path": "/products/kpv-5mg",
+      "title": "KPV"
+    },
+    {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
+      "path": "/products/vip-10mg",
+      "title": "VIP"
+    },
+    {
+      "path": "/products/vip-5mg",
+      "title": "VIP"
+    }
+  ],
+  "/products/ll-37-10mg": [
+    {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
+      "path": "/products/oxytocin-8mg",
+      "title": "Oxytocin"
+    },
+    {
+      "path": "/products/tb-500-10mg",
+      "title": "TB-500"
+    },
+    {
+      "path": "/products/oxytocin-10mg",
+      "title": "Oxytocin"
+    }
+  ],
+  "/products/thymosin-alpha-1-5mg": [
+    {
+      "path": "/products/thymosin-alpha-1-10mg",
+      "title": "TA-1"
+    },
+    {
+      "path": "/products/thymulin-10mg",
+      "title": "Thymulin"
+    },
+    {
+      "path": "/products/vip-5mg",
+      "title": "VIP"
+    },
+    {
+      "path": "/products/thymogen-20mg",
+      "title": "Thymogen"
+    }
+  ],
+  "/products/thymosin-alpha-1-10mg": [
+    {
+      "path": "/products/thymosin-alpha-1-5mg",
+      "title": "TA-1"
+    },
+    {
+      "path": "/products/thymogen-20mg",
+      "title": "Thymogen"
+    },
+    {
+      "path": "/products/vip-5mg",
+      "title": "VIP"
+    },
+    {
+      "path": "/products/thymulin-10mg",
+      "title": "Thymulin"
+    }
+  ],
+  "/products/ara-290-10mg": [
+    {
+      "path": "/products/bpc-157-10mg",
+      "title": "BPC-157"
+    },
+    {
+      "path": "/products/tb-500-10mg",
+      "title": "TB-500"
+    },
+    {
+      "path": "/products/bpc-157-capsules-500mcg-x60",
+      "title": "BPC-157 Caps"
+    },
+    {
+      "path": "/products/ll-37-10mg",
+      "title": "LL-37"
+    }
+  ],
+  "/products/mots-c-10mg": [
+    {
+      "path": "/products/mots-c-20mg",
+      "title": "MOTS-c"
+    },
+    {
+      "path": "/products/mots-c-40mg",
+      "title": "MOTS-c"
+    },
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/vilon-20mg",
+      "title": "Vilon"
+    }
+  ],
+  "/products/mots-c-20mg": [
+    {
+      "path": "/products/mots-c-40mg",
+      "title": "MOTS-c"
+    },
+    {
+      "path": "/products/mots-c-10mg",
+      "title": "MOTS-c"
+    },
+    {
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
+    },
+    {
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
+    }
+  ],
+  "/products/mots-c-40mg": [
+    {
+      "path": "/products/mots-c-20mg",
+      "title": "MOTS-c"
+    },
+    {
+      "path": "/products/mots-c-10mg",
+      "title": "MOTS-c"
+    },
+    {
+      "path": "/products/ss-31-50mg",
+      "title": "SS-31"
+    },
+    {
+      "path": "/products/glutathione-1500mg",
+      "title": "Glutathione"
+    }
+  ],
+  "/products/ss-31-10mg": [
+    {
+      "path": "/products/ss-31-25mg",
+      "title": "SS-31"
+    },
+    {
+      "path": "/products/ss-31-50mg",
+      "title": "SS-31"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/mots-c-10mg",
+      "title": "MOTS-c"
+    }
+  ],
+  "/products/ss-31-25mg": [
+    {
+      "path": "/products/ss-31-10mg",
+      "title": "SS-31"
+    },
+    {
+      "path": "/products/ss-31-50mg",
+      "title": "SS-31"
+    },
+    {
+      "path": "/products/mots-c-20mg",
+      "title": "MOTS-c"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    }
+  ],
+  "/products/ss-31-50mg": [
+    {
+      "path": "/products/ss-31-25mg",
+      "title": "SS-31"
+    },
+    {
+      "path": "/products/ss-31-10mg",
+      "title": "SS-31"
+    },
+    {
+      "path": "/products/mots-c-40mg",
+      "title": "MOTS-c"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    }
+  ],
+  "/products/vip-5mg": [
+    {
+      "path": "/products/vip-10mg",
+      "title": "VIP"
+    },
+    {
+      "path": "/products/thymulin-10mg",
+      "title": "Thymulin"
+    },
+    {
+      "path": "/products/oxytocin-8mg",
+      "title": "Oxytocin"
+    },
+    {
+      "path": "/products/vilon-20mg",
+      "title": "Vilon"
+    }
+  ],
+  "/products/vip-10mg": [
+    {
+      "path": "/products/vip-5mg",
+      "title": "VIP"
+    },
+    {
+      "path": "/products/thymulin-10mg",
+      "title": "Thymulin"
+    },
+    {
+      "path": "/products/kpv-10mg",
+      "title": "KPV"
+    },
+    {
+      "path": "/products/oxytocin-8mg",
+      "title": "Oxytocin"
+    }
+  ],
+  "/products/oxytocin-8mg": [
+    {
+      "path": "/products/oxytocin-10mg",
+      "title": "Oxytocin"
+    },
+    {
+      "path": "/products/kpv-5mg",
+      "title": "KPV"
+    },
+    {
+      "path": "/products/ll-37-10mg",
+      "title": "LL-37"
+    },
+    {
+      "path": "/products/thymulin-10mg",
+      "title": "Thymulin"
+    }
+  ],
+  "/products/oxytocin-10mg": [
+    {
+      "path": "/products/oxytocin-8mg",
+      "title": "Oxytocin"
+    },
+    {
+      "path": "/products/tb-500-10mg",
+      "title": "TB-500"
+    },
+    {
+      "path": "/products/ll-37-10mg",
+      "title": "LL-37"
+    },
+    {
+      "path": "/products/bpc-157-10mg",
+      "title": "BPC-157"
+    }
+  ],
+  "/products/thymulin-10mg": [
+    {
+      "path": "/products/vip-5mg",
+      "title": "VIP"
+    },
+    {
+      "path": "/products/vip-10mg",
+      "title": "VIP"
+    },
+    {
+      "path": "/products/oxytocin-8mg",
+      "title": "Oxytocin"
+    },
+    {
+      "path": "/products/thymosin-alpha-1-5mg",
+      "title": "TA-1"
+    }
+  ],
+  "/products/bronchogen-20mg": [
+    {
+      "path": "/products/chonluten-20mg",
+      "title": "Chonluten"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/ovagen-20mg",
+      "title": "Ovagen"
+    },
+    {
+      "path": "/products/pancragen-20mg",
+      "title": "Pancragen"
+    }
+  ],
+  "/products/cardiogen-20mg": [
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    },
+    {
+      "path": "/products/pancragen-20mg",
+      "title": "Pancragen"
+    },
+    {
+      "path": "/products/prostamax-20mg",
+      "title": "Prostamax"
+    },
+    {
+      "path": "/products/testagen-20mg",
+      "title": "Testagen"
+    }
+  ],
+  "/products/cartalax-20mg": [
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/testagen-20mg",
+      "title": "Testagen"
+    },
+    {
+      "path": "/products/crystagen-20mg",
+      "title": "Crystagen"
+    },
+    {
+      "path": "/products/livagen-20mg",
+      "title": "Livagen"
+    }
+  ],
+  "/products/chonluten-20mg": [
+    {
+      "path": "/products/bronchogen-20mg",
+      "title": "Bronchogen"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/ovagen-20mg",
+      "title": "Ovagen"
+    },
+    {
+      "path": "/products/pancragen-20mg",
+      "title": "Pancragen"
+    }
+  ],
+  "/products/cortagen-20mg": [
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/prostamax-20mg",
+      "title": "Prostamax"
+    },
+    {
+      "path": "/products/bronchogen-20mg",
+      "title": "Bronchogen"
+    },
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    }
+  ],
+  "/products/crystagen-20mg": [
+    {
+      "path": "/products/thymogen-20mg",
+      "title": "Thymogen"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    },
+    {
+      "path": "/products/ovagen-20mg",
+      "title": "Ovagen"
+    }
+  ],
+  "/products/livagen-20mg": [
+    {
+      "path": "/products/ovagen-20mg",
+      "title": "Ovagen"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    },
+    {
+      "path": "/products/prostamax-20mg",
+      "title": "Prostamax"
+    }
+  ],
+  "/products/ovagen-20mg": [
+    {
+      "path": "/products/livagen-20mg",
+      "title": "Livagen"
+    },
+    {
+      "path": "/products/bronchogen-20mg",
+      "title": "Bronchogen"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/chonluten-20mg",
+      "title": "Chonluten"
+    }
+  ],
+  "/products/pancragen-20mg": [
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/testagen-20mg",
+      "title": "Testagen"
+    },
+    {
+      "path": "/products/bronchogen-20mg",
+      "title": "Bronchogen"
+    },
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    }
+  ],
+  "/products/prostamax-20mg": [
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    },
+    {
+      "path": "/products/cortagen-20mg",
+      "title": "Cortagen"
+    },
+    {
+      "path": "/products/livagen-20mg",
+      "title": "Livagen"
+    }
+  ],
+  "/products/testagen-20mg": [
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    },
+    {
+      "path": "/products/pancragen-20mg",
+      "title": "Pancragen"
+    },
+    {
+      "path": "/products/crystagen-20mg",
+      "title": "Crystagen"
+    }
+  ],
+  "/products/thymogen-20mg": [
+    {
+      "path": "/products/crystagen-20mg",
+      "title": "Crystagen"
+    },
+    {
+      "path": "/products/thymosin-alpha-1-10mg",
+      "title": "TA-1"
+    },
+    {
+      "path": "/products/thymulin-10mg",
+      "title": "Thymulin"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    }
+  ],
+  "/products/vesilute-20mg": [
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    },
+    {
+      "path": "/products/livagen-20mg",
+      "title": "Livagen"
+    },
+    {
+      "path": "/products/prostamax-20mg",
+      "title": "Prostamax"
+    }
+  ],
+  "/products/vesugen-20mg": [
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/cartalax-20mg",
+      "title": "Cartalax"
+    },
+    {
+      "path": "/products/livagen-20mg",
+      "title": "Livagen"
+    },
+    {
+      "path": "/products/prostamax-20mg",
+      "title": "Prostamax"
+    }
+  ],
+  "/products/vilon-20mg": [
+    {
+      "path": "/products/vip-5mg",
+      "title": "VIP"
+    },
+    {
+      "path": "/products/cardiogen-20mg",
+      "title": "Cardiogen"
+    },
+    {
+      "path": "/products/crystagen-20mg",
+      "title": "Crystagen"
+    },
+    {
+      "path": "/products/thymogen-20mg",
+      "title": "Thymogen"
+    }
+  ],
+  "/products/bacteriostatic-water-30ml": [
+    {
+      "path": "/products/usp-bacteriostatic-water-30ml",
+      "title": "USP BAC Water"
+    },
+    {
+      "path": "/guide",
+      "title": "Peptide Science Guide"
+    },
+    {
+      "path": "/faq",
+      "title": "Peptide FAQ"
+    },
+    {
+      "path": "/peptide-dosing-chart",
+      "title": "Peptide Dosing Chart"
+    }
+  ],
+  "/products/usp-bacteriostatic-water-30ml": [
+    {
+      "path": "/products/bacteriostatic-water-30ml",
+      "title": "BAC Water"
+    },
+    {
+      "path": "/guide",
+      "title": "Peptide Science Guide"
+    },
+    {
+      "path": "/faq",
+      "title": "Peptide FAQ"
+    },
+    {
+      "path": "/peptide-dosing-chart",
+      "title": "Peptide Dosing Chart"
+    }
+  ],
+  "/products/igf-1-lr3-1mg": [
     {
       "path": "/categories/growth-body-comp",
       "title": "Growth & Body Composition"
     },
     {
-      "path": "/products/igf-1lr3",
+      "path": "/products/peg-mgf-2mg",
+      "title": "PEG-MGF"
+    },
+    {
+      "path": "/stacks/body-recomp",
+      "title": "The Body Recomposition Stack"
+    },
+    {
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
+    }
+  ],
+  "/products/ipamorelin-10mg": [
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/products/ghrp-2-10mg",
+      "title": "GHRP-2"
+    },
+    {
+      "path": "/products/hexarelin-5mg",
+      "title": "Hexarelin"
+    },
+    {
+      "path": "/products/sermorelin-5mg",
+      "title": "Sermorelin"
+    }
+  ],
+  "/products/cjc-1295-no-dac-5mg": [
+    {
+      "path": "/products/cjc-1295-no-dac-10mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/products/sermorelin-2mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
+    }
+  ],
+  "/products/cjc-1295-no-dac-10mg": [
+    {
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
+    },
+    {
+      "path": "/products/sermorelin-2mg",
+      "title": "Sermorelin"
+    }
+  ],
+  "/products/cjc-1295-with-dac-10mg": [
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-10mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/products/sermorelin-2mg",
+      "title": "Sermorelin"
+    }
+  ],
+  "/products/ghrp-2-10mg": [
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
+    },
+    {
+      "path": "/products/ghrp-6-10mg",
+      "title": "GHRP-6"
+    },
+    {
+      "path": "/products/sermorelin-2mg",
+      "title": "Sermorelin"
+    }
+  ],
+  "/products/ghrp-6-10mg": [
+    {
+      "path": "/products/ghrp-2-10mg",
+      "title": "GHRP-2"
+    },
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
+    },
+    {
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
+    }
+  ],
+  "/products/hexarelin-5mg": [
+    {
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-10mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/products/ghrp-2-10mg",
+      "title": "GHRP-2"
+    }
+  ],
+  "/products/sermorelin-2mg": [
+    {
+      "path": "/products/sermorelin-5mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/sermorelin-10mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
+    }
+  ],
+  "/products/sermorelin-5mg": [
+    {
+      "path": "/products/sermorelin-10mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/sermorelin-2mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-10mg",
+      "title": "CJC-1295"
+    }
+  ],
+  "/products/sermorelin-10mg": [
+    {
+      "path": "/products/sermorelin-5mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/sermorelin-2mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-10mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
+    }
+  ],
+  "/products/tesamorelin-10mg": [
+    {
+      "path": "/products/tesamorelin-20mg",
+      "title": "Tesamorelin"
+    },
+    {
+      "path": "/products/sermorelin-2mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
+    }
+  ],
+  "/products/tesamorelin-20mg": [
+    {
+      "path": "/products/tesamorelin-10mg",
+      "title": "Tesamorelin"
+    },
+    {
+      "path": "/products/sermorelin-5mg",
+      "title": "Sermorelin"
+    },
+    {
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
+    },
+    {
+      "path": "/products/sermorelin-10mg",
+      "title": "Sermorelin"
+    }
+  ],
+  "/products/kisspeptin-10-5mg": [
+    {
+      "path": "/products/kisspeptin-10-10mg",
+      "title": "Kisspeptin-10"
+    },
+    {
+      "path": "/products/gonadorelin-acetate",
+      "title": "Gonadorelin"
+    },
+    {
+      "path": "/products/igf-1-lr3-1mg",
       "title": "IGF-1 LR3"
     },
     {
-      "path": "/products/bpc157-10mg",
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
+    }
+  ],
+  "/products/kisspeptin-10-10mg": [
+    {
+      "path": "/products/kisspeptin-10-5mg",
+      "title": "Kisspeptin-10"
+    },
+    {
+      "path": "/products/gonadorelin-acetate",
+      "title": "Gonadorelin"
+    },
+    {
+      "path": "/products/tesamorelin-20mg",
+      "title": "Tesamorelin"
+    },
+    {
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
+    }
+  ],
+  "/products/peg-mgf-2mg": [
+    {
+      "path": "/products/igf-1-lr3-1mg",
+      "title": "IGF-1 LR3"
+    },
+    {
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
+    },
+    {
+      "path": "/products/hexarelin-5mg",
+      "title": "Hexarelin"
+    },
+    {
+      "path": "/products/tesamorelin-10mg",
+      "title": "Tesamorelin"
+    }
+  ],
+  "/products/gonadorelin-acetate": [
+    {
+      "path": "/products/kisspeptin-10-5mg",
+      "title": "Kisspeptin-10"
+    },
+    {
+      "path": "/products/kisspeptin-10-10mg",
+      "title": "Kisspeptin-10"
+    },
+    {
+      "path": "/products/ghrp-6-10mg",
+      "title": "GHRP-6"
+    },
+    {
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
+    }
+  ],
+  "/products/semaglutide-3mg": [
+    {
+      "path": "/products/semaglutide-6mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-20mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-12mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-30mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/semaglutide-6mg": [
+    {
+      "path": "/products/semaglutide-3mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-12mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-30mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-20mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/semaglutide-12mg": [
+    {
+      "path": "/products/semaglutide-6mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-30mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-3mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-20mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/semaglutide-20mg": [
+    {
+      "path": "/products/semaglutide-3mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-30mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-6mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-12mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/semaglutide-30mg": [
+    {
+      "path": "/products/semaglutide-20mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-6mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-12mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-3mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/tirzepatide-15mg": [
+    {
+      "path": "/products/tirzepatide-30mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/products/tirzepatide-60mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
+    }
+  ],
+  "/products/tirzepatide-30mg": [
+    {
+      "path": "/products/tirzepatide-15mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/products/tirzepatide-60mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
+    }
+  ],
+  "/products/tirzepatide-60mg": [
+    {
+      "path": "/products/tirzepatide-30mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/products/tirzepatide-15mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/semaglutide-30mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/retatrutide-10mg": [
+    {
+      "path": "/products/retatrutide-20mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-15mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-30mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    }
+  ],
+  "/products/retatrutide-15mg": [
+    {
+      "path": "/products/retatrutide-20mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-30mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    }
+  ],
+  "/products/retatrutide-20mg": [
+    {
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-15mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-30mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    }
+  ],
+  "/products/retatrutide-30mg": [
+    {
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-15mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-20mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    }
+  ],
+  "/products/cagrilintide-5mg": [
+    {
+      "path": "/products/cagrilintide-10mg",
+      "title": "Cagrilintide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/cagri-sema-blend-10mg",
+      "title": "CagriSema"
+    },
+    {
+      "path": "/products/tirzepatide-15mg",
+      "title": "Tirzepatide"
+    }
+  ],
+  "/products/cagrilintide-10mg": [
+    {
+      "path": "/products/cagrilintide-5mg",
+      "title": "Cagrilintide"
+    },
+    {
+      "path": "/categories/metabolic-fat-loss",
+      "title": "Metabolic & Fat Loss Peptides"
+    },
+    {
+      "path": "/products/tirzepatide-30mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/products/cagri-reta-10mg",
+      "title": "Cagri-Reta"
+    }
+  ],
+  "/products/mazdutide-6mg": [
+    {
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/survodutide-10mg",
+      "title": "Survodutide"
+    },
+    {
+      "path": "/products/tirzepatide-15mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/products/tirzepatide-30mg",
+      "title": "Tirzepatide"
+    }
+  ],
+  "/products/survodutide-10mg": [
+    {
+      "path": "/products/mazdutide-6mg",
+      "title": "Mazdutide"
+    },
+    {
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/retatrutide-20mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/tirzepatide-15mg",
+      "title": "Tirzepatide"
+    }
+  ],
+  "/products/aod9604-2mg": [
+    {
+      "path": "/products/aod9604-5mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/aod9604-10mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/5-amino-1mq-50mg",
+      "title": "5-Amino-1MQ"
+    }
+  ],
+  "/products/aod9604-5mg": [
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/aod9604-10mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/5-amino-1mq-50mg",
+      "title": "5-Amino-1MQ"
+    }
+  ],
+  "/products/aod9604-10mg": [
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/aod9604-5mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/retatrutide-30mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x120-capsules",
+      "title": "SLU-PP-332"
+    }
+  ],
+  "/products/5-amino-1mq-5mg": [
+    {
+      "path": "/products/5-amino-1mq-50mg",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/5-amino-1mq-capsules-50mg-x60",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/aicar-50mg",
+      "title": "AICAR"
+    },
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    }
+  ],
+  "/products/5-amino-1mq-50mg": [
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/5-amino-1mq-capsules-50mg-x60",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/bam-15-50mg-ml-30ml",
+      "title": "BAM-15"
+    },
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    }
+  ],
+  "/products/5-amino-1mq-capsules-50mg-x60": [
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/5-amino-1mq-50mg",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/aod9604-5mg",
+      "title": "AOD9604"
+    }
+  ],
+  "/products/aicar-50mg": [
+    {
+      "path": "/products/slu-pp-332-1mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/o-304-atx-304-100mg-x60-capsules",
+      "title": "O-304"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    }
+  ],
+  "/products/adipotide-ftpp-5mg": [
+    {
+      "path": "/products/adipotide-ftpp-10mg",
+      "title": "Adipotide"
+    },
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/aicar-50mg",
+      "title": "AICAR"
+    }
+  ],
+  "/products/adipotide-ftpp-10mg": [
+    {
+      "path": "/products/adipotide-ftpp-5mg",
+      "title": "Adipotide"
+    },
+    {
+      "path": "/products/aod9604-5mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/5-amino-1mq-50mg",
+      "title": "5-Amino-1MQ"
+    },
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    }
+  ],
+  "/products/bam-15-30mg-ml-30ml": [
+    {
+      "path": "/products/bam-15-50mg-ml-30ml",
+      "title": "BAM-15"
+    },
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/aod9604-5mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    }
+  ],
+  "/products/bam-15-50mg-ml-30ml": [
+    {
+      "path": "/products/bam-15-30mg-ml-30ml",
+      "title": "BAM-15"
+    },
+    {
+      "path": "/products/l-carnitine-600mg-ml",
+      "title": "L-Carnitine"
+    },
+    {
+      "path": "/products/slu-pp-332-5mg-ml-30ml",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/5-amino-1mq-50mg",
+      "title": "5-Amino-1MQ"
+    }
+  ],
+  "/products/l-carnitine-400mg-ml": [
+    {
+      "path": "/products/l-carnitine-600mg-ml",
+      "title": "L-Carnitine"
+    },
+    {
+      "path": "/products/l-carnitine-5-pack-600mg",
+      "title": "L-Carnitine"
+    },
+    {
+      "path": "/products/aod9604-2mg",
+      "title": "AOD9604"
+    },
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    }
+  ],
+  "/products/l-carnitine-600mg-ml": [
+    {
+      "path": "/products/l-carnitine-400mg-ml",
+      "title": "L-Carnitine"
+    },
+    {
+      "path": "/products/l-carnitine-5-pack-600mg",
+      "title": "L-Carnitine"
+    },
+    {
+      "path": "/products/bam-15-50mg-ml-30ml",
+      "title": "BAM-15"
+    },
+    {
+      "path": "/products/slu-pp-332-5mg-ml-30ml",
+      "title": "SLU-PP-332"
+    }
+  ],
+  "/products/l-carnitine-5-pack-600mg": [
+    {
+      "path": "/products/l-carnitine-400mg-ml",
+      "title": "L-Carnitine"
+    },
+    {
+      "path": "/products/l-carnitine-600mg-ml",
+      "title": "L-Carnitine"
+    },
+    {
+      "path": "/products/semaglutide-20mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-30mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/o-304-atx-304-100mg-x60-capsules": [
+    {
+      "path": "/products/aicar-50mg",
+      "title": "AICAR"
+    },
+    {
+      "path": "/products/semaglutide-3mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/5-amino-1mq-5mg",
+      "title": "5-Amino-1MQ"
+    }
+  ],
+  "/products/slu-pp-332-1mg-x30-capsules": [
+    {
+      "path": "/products/slu-pp-332-100mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x120-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-1mg-ml-30ml",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-5mg-ml-30ml",
+      "title": "SLU-PP-332"
+    }
+  ],
+  "/products/slu-pp-332-100mg-x30-capsules": [
+    {
+      "path": "/products/slu-pp-332-1mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x120-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-1mg-ml-30ml",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-5mg-ml-30ml",
+      "title": "SLU-PP-332"
+    }
+  ],
+  "/products/slu-pp-332-100mg-x120-capsules": [
+    {
+      "path": "/products/slu-pp-332-1mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-1mg-ml-30ml",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-5mg-ml-30ml",
+      "title": "SLU-PP-332"
+    }
+  ],
+  "/products/slu-pp-332-1mg-ml-30ml": [
+    {
+      "path": "/products/slu-pp-332-5mg-ml-30ml",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-1mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x120-capsules",
+      "title": "SLU-PP-332"
+    }
+  ],
+  "/products/slu-pp-332-5mg-ml-30ml": [
+    {
+      "path": "/products/slu-pp-332-1mg-ml-30ml",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-1mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x30-capsules",
+      "title": "SLU-PP-332"
+    },
+    {
+      "path": "/products/slu-pp-332-100mg-x120-capsules",
+      "title": "SLU-PP-332"
+    }
+  ],
+  "/products/tesofensine-500mcg-x30-capsules": [
+    {
+      "path": "/products/tesofensine-500mcg-x30-tablets",
+      "title": "Tesofensine"
+    },
+    {
+      "path": "/products/tirzepatide-15mg",
+      "title": "Tirzepatide"
+    },
+    {
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
+    },
+    {
+      "path": "/products/semaglutide-3mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/tesofensine-500mcg-x30-tablets": [
+    {
+      "path": "/products/tesofensine-500mcg-x30-capsules",
+      "title": "Tesofensine"
+    },
+    {
+      "path": "/products/semaglutide-3mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-6mg",
+      "title": "Semaglutide"
+    },
+    {
+      "path": "/products/semaglutide-12mg",
+      "title": "Semaglutide"
+    }
+  ],
+  "/products/bpc-157-tb-500-blend-10mg": [
+    {
+      "path": "/products/bpc-157-tb-500-blend-20mg",
+      "title": "Wolverine Stack"
+    },
+    {
+      "path": "/products/bpc-157-10mg",
       "title": "BPC-157"
     },
     {
-      "path": "/products/tb500-10mg",
+      "path": "/products/tb-500-10mg",
       "title": "TB-500"
+    },
+    {
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
     }
   ],
-  "/products/glp-1s-5mg": [
+  "/products/bpc-157-tb-500-blend-20mg": [
     {
-      "path": "/categories/metabolic-fat-loss",
-      "title": "Metabolic & Fat Loss Peptides"
+      "path": "/products/bpc-157-tb-500-blend-10mg",
+      "title": "Wolverine Stack"
     },
     {
-      "path": "/products/glp-1cglp-1s-5mg",
-      "title": "Cagri + Sema Combo"
+      "path": "/products/bpc-157-10mg",
+      "title": "BPC-157"
     },
     {
-      "path": "/products/glp-2t-15m",
-      "title": "Tirzepatide 15mg"
+      "path": "/products/glow-blend-50mg",
+      "title": "GLOW Blend"
     },
     {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
+      "path": "/stacks/recovery",
+      "title": "The Recovery & Healing Stack"
     }
   ],
-  "/products/glp-1s-10mg": [
+  "/products/ipamorelin-cjc-1295-blend-10mg": [
     {
-      "path": "/categories/metabolic-fat-loss",
-      "title": "Metabolic & Fat Loss Peptides"
+      "path": "/products/ipamorelin-tesamorelin-blend-15mg",
+      "title": "Ipa/Tesa 15mg"
     },
     {
-      "path": "/products/glp-3r-15mg",
-      "title": "Retatrutide 15mg"
+      "path": "/products/ipamorelin-tesamorelin-blend-13mg",
+      "title": "Ipa/Tesa 13mg"
     },
     {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
+      "path": "/products/ipa-tesa-blend-15mg",
+      "title": "IPA/TESA"
     },
     {
-      "path": "/products/glp-2t-30mg",
-      "title": "Tirzepatide 30mg"
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
     }
   ],
-  "/products/glp-1s-15mg": [
+  "/products/ipamorelin-tesamorelin-blend-13mg": [
     {
-      "path": "/categories/metabolic-fat-loss",
-      "title": "Metabolic & Fat Loss Peptides"
+      "path": "/products/ipamorelin-tesamorelin-blend-15mg",
+      "title": "Ipa/Tesa 15mg"
     },
     {
-      "path": "/products/glp-2-t-60mg",
-      "title": "Tirzepatide 60mg"
+      "path": "/products/ipa-tesa-blend-15mg",
+      "title": "IPA/TESA"
     },
     {
-      "path": "/products/glp-3-r-60mg",
-      "title": "Retatrutide 60mg"
+      "path": "/products/ipamorelin-cjc-1295-blend-10mg",
+      "title": "Ipa/CJC Blend"
     },
     {
-      "path": "/products/glp-1s-10mg",
-      "title": "Semaglutide 10mg"
+      "path": "/products/tesamorelin-10mg",
+      "title": "Tesamorelin"
     }
   ],
-  "/products/glp-2t-15m": [
+  "/products/ipamorelin-tesamorelin-blend-15mg": [
     {
-      "path": "/categories/metabolic-fat-loss",
-      "title": "Metabolic & Fat Loss Peptides"
+      "path": "/products/ipamorelin-tesamorelin-blend-13mg",
+      "title": "Ipa/Tesa 13mg"
     },
     {
-      "path": "/products/glp-1cglp-1s-5mg",
-      "title": "Cagri + Sema Combo"
+      "path": "/products/ipa-tesa-blend-15mg",
+      "title": "IPA/TESA"
     },
     {
-      "path": "/products/glp-2t-30mg",
-      "title": "Tirzepatide 30mg"
+      "path": "/products/ipamorelin-cjc-1295-blend-10mg",
+      "title": "Ipa/CJC Blend"
     },
     {
-      "path": "/products/glp-3r-10mg",
-      "title": "Retatrutide 10mg"
+      "path": "/products/reta-cagri-5mg-5mg",
+      "title": "Reta-Cagri"
     }
   ],
-  "/products/glp-2t-30mg": [
+  "/products/ipa-tesa-blend-15mg": [
     {
-      "path": "/categories/metabolic-fat-loss",
-      "title": "Metabolic & Fat Loss Peptides"
+      "path": "/products/ipamorelin-tesamorelin-blend-13mg",
+      "title": "Ipa/Tesa 13mg"
     },
     {
-      "path": "/products/glp-3-r-30mg",
-      "title": "Retatrutide 30mg"
+      "path": "/products/ipamorelin-tesamorelin-blend-15mg",
+      "title": "Ipa/Tesa 15mg"
     },
     {
-      "path": "/products/glp-2t-15m",
-      "title": "Tirzepatide 15mg"
+      "path": "/products/ipamorelin-cjc-1295-blend-10mg",
+      "title": "Ipa/CJC Blend"
     },
     {
-      "path": "/products/glp-1s-10mg",
-      "title": "Semaglutide 10mg"
+      "path": "/products/bpc-157-tb-500-blend-10mg",
+      "title": "Wolverine Stack"
     }
   ],
-  "/products/glp-2-t-60mg": [
+  "/products/cagri-reta-5mg": [
     {
-      "path": "/products/glp-3-r-60mg",
-      "title": "Retatrutide 60mg"
+      "path": "/products/cagri-reta-10mg",
+      "title": "Cagri-Reta"
     },
     {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
+      "path": "/products/reta-cagri-5mg-5mg",
+      "title": "Reta-Cagri"
     },
     {
-      "path": "/products/glp-3-r-30mg",
-      "title": "Retatrutide 30mg"
+      "path": "/products/cagri-sema-blend-10mg",
+      "title": "CagriSema"
     },
     {
-      "path": "/products/glp-1s-10mg",
-      "title": "Semaglutide 10mg"
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
     }
   ],
-  "/products/glp-3r-10mg": [
+  "/products/cagri-reta-10mg": [
     {
-      "path": "/products/glp-2t-15m",
-      "title": "Tirzepatide 15mg"
+      "path": "/products/cagri-reta-5mg",
+      "title": "Cagri-Reta"
     },
     {
-      "path": "/products/glp-3r-15mg",
-      "title": "Retatrutide 15mg"
+      "path": "/products/reta-cagri-5mg-5mg",
+      "title": "Reta-Cagri"
     },
     {
-      "path": "/products/glp-3-r-60mg",
-      "title": "Retatrutide 60mg"
+      "path": "/products/cagri-sema-blend-10mg",
+      "title": "CagriSema"
     },
     {
-      "path": "/products/glp-1cglp-1s-5mg",
-      "title": "Cagri + Sema Combo"
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
     }
   ],
-  "/products/glp-3r-15mg": [
+  "/products/reta-cagri-5mg-5mg": [
     {
-      "path": "/products/glp-1s-10mg",
-      "title": "Semaglutide 10mg"
+      "path": "/products/cagri-reta-10mg",
+      "title": "Cagri-Reta"
     },
     {
-      "path": "/products/glp-3r-10mg",
-      "title": "Retatrutide 10mg"
+      "path": "/products/cagri-reta-5mg",
+      "title": "Cagri-Reta"
     },
     {
-      "path": "/products/glp-2t-15m",
-      "title": "Tirzepatide 15mg"
+      "path": "/products/cagri-sema-blend-10mg",
+      "title": "CagriSema"
     },
     {
-      "path": "/products/glp-2t-30mg",
-      "title": "Tirzepatide 30mg"
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
     }
   ],
-  "/products/glp-3-r-30mg": [
+  "/products/cagri-sema-blend-10mg": [
     {
-      "path": "/products/glp-2t-30mg",
-      "title": "Tirzepatide 30mg"
+      "path": "/products/cagri-reta-5mg",
+      "title": "Cagri-Reta"
     },
     {
-      "path": "/products/glp-2-t-60mg",
-      "title": "Tirzepatide 60mg"
+      "path": "/products/cagri-reta-10mg",
+      "title": "Cagri-Reta"
     },
     {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
+      "path": "/products/cagrilintide-5mg",
+      "title": "Cagrilintide"
     },
     {
-      "path": "/products/glp-3-r-60mg",
-      "title": "Retatrutide 60mg"
+      "path": "/products/reta-cagri-5mg-5mg",
+      "title": "Reta-Cagri"
     }
   ],
-  "/products/glp-3-r-60mg": [
+  "/products/glow-blend-50mg": [
     {
-      "path": "/products/glp-2-t-60mg",
-      "title": "Tirzepatide 60mg"
+      "path": "/products/glow-blend-70mg",
+      "title": "GLOW Blend"
     },
     {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
+      "path": "/products/klow-blend-80mg",
+      "title": "KLOW Blend"
     },
     {
-      "path": "/products/glp-3-r-30mg",
-      "title": "Retatrutide 30mg"
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
     },
     {
-      "path": "/products/glp-2t-15m",
-      "title": "Tirzepatide 15mg"
+      "path": "/products/ghk-cu-100mg",
+      "title": "GHK-Cu"
     }
   ],
-  "/products/glp-1cglp-1s-5mg": [
+  "/products/glow-blend-70mg": [
     {
-      "path": "/products/glp-1s-5mg",
-      "title": "Semaglutide 5mg"
+      "path": "/products/glow-blend-50mg",
+      "title": "GLOW Blend"
     },
     {
-      "path": "/products/glp-2t-15m",
-      "title": "Tirzepatide 15mg"
+      "path": "/products/klow-blend-80mg",
+      "title": "KLOW Blend"
     },
     {
-      "path": "/products/glp-3r-10mg",
-      "title": "Retatrutide 10mg"
+      "path": "/products/ipamorelin-cjc-1295-blend-10mg",
+      "title": "Ipa/CJC Blend"
     },
     {
-      "path": "/products/glp-3-r-60mg",
-      "title": "Retatrutide 60mg"
+      "path": "/products/sermorelin-10mg",
+      "title": "Sermorelin"
     }
   ],
-  "/products/glp-2t-20mg-5-pack": [
+  "/products/klow-blend-80mg": [
     {
-      "path": "/products/glp-2t-15mg-4-pack",
-      "title": "Tirzepatide 4-Pack"
+      "path": "/products/glow-blend-50mg",
+      "title": "GLOW Blend"
     },
     {
-      "path": "/products/glp-2t-15mg-10-pack",
-      "title": "Tirzepatide 10-Pack"
+      "path": "/products/glow-blend-70mg",
+      "title": "GLOW Blend"
     },
     {
-      "path": "/products/glp-2-t-60mg",
-      "title": "Tirzepatide 60mg"
+      "path": "/categories/longevity",
+      "title": "Longevity Peptides"
     },
     {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
-    }
-  ],
-  "/products/glp-2t-15mg-4-pack": [
-    {
-      "path": "/products/glp-2t-20mg-5-pack",
-      "title": "Tirzepatide 5-Pack"
-    },
-    {
-      "path": "/products/glp-2t-15mg-10-pack",
-      "title": "Tirzepatide 10-Pack"
-    },
-    {
-      "path": "/products/glp-2-t-60mg",
-      "title": "Tirzepatide 60mg"
-    },
-    {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
-    }
-  ],
-  "/products/glp-2t-15mg-10-pack": [
-    {
-      "path": "/products/glp-2t-20mg-5-pack",
-      "title": "Tirzepatide 5-Pack"
-    },
-    {
-      "path": "/products/glp-2t-15mg-4-pack",
-      "title": "Tirzepatide 4-Pack"
-    },
-    {
-      "path": "/products/glp-2-t-60mg",
-      "title": "Tirzepatide 60mg"
-    },
-    {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
-    }
-  ],
-  "/products/bacteriostatic-water-reconstitution-solution-10ml": [
-    {
-      "path": "/products/glp-1s-10mg",
-      "title": "Semaglutide 10mg"
-    },
-    {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
-    },
-    {
-      "path": "/products/glp-2-t-60mg",
-      "title": "Tirzepatide 60mg"
-    },
-    {
-      "path": "/products/glp-3-r-60mg",
-      "title": "Retatrutide 60mg"
+      "path": "/products/ipamorelin-cjc-1295-blend-10mg",
+      "title": "Ipa/CJC Blend"
     }
   ],
   "/categories/skin-anti-aging": [
     {
-      "path": "/products/snap-8",
-      "title": "SNAP-8"
-    },
-    {
-      "path": "/products/snap-8-2-pack",
-      "title": "SNAP-8 2-Pack"
-    },
-    {
-      "path": "/products/ghk-cu",
+      "path": "/products/ghk-cu-50mg",
       "title": "GHK-Cu"
     },
     {
-      "path": "/looksmaxxing",
-      "title": "Looksmaxxing with Peptides"
+      "path": "/products/snap-8-10mg",
+      "title": "SNAP-8"
+    },
+    {
+      "path": "/products/melanotan-1-10mg",
+      "title": "Melanotan I"
+    },
+    {
+      "path": "/products/melanotan-2-10mg",
+      "title": "Melanotan II"
     }
   ],
   "/categories/longevity": [
     {
-      "path": "/products/nad",
-      "title": "NAD+ 500mg"
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
     },
     {
-      "path": "/products/epithalon-50mg",
-      "title": "Epithalon 50mg"
+      "path": "/products/nad-500mg",
+      "title": "NAD+"
     },
     {
-      "path": "/stacks/longevity",
-      "title": "The Longevity & Anti-Aging Stack"
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
     },
     {
-      "path": "/categories/skin-anti-aging",
-      "title": "Skin & Anti-Aging Peptides"
+      "path": "/products/nad-1000mg",
+      "title": "NAD+"
     }
   ],
   "/categories/recovery-healing": [
     {
-      "path": "/products/bpc157-10mg",
+      "path": "/products/bpc-157-10mg",
       "title": "BPC-157"
     },
     {
-      "path": "/products/tb500-10mg",
+      "path": "/products/tb-500-10mg",
       "title": "TB-500"
     },
     {
-      "path": "/wolverine-stack-bpc-157-tb-500",
-      "title": "Wolverine Stack: BPC-157 + TB-500"
+      "path": "/products/kpv-5mg",
+      "title": "KPV"
     },
     {
-      "path": "/stacks/recovery",
-      "title": "The Recovery & Healing Stack"
+      "path": "/products/bpc-157-capsules-500mcg-x60",
+      "title": "BPC-157 Caps"
     }
   ],
   "/categories/growth-body-comp": [
     {
-      "path": "/products/igf-1lr3",
+      "path": "/products/igf-1-lr3-1mg",
       "title": "IGF-1 LR3"
     },
     {
-      "path": "/products/cjc1295-ipamorelin",
-      "title": "CJC-1295 / Ipamorelin"
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
     },
     {
-      "path": "/peptide-stack-body-recomposition",
-      "title": "Peptide Stack for Body Recomposition"
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
     },
     {
-      "path": "/stacks/body-recomp",
-      "title": "The Body Recomposition Stack"
+      "path": "/products/ipamorelin-10mg",
+      "title": "Ipamorelin"
     }
   ],
   "/categories/metabolic-fat-loss": [
     {
-      "path": "/products/glp-1s-15mg",
-      "title": "Semaglutide 15mg"
+      "path": "/products/tirzepatide-15mg",
+      "title": "Tirzepatide"
     },
     {
-      "path": "/products/glp-2t-30mg",
-      "title": "Tirzepatide 30mg"
+      "path": "/products/retatrutide-10mg",
+      "title": "Retatrutide"
     },
     {
-      "path": "/products/glp-1s-10mg",
-      "title": "Semaglutide 10mg"
+      "path": "/products/tirzepatide-30mg",
+      "title": "Tirzepatide"
     },
     {
-      "path": "/products/glp-2t-15m",
-      "title": "Tirzepatide 15mg"
+      "path": "/products/retatrutide-20mg",
+      "title": "Retatrutide"
     }
   ],
   "/stacks/aesthetic-starter": [
@@ -577,6 +2629,10 @@
   ],
   "/stacks/recovery": [
     {
+      "path": "/categories/recovery-healing",
+      "title": "Recovery & Healing Peptides"
+    },
+    {
       "path": "/stacks/body-recomp",
       "title": "The Body Recomposition Stack"
     },
@@ -587,10 +2643,6 @@
     {
       "path": "/stacks/elite-optimization",
       "title": "The Elite Optimization Stack"
-    },
-    {
-      "path": "/stacks/longevity",
-      "title": "The Longevity & Anti-Aging Stack"
     }
   ],
   "/stacks/longevity": [
@@ -607,8 +2659,8 @@
       "title": "The Recovery & Healing Stack"
     },
     {
-      "path": "/stacks/fat-loss",
-      "title": "The Fat Loss & Vascularity Stack"
+      "path": "/categories/longevity",
+      "title": "Longevity Peptides"
     }
   ],
   "/stacks/elite-optimization": [
@@ -653,16 +2705,16 @@
       "title": "Peptide FAQ"
     },
     {
+      "path": "/products/bacteriostatic-water-30ml",
+      "title": "BAC Water"
+    },
+    {
+      "path": "/products/usp-bacteriostatic-water-30ml",
+      "title": "USP BAC Water"
+    },
+    {
       "path": "/products",
       "title": "All Peptides"
-    },
-    {
-      "path": "/peptide-stacking-guide-beginners",
-      "title": "Peptide Stacking Guide for Beginners"
-    },
-    {
-      "path": "/peptide-dosing-chart",
-      "title": "Peptide Dosing Chart"
     }
   ],
   "/faq": [
@@ -671,16 +2723,16 @@
       "title": "Peptide Science Guide"
     },
     {
+      "path": "/products/bacteriostatic-water-30ml",
+      "title": "BAC Water"
+    },
+    {
+      "path": "/products/usp-bacteriostatic-water-30ml",
+      "title": "USP BAC Water"
+    },
+    {
       "path": "/products",
       "title": "All Peptides"
-    },
-    {
-      "path": "/stacks/aesthetic-starter",
-      "title": "The Aesthetic Starter Stack"
-    },
-    {
-      "path": "/products/bacteriostatic-water-reconstitution-solution-10ml",
-      "title": "Bacteriostatic Water"
     }
   ],
   "/looksmaxxing": [
@@ -697,8 +2749,8 @@
       "title": "The Body Recomposition Stack"
     },
     {
-      "path": "/products/igf-1lr3",
-      "title": "IGF-1 LR3"
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
     }
   ],
   "/products": [
@@ -711,12 +2763,12 @@
       "title": "Peptide FAQ"
     },
     {
-      "path": "/products/bacteriostatic-water-reconstitution-solution-10ml",
-      "title": "Bacteriostatic Water"
+      "path": "/products/usp-bacteriostatic-water-30ml",
+      "title": "USP BAC Water"
     },
     {
-      "path": "/categories/skin-anti-aging",
-      "title": "Skin & Anti-Aging Peptides"
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
     }
   ],
   "/peptide-stacking-guide-beginners": [
@@ -751,8 +2803,8 @@
       "title": "Peptide Stack for Body Recomposition"
     },
     {
-      "path": "/products/glp-1s-5mg",
-      "title": "Semaglutide 5mg"
+      "path": "/products/ghk-cu-50mg",
+      "title": "GHK-Cu"
     }
   ],
   "/semaglutide-vs-tirzepatide-vs-retatrutide": [
@@ -761,59 +2813,55 @@
       "title": "Metabolic & Fat Loss Peptides"
     },
     {
-      "path": "/products/glp-1s-5mg",
-      "title": "Semaglutide 5mg"
+      "path": "/products/retatrutide-30mg",
+      "title": "Retatrutide"
     },
     {
-      "path": "/products/glp-2t-15m",
-      "title": "Tirzepatide 15mg"
+      "path": "/products/tirzepatide-15mg",
+      "title": "Tirzepatide"
     },
     {
-      "path": "/products/glp-3r-10mg",
-      "title": "Retatrutide 10mg"
+      "path": "/products/tirzepatide-30mg",
+      "title": "Tirzepatide"
     }
   ],
   "/wolverine-stack-bpc-157-tb-500": [
     {
-      "path": "/categories/recovery-healing",
-      "title": "Recovery & Healing Peptides"
+      "path": "/products/bpc-157-tb-500-blend-10mg",
+      "title": "Wolverine Stack"
+    },
+    {
+      "path": "/products/bpc-157-tb-500-blend-20mg",
+      "title": "Wolverine Stack"
     },
     {
       "path": "/stacks/recovery",
       "title": "The Recovery & Healing Stack"
     },
     {
-      "path": "/products/bpc157-10mg",
+      "path": "/products/bpc-157-10mg",
       "title": "BPC-157"
-    },
-    {
-      "path": "/products/tb500-10mg",
-      "title": "TB-500"
     }
   ],
   "/cjc-1295-with-dac-vs-without-dac": [
     {
-      "path": "/products/cjc1295-ipamorelin",
-      "title": "CJC-1295 / Ipamorelin"
-    },
-    {
       "path": "/categories/growth-body-comp",
       "title": "Growth & Body Composition"
     },
     {
-      "path": "/stacks/aesthetic-starter",
-      "title": "The Aesthetic Starter Stack"
+      "path": "/products/cjc-1295-with-dac-10mg",
+      "title": "CJC-1295 DAC"
     },
     {
-      "path": "/stacks/fat-loss",
-      "title": "The Fat Loss & Vascularity Stack"
+      "path": "/products/cjc-1295-no-dac-5mg",
+      "title": "CJC-1295"
+    },
+    {
+      "path": "/products/cjc-1295-no-dac-10mg",
+      "title": "CJC-1295"
     }
   ],
   "/peptide-stack-body-recomposition": [
-    {
-      "path": "/categories/growth-body-comp",
-      "title": "Growth & Body Composition"
-    },
     {
       "path": "/stacks/fat-loss",
       "title": "The Fat Loss & Vascularity Stack"
@@ -825,11 +2873,15 @@
     {
       "path": "/stacks/elite-optimization",
       "title": "The Elite Optimization Stack"
+    },
+    {
+      "path": "/categories/growth-body-comp",
+      "title": "Growth & Body Composition"
     }
   ],
   "/ghk-cu-results-timeline": [
     {
-      "path": "/products/ghk-cu",
+      "path": "/products/ghk-cu-50mg",
       "title": "GHK-Cu"
     },
     {
@@ -837,30 +2889,30 @@
       "title": "Skin & Anti-Aging Peptides"
     },
     {
-      "path": "/stacks/aesthetic-starter",
-      "title": "The Aesthetic Starter Stack"
+      "path": "/products/ghk-cu-100mg",
+      "title": "GHK-Cu"
     },
     {
-      "path": "/stacks/elite-optimization",
-      "title": "The Elite Optimization Stack"
+      "path": "/products/glow-blend-50mg",
+      "title": "GLOW Blend"
     }
   ],
   "/epithalon-protocol-longevity-cycle": [
+    {
+      "path": "/products/epitalon-10mg",
+      "title": "Epitalon"
+    },
+    {
+      "path": "/products/epitalon-50mg",
+      "title": "Epitalon"
+    },
     {
       "path": "/categories/longevity",
       "title": "Longevity Peptides"
     },
     {
-      "path": "/products/epithalon-50mg",
-      "title": "Epithalon 50mg"
-    },
-    {
       "path": "/stacks/longevity",
       "title": "The Longevity & Anti-Aging Stack"
-    },
-    {
-      "path": "/stacks/elite-optimization",
-      "title": "The Elite Optimization Stack"
     }
   ],
   "/peptide-dosing-chart": [
@@ -869,23 +2921,19 @@
       "title": "Peptide Science Guide"
     },
     {
-      "path": "/products/bacteriostatic-water-reconstitution-solution-10ml",
-      "title": "Bacteriostatic Water"
-    },
-    {
       "path": "/how-to-store-peptides",
       "title": "How to Store Peptides"
     },
     {
-      "path": "/peptide-stacking-guide-beginners",
-      "title": "Peptide Stacking Guide for Beginners"
+      "path": "/products/bacteriostatic-water-30ml",
+      "title": "BAC Water"
+    },
+    {
+      "path": "/products/usp-bacteriostatic-water-30ml",
+      "title": "USP BAC Water"
     }
   ],
   "/how-to-store-peptides": [
-    {
-      "path": "/products/bacteriostatic-water-reconstitution-solution-10ml",
-      "title": "Bacteriostatic Water"
-    },
     {
       "path": "/guide",
       "title": "Peptide Science Guide"
@@ -897,6 +2945,10 @@
     {
       "path": "/peptide-stacking-guide-beginners",
       "title": "Peptide Stacking Guide for Beginners"
+    },
+    {
+      "path": "/products/bacteriostatic-water-30ml",
+      "title": "BAC Water"
     }
   ]
 }

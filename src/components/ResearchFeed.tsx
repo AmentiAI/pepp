@@ -12,7 +12,7 @@ const studies = [
     finding:
       'A Phase 2 randomized controlled trial (n=338) found that once-weekly Retatrutide (GLP-1/GIP/Glucagon triple agonist) produced up to 24.2% body weight reduction at week 24 — the highest pharmacological weight loss ever recorded in a clinical trial.',
     compound: 'Retatrutide',
-    href: '/products/glp-3r-10mg',
+    href: '/products/retatrutide-10mg',
   },
   {
     journal: 'Genome Biology & Evolution',
@@ -24,7 +24,7 @@ const studies = [
     finding:
       'Bioinformatic analysis of human gene databases confirmed that GHK-Cu, a naturally occurring copper-binding tripeptide, modulates the expression of over 4,000 genes — including collagen, elastin, antioxidant enzymes, and genes associated with tissue repair and skin regeneration.',
     compound: 'GHK-Cu',
-    href: '/products/ghk-cu',
+    href: '/products/ghk-cu-50mg',
   },
   {
     journal: 'Journal of Clinical Endocrinology',
@@ -36,7 +36,7 @@ const studies = [
     finding:
       'A dose-escalation study (n=65) demonstrated that CJC-1295 with DAC produced mean GH concentrations of 2–10 ng/mL for up to 14 days following a single injection, with 2–3× increases in mean IGF-1 levels maintained over 28 days — establishing the concept of GHRH-R saturation dosing.',
     compound: 'CJC-1295',
-    href: '/products/cjc1295-ipamorelin',
+    href: '/products/ipamorelin-cjc-1295-blend-10mg',
   },
   {
     journal: 'Annals of the New York Academy of Sciences',
@@ -48,7 +48,7 @@ const studies = [
     finding:
       'Dr. Vladimir Khavinson\'s research confirmed Epithalon (Ala-Glu-Asp-Gly) activates telomerase in human somatic cells — including diploid fibroblasts — making it the only research peptide with published in vivo human telomere extension data from the St. Petersburg Institute of Gerontology.',
     compound: 'Epithalon',
-    href: '/products/epithalon',
+    href: '/products/epitalon-50mg',
   },
 ]
 

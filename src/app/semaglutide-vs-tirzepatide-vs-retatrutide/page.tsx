@@ -81,7 +81,7 @@ const decisionCards = [
     recommendation: 'Semaglutide',
     reason:
       'Extensive long-term safety data, wide clinical familiarity, and strong efficacy for first-time GLP-1 users. The lowest risk on-ramp to GLP-1 therapy.',
-    href: '/products/glp-1s-5mg',
+    href: '/products/semaglutide-6mg',
     color: '#34d399',
     icon: <Shield size={20} />,
   },
@@ -90,7 +90,7 @@ const decisionCards = [
     recommendation: 'Tirzepatide',
     reason:
       'The highest efficacy among currently approved options. Dual receptor synergy provides a meaningfully better outcome than semaglutide with an established safety profile.',
-    href: '/products/glp-2t-15m',
+    href: '/products/tirzepatide-15mg',
     color: '#a78bfa',
     icon: <TrendingUp size={20} />,
   },
@@ -99,7 +99,7 @@ const decisionCards = [
     recommendation: 'Retatrutide',
     reason:
       'The highest recorded pharmacological fat loss compound in existence. For research purposes only. Triple-receptor mechanism adds thermogenesis no other GLP-1 can match.',
-    href: '/products/glp-3r-10mg',
+    href: '/products/retatrutide-10mg',
     color: '#d4a843',
     icon: <FlaskConical size={20} />,
   },
@@ -379,7 +379,7 @@ export default function GlpComparisonPage() {
             </div>
           </div>
           <Link
-            href="/products/glp-1s-5mg"
+            href="/products/semaglutide-6mg"
             className="hover-lift"
             style={{
               display: 'inline-flex',
@@ -458,7 +458,7 @@ export default function GlpComparisonPage() {
             </div>
           </div>
           <Link
-            href="/products/glp-2t-15m"
+            href="/products/tirzepatide-15mg"
             className="hover-lift"
             style={{
               display: 'inline-flex',
@@ -613,7 +613,7 @@ export default function GlpComparisonPage() {
                   simply total weight reduction.
                 </p>
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                  <Link href="/products/cjc1295-ipamorelin" className="btn-primary" style={{ fontSize: '0.9rem', padding: '0.65rem 1.4rem' }}>
+                  <Link href="/products/ipamorelin-cjc-1295-blend-10mg" className="btn-primary" style={{ fontSize: '0.9rem', padding: '0.65rem 1.4rem' }}>
                     CJC-1295 + Ipamorelin Stack <ArrowRight size={14} />
                   </Link>
                   <Link href="/stacks/fat-loss" className="btn-secondary" style={{ fontSize: '0.9rem', padding: '0.65rem 1.4rem' }}>

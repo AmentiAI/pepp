@@ -19,7 +19,7 @@ import RelatedLinks from '@/components/RelatedLinks'
 const dosingData = [
   {
     compound: 'GHK-Cu',
-    slug: '/products/ghk-cu',
+    slug: '/products/ghk-cu-50mg',
     category: 'Skin / Anti-Aging',
     color: '#a78bfa',
     vialSize: '50mg',
@@ -32,7 +32,7 @@ const dosingData = [
   },
   {
     compound: 'SNAP-8',
-    slug: '/products/snap-8',
+    slug: '/products/snap-8-10mg',
     category: 'Skin / Anti-Aging',
     color: '#a78bfa',
     vialSize: '10mg',
@@ -45,7 +45,7 @@ const dosingData = [
   },
   {
     compound: 'Epithalon',
-    slug: '/products/epithalon-50mg',
+    slug: '/products/epitalon-50mg',
     category: 'Longevity',
     color: '#34d399',
     vialSize: '50mg',
@@ -58,7 +58,7 @@ const dosingData = [
   },
   {
     compound: 'BPC-157',
-    slug: '/products/bpc157-10mg',
+    slug: '/products/bpc-157-10mg',
     category: 'Recovery',
     color: '#22d3ee',
     vialSize: '10mg',
@@ -71,7 +71,7 @@ const dosingData = [
   },
   {
     compound: 'TB-500',
-    slug: '/products/tb500-10mg',
+    slug: '/products/tb-500-10mg',
     category: 'Recovery',
     color: '#22d3ee',
     vialSize: '10mg',
@@ -84,7 +84,7 @@ const dosingData = [
   },
   {
     compound: 'IGF-1 LR3',
-    slug: '/products/igf-1lr3',
+    slug: '/products/igf-1-lr3-1mg',
     category: 'Growth',
     color: '#fb923c',
     vialSize: '1mg',
@@ -97,7 +97,7 @@ const dosingData = [
   },
   {
     compound: 'CJC-1295 / Ipamorelin',
-    slug: '/products/cjc1295-ipamorelin',
+    slug: '/products/ipamorelin-cjc-1295-blend-10mg',
     category: 'Growth',
     color: '#fb923c',
     vialSize: '5mg / 5mg',
@@ -110,7 +110,7 @@ const dosingData = [
   },
   {
     compound: 'Semaglutide',
-    slug: '/products/glp-1s-5mg',
+    slug: '/products/semaglutide-6mg',
     category: 'Metabolic',
     color: '#d4a843',
     vialSize: '5mg',
@@ -123,7 +123,7 @@ const dosingData = [
   },
   {
     compound: 'Tirzepatide',
-    slug: '/products/glp-2t-15m',
+    slug: '/products/tirzepatide-15mg',
     category: 'Metabolic',
     color: '#d4a843',
     vialSize: '15mg',
@@ -136,7 +136,7 @@ const dosingData = [
   },
   {
     compound: 'Retatrutide',
-    slug: '/products/glp-3r-10mg',
+    slug: '/products/retatrutide-10mg',
     category: 'Metabolic',
     color: '#d4a843',
     vialSize: '10mg',

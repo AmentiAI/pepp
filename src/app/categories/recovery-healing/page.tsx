@@ -320,7 +320,7 @@ export default function RecoveryPage() {
 
               {/* Product link */}
               <div style={{ marginTop: '1.5rem' }}>
-                <Link href="/products/bpc157-10mg" style={{
+                <Link href="/products/bpc-157-10mg" style={{
                   display: 'inline-flex', alignItems: 'center', gap: 6,
                   color: '#0891b2', fontWeight: 700, fontSize: '0.85rem',
                   textDecoration: 'none', borderBottom: '1.5px solid rgba(34,211,238,0.35)',
@@ -441,7 +441,7 @@ export default function RecoveryPage() {
 
               {/* Product link */}
               <div style={{ marginTop: '1.5rem' }}>
-                <Link href="/products/tb500-10mg" style={{
+                <Link href="/products/tb-500-10mg" style={{
                   display: 'inline-flex', alignItems: 'center', gap: 6,
                   color: '#059669', fontWeight: 700, fontSize: '0.85rem',
                   textDecoration: 'none', borderBottom: '1.5px solid rgba(52,211,153,0.35)',

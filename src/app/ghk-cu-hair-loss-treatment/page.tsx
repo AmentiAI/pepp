@@ -250,7 +250,7 @@ export default function GhkCuHairPage() {
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
-            <Link href="/products/ghk-cu" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '0.75rem 1.5rem', background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.25)', color: '#d4a843', borderRadius: 10, textDecoration: 'none', fontWeight: 700, fontSize: '0.93rem' }}>
+            <Link href="/products/ghk-cu-50mg" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '0.75rem 1.5rem', background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.25)', color: '#d4a843', borderRadius: 10, textDecoration: 'none', fontWeight: 700, fontSize: '0.93rem' }}>
               Shop GHK-Cu <ArrowRight size={14} />
             </Link>
             <Link href="/products/bpc-157" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '0.75rem 1.5rem', background: 'rgba(34,211,238,0.08)', border: '1px solid rgba(34,211,238,0.2)', color: '#22d3ee', borderRadius: 10, textDecoration: 'none', fontWeight: 700, fontSize: '0.93rem' }}>

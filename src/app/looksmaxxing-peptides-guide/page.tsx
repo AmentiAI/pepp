@@ -236,7 +236,7 @@ export default function LooksmaxxingGuide() {
                 </p>
               </div>
 
-              <Link href="/products/ghk-cu" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
+              <Link href="/products/ghk-cu-50mg" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
                 View GHK-Cu Profile <ArrowRight size={14} />
               </Link>
             </div>
@@ -282,7 +282,7 @@ export default function LooksmaxxingGuide() {
                 </p>
               </div>
 
-              <Link href="/products/snap-8" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
+              <Link href="/products/snap-8-10mg" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
                 View SNAP-8 Profile <ArrowRight size={14} />
               </Link>
             </div>
@@ -346,7 +346,7 @@ export default function LooksmaxxingGuide() {
                 </p>
               </div>
 
-              <Link href="/products/igf-1lr3" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
+              <Link href="/products/igf-1-lr3-1mg" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
                 View IGF-1 LR3 Profile <ArrowRight size={14} />
               </Link>
             </div>
@@ -385,7 +385,7 @@ export default function LooksmaxxingGuide() {
                 </p>
               </div>
 
-              <Link href="/products/cjc1295-ipamorelin" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
+              <Link href="/products/ipamorelin-cjc-1295-blend-10mg" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
                 View CJC-1295/Ipamorelin Profile <ArrowRight size={14} />
               </Link>
             </div>
@@ -472,7 +472,7 @@ export default function LooksmaxxingGuide() {
               </div>
 
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                <Link href="/products/glp-3r-10mg" className="btn-secondary hover-lift" style={{ flex: 1, justifyContent: 'center' }}>
+                <Link href="/products/retatrutide-10mg" className="btn-secondary hover-lift" style={{ flex: 1, justifyContent: 'center' }}>
                   View Retatrutide <ArrowRight size={14} />
                 </Link>
                 <Link href="/semaglutide-vs-tirzepatide-vs-retatrutide" className="btn-secondary hover-lift" style={{ flex: 1, justifyContent: 'center', fontSize: '0.9rem' }}>
@@ -566,7 +566,7 @@ export default function LooksmaxxingGuide() {
                 </p>
               </div>
 
-              <Link href="/products/bpc157-10mg" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
+              <Link href="/products/bpc-157-10mg" className="btn-secondary hover-lift" style={{ width: '100%', justifyContent: 'center' }}>
                 View BPC-157 Profile <ArrowRight size={14} />
               </Link>
             </div>

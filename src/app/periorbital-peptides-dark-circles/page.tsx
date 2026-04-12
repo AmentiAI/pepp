@@ -108,7 +108,7 @@ export default function PeriorbitalPeptidesDarkCirclesPage() {
               The under-eye area has 4 distinct dark circle types with different causes — and different peptide solutions. Diagnose yours with the stretch test, then target the right mechanism.
             </p>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: '2rem' }}>
-              <Link href="/products/ghk-cu" className="btn-primary">
+              <Link href="/products/ghk-cu-50mg" className="btn-primary">
                 View GHK-Cu <ArrowRight size={14} />
               </Link>
               <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary" style={{ color: 'rgba(255,255,255,0.75)', borderColor: 'rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}>

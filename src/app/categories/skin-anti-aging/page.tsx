@@ -202,7 +202,7 @@ export default function AntiAgingPage() {
                 GHK-Cu
               </div>
               <Link
-                href="/products/ghk-cu"
+                href="/products/ghk-cu-50mg"
                 style={{
                   display: 'flex', alignItems: 'center', gap: 6,
                   fontSize: '0.82rem', fontWeight: 700,
@@ -320,7 +320,7 @@ export default function AntiAgingPage() {
               </div>
 
               <Link
-                href="/products/epithalon-50mg"
+                href="/products/epitalon-50mg"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 6,
                   fontSize: '0.82rem', fontWeight: 700,
@@ -426,7 +426,7 @@ export default function AntiAgingPage() {
             </div>
 
             <Link
-              href="/products/snap-8"
+              href="/products/snap-8-10mg"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 6,
                 fontSize: '0.82rem', fontWeight: 700,
@@ -473,36 +473,36 @@ export default function AntiAgingPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
             {[
               {
-                slug: 'ghk-cu',
+                slug: 'ghk-cu-50mg',
                 name: 'GHK-Cu',
                 badge: '#a78bfa',
                 badgeText: '#fff',
                 target: 'Dermal Matrix & Gene Expression',
                 strength: 'Broadest biological activity — 4,000+ genes, collagen, antioxidant enzymes',
                 idealFor: ['Matrix restoration', 'Fibroblast activation', 'Gene-level skin reset'],
-                href: '/products/ghk-cu',
+                href: '/products/ghk-cu-50mg',
                 borderColor: '#a78bfa',
               },
               {
-                slug: 'epithalon-50mg',
+                slug: 'epitalon-50mg',
                 name: 'Epithalon',
                 badge: '#d4a843',
                 badgeText: '#000',
                 target: 'Telomeres & Cellular Longevity',
                 strength: 'Only peptide with published telomere elongation data in human somatic cells',
                 idealFor: ['Telomere maintenance', 'Replicative senescence delay', 'Pineal / circadian support'],
-                href: '/products/epithalon-50mg',
+                href: '/products/epitalon-50mg',
                 borderColor: '#d4a843',
               },
               {
-                slug: 'snap-8',
+                slug: 'snap-8-10mg',
                 name: 'SNAP-8',
                 badge: '#7c3aed',
                 badgeText: '#fff',
                 target: 'Neuromuscular Junction / Expression Wrinkles',
                 strength: 'Modulates SNARE complex to reduce wrinkle-forming muscle contraction amplitude',
                 idealFor: ['Forehead / glabellar wrinkles', 'Non-paralytic mechanism', 'SNARE pathway research'],
-                href: '/products/snap-8',
+                href: '/products/snap-8-10mg',
                 borderColor: '#7c3aed',
               },
             ].map(c => (

@@ -13,7 +13,7 @@ const slides = [
     headlineEnd: 'Ever Researched',
     sub: 'Retatrutide (GLP-3R) delivers 24.2% body weight reduction in clinical trials — surpassing every anti-obesity agent in history. Triple GLP-1/GIP/Glucagon receptor co-agonism for unmatched metabolic transformation.',
     cta: 'Explore Retatrutide',
-    ctaHref: '/products/glp-3r-10mg',
+    ctaHref: '/products/retatrutide-10mg',
     ctaSecondary: 'Shop All Fat Loss',
     ctaSecondaryHref: '/products?category=metabolic-fat-loss',
     stats: [
@@ -33,7 +33,7 @@ const slides = [
     headlineEnd: 'at the Gene Level',
     sub: 'GHK-Cu activates over 4,000 human genes involved in skin regeneration. The copper peptide that naturally declines 60% by age 60 — research shows it reverses dermal aging at the cellular level.',
     cta: 'Explore GHK-Cu',
-    ctaHref: '/products/ghk-cu',
+    ctaHref: '/products/ghk-cu-50mg',
     ctaSecondary: 'All Anti-Aging Peptides',
     ctaSecondaryHref: '/products?category=skin-anti-aging',
     stats: [
@@ -53,7 +53,7 @@ const slides = [
     headlineEnd: 'CJC + Ipamorelin',
     sub: 'The gold-standard GH peptide combination producing pulses 4–8× greater than either compound alone. Selective, clean, and timed perfectly with sleep architecture for overnight recomposition.',
     cta: 'Explore The Stack',
-    ctaHref: '/products/cjc1295-ipamorelin',
+    ctaHref: '/products/ipamorelin-cjc-1295-blend-10mg',
     ctaSecondary: 'Growth Peptides',
     ctaSecondaryHref: '/products?category=growth-body-comp',
     stats: [
@@ -73,7 +73,7 @@ const slides = [
     headlineEnd: 'at the Cellular Root',
     sub: 'Epithalon activates telomerase — the enzyme that maintains telomere length and is inactivated in most somatic cells. 40 years of research. The only peptide with confirmed telomere elongation data.',
     cta: 'Explore Epithalon',
-    ctaHref: '/products/epithalon-50mg',
+    ctaHref: '/products/epitalon-50mg',
     ctaSecondary: 'Longevity Peptides',
     ctaSecondaryHref: '/products?category=longevity',
     stats: [

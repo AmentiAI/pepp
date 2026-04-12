@@ -58,7 +58,7 @@ const levers = [
 const compounds = [
   {
     name: 'CJC-1295 + Ipamorelin',
-    slug: 'cjc1295-ipamorelin',
+    slug: 'ipamorelin-cjc-1295-blend-10mg',
     category: 'GH Secretagogue Stack',
     color: '#34d399',
     bg: 'rgba(52,211,153,0.08)',
@@ -72,7 +72,7 @@ const compounds = [
   },
   {
     name: 'IGF-1 LR3',
-    slug: 'igf-1lr3',
+    slug: 'igf-1-lr3-1mg',
     category: 'Growth Factor',
     color: '#fb923c',
     bg: 'rgba(251,146,60,0.08)',
@@ -86,7 +86,7 @@ const compounds = [
   },
   {
     name: 'GHK-Cu Copper Peptide',
-    slug: 'ghk-cu',
+    slug: 'ghk-cu-50mg',
     category: 'Skin & Anti-Aging',
     color: '#a78bfa',
     bg: 'rgba(167,139,250,0.08)',
@@ -100,7 +100,7 @@ const compounds = [
   },
   {
     name: 'Retatrutide (GLP-3R)',
-    slug: 'glp-3r-10mg',
+    slug: 'retatrutide-10mg',
     category: 'Metabolic & Fat Loss',
     color: '#d4a843',
     bg: 'rgba(212,168,67,0.07)',
@@ -114,7 +114,7 @@ const compounds = [
   },
   {
     name: 'BPC-157',
-    slug: 'bpc157-10mg',
+    slug: 'bpc-157-10mg',
     category: 'Recovery & Healing',
     color: '#22d3ee',
     bg: 'rgba(34,211,238,0.07)',

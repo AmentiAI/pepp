@@ -183,7 +183,7 @@ export default function LongevityPage() {
                 Shop Longevity Peptides <ExternalLink size={14} />
               </a>
               <Link
-                href="/products/epithalon-50mg"
+                href="/products/epitalon-50mg"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 8,
                   padding: '0.75rem 1.5rem',
@@ -744,7 +744,7 @@ export default function LongevityPage() {
               Shop Now <ExternalLink size={15} />
             </a>
             <Link
-              href="/products/epithalon-50mg"
+              href="/products/epitalon-50mg"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
                 padding: '0.9rem 1.75rem',

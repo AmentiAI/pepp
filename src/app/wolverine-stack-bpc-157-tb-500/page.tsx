@@ -607,7 +607,7 @@ export default function WolverineStackPage() {
                 </p>
               </div>
               <div style={{ marginTop: 'auto', display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                <Link href="/products/bpc157-10mg" className="btn-primary">
+                <Link href="/products/bpc-157-10mg" className="btn-primary">
                   Product Details <ArrowRight size={13} />
                 </Link>
               </div>
@@ -633,7 +633,7 @@ export default function WolverineStackPage() {
                 </p>
               </div>
               <div style={{ marginTop: 'auto', display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                <Link href="/products/tb500-10mg" className="btn-primary">
+                <Link href="/products/tb-500-10mg" className="btn-primary">
                   Product Details <ArrowRight size={13} />
                 </Link>
               </div>

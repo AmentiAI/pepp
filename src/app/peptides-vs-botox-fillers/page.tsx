@@ -426,8 +426,8 @@ export default function PeptidesVsBotoxFillersPage() {
         <section style={{ padding: '4.5rem 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
             {[
-              { name: 'GHK-Cu', desc: 'Collagen density, skin thickness, dermal remodeling — the core anti-aging peptide.', href: '/products/ghk-cu', color: '#d4a843' },
-              { name: 'SNAP-8', desc: 'The peptide Botox alternative — reduces neuromuscular expression line formation.', href: '/products/snap-8', color: '#a78bfa' },
+              { name: 'GHK-Cu', desc: 'Collagen density, skin thickness, dermal remodeling — the core anti-aging peptide.', href: '/products/ghk-cu-50mg', color: '#d4a843' },
+              { name: 'SNAP-8', desc: 'The peptide Botox alternative — reduces neuromuscular expression line formation.', href: '/products/snap-8-10mg', color: '#a78bfa' },
               { name: 'BPC-157', desc: 'Systemic healing and recovery support for skin and tissue regeneration.', href: '/products/bpc-157', color: '#34d399' },
             ].map(p => (
               <div key={p.name} style={{ padding: '1.75rem', background: '#f9f9fd', border: '1px solid rgba(0,0,0,0.07)', borderTop: `3px solid ${p.color}`, borderRadius: 18 }}>

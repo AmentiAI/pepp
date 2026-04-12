@@ -16,7 +16,7 @@ const compounds = [
     color: '#60a5fa',
     borderColor: 'rgba(96,165,250,0.35)',
     bg: 'rgba(96,165,250,0.06)',
-    slug: 'cjc1295-ipamorelin',
+    slug: 'ipamorelin-cjc-1295-blend-10mg',
     body: 'CJC-1295 is a synthetic analog of GHRH that binds and activates pituitary somatotroph cells via the cAMP/PKA signaling cascade. Its DAC (Drug Affinity Complex) modification extends half-life to 7–10 days, producing sustained baseline GH elevation without disrupting natural pulsatility. Clinical studies demonstrate 4–8× amplification of mean GH pulse amplitude and dose-dependent increases in IGF-1 serum levels over 28-day protocols.',
   },
   {
@@ -26,7 +26,7 @@ const compounds = [
     color: '#a78bfa',
     borderColor: 'rgba(167,139,250,0.35)',
     bg: 'rgba(167,139,250,0.06)',
-    slug: 'cjc1295-ipamorelin',
+    slug: 'ipamorelin-cjc-1295-blend-10mg',
     body: 'Ipamorelin is a pentapeptide ghrelin mimetic acting exclusively at GHSR-1a to trigger calcium-mediated GH exocytosis from pituitary somatotrophs. Unlike older secretagogues (GHRP-2, GHRP-6), it produces no measurable elevation in cortisol, prolactin, or ACTH — making it the most selective GH pulse driver identified. Paired with CJC-1295 it exploits both GHRH-R and GHSR-1a simultaneously for synergistic, supra-physiological GH output.',
   },
   {
@@ -36,7 +36,7 @@ const compounds = [
     color: '#d4a843',
     borderColor: 'rgba(212,168,67,0.35)',
     bg: 'rgba(212,168,67,0.06)',
-    slug: 'igf-1lr3',
+    slug: 'igf-1-lr3-1mg',
     body: 'IGF-1 LR3 is a long-acting recombinant IGF-1 analog with a 13-amino-acid N-terminal extension that blocks IGF Binding Protein sequestration — elevating bioavailability ~3× vs native IGF-1 and extending half-life to 20–30 hours. It activates PI3K/Akt/mTOR and Ras/MAPK pathways to drive muscle satellite cell proliferation and differentiation, producing genuine myofiber hyperplasia (new fiber creation) rather than hypertrophy alone. Post-workout injection routes the anabolic signal directly to recently stressed tissue.',
   },
 ]
@@ -455,14 +455,14 @@ export default function GrowthPage() {
                 >
                   Shop Now <ExternalLink size={15} />
                 </a>
-                <Link href="/products/igf-1lr3"
+                <Link href="/products/igf-1-lr3-1mg"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '0.9rem 1.75rem', background: 'rgba(255,255,255,0.15)', color: '#ffffff', fontWeight: 700, fontSize: '0.95rem', borderRadius: 10, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.35)', transition: 'background 0.15s' }}
                   onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.22)')}
                   onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.15)')}
                 >
                   IGF-1 LR3 Details <ArrowRight size={14} />
                 </Link>
-                <Link href="/products/cjc1295-ipamorelin"
+                <Link href="/products/ipamorelin-cjc-1295-blend-10mg"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '0.9rem 1.75rem', background: 'rgba(255,255,255,0.15)', color: '#ffffff', fontWeight: 700, fontSize: '0.95rem', borderRadius: 10, textDecoration: 'none', border: '1.5px solid rgba(255,255,255,0.35)', transition: 'background 0.15s' }}
                   onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.22)')}
                   onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.15)')}

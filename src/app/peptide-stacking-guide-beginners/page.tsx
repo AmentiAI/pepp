@@ -123,7 +123,7 @@ const starterStacks = [
     week38: 'Body composition begins shifting — mild fat loss, improved muscle tone, better skin quality.',
     week68: 'Measurable improvements in body composition, energy, and recovery. Some researchers report skin texture improvement by week 8.',
     mechanism: 'The pre-sleep timing is critical. GH naturally peaks during slow-wave sleep. CJC-1295 + Ipamorelin synchronize a larger, sharper pulse with this window — amplifying an existing physiological process rather than introducing a foreign hormonal signal pattern.',
-    link: '/products/cjc1295-ipamorelin',
+    link: '/products/ipamorelin-cjc-1295-blend-10mg',
   },
   {
     label: 'Acute Recovery Protocol',
@@ -137,7 +137,7 @@ const starterStacks = [
     week23: 'Reduced joint discomfort, improved range of motion in injured areas.',
     week46: 'Measurable improvement in tissue integrity for acute injuries. Chronic injuries may require the full 12-week protocol.',
     mechanism: 'BPC-157 (Body Protection Compound) upregulates VEGF (vascular endothelial growth factor), stimulating new blood vessel formation into damaged tissue. This improves nutrient delivery and waste removal from the repair site — the fundamental bottleneck in tissue healing.',
-    link: '/products/bpc157-10mg',
+    link: '/products/bpc-157-10mg',
     note: '6–8 weeks for acute injuries; 12 weeks for chronic conditions.',
   },
   {
@@ -152,7 +152,7 @@ const starterStacks = [
     week24: 'Texture improvement, reduced appearance of fine lines.',
     week68: 'Collagen density increases. Wound healing accelerated. Skin elasticity measurably improved.',
     mechanism: 'GHK-Cu modulates over 4,000 human genes — the majority involved in skin regeneration, collagen I/III/IV synthesis, elastin, and inflammation reduction. It effectively resets the gene expression profile of aging skin toward a younger biological state.',
-    link: '/products/ghk-cu',
+    link: '/products/ghk-cu-50mg',
     note: '12 weeks minimum for full collagen restructuring. Topical application is the most common route for skin-specific goals.',
   },
 ]

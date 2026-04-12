@@ -24,7 +24,7 @@ const mechanisms = [
     label: 'IGF-1 LR3',
     title: 'Muscle Hyperplasia',
     body: 'Not just hypertrophy — actual new muscle fiber creation via satellite cell activation. IGF-1 LR3 binds the IGF-1 receptor at 3× the potency of native IGF-1 and has a 20–30 hour half-life, sustaining anabolic signaling far beyond endogenous pulses. Satellite cells proliferate and fuse with existing fibers, increasing the total number of myonuclei. This is what separates IGF-1 LR3 from other anabolic approaches — the gains in fiber number are permanent structural changes.',
-    slug: 'igf-1lr3',
+    slug: 'igf-1-lr3-1mg',
   },
   {
     icon: <Activity size={24} />,
@@ -32,7 +32,7 @@ const mechanisms = [
     label: 'CJC-1295 / Ipamorelin',
     title: 'GH Axis Optimization',
     body: '4–8× GH pulse amplification drives both lipolysis AND muscle protein synthesis — GH is inherently dual-purpose. CJC-1295 (no DAC) acts on GHRH receptors; Ipamorelin mimics ghrelin at the GHS-R1a receptor. The two signals are additive and synergistic: the GHRH analog extends the pulse duration while the GHRP increases pulse amplitude. Timed pre-sleep, these peptides amplify the largest natural GH pulse of the 24-hour cycle, maximizing fat mobilization from adipose tissue and driving muscle protein synthesis during recovery.',
-    slug: 'cjc1295-ipamorelin',
+    slug: 'ipamorelin-cjc-1295-blend-10mg',
   },
   {
     icon: <TrendingUp size={24} />,
@@ -40,7 +40,7 @@ const mechanisms = [
     label: 'GLP-1 Agonists',
     title: 'Fat Oxidation Enhancement',
     body: 'Metabolic hormone signaling reduces adipose tissue while preserving metabolically active lean mass. GLP-1 receptor agonists slow gastric emptying, reduce appetite signaling centrally, and improve glucose disposal — all of which create the caloric environment for fat loss. When stacked with GH-axis peptides, the dual signal creates a genuine recomposition environment: GLP-1 handles the fat side, growth hormone handles the muscle side. Retatrutide\'s additional glucagon agonism adds direct lipolytic signaling to adipocytes.',
-    slug: 'glp-3r-10mg',
+    slug: 'retatrutide-10mg',
   },
   {
     icon: <Shield size={24} />,
@@ -48,7 +48,7 @@ const mechanisms = [
     label: 'BPC-157',
     title: 'Recovery Optimization',
     body: 'Training frequency × volume = results. BPC-157 accelerates inter-session recovery by upregulating VEGF (vascular endothelial growth factor), increasing tendon fibroblast proliferation, reducing local inflammation, and modulating the nitric oxide system. In practical terms: joint discomfort decreases, training sessions that previously required 48–72 hours of recovery can be repeated in 24–36 hours. Higher total training load over a cycle means more mechanical stimulus for muscle protein synthesis and greater total energy expenditure — both essential for recomposition.',
-    slug: 'bpc157-10mg',
+    slug: 'bpc-157-10mg',
   },
 ]
 
@@ -102,10 +102,10 @@ const timelinePhases = [
 ]
 
 const keyProducts = [
-  { name: 'IGF-1 LR3', slug: 'igf-1lr3', path: '/products/igf-1lr3', color: '#fb923c', role: 'Muscle Hyperplasia' },
-  { name: 'CJC-1295/Ipamorelin', slug: 'cjc1295-ipamorelin', path: '/products/cjc1295-ipamorelin', color: '#d4a843', role: 'GH Axis Optimization' },
-  { name: 'BPC-157', slug: 'bpc157-10mg', path: '/products/bpc157-10mg', color: '#34d399', role: 'Recovery' },
-  { name: 'Retatrutide', slug: 'glp-3r-10mg', path: '/products/glp-3r-10mg', color: '#22d3ee', role: 'Fat Oxidation' },
+  { name: 'IGF-1 LR3', slug: 'igf-1-lr3-1mg', path: '/products/igf-1-lr3-1mg', color: '#fb923c', role: 'Muscle Hyperplasia' },
+  { name: 'CJC-1295/Ipamorelin', slug: 'ipamorelin-cjc-1295-blend-10mg', path: '/products/ipamorelin-cjc-1295-blend-10mg', color: '#d4a843', role: 'GH Axis Optimization' },
+  { name: 'BPC-157', slug: 'bpc-157-10mg', path: '/products/bpc-157-10mg', color: '#34d399', role: 'Recovery' },
+  { name: 'Retatrutide', slug: 'retatrutide-10mg', path: '/products/retatrutide-10mg', color: '#22d3ee', role: 'Fat Oxidation' },
 ]
 
 export default function BodyRecompPage() {
@@ -407,7 +407,7 @@ export default function BodyRecompPage() {
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <Link
-                  href="/products/cjc1295-ipamorelin"
+                  href="/products/ipamorelin-cjc-1295-blend-10mg"
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: 8,
                     color: '#d4a843', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem',
@@ -416,7 +416,7 @@ export default function BodyRecompPage() {
                   <ChevronRight size={14} /> CJC-1295 / Ipamorelin — GH Axis Optimization
                 </Link>
                 <Link
-                  href="/products/glp-3r-10mg"
+                  href="/products/retatrutide-10mg"
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: 8,
                     color: '#22d3ee', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem',

@@ -55,14 +55,14 @@ const phases = [
     compounds: [
       {
         name: 'GHK-Cu',
-        slug: 'ghk-cu',
+        slug: 'ghk-cu-50mg',
         dose: 'Topical: apply twice daily to face/neck. Injectable: 500mcg–1mg subQ, 3–5×/week',
         timing: 'Morning + evening topical, or morning injectable',
         mechanism: 'Initiates collagen I/III gene upregulation, SOD antioxidant activation, TIMP-1/2 elevation to reduce collagen breakdown',
       },
       {
         name: 'SNAP-8',
-        slug: 'snap-8',
+        slug: 'snap-8-10mg',
         dose: 'Topical: apply twice daily to expression line target areas (forehead, crow\'s feet, glabellar)',
         timing: 'Morning + evening — apply 10–15 min after GHK-Cu absorption',
         mechanism: 'Competitive SNAP-25 inhibition reduces acetylcholine vesicle fusion at neuromuscular junction — reduces muscular micro-tension that creates expression lines',
@@ -81,21 +81,21 @@ const phases = [
     compounds: [
       {
         name: 'CJC-1295 (no DAC) + Ipamorelin',
-        slug: 'cjc1295-ipamorelin',
+        slug: 'ipamorelin-cjc-1295-blend-10mg',
         dose: 'CJC-1295: 100mcg + Ipamorelin: 100–200mcg, combined in same injection',
         timing: '30–60 minutes before sleep, 5 days on / 2 days off (no weekends)',
         mechanism: 'CJC-1295 (GHRH analog) extends GH pulse duration. Ipamorelin (GHRP, GHS-R1a agonist) amplifies GH pulse amplitude. Combined: 4–8× native GH pulse during deep sleep. Downstream IGF-1 elevation drives lean tissue, bone modeling, lipolysis.',
       },
       {
         name: 'GHK-Cu (continue)',
-        slug: 'ghk-cu',
+        slug: 'ghk-cu-50mg',
         dose: 'Continue same protocol from Phase 1',
         timing: 'Same as Phase 1 — morning + evening topical or injectable',
         mechanism: 'Ongoing collagen remodeling, skin thickening, and antioxidant defense. GH axis activation from Phase 2 compounds synergistically amplifies skin repair during sleep.',
       },
       {
         name: 'SNAP-8 (continue)',
-        slug: 'snap-8',
+        slug: 'snap-8-10mg',
         dose: 'Continue same protocol from Phase 1',
         timing: 'Same as Phase 1 — twice daily to expression areas',
         mechanism: 'Continued SNARE inhibition. By weeks 6–8, established inhibition cycle produces visible softening of dynamic expression lines.',
@@ -114,14 +114,14 @@ const phases = [
     compounds: [
       {
         name: 'IGF-1 LR3 (intermediate/advanced only)',
-        slug: 'igf-1lr3',
+        slug: 'igf-1-lr3-1mg',
         dose: '20–40mcg subQ, post-workout, 5 days on / 2 off',
         timing: 'Post-workout (within 30 min) for optimal satellite cell signaling in worked muscle groups',
         mechanism: 'Long-Arg3 modification extends IGF-1 half-life to 20–30 hours. Activates IGF-1R on skeletal muscle satellite cells — drives myofiber hyperplasia (new fiber formation) beyond what GH secretagogues achieve alone. 3× potency of native IGF-1.',
       },
       {
         name: 'Retatrutide (GLP-3R, if fat loss is goal)',
-        slug: 'glp-3r-10mg',
+        slug: 'retatrutide-10mg',
         dose: 'Begin at 0.5mg/week SQ, titrate per clinical protocol',
         timing: 'Once weekly subcutaneous injection — consistent day/time each week',
         mechanism: 'Triple GIP/GLP-1/glucagon agonism. GLP-1: appetite suppression, gastric emptying delay. GIP: fat metabolism, insulin sensitivity. Glucagon: hepatic fat oxidation, thermogenesis. Phase 2 trial: 24.2% avg body weight reduction at 48 weeks.',

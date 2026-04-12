@@ -14,12 +14,12 @@ const categories = [
 ]
 
 const topCompounds = [
-  { label: 'Retatrutide', slug: 'glp-3r-10mg', tag: 'Most Potent' },
-  { label: 'GHK-Cu', slug: 'ghk-cu', tag: 'Top Seller' },
-  { label: 'BPC-157', slug: 'bpc157-10mg', tag: 'Most Studied' },
-  { label: 'Epithalon', slug: 'epithalon-50mg', tag: 'Longevity' },
-  { label: 'IGF-1 LR3', slug: 'igf-1lr3', tag: 'Growth' },
-  { label: 'Tirzepatide', slug: 'glp-2t-15m', tag: 'Fat Loss' },
+  { label: 'Retatrutide', slug: 'retatrutide-10mg', tag: 'Most Potent' },
+  { label: 'GHK-Cu', slug: 'ghk-cu-50mg', tag: 'Top Seller' },
+  { label: 'BPC-157', slug: 'bpc-157-10mg', tag: 'Most Studied' },
+  { label: 'Epithalon', slug: 'epitalon-50mg', tag: 'Longevity' },
+  { label: 'IGF-1 LR3', slug: 'igf-1-lr3-1mg', tag: 'Growth' },
+  { label: 'Tirzepatide', slug: 'tirzepatide-15mg', tag: 'Fat Loss' },
 ]
 
 const topNavLinks = [
