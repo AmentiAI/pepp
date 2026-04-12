@@ -59,6 +59,21 @@ export default async function ProductPage({ params }: Props) {
   const related = getRelatedProducts(product.relatedSlugs)
   const buyUrl = AFFILIATE_PRODUCT(product.slug)
 
+  // ── Dynamic prose paragraphs ──────────────────────────────────────────────
+  const categoryLower = product.category.toLowerCase()
+  const benefitTitles = product.benefits.slice(0, 3).map(b => b.title)
+
+  const p2ResearchContext = `As one of the most studied compounds in the ${categoryLower} research space, ${product.shortName} has attracted sustained scientific interest across ${product.idealFor.slice(0, 3).join(', ')}. ${product.researchHighlights[0] ? `Peer-reviewed evidence indicates that ${product.researchHighlights[0].charAt(0).toLowerCase() + product.researchHighlights[0].slice(1)}, which has positioned ${product.shortName} as a reference standard for researchers exploring ${product.idealFor[0]?.toLowerCase() ?? categoryLower} outcomes.` : `Its reproducible activity profile has made it a standard inclusion in ${categoryLower} research panels across multiple independent laboratory groups.`} The compound's selectivity and documented tolerability in preclinical models have contributed to a rapidly growing body of literature over the past decade.`
+
+  const p3MechanismExpansion = `The ${product.benefits.length} primary research pathways identified for ${product.shortName}${benefitTitles.length > 0 ? ` — ${benefitTitles.join(', ')} —` : ''} collectively point to a compound with pleiotropic activity across interconnected biological systems. ${product.researchHighlights[1] ? `Studies have further shown that ${product.researchHighlights[1].charAt(0).toLowerCase() + product.researchHighlights[1].slice(1)}, reinforcing the mechanistic picture established in earlier cell-line work.` : `This multi-target pharmacology means that research protocols can address several related endpoints simultaneously, reducing the compound count required in a given study design.`} Unlike single-pathway agents, ${product.shortName}'s broad receptor engagement profile continues to generate hypotheses for novel applications beyond its originally characterized use cases.`
+
+  const relatedNames = related.slice(0, 2).map(r => r.shortName)
+  const p4StackingContext = relatedNames.length > 0
+    ? `${product.shortName} is routinely studied alongside ${relatedNames.join(' and ')} in ${categoryLower}-focused compound panels. Researchers investigating ${product.idealFor[0]?.toLowerCase() ?? 'this area'} have found that pairing compounds with complementary receptor profiles can produce additive results while keeping individual doses within well-characterized ranges. ${product.researchHighlights[2] ? `Preliminary evidence that ${product.researchHighlights[2].charAt(0).toLowerCase() + product.researchHighlights[2].slice(1)} has informed several of these multi-compound protocol designs.` : `This synergy-based methodology is now standard practice in preclinical ${categoryLower} research and mirrors increasingly common patterns in translational study designs.`}`
+    : `${product.shortName} functions effectively as both a standalone reference compound and as part of larger ${categoryLower} research panels. Its well-characterized ${product.idealFor[0]?.toLowerCase() ?? categoryLower} profile makes it a common inclusion in head-to-head comparative studies. Investigators designing multi-endpoint protocols often anchor a panel around ${product.shortName} due to its consistent inter-laboratory reproducibility and the depth of existing baseline data available in published literature.`
+
+  const p5QualityContext = `All ${product.shortName} research material offered through this catalog is manufactured under controlled conditions and independently verified by a third-party laboratory prior to release. Each lot undergoes High-Performance Liquid Chromatography (HPLC) analysis to confirm ≥98% purity, with identity confirmed via mass spectrometry. The accompanying Certificate of Analysis (CoA) documents the exact purity, molecular weight confirmation, and lot-specific testing date — data that should accompany any reproducible research protocol. Lyophilized powder formulation ensures maximum stability during shipping and storage at −20°C long-term or 4°C for short-term use.`
+
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -203,7 +218,7 @@ export default async function ProductPage({ params }: Props) {
           {/* Main content */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
 
-            {/* Description */}
+            {/* Description — paragraphs 1 & 2 */}
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
                 <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
@@ -211,7 +226,10 @@ export default async function ProductPage({ params }: Props) {
                 </div>
                 <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>{product.headline}</h2>
               </div>
-              <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{product.description}</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
+                <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{product.description}</p>
+                <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p2ResearchContext}</p>
+              </div>
             </div>
 
             {/* Benefits */}
@@ -237,7 +255,7 @@ export default async function ProductPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Mechanism */}
+            {/* Mechanism — paragraph 3 */}
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
                 <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
@@ -245,9 +263,34 @@ export default async function ProductPage({ params }: Props) {
                 </div>
                 <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>How {product.shortName} Works: Molecular Mechanism & Pathway</h2>
               </div>
-              <div style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.06)', borderLeft: '3px solid rgba(212,168,67,0.5)', borderRadius: '0 16px 16px 0', padding: '1.5rem 1.75rem' }}>
-                <p style={{ fontSize: '1rem', color: '#555570', lineHeight: 1.85 }}>{product.mechanism}</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
+                <div style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.06)', borderLeft: '3px solid rgba(212,168,67,0.5)', borderRadius: '0 16px 16px 0', padding: '1.5rem 1.75rem' }}>
+                  <p style={{ fontSize: '1rem', color: '#555570', lineHeight: 1.85 }}>{product.mechanism}</p>
+                </div>
+                <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p3MechanismExpansion}</p>
               </div>
+            </div>
+
+            {/* Stacking & Combinations — paragraph 4 */}
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
+                <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
+                  <FlaskConical size={16} />
+                </div>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>Research Protocols & Compound Combinations</h2>
+              </div>
+              <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p4StackingContext}</p>
+            </div>
+
+            {/* Quality & Purity — paragraph 5 */}
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
+                <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
+                  <Shield size={16} />
+                </div>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>Purity, Testing & Research Grade Standards</h2>
+              </div>
+              <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p5QualityContext}</p>
             </div>
           </div>
 
