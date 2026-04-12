@@ -2,8 +2,11 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ChevronDown, ExternalLink, TrendingUp, Sparkles, Activity, Shield, Zap, ArrowRight } from 'lucide-react'
+import { Menu, X, ChevronDown, ExternalLink, TrendingUp, Sparkles, Activity, Shield, Zap, ArrowRight, Search } from 'lucide-react'
 import { AFFILIATE_BASE } from '@/lib/products'
+import dynamic from 'next/dynamic'
+
+const ProductSearchModal = dynamic(() => import('@/components/ProductSearchModal'), { ssr: false })
 
 const categories = [
   { label: 'Fat Loss', href: '/categories/metabolic-fat-loss', desc: 'GLP-1, dual & triple agonists', stat: '24.2% weight loss', color: '#d4a843', icon: <TrendingUp size={17} /> },
@@ -44,6 +47,7 @@ export default function Navbar() {
   const [dropOpen, setDropOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 900)
@@ -55,6 +59,18 @@ export default function Navbar() {
       window.removeEventListener('resize', checkMobile)
       window.removeEventListener('scroll', onScroll)
     }
+  }, [])
+
+  // ⌘K / Ctrl+K global shortcut
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault()
+        setSearchOpen(s => !s)
+      }
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
   }, [])
 
   const doubled = [...tickerItems, ...tickerItems, ...tickerItems, ...tickerItems]
@@ -180,7 +196,30 @@ export default function Navbar() {
           )}
 
           {/* Right side */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            {/* Search button — always visible */}
+            <button
+              onClick={() => setSearchOpen(true)}
+              aria-label="Search products"
+              style={{
+                display: 'flex', alignItems: 'center', gap: 8,
+                padding: isMobile ? '8px' : '7px 14px',
+                background: '#f3f4f8', border: '1px solid rgba(0,0,0,0.09)',
+                borderRadius: 10, cursor: 'pointer', color: '#666680',
+                fontSize: '0.82rem', fontWeight: 500, transition: 'border-color 0.15s, background 0.15s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.35)'; e.currentTarget.style.background = '#fffff8'; }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.09)'; e.currentTarget.style.background = '#f3f4f8'; }}
+            >
+              <Search size={15} />
+              {!isMobile && (
+                <>
+                  <span>Search</span>
+                  <kbd style={{ padding: '1px 5px', background: 'rgba(0,0,0,0.07)', borderRadius: 4, fontSize: '0.65rem', fontWeight: 700, color: '#9090a8', fontFamily: 'inherit' }}>⌘K</kbd>
+                </>
+              )}
+            </button>
+
             {!isMobile && (
               <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer"
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '8px 18px', background: 'linear-gradient(135deg, #d4a843 0%, #a07c2e 100%)', color: '#000', fontWeight: 700, fontSize: '1.05rem', borderRadius: 8, textDecoration: 'none', transition: 'opacity 0.15s, transform 0.15s, box-shadow 0.15s', boxShadow: '0 4px 16px rgba(212,168,67,0.25)' }}
@@ -197,6 +236,9 @@ export default function Navbar() {
             )}
           </div>
         </div>
+
+        {/* Search modal */}
+        {searchOpen && <ProductSearchModal onClose={() => setSearchOpen(false)} />}
 
         {/* Mobile menu */}
         {isMobile && menuOpen && (
