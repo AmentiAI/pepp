@@ -33,8 +33,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'apollopeptidesciences.com',
-        pathname: '/wp-content/uploads/**',
+        hostname: 'phiogen.is',
+        pathname: '/images/**',
       },
       {
         protocol: 'https',
