@@ -292,6 +292,148 @@ body {
   .rg-trust > *:last-child { border-bottom: none; }
 }
 
+/* ══════════════════════════════════════════════════════════
+   MOBILE OPTIMIZATION — comprehensive overrides
+   ══════════════════════════════════════════════════════════ */
+
+/* ── 768px — tablets and large phones ─────────────────────── */
+@media (max-width: 768px) {
+
+  /* Prevent ALL horizontal overflow */
+  html, body { overflow-x: hidden; }
+  * { max-width: 100%; }
+  img, video, iframe { max-width: 100%; height: auto; }
+
+  /* Tighten section vertical padding (overrides inline styles) */
+  section {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Reduce oversized section heading margins */
+  .section-mb-5 { margin-bottom: 2.5rem !important; }
+  .section-mb-4 { margin-bottom: 2rem !important; }
+
+  /* Large inline stat/display numbers — constrain with clamp */
+  .stat-display { font-size: clamp(1.8rem, 7vw, 3.5rem) !important; }
+
+  /* Button rows — wrap nicely */
+  .btn-row { flex-wrap: wrap !important; gap: 0.875rem !important; }
+  .btn-row .btn-primary,
+  .btn-row .btn-secondary { flex: 1 1 auto; min-width: 160px; justify-content: center; }
+
+  /* CTA box */
+  .cta-box { padding: 2.5rem 1.5rem !important; border-radius: 20px !important; }
+
+  /* Product page hero */
+  .product-hero-wrap { padding: 2rem 1.25rem !important; }
+
+  /* Remove sticky sidebar on product detail page */
+  .product-sidebar > * { position: static !important; top: auto !important; }
+
+  /* Products listing — hide desktop sidebar */
+  .products-layout-sidebar { display: none !important; }
+  .products-layout-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  /* Horizontal category filter pills (shown on mobile only) */
+  .category-pills-mobile {
+    display: flex !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .category-pills-mobile::-webkit-scrollbar { display: none; }
+  .category-pills-mobile button {
+    flex-shrink: 0;
+    padding: 7px 14px !important;
+    font-size: 0.82rem !important;
+    border-radius: 100px !important;
+    white-space: nowrap;
+  }
+
+  /* Stats trust bar: stack items */
+  .rg-trust { grid-template-columns: repeat(2, 1fr) !important; }
+  .rg-trust > * { border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.06) !important; }
+
+  /* Science / quality cards: stack icon+text on mobile */
+  .science-card-inner { flex-direction: column !important; gap: 1rem !important; }
+  .science-card-icon { width: 44px !important; height: 44px !important; }
+
+  /* Testimonial cards */
+  .testimonial-card { padding: 1.5rem !important; }
+
+  /* GLP tier rows */
+  .tier-row { padding: 1rem 1.25rem !important; gap: 0.875rem !important; }
+  .tier-loss { font-size: 1.4rem !important; }
+
+  /* Breadcrumb padding */
+  .breadcrumb-nav { padding: 0.75rem 1.25rem !important; }
+
+  /* Page section inner max-width wrappers */
+  .page-inner { padding: 0 !important; }
+
+  /* Hero product image */
+  .product-hero-image { padding: 1.5rem !important; }
+}
+
+/* ── 480px — small phones ──────────────────────────────────── */
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+
+  /* All page wrappers: tighter horizontal padding */
+  section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  /* Section headings */
+  .heading-xl { font-size: clamp(1.9rem, 9vw, 2.6rem) !important; }
+  .heading-lg { font-size: clamp(1.5rem, 7vw, 1.9rem) !important; }
+
+  /* Products layout: tighter padding */
+  .products-layout-wrap { padding: 1.5rem 1rem !important; }
+  .products-layout-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 0.75rem !important; }
+
+  /* Product detail page */
+  .product-page-container { padding: 1.5rem 1rem !important; }
+  /* Hero margin-bottom tightened on smallest screens */
+  .product-hero-mb { margin-bottom: 2.5rem !important; }
+
+  /* CTA buttons: full-width on smallest screens */
+  .cta-box .btn-primary,
+  .cta-box .btn-secondary { width: 100%; justify-content: center; }
+
+  /* Stat display numbers: smaller floor */
+  .stat-display { font-size: clamp(1.6rem, 8vw, 2.5rem) !important; }
+
+  /* Category cards in rg-5col: use 2-per-row */
+  .rg-5col { grid-template-columns: repeat(2, 1fr) !important; gap: 0.75rem !important; }
+  .rg-3col { grid-template-columns: repeat(2, 1fr) !important; gap: 0.75rem !important; }
+
+  /* Card border radius: less dramatic on small screen */
+  .card { border-radius: 12px !important; }
+
+  /* Tables: horizontal scroll */
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* FAQ / 2-col grids: collapse to single column */
+  .faq-grid { grid-template-columns: 1fr !important; gap: 2rem 0 !important; }
+
+  /* Stacks buy panel: stack on mobile */
+  .stack-buy-panel { grid-template-columns: 1fr !important; }
+}
+
 /* ── Table ────────────────────────────────────────────────── */
 .data-table {
   width: 100%;

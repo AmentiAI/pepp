@@ -125,10 +125,10 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </nav>
 
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '3.5rem 2rem' }}>
+      <div className="product-page-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '3.5rem 2rem' }}>
 
         {/* Hero grid */}
-        <div className="rg-2col" style={{ gap: '4rem', marginBottom: '5rem', alignItems: 'start' }}>
+        <div className="rg-2col product-hero-mb" style={{ gap: '4rem', marginBottom: '5rem', alignItems: 'start' }}>
 
           {/* Image panel */}
           <div>

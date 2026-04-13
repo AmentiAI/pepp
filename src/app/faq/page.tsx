@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ArrowRight, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react'
 import { AFFILIATE_BASE } from '@/lib/products'
 import RelatedLinks from '@/components/RelatedLinks'
+import FeaturedProductsStrip from '@/components/FeaturedProductsStrip'
 
 const faqs = [
   {
@@ -177,7 +178,7 @@ export default function FAQPage() {
         </section>
 
         {/* FAQ sections */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem 5rem', padding: '3.5rem 0' }}>
+        <div className="faq-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem 5rem', padding: '3.5rem 0' }}>
           {faqs.map(cat => (
             <section key={cat.category} id={cat.category.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')} style={{ scrollMarginTop: 80 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '1.5rem' }}>
@@ -192,6 +193,9 @@ export default function FAQPage() {
             </section>
           ))}
         </div>
+
+        {/* Featured products strip */}
+        <FeaturedProductsStrip heading="Browse Our Peptide Catalog" subheading="100+ compounds — every batch third-party HPLC tested with a Certificate of Analysis." />
 
         {/* Internal links */}
         <section style={{ padding: '0 0 1rem' }}>

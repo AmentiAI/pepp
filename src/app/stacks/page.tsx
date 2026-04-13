@@ -556,7 +556,7 @@ export default function StacksPage() {
                 </div>
 
                 {/* Card body: two columns */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0 }}>
+                <div className="stack-buy-panel" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0 }}>
                   {/* Left: tagline + benefits */}
                   <div style={{
                     padding: '1.5rem',

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ArrowRight, ExternalLink, CheckCircle, Sparkles, Zap, Activity, TrendingUp } from 'lucide-react'
 import { AFFILIATE_BASE } from '@/lib/products'
 import RelatedLinks from '@/components/RelatedLinks'
+import FeaturedProductsStrip from '@/components/FeaturedProductsStrip'
 
 const pillars = [
   {
@@ -650,6 +651,9 @@ export default function LooksMaxingPage() {
             ))}
           </div>
         </section>
+
+        {/* Featured products strip */}
+        <FeaturedProductsStrip heading="Top Looksmaxxing Peptides" subheading="The exact compounds used in the protocols above — independently HPLC verified." />
 
         {/* Internal links */}
         <section style={{ padding: '0 0 1rem' }}>

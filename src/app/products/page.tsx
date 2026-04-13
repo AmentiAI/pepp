@@ -54,11 +54,11 @@ function ProductsContent() {
         </div>
       </div>
 
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '3rem 2rem' }}>
+      <div className="product-page-container" style={{ maxWidth: 1280, margin: '0 auto', padding: '3rem 2rem' }}>
 
         {/* Search + Sort bar */}
         <div style={{ display: 'flex', gap: '1rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
-          <div style={{ position: 'relative', flex: 1, minWidth: 280 }}>
+          <div style={{ position: 'relative', flex: 1, minWidth: 0 }}>
             <Search size={15} style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', color: '#9090a8', pointerEvents: 'none' }} />
             <input
               type="text"
@@ -86,9 +86,25 @@ function ProductsContent() {
           </select>
         </div>
 
-        <div style={{ display: 'flex', gap: '2.5rem', alignItems: 'flex-start' }}>
+        {/* Mobile category pills — hidden on desktop via CSS */}
+        <div className="category-pills-mobile" style={{ display: 'none' }}>
+          {allCategories.map(cat => {
+            const isActive = activeCategory === cat.slug
+            return (
+              <button
+                key={cat.slug}
+                onClick={() => setActiveCategory(cat.slug)}
+                style={{ flexShrink: 0, padding: '0.45rem 1rem', borderRadius: 20, fontSize: '0.82rem', fontWeight: isActive ? 700 : 500, color: isActive ? '#ffffff' : '#555570', background: isActive ? '#d4a843' : '#f0f0f8', border: 'none', cursor: 'pointer', whiteSpace: 'nowrap' }}
+              >
+                {cat.name}
+              </button>
+            )
+          })}
+        </div>
+
+        <div className="products-layout-wrap" style={{ display: 'flex', gap: '2.5rem', alignItems: 'flex-start' }}>
           {/* Sidebar */}
-          <aside style={{ width: 200, flexShrink: 0 }}>
+          <aside className="products-layout-sidebar" style={{ width: 200, flexShrink: 0 }}>
             <div style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 16, padding: '1.25rem', position: 'sticky', top: 80 }}>
               <div style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#9090a8', marginBottom: '0.75rem', paddingLeft: 4 }}>Categories</div>
               <nav style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
@@ -98,7 +114,7 @@ function ProductsContent() {
                     <button
                       key={cat.slug}
                       onClick={() => setActiveCategory(cat.slug)}
-                      style={{ width: '100%', display: 'flex', alignItems: 'center', gap: 8, padding: '8px 10px', borderRadius: 9, fontSize: '1.05rem', fontWeight: isActive ? 700 : 500, color: isActive ? '#d4a843' : '#6666888', background: isActive ? 'rgba(212,168,67,0.08)' : 'transparent', border: isActive ? '1px solid rgba(212,168,67,0.18)' : '1px solid transparent', cursor: 'pointer', textAlign: 'left', transition: 'all 0.15s' }}
+                      style={{ width: '100%', display: 'flex', alignItems: 'center', gap: 8, padding: '8px 10px', borderRadius: 9, fontSize: '0.875rem', fontWeight: isActive ? 700 : 500, color: isActive ? '#d4a843' : '#333348', background: isActive ? 'rgba(212,168,67,0.08)' : 'transparent', border: isActive ? '1px solid rgba(212,168,67,0.18)' : '1px solid transparent', cursor: 'pointer', textAlign: 'left', transition: 'all 0.15s' }}
                       onMouseEnter={e => { if (!isActive) e.currentTarget.style.color = '#0a0a14' }}
                       onMouseLeave={e => { if (!isActive) e.currentTarget.style.color = '#666688' }}
                     >
@@ -129,7 +145,7 @@ function ProductsContent() {
                 </button>
               </div>
             ) : (
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }}>
+              <div className="products-layout-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.25rem' }}>
                 {filtered.map(p => <ProductCard key={p.slug} product={p} />)}
               </div>
             )}

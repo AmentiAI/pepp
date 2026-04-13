@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, ExternalLink, CheckCircle, BookOpen, Beaker, Shield, Zap, Clock, AlertCircle, FlaskConical, Dna, TrendingUp, Activity, Sparkles } from 'lucide-react'
 import { AFFILIATE_BASE } from '@/lib/products'
 import RelatedLinks from '@/components/RelatedLinks'
+import FeaturedProductsStrip from '@/components/FeaturedProductsStrip'
 import ResearchCard from '@/components/ResearchCard'
 import CompoundTable from '@/components/CompoundTable'
 import ProtocolSteps from '@/components/ProtocolSteps'
@@ -327,7 +328,7 @@ export default function GuidePage() {
 
         {/* ── 9. BEGINNER ROADMAP ── */}
         <section style={{ padding: '3rem 0', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+          <div className="rg-2col" style={{ gap: '4rem', alignItems: 'start' }}>
             <div>
               <div className="section-label">Start Here</div>
               <h2 style={{ fontSize: '1.4rem', fontWeight: 900, color: '#0a0a14', marginBottom: '0.75rem' }}>
@@ -556,6 +557,9 @@ export default function GuidePage() {
             ))}
           </div>
         </section>
+
+        {/* Featured products strip */}
+        <FeaturedProductsStrip heading="Top Research Peptides" subheading="The compounds referenced throughout this guide — all third-party HPLC verified." />
 
         {/* Internal links */}
         <section style={{ padding: '0 0 1rem' }}>
