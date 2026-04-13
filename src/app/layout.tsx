@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: '%s | StacksPeptide',
   },
   description:
-    'StacksPeptide is the #1 peptide stacking guide. GHK-Cu, BPC-157, Retatrutide, Epithalon & 24+ compounds — third-party tested, CoA included.',
+    'StacksPeptide is the #1 peptide stacking guide. GHK-Cu, BPC-157, Retatrutide, Epithalon & 100+ compounds — third-party tested, CoA included.',
   keywords: [
     'stackspeptide',
     'stacks peptide',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'StacksPeptide',
     title: 'StacksPeptide — Peptide Stacking Guide & Protocols',
     description:
-      'StacksPeptide is the #1 peptide stacking guide. GHK-Cu, BPC-157, Retatrutide, Epithalon & 24+ compounds — third-party tested, CoA included.',
+      'StacksPeptide is the #1 peptide stacking guide. GHK-Cu, BPC-157, Retatrutide, Epithalon & 100+ compounds — third-party tested, CoA included.',
     images: [
       {
         url: '/og-image.jpg',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'StacksPeptide — Premium Peptides for Peak Human Optimization',
     description:
-      'Shop 24+ premium peptides. GHK-Cu, BPC-157, Retatrutide, Epithalon & more. Third-party HPLC tested.',
+      'Shop 100+ premium peptides. GHK-Cu, BPC-157, Retatrutide, Epithalon & more. Third-party HPLC tested.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -75,7 +75,7 @@ const orgSchema = {
   name: 'StacksPeptide',
   url: siteUrl,
   description:
-    'Premium peptide supplier guide. Covering GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3, and 24+ more compounds.',
+    'Premium peptide supplier guide. Covering GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3, and 100+ more compounds.',
   sameAs: [],
 }
 

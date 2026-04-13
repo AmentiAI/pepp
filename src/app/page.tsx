@@ -5,7 +5,7 @@ import ResearchFeed from '@/components/ResearchFeed'
 export const metadata: Metadata = {
   title: 'StacksPeptide — Premium Peptide Stacking Protocols & Science Guide',
   description:
-    'The #1 peptide stacking resource. 24 third-party tested compounds — GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3 & more. Certificate of Analysis every order. Shop our supplier.',
+    'The #1 peptide stacking resource. 100+ third-party tested compounds — GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3 & more. Certificate of Analysis every order. Shop our supplier.',
   alternates: {
     canonical: 'https://www.stackspeptide.com',
   },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'StacksPeptide — Premium Peptide Stacking Protocols & Science Guide',
     description:
-      'The #1 peptide stacking resource. 24 third-party tested compounds with full CoA documentation.',
+      'The #1 peptide stacking resource. 100+ third-party tested compounds with full CoA documentation.',
   },
 }
 

@@ -112,12 +112,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.82,
     },
     {
-      url: `${baseUrl}/jawline-peptides-looksmaxxing`,
-      lastModified: D_ARTICLE,
-      changeFrequency: 'monthly',
-      priority: 0.87,
-    },
-    {
       url: `${baseUrl}/snap-8-vs-botox-looksmaxxing`,
       lastModified: D_ARTICLE,
       changeFrequency: 'monthly',
@@ -128,6 +122,75 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D_ARTICLE,
       changeFrequency: 'monthly',
       priority: 0.88,
+    },
+    // Looksmaxxing cluster
+    {
+      url: `${baseUrl}/looksmaxxing-by-age`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
+      url: `${baseUrl}/looksmaxxing-starter-stack-budget`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: `${baseUrl}/peptide-looksmaxxing-daily-routine`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: `${baseUrl}/peptides-for-women-looksmaxxing`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/jawline-peptides-looksmaxxing`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    // Skin & anti-aging articles
+    {
+      url: `${baseUrl}/ghk-cu-hair-loss-treatment`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.86,
+    },
+    {
+      url: `${baseUrl}/periorbital-peptides-dark-circles`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/skin-texture-pore-peptides`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
+      url: `${baseUrl}/peptides-vs-botox-fillers`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    // Health & wellness articles
+    {
+      url: `${baseUrl}/sleep-growth-hormone-peptides`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.84,
+    },
+    {
+      url: `${baseUrl}/peptide-cycle-calendar`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.83,
     },
   ]
 

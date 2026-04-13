@@ -44,7 +44,7 @@ function ProductsContent() {
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
           <div className="section-label">Full Catalog</div>
           <h1 className="heading-xl" style={{ color: '#0a0a14', marginBottom: '0.75rem' }}>
-            {activeCat?.slug === 'all' ? '24+ Premium Peptides' : activeCat?.name}
+            {activeCat?.slug === 'all' ? '100+ Premium Peptides' : activeCat?.name}
           </h1>
           <p style={{ color: '#666688', fontSize: '0.875rem', maxWidth: 680 }}>
             {activeCat?.slug === 'all'

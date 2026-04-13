@@ -541,7 +541,7 @@ export default function GuidePage() {
             {[
               { href: '/stacks', label: 'Stacking Protocols', desc: 'Pre-built protocols by goal — beginner to advanced', color: '#d4a843', icon: <Zap size={18} /> },
               { href: '/faq', label: 'FAQ', desc: 'Common questions on purity, shipping, storage, and sourcing', color: '#a78bfa', icon: <BookOpen size={18} /> },
-              { href: '/products', label: 'Full Catalog', desc: 'Browse all 24+ compounds with detailed profiles', color: '#22d3ee', icon: <Beaker size={18} /> },
+              { href: '/products', label: 'Full Catalog', desc: 'Browse all 100+ compounds with detailed profiles', color: '#22d3ee', icon: <Beaker size={18} /> },
             ].map(item => (
               <Link key={item.href} href={item.href} style={{ display: 'flex', gap: '1rem', padding: '1.5rem', background: '#f9f9fd', border: '1px solid rgba(0,0,0,0.07)', borderRadius: 18, textDecoration: 'none' }}>
                 <div style={{ width: 40, height: 40, borderRadius: 10, background: `${item.color}12`, border: `1px solid ${item.color}25`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: item.color, flexShrink: 0 }}>

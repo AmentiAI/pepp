@@ -39,7 +39,7 @@ const tickerItems = [
   '⬡ CERTIFICATE OF ANALYSIS INCLUDED',
   '⬡ PREMIUM GRADE COMPOUNDS',
   '⬡ FAST TRACKED SHIPPING',
-  '⬡ 24 PREMIUM PEPTIDES',
+  '⬡ 100+ PREMIUM PEPTIDES',
 ]
 
 export default function Navbar() {
@@ -156,7 +156,7 @@ export default function Navbar() {
                           onMouseEnter={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(212,168,67,0.14), rgba(212,168,67,0.08))' }}
                           onMouseLeave={e => { e.currentTarget.style.background = 'linear-gradient(135deg, rgba(212,168,67,0.08), rgba(212,168,67,0.04))' }}
                         >
-                          View All 24+ Compounds <ArrowRight size={13} />
+                          View All 100+ Compounds <ArrowRight size={13} />
                         </Link>
                       </div>
 

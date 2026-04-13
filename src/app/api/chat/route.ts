@@ -3,7 +3,7 @@ import { products, AFFILIATE_BASE, AFFILIATE_PRODUCT } from '@/lib/products'
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
 
-const SYSTEM_PROMPT = `You are PEPE, the AI peptide assistant for StacksPeptide.com — the #1 independent peptide guide covering GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3, and 24+ compounds.
+const SYSTEM_PROMPT = `You are PEPE, the AI peptide assistant for StacksPeptide.com — the #1 independent peptide guide covering GHK-Cu, BPC-157, Retatrutide, Epithalon, IGF-1 LR3, and 100+ compounds.
 
 Your role is to help users understand peptides: mechanisms of action, stacking protocols, purity standards, storage, reconstitution, and compound selection.
 

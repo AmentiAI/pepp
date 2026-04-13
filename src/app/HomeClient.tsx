@@ -68,7 +68,7 @@ export default function HomePage() {
             { icon: <FlaskConical size={22} />, n: '>98%', l: 'Purity Guaranteed' },
             { icon: <Shield size={22} />, n: '3rd Party', l: 'Lab Tested' },
             { icon: <CheckCircle size={22} />, n: 'CoA', l: 'Every Order' },
-            { icon: <Zap size={22} />, n: '24', l: 'Compounds' },
+            { icon: <Zap size={22} />, n: '100+', l: 'Compounds' },
           ].map((b, i) => (
             <div key={b.l} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', padding: '1.75rem', borderRight: i < 3 ? '1px solid rgba(0,0,0,0.06)' : 'none' }}>
               <div style={{ color: '#d4a843', opacity: 0.8 }}>{b.icon}</div>
@@ -104,7 +104,7 @@ export default function HomePage() {
             {[
               'Third-party HPLC and mass spectrometry verified',
               'Certificate of Analysis with every order',
-              '24 premium grade compounds in one catalog',
+              '100+ premium grade compounds in one catalog',
               'Sourced exclusively from our supplier',
             ].map(pt => (
               <div key={pt} style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', marginBottom: '0.875rem' }}>
@@ -115,7 +115,7 @@ export default function HomePage() {
               </div>
             ))}
             <div style={{ display: 'flex', gap: 14, marginTop: '3rem', flexWrap: 'wrap' }}>
-              <Link href="/products" className="btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Browse All 24 Compounds <ArrowRight size={16} /></Link>
+              <Link href="/products" className="btn-primary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Browse 100+ Compounds <ArrowRight size={16} /></Link>
               <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" className="btn-secondary" style={{ fontSize: '1rem', padding: '1rem 2rem' }}>Shop Now <ExternalLink size={14} /></a>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function HomePage() {
               </p>
             </div>
             <Link href="/products" className="btn-secondary" style={{ fontSize: '1.05rem', padding: '0.9rem 1.75rem', flexShrink: 0 }}>
-              View All 24 Peptides <ArrowRight size={14} />
+              View All 100+ Peptides <ArrowRight size={14} />
             </Link>
           </div>
 
@@ -250,7 +250,7 @@ export default function HomePage() {
       <div className="sec-pad-sm" style={{ background: 'linear-gradient(135deg, #fdf9f0 0%, #f7f8fc 50%, #f8f0ff 100%)', borderTop: '1px solid rgba(212,168,67,0.12)', borderBottom: '1px solid rgba(212,168,67,0.12)' }}>
         <div className="rg-stats4" style={S.inner}>
           {[
-            { n: '24', l: 'Compounds', sub: 'Complete catalog' },
+            { n: '100+', l: 'Compounds', sub: 'Complete catalog' },
             { n: '>98%', l: 'Purity Standard', sub: 'Every batch, every time' },
             { n: '$49–$150', l: 'Price Per Compound', sub: 'Competitive lab pricing' },
             { n: '100%', l: 'Third-Party Verified', sub: 'Independent lab testing' },
