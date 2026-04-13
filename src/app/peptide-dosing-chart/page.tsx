@@ -416,11 +416,8 @@ export default function PeptideDosingChart() {
           }}>
             {reconstitutionSteps.map((step, idx) => (
               <div key={step.num} style={{
-                display: 'grid',
-                gridTemplateColumns: '72px 1fr',
                 gap: 0,
-                borderBottom: idx < reconstitutionSteps.length - 1 ? '1px solid rgba(0,0,0,0.06)' : 'none',
-              }}>
+                borderBottom: idx < reconstitutionSteps.length - 1 ? '1px solid rgba(0,0,0,0.06)' : 'none' }}>
                 {/* Number + icon column */}
                 <div style={{
                   background: `${step.color}08`,
@@ -571,7 +568,7 @@ export default function PeptideDosingChart() {
                 gap: '0.75rem',
               }}>
                 <div style={{ fontWeight: 800, color: '#0a0a14', fontSize: '1.05rem' }}>{item.compound}</div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
+                <div className="rg-2col" style={{ gap: '0.5rem' }}>
                   <div>
                     <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#9090a8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.2rem' }}>Lyophilized</div>
                     <div style={{ fontSize: '0.88rem', fontWeight: 600, color: '#444458' }}>{item.lyophilized}</div>

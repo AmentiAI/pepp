@@ -130,7 +130,7 @@ export default function HomePage() {
             ].map(s => (
               <div key={s.l} style={{ ...S.card, padding: '2.25rem', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${s.c}, transparent)` }} />
-                <div style={{ fontSize: '3rem', fontWeight: 900, letterSpacing: '-0.05em', lineHeight: 1, color: s.c, marginBottom: '0.75rem' }}>{s.n}</div>
+                <div className="stat-display" style={{ fontSize: 'clamp(1.8rem, 6vw, 3rem)', fontWeight: 900, letterSpacing: '-0.05em', lineHeight: 1, color: s.c, marginBottom: '0.75rem' }}>{s.n}</div>
                 <div style={{ fontSize: '1rem', fontWeight: 700, color: '#0a0a14', marginBottom: '0.4rem' }}>{s.l}</div>
                 <div style={{ fontSize: '1rem', color: '#9090a8' }}>{s.sub}</div>
               </div>
@@ -163,7 +163,7 @@ export default function HomePage() {
               >
                 <div style={{ color: cat.color, marginBottom: '1.5rem' }}>{cat.icon}</div>
                 <div style={{ fontSize: '0.87rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: cat.color, marginBottom: '0.5rem' }}>{cat.label}</div>
-                <div style={{ fontSize: '2.4rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.04em', lineHeight: 1, marginBottom: '0.2rem' }}>{cat.stat}</div>
+                <div className="stat-display" style={{ fontSize: 'clamp(1.5rem, 5vw, 2.4rem)', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.04em', lineHeight: 1, marginBottom: '0.2rem' }}>{cat.stat}</div>
                 <div style={{ fontSize: '0.97rem', fontWeight: 600, color: '#666680', marginBottom: '0.2rem' }}>{cat.statLabel}</div>
                 <div style={{ fontSize: '0.87rem', color: cat.color, opacity: 0.65, marginBottom: '1.25rem' }}>{cat.sub}</div>
                 <p style={{ fontSize: '1.05rem', lineHeight: 1.75, flex: 1, color: '#555570' }}>{cat.desc}</p>
@@ -209,9 +209,9 @@ export default function HomePage() {
                 onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.35)'; e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 28px 80px rgba(212,168,67,0.12)'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
               >
-                <div style={{ display: 'flex', gap: 0 }}>
+                <div className="feat-hero-card" style={{ display: 'flex', gap: 0 }}>
                   {/* Image */}
-                  <Link href={`/products/${product.slug}`} style={{ display: 'block', textDecoration: 'none', position: 'relative', width: 200, flexShrink: 0, background: 'rgba(255,255,255,0.04)', borderRight: '1px solid rgba(255,255,255,0.07)' }}>
+                  <Link href={`/products/${product.slug}`} className="feat-hero-img" style={{ display: 'block', textDecoration: 'none', position: 'relative', width: 200, flexShrink: 0, background: 'rgba(255,255,255,0.04)', borderRight: '1px solid rgba(255,255,255,0.07)' }}>
                     <div style={{ position: 'relative', height: 200 }}>
                       <Image src={product.image} alt={product.name} fill style={{ objectFit: 'contain', padding: '2rem' }} sizes="200px" />
                     </div>

@@ -20,7 +20,7 @@ const stripProducts = STRIP_SLUGS
 
 export default function FeaturedProductsStrip({ heading = 'Top Peptides', subheading = 'Independently HPLC tested. CoA with every order.' }: { heading?: string; subheading?: string }) {
   return (
-    <section style={{ background: '#0c0c18', borderTop: '1px solid rgba(212,168,67,0.12)', borderBottom: '1px solid rgba(212,168,67,0.12)', padding: '3.5rem 2rem' }}>
+    <section className="featured-strip" style={{ background: '#0c0c18', borderTop: '1px solid rgba(212,168,67,0.12)', borderBottom: '1px solid rgba(212,168,67,0.12)', padding: '3.5rem 2rem' }}>
       <div style={{ maxWidth: 1280, margin: '0 auto' }}>
 
         {/* Header */}
@@ -39,7 +39,7 @@ export default function FeaturedProductsStrip({ heading = 'Top Peptides', subhea
         </div>
 
         {/* Horizontal scroll on mobile, 6-col flex on desktop */}
-        <div style={{ display: 'flex', gap: '1rem', overflowX: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', paddingBottom: 4 }}>
+        <div className="strip-scroll" style={{ display: 'flex', gap: '1rem', overflowX: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', paddingBottom: 4 }}>
           {stripProducts.map(product => (
             <div key={product.slug} style={{ background: '#13131f', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 16, overflow: 'hidden', flex: '0 0 200px', display: 'flex', flexDirection: 'column', transition: 'border-color 0.2s, transform 0.2s' }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.3)'; e.currentTarget.style.transform = 'translateY(-3px)'; }}

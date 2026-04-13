@@ -105,7 +105,7 @@ export default async function StackPage({ params }: { params: Promise<{ slug: st
         {/* Stat + description */}
         <section className="rg-stack-hero" style={{ padding: '3rem 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ textAlign: 'center', padding: '2rem', background: `${stack.color}08`, border: `1px solid ${stack.color}20`, borderRadius: 20 }}>
-            <div style={{ fontSize: '3.5rem', fontWeight: 900, color: stack.color, letterSpacing: '-0.05em', lineHeight: 1 }}>{stack.stat}</div>
+            <div className="stat-display" style={{ fontSize: 'clamp(2rem, 7vw, 3.5rem)', fontWeight: 900, color: stack.color, letterSpacing: '-0.05em', lineHeight: 1 }}>{stack.stat}</div>
             <div style={{ fontSize: '0.9rem', color: '#666688', marginTop: 8, fontWeight: 600 }}>{stack.statLabel}</div>
           </div>
           <div>

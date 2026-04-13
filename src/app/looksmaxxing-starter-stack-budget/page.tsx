@@ -340,7 +340,8 @@ export default function LooksmaxxingStarterStackBudgetPage() {
             Realistic Results <span className="gold-text">by Tier</span>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 2fr 2fr', gap: '1rem', padding: '0.75rem 1.5rem', background: '#0a0a14', borderRadius: 10 }}>
+            <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginLeft: '-0.5rem', marginRight: '-0.5rem', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
+<div style={{ display: 'grid', gridTemplateColumns: '1.5fr 2fr 2fr', gap: '1rem', padding: '0.75rem 1.5rem', background: '#0a0a14', borderRadius: 10 }}>
               {['Tier', 'At 6 Weeks', 'At 12 Weeks'].map(h => (
                 <div key={h} style={{ fontSize: '0.72rem', fontWeight: 700, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{h}</div>
               ))}
@@ -358,6 +359,7 @@ export default function LooksmaxxingStarterStackBudgetPage() {
                 <div style={{ color: '#333350', fontSize: '0.88rem', lineHeight: 1.6, fontWeight: 500 }}>{r.result12wk}</div>
               </div>
             ))}
+            </div>{/* end scroll wrapper */}
           </div>
         </section>
 

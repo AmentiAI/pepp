@@ -221,11 +221,13 @@ export default function PeptidesVsBotoxFillersPage() {
           </p>
 
           {/* Column Headers */}
-          <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '1rem', marginBottom: '1rem', padding: '0 1.5rem' }}>
-            <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#888', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Criterion</div>
-            <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#888', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center' }}>Botox</div>
-            <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#888', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center' }}>Fillers</div>
-            <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#d4a843', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center' }}>Peptides</div>
+          <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginLeft: '-0.5rem', marginRight: '-0.5rem', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '1rem', marginBottom: '1rem', padding: '0 1.5rem' }}>
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#888', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Criterion</div>
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#888', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center' }}>Botox</div>
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#888', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center' }}>Fillers</div>
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, color: '#d4a843', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center' }}>Peptides</div>
+            </div>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -236,12 +238,14 @@ export default function PeptidesVsBotoxFillersPage() {
                 borderRadius: 14,
                 padding: '1.25rem 1.5rem',
               }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '1rem', alignItems: 'center', marginBottom: '0.6rem' }}>
+                <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginLeft: '-0.5rem', marginRight: '-0.5rem', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
+<div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '1rem', alignItems: 'center', marginBottom: '0.6rem' }}>
                   <div style={{ fontWeight: 700, color: '#0a0a14', fontSize: '0.97rem' }}>{c.name}</div>
                   <div style={{ display: 'flex', justifyContent: 'center' }}><ScoreBar score={c.botox} color="#fb923c" /></div>
                   <div style={{ display: 'flex', justifyContent: 'center' }}><ScoreBar score={c.fillers} color="#a78bfa" /></div>
                   <div style={{ display: 'flex', justifyContent: 'center' }}><ScoreBar score={c.peptides} color="#d4a843" /></div>
                 </div>
+                </div>{/* end scroll wrapper */}
                 <p style={{ color: '#666688', fontSize: '0.88rem', margin: 0, lineHeight: 1.6 }}>{c.note}</p>
               </div>
             ))}

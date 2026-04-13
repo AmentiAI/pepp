@@ -69,7 +69,7 @@ export default function EpithalonProtocolPage() {
 
         {/* Origin Story */}
         <section style={{ padding: '4rem 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'flex-start' }}>
+          <div className="rg-2col" style={{ gap: '4rem', alignItems: 'flex-start' }}>
             <div>
               <div className="section-label" style={{ color: '#34d399' }}>Origin Story</div>
               <h2 className="heading-lg" style={{ color: '#0a0a14', marginBottom: '1.25rem' }}>

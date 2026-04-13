@@ -219,13 +219,10 @@ export default function SkinTexturePorePeptidesPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', maxWidth: 900 }}>
             {skinLayers.map((layer, i) => (
               <div key={layer.layer} style={{
-                display: 'grid',
-                gridTemplateColumns: '160px 1fr',
                 gap: '0',
                 border: '1px solid rgba(0,0,0,0.08)',
                 borderRadius: i === 0 ? '14px 14px 0 0' : i === skinLayers.length - 1 ? '0 0 14px 14px' : '0',
-                overflow: 'hidden',
-              }}>
+                overflow: 'hidden' }}>
                 {/* Layer Color Block */}
                 <div style={{
                   background: layer.color,

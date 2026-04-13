@@ -304,7 +304,8 @@ export default function PeptideCycleCalendarPage() {
             Compound-Specific <span className="gold-text">Cycling Rules</span>
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 2fr 1.5fr', gap: '1rem', padding: '0.75rem 1.5rem', background: '#0a0a14', borderRadius: 10 }}>
+            <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginLeft: '-0.5rem', marginRight: '-0.5rem', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}>
+<div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 2fr 1.5fr', gap: '1rem', padding: '0.75rem 1.5rem', background: '#0a0a14', borderRadius: 10 }}>
               {['Compound', 'On Period', 'Off Period', 'Why Off?', 'Flexibility'].map(h => (
                 <div key={h} style={{ fontSize: '0.72rem', fontWeight: 700, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{h}</div>
               ))}
@@ -322,6 +323,7 @@ export default function PeptideCycleCalendarPage() {
                 <div style={{ color: '#666688', fontSize: '0.85rem', lineHeight: 1.6, fontStyle: 'italic' }}>{r.flexibility}</div>
               </div>
             ))}
+            </div>{/* end scroll wrapper */}
           </div>
         </section>
 

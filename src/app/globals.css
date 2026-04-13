@@ -296,6 +296,12 @@ body {
    MOBILE OPTIMIZATION — comprehensive overrides
    ══════════════════════════════════════════════════════════ */
 
+/* ── Category page hero grids ─────────────────────────────── */
+/* 1fr 380px hero (dark band + image) */
+.cat-hero-grid { display: grid; grid-template-columns: 1fr 380px; }
+/* 220px sidebar + content */
+.cat-content-grid { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; }
+
 /* ── 768px — tablets and large phones ─────────────────────── */
 @media (max-width: 768px) {
 
@@ -383,6 +389,39 @@ body {
 
   /* Hero product image */
   .product-hero-image { padding: 1.5rem !important; }
+
+  /* Category page grids */
+  .cat-hero-grid { grid-template-columns: 1fr !important; }
+  .cat-hero-image { display: none !important; }
+  .cat-content-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
+  .cat-sidebar { display: none !important; }
+
+  /* Looksmaxxing hero */
+  .looksmax-hero { padding: 3.5rem 1.25rem 3rem !important; }
+
+  /* 2-col grids used in looksmaxxing / article pages */
+  .rg-2col-article { grid-template-columns: 1fr !important; gap: 2rem !important; }
+
+  /* Featured products strip — tighter padding */
+  .featured-strip { padding: 2.5rem 1.25rem !important; }
+
+  /* Protocols table — horizontal scroll on mobile */
+  .protocols-table-scroll { overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; }
+  .protocols-table-scroll .protocols-header,
+  .protocols-table-scroll .protocols-row {
+    min-width: 620px;
+  }
+
+  /* Stacks page card body */
+  .stack-buy-panel { grid-template-columns: 1fr !important; }
+  .stack-buy-panel > *:first-child { border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.07) !important; }
+
+  /* Homepage featured products: hero cards — stack image + info */
+  .feat-hero-card { flex-direction: column !important; }
+  .feat-hero-card .feat-hero-img { width: 100% !important; height: 180px !important; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.07) !important; }
+
+  /* FeaturedProductsStrip inner container — allow negative margin for full-bleed scroll */
+  .strip-scroll { margin-left: -1.25rem !important; margin-right: -1.25rem !important; padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
 }
 
 /* ── 480px — small phones ──────────────────────────────────── */
@@ -432,6 +471,17 @@ body {
 
   /* Stacks buy panel: stack on mobile */
   .stack-buy-panel { grid-template-columns: 1fr !important; }
+
+  /* Looksmaxxing hero: even tighter */
+  .looksmax-hero { padding: 2.5rem 1rem 2rem !important; }
+  .featured-strip { padding: 2rem 1rem !important; }
+
+  /* Protocols table */
+  .protocols-table-scroll .protocols-header,
+  .protocols-table-scroll .protocols-row { min-width: 580px; }
+
+  /* rg-2col on smallest screens */
+  .rg-2col { grid-template-columns: 1fr !important; gap: 1.25rem !important; }
 }
 
 /* ── Table ────────────────────────────────────────────────── */

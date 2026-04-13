@@ -31,7 +31,7 @@ export default function AntiAgingPage() {
           pointerEvents: 'none',
         }} />
 
-        <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 380px', minHeight: 560 }}>
+        <div className="cat-hero-grid" style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 380px', minHeight: 560 }}>
 
           {/* Left: Headline + copy */}
           <div style={{ padding: '5rem 3rem 5rem 2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -169,7 +169,7 @@ export default function AntiAgingPage() {
       {/* GHK-Cu Block — white bg, left-aligned, large purple number left edge */}
       <div style={{ borderTop: '4px solid #a78bfa', margin: '2.5rem 0 0', background: '#ffffff' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', padding: '4rem 2rem' }}>
-          <div style={{
+          <div className="cat-content-grid" style={{
             display: 'grid', gridTemplateColumns: '220px 1fr',
             gap: '3rem', alignItems: 'start',
             borderLeft: '3px solid #a78bfa', paddingLeft: '2.5rem',
@@ -262,7 +262,7 @@ export default function AntiAgingPage() {
       {/* Epithalon Block — purple-tinted bg, right-aligned, number on right edge */}
       <div style={{ background: '#f8f0ff', borderTop: '1px solid rgba(167,139,250,0.2)', borderBottom: '1px solid rgba(167,139,250,0.2)' }}>
         <div style={{ maxWidth: 1280, margin: '0 auto', padding: '4rem 2rem' }}>
-          <div style={{
+          <div className="cat-content-grid" style={{
             display: 'grid', gridTemplateColumns: '1fr 220px',
             gap: '3rem', alignItems: 'start',
             borderRight: '3px solid #d4a843', paddingRight: '2.5rem',

@@ -144,7 +144,7 @@ export default function LooksMaxingPage() {
     <div style={{ background: '#ffffff', minHeight: '100vh', fontFamily: 'inherit' }}>
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <div style={{
+      <div className="looksmax-hero" style={{
         position: 'relative',
         background: 'linear-gradient(165deg, #0c0a18 0%, #13101f 55%, #0a0e14 100%)',
         borderBottom: '1px solid rgba(255,255,255,0.06)',
@@ -225,7 +225,7 @@ export default function LooksMaxingPage() {
         borderBottom: '1px solid rgba(0,0,0,0.07)',
       }}>
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
+          <div className="rg-stats4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
             {stats.map((s, i) => (
               <div key={s.l} style={{
                 padding: '2rem 2.5rem',
@@ -436,7 +436,7 @@ export default function LooksMaxingPage() {
                 Complete LooksMaxing Protocol
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '4rem', alignItems: 'center' }}>
+              <div className="rg-2col" style={{ gap: '3rem', alignItems: 'center' }}>
                 <div>
                   <h2 style={{
                     fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 900,
@@ -501,7 +501,7 @@ export default function LooksMaxingPage() {
             The Biology Behind the Results
           </h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'start' }}>
+          <div className="rg-2col" style={{ gap: '3.5rem', alignItems: 'start' }}>
             {/* Left — editorial blockquote */}
             <div>
               <blockquote style={{
@@ -577,8 +577,11 @@ export default function LooksMaxingPage() {
             </Link>
           </div>
 
+          {/* Table — horizontal scroll on mobile */}
+          <div className="protocols-table-scroll" style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+
           {/* Table header */}
-          <div style={{
+          <div className="protocols-header" style={{
             display: 'grid',
             gridTemplateColumns: '2fr 2fr 2.5fr 1fr 80px',
             gap: '1rem',
@@ -597,6 +600,7 @@ export default function LooksMaxingPage() {
             {protocols.map(p => (
               <div
                 key={p.name}
+                className="protocols-row"
                 style={{
                   display: 'grid',
                   gridTemplateColumns: '2fr 2fr 2.5fr 1fr 80px',
@@ -650,6 +654,7 @@ export default function LooksMaxingPage() {
               </div>
             ))}
           </div>
+          </div>{/* end protocols-table-scroll */}
         </section>
 
         {/* Featured products strip */}

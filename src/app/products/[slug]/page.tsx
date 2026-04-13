@@ -295,7 +295,7 @@ export default async function ProductPage({ params }: Props) {
           </div>
 
           {/* Sidebar */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', position: 'sticky', top: 80 }}>
+          <div className="product-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', position: 'sticky', top: 80 }}>
 
             {/* Research highlights */}
             <div style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 18, padding: '1.5rem' }}>

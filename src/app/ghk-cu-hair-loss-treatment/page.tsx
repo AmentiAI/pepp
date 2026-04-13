@@ -102,7 +102,7 @@ export default function GhkCuHairPage() {
             {hairPhases.map((phase) => (
               <div key={phase.week} style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.07)', borderRadius: 20, padding: '1.75rem', overflow: 'hidden', position: 'relative' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: `${phase.fill}%`, background: `${phase.color}08`, transition: 'width 0.6s ease', pointerEvents: 'none' }} />
-                <div style={{ position: 'relative', display: 'grid', gridTemplateColumns: '200px 1fr', gap: '2rem', alignItems: 'start' }}>
+                <div className="rg-2col" style={{ position: 'relative', gap: '2rem', alignItems: 'start' }}>
                   <div>
                     <div style={{ fontSize: '0.72rem', fontWeight: 700, color: phase.color, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.35rem' }}>{phase.week}</div>
                     <div style={{ fontSize: '1.2rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em', marginBottom: '0.75rem' }}>{phase.title}</div>
