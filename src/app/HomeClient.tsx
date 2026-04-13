@@ -81,6 +81,139 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* ────────────── 2.5. TOP PICKS ───────────────── */}
+      <section className="sec-pad" style={{ background: '#ffffff', borderBottom: '1px solid rgba(0,0,0,0.07)' }}>
+        <div style={S.inner}>
+
+          {/* Section header */}
+          <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '3rem', flexWrap: 'wrap', gap: '1.5rem' }}>
+            <div>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#d4a843', marginBottom: '1rem' }}>
+                <span style={{ width: 22, height: 1.5, background: '#d4a843', display: 'block' }} />
+                Top Picks
+              </div>
+              <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 900, color: '#0a0a14', lineHeight: 1.05, letterSpacing: '-0.04em', marginBottom: '0.75rem' }}>
+                Our Best-Selling Peptides
+              </h2>
+              <p style={{ fontSize: '1.05rem', color: '#666688', maxWidth: 520, lineHeight: 1.7 }}>
+                Handpicked for clinical significance — independently HPLC verified, every batch.
+              </p>
+            </div>
+            <Link href="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '0.8rem 1.75rem', background: 'rgba(212,168,67,0.08)', border: '1px solid rgba(212,168,67,0.3)', borderRadius: 10, textDecoration: 'none', color: '#d4a843', fontWeight: 700, fontSize: '0.9rem', transition: 'background 0.15s', flexShrink: 0 }}
+              onMouseEnter={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.15)')}
+              onMouseLeave={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.08)')}
+            >
+              View All 100+ Peptides <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          {/* Hero spotlight: top 2 products — large cards */}
+          <div className="rg-2col" style={{ gap: '1.5rem', marginBottom: '1.5rem' }}>
+            {heroProducts.slice(0, 2).map(product => (
+              <div key={product.slug} style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 22, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.25s, transform 0.25s, box-shadow 0.25s' }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.5)'; e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 20px 60px rgba(212,168,67,0.12)'; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
+              >
+                <div className="feat-hero-card" style={{ display: 'flex', gap: 0 }}>
+                  {/* Image */}
+                  <Link href={`/products/${product.slug}`} className="feat-hero-img" style={{ display: 'block', textDecoration: 'none', position: 'relative', width: 200, flexShrink: 0, background: '#f9f9fd', borderRight: '1px solid rgba(0,0,0,0.07)' }}>
+                    <div style={{ position: 'relative', height: 200 }}>
+                      <Image src={product.image} alt={product.name} fill style={{ objectFit: 'contain', padding: '2rem' }} sizes="200px" />
+                    </div>
+                    {product.tag && (
+                      <div style={{ position: 'absolute', top: 12, left: 12 }}>
+                        <span className={`badge badge-${product.tagColor || 'gold'}`}>{product.tag}</span>
+                      </div>
+                    )}
+                  </Link>
+                  {/* Info */}
+                  <div style={{ flex: 1, padding: '1.75rem', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#b08a2a', marginBottom: '0.4rem' }}>{product.category}</div>
+                    <Link href={`/products/${product.slug}`} style={{ textDecoration: 'none' }}>
+                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#111122', lineHeight: 1.2, marginBottom: '0.75rem', transition: 'color 0.15s' }}
+                        onMouseEnter={e => (e.currentTarget.style.color = '#d4a843')}
+                        onMouseLeave={e => (e.currentTarget.style.color = '#111122')}
+                      >{product.shortName}</h3>
+                    </Link>
+                    <p style={{ fontSize: '0.88rem', color: '#4a4a62', lineHeight: 1.65, flex: 1, marginBottom: '1.25rem' }}>
+                      {product.summary.slice(0, 120)}...
+                    </p>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10 }}>
+                      <span style={{ fontSize: '1.6rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.04em' }}>${product.price.toFixed(2)}</span>
+                      <div style={{ display: 'flex', gap: 8 }}>
+                        <Link href={`/products/${product.slug}`} style={{ display: 'flex', alignItems: 'center', padding: '8px 14px', background: '#f5f5fa', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 8, textDecoration: 'none', color: '#444458', fontSize: '0.82rem', fontWeight: 600, transition: 'all 0.15s' }}
+                          onMouseEnter={e => { e.currentTarget.style.background = '#ebebf5'; e.currentTarget.style.color = '#111122'; }}
+                          onMouseLeave={e => { e.currentTarget.style.background = '#f5f5fa'; e.currentTarget.style.color = '#444458'; }}
+                        >Details</Link>
+                        <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="sponsored noopener noreferrer"
+                          style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '8px 18px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 800, fontSize: '0.85rem', borderRadius: 8, textDecoration: 'none', transition: 'opacity 0.15s, box-shadow 0.15s', boxShadow: '0 4px 16px rgba(212,168,67,0.3)' }}
+                          onMouseEnter={e => { e.currentTarget.style.opacity = '0.9'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(212,168,67,0.45)'; }}
+                          onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(212,168,67,0.3)'; }}
+                        >Buy Now <ExternalLink size={11} /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Remaining 6 products grid */}
+          <div className="rg-3col" style={{ gap: '1rem' }}>
+            {heroProducts.slice(2, 8).map(product => (
+              <div key={product.slug} style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 18, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.25s, transform 0.2s, box-shadow 0.2s' }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.45)'; e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 16px 40px rgba(212,168,67,0.10)'; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.09)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
+              >
+                <Link href={`/products/${product.slug}`} style={{ display: 'block', textDecoration: 'none', position: 'relative', background: '#f9f9fd' }}>
+                  <div style={{ position: 'relative', height: 160, padding: '1.25rem' }}>
+                    <Image src={product.image} alt={product.name} fill style={{ objectFit: 'contain', padding: '0.75rem' }} sizes="280px" />
+                  </div>
+                  {product.tag && (
+                    <div style={{ position: 'absolute', top: 10, left: 10 }}>
+                      <span className={`badge badge-${product.tagColor || 'gold'}`}>{product.tag}</span>
+                    </div>
+                  )}
+                </Link>
+                <div style={{ height: 1, background: 'rgba(0,0,0,0.06)' }} />
+                <div style={{ padding: '1rem 1.1rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                  <div style={{ fontSize: '0.6rem', fontWeight: 800, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#b08a2a', marginBottom: '0.25rem' }}>{product.category}</div>
+                  <Link href={`/products/${product.slug}`} style={{ textDecoration: 'none' }}>
+                    <h3 style={{ fontSize: '0.92rem', fontWeight: 800, color: '#111122', lineHeight: 1.25, marginBottom: '0.4rem', transition: 'color 0.15s' }}
+                      onMouseEnter={e => (e.currentTarget.style.color = '#d4a843')}
+                      onMouseLeave={e => (e.currentTarget.style.color = '#111122')}
+                    >{product.shortName}</h3>
+                  </Link>
+                  <p style={{ fontSize: '0.79rem', color: '#4a4a62', lineHeight: 1.55, flex: 1, marginBottom: '0.875rem' }}>
+                    {product.summary.slice(0, 80)}…
+                  </p>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                    <span style={{ fontSize: '1.15rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.03em' }}>${product.price.toFixed(2)}</span>
+                    <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="sponsored noopener noreferrer"
+                      style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '7px 14px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 800, fontSize: '0.78rem', borderRadius: 8, textDecoration: 'none', transition: 'opacity 0.15s', boxShadow: '0 2px 10px rgba(212,168,67,0.25)', flexShrink: 0 }}
+                      onMouseEnter={e => (e.currentTarget.style.opacity = '0.88')}
+                      onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+                    >Buy <ArrowRight size={11} /></a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom CTA row */}
+          <div style={{ textAlign: 'center', marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(0,0,0,0.07)' }}>
+            <p style={{ color: '#666688', fontSize: '0.97rem', marginBottom: '1.25rem' }}>Explore the complete catalog — 100+ compounds, all third-party HPLC verified.</p>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+              <Link href="/products" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.25rem' }}>Browse All Peptides <ArrowRight size={15} /></Link>
+              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '0.9rem 2.25rem', background: '#f5f5fa', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 10, textDecoration: 'none', color: '#444458', fontWeight: 600, fontSize: '1rem', transition: 'background 0.15s' }}
+                onMouseEnter={e => (e.currentTarget.style.background = '#ebebf5')}
+                onMouseLeave={e => (e.currentTarget.style.background = '#f5f5fa')}
+              >Shop Now <ExternalLink size={13} /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ────────────── 3. HERO EDITORIAL ────────────── */}
       <section className="sec-pad-hero" style={{ background: '#ffffff' }}>
         <div className="rg-2hero" style={S.inner}>
@@ -172,139 +305,6 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ────────────── 5. FEATURED PRODUCTS ─────────── */}
-      <section className="sec-pad" style={{ background: '#0a0a14' }}>
-        <div style={S.inner}>
-
-          {/* Section header */}
-          <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '3rem', flexWrap: 'wrap', gap: '1.5rem' }}>
-            <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#d4a843', marginBottom: '1rem' }}>
-                <span style={{ width: 22, height: 1.5, background: '#d4a843', display: 'block' }} />
-                Top Picks
-              </div>
-              <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.05, letterSpacing: '-0.04em', marginBottom: '0.75rem' }}>
-                Our Best-Selling Peptides
-              </h2>
-              <p style={{ fontSize: '1.05rem', color: '#9090b8', maxWidth: 520, lineHeight: 1.7 }}>
-                Handpicked for clinical significance — independently HPLC verified, every batch.
-              </p>
-            </div>
-            <Link href="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '0.8rem 1.75rem', background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.3)', borderRadius: 10, textDecoration: 'none', color: '#d4a843', fontWeight: 700, fontSize: '0.9rem', transition: 'background 0.15s', flexShrink: 0 }}
-              onMouseEnter={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.18)')}
-              onMouseLeave={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.1)')}
-            >
-              View All 100+ Peptides <ArrowRight size={14} />
-            </Link>
-          </div>
-
-          {/* Hero spotlight: top 2 products — large cards */}
-          <div className="rg-2col" style={{ gap: '1.5rem', marginBottom: '1.5rem' }}>
-            {heroProducts.slice(0, 2).map(product => (
-              <div key={product.slug} style={{ background: '#13131f', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 22, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.25s, transform 0.25s, box-shadow 0.25s' }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.35)'; e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 28px 80px rgba(212,168,67,0.12)'; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
-              >
-                <div className="feat-hero-card" style={{ display: 'flex', gap: 0 }}>
-                  {/* Image */}
-                  <Link href={`/products/${product.slug}`} className="feat-hero-img" style={{ display: 'block', textDecoration: 'none', position: 'relative', width: 200, flexShrink: 0, background: 'rgba(255,255,255,0.04)', borderRight: '1px solid rgba(255,255,255,0.07)' }}>
-                    <div style={{ position: 'relative', height: 200 }}>
-                      <Image src={product.image} alt={product.name} fill style={{ objectFit: 'contain', padding: '2rem' }} sizes="200px" />
-                    </div>
-                    {product.tag && (
-                      <div style={{ position: 'absolute', top: 12, left: 12 }}>
-                        <span className={`badge badge-${product.tagColor || 'gold'}`}>{product.tag}</span>
-                      </div>
-                    )}
-                  </Link>
-                  {/* Info */}
-                  <div style={{ flex: 1, padding: '1.75rem', display: 'flex', flexDirection: 'column' }}>
-                    <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#b08a2a', marginBottom: '0.4rem' }}>{product.category}</div>
-                    <Link href={`/products/${product.slug}`} style={{ textDecoration: 'none' }}>
-                      <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#ffffff', lineHeight: 1.2, marginBottom: '0.75rem', transition: 'color 0.15s' }}
-                        onMouseEnter={e => (e.currentTarget.style.color = '#d4a843')}
-                        onMouseLeave={e => (e.currentTarget.style.color = '#ffffff')}
-                      >{product.shortName}</h3>
-                    </Link>
-                    <p style={{ fontSize: '0.88rem', color: '#8888aa', lineHeight: 1.65, flex: 1, marginBottom: '1.25rem' }}>
-                      {product.summary.slice(0, 120)}...
-                    </p>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10 }}>
-                      <span style={{ fontSize: '1.6rem', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.04em' }}>${product.price.toFixed(2)}</span>
-                      <div style={{ display: 'flex', gap: 8 }}>
-                        <Link href={`/products/${product.slug}`} style={{ display: 'flex', alignItems: 'center', padding: '8px 14px', background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 8, textDecoration: 'none', color: '#ccccdd', fontSize: '0.82rem', fontWeight: 600, transition: 'all 0.15s' }}
-                          onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.12)'; e.currentTarget.style.color = '#ffffff'; }}
-                          onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; e.currentTarget.style.color = '#ccccdd'; }}
-                        >Details</Link>
-                        <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="sponsored noopener noreferrer"
-                          style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '8px 18px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 800, fontSize: '0.85rem', borderRadius: 8, textDecoration: 'none', transition: 'opacity 0.15s, box-shadow 0.15s', boxShadow: '0 4px 16px rgba(212,168,67,0.3)' }}
-                          onMouseEnter={e => { e.currentTarget.style.opacity = '0.9'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(212,168,67,0.45)'; }}
-                          onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(212,168,67,0.3)'; }}
-                        >Buy Now <ExternalLink size={11} /></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Remaining 6 products grid */}
-          <div className="rg-3col" style={{ gap: '1rem' }}>
-            {heroProducts.slice(2, 8).map(product => (
-              <div key={product.slug} style={{ background: '#13131f', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 18, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.25s, transform 0.2s, box-shadow 0.2s' }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.3)'; e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 20px 50px rgba(212,168,67,0.10)'; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
-              >
-                <Link href={`/products/${product.slug}`} style={{ display: 'block', textDecoration: 'none', position: 'relative', background: 'rgba(255,255,255,0.03)' }}>
-                  <div style={{ position: 'relative', height: 160, padding: '1.25rem' }}>
-                    <Image src={product.image} alt={product.name} fill style={{ objectFit: 'contain', padding: '0.75rem' }} sizes="280px" />
-                  </div>
-                  {product.tag && (
-                    <div style={{ position: 'absolute', top: 10, left: 10 }}>
-                      <span className={`badge badge-${product.tagColor || 'gold'}`}>{product.tag}</span>
-                    </div>
-                  )}
-                </Link>
-                <div style={{ height: 1, background: 'rgba(255,255,255,0.06)' }} />
-                <div style={{ padding: '1rem 1.1rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
-                  <div style={{ fontSize: '0.6rem', fontWeight: 800, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#b08a2a', marginBottom: '0.25rem' }}>{product.category}</div>
-                  <Link href={`/products/${product.slug}`} style={{ textDecoration: 'none' }}>
-                    <h3 style={{ fontSize: '0.92rem', fontWeight: 800, color: '#f0f0ff', lineHeight: 1.25, marginBottom: '0.4rem', transition: 'color 0.15s' }}
-                      onMouseEnter={e => (e.currentTarget.style.color = '#d4a843')}
-                      onMouseLeave={e => (e.currentTarget.style.color = '#f0f0ff')}
-                    >{product.shortName}</h3>
-                  </Link>
-                  <p style={{ fontSize: '0.79rem', color: '#7070a0', lineHeight: 1.55, flex: 1, marginBottom: '0.875rem' }}>
-                    {product.summary.slice(0, 80)}…
-                  </p>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-                    <span style={{ fontSize: '1.15rem', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.03em' }}>${product.price.toFixed(2)}</span>
-                    <a href={AFFILIATE_PRODUCT(product.slug)} target="_blank" rel="sponsored noopener noreferrer"
-                      style={{ display: 'inline-flex', alignItems: 'center', gap: 4, padding: '7px 14px', background: 'linear-gradient(135deg, #d4a843, #a07c2e)', color: '#000', fontWeight: 800, fontSize: '0.78rem', borderRadius: 8, textDecoration: 'none', transition: 'opacity 0.15s', boxShadow: '0 2px 10px rgba(212,168,67,0.25)', flexShrink: 0 }}
-                      onMouseEnter={e => (e.currentTarget.style.opacity = '0.88')}
-                      onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
-                    >Buy <ArrowRight size={11} /></a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom CTA row */}
-          <div style={{ textAlign: 'center', marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
-            <p style={{ color: '#9090b8', fontSize: '0.97rem', marginBottom: '1.25rem' }}>Explore the complete catalog — 100+ compounds, all third-party HPLC verified.</p>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link href="/products" className="btn-primary" style={{ fontSize: '1rem', padding: '0.9rem 2.25rem' }}>Browse All Peptides <ArrowRight size={15} /></Link>
-              <a href={AFFILIATE_BASE} target="_blank" rel="sponsored noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '0.9rem 2.25rem', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 10, textDecoration: 'none', color: '#ccccdd', fontWeight: 600, fontSize: '1rem', transition: 'background 0.15s' }}
-                onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.1)')}
-                onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.06)')}
-              >Shop Now <ExternalLink size={13} /></a>
-            </div>
           </div>
         </div>
       </section>
