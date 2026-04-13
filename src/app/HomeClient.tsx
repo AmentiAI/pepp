@@ -86,7 +86,7 @@ export default function HomePage() {
         <div style={S.inner}>
 
           {/* Section header */}
-          <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '3rem', flexWrap: 'wrap', gap: '1.5rem' }}>
+          <div className="home-picks-header" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '3rem', flexWrap: 'wrap', gap: '1.5rem' }}>
             <div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#d4a843', marginBottom: '1rem' }}>
                 <span style={{ width: 22, height: 1.5, background: '#d4a843', display: 'block' }} />
@@ -127,7 +127,7 @@ export default function HomePage() {
                     )}
                   </Link>
                   {/* Info */}
-                  <div style={{ flex: 1, padding: '1.75rem', display: 'flex', flexDirection: 'column' }}>
+                  <div className="feat-hero-info" style={{ flex: 1, padding: '1.75rem', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#b08a2a', marginBottom: '0.4rem' }}>{product.category}</div>
                     <Link href={`/products/${product.slug}`} style={{ textDecoration: 'none' }}>
                       <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#111122', lineHeight: 1.2, marginBottom: '0.75rem', transition: 'color 0.15s' }}
@@ -161,12 +161,12 @@ export default function HomePage() {
           {/* Remaining 6 products grid */}
           <div className="rg-3col" style={{ gap: '1rem' }}>
             {heroProducts.slice(2, 8).map(product => (
-              <div key={product.slug} style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 18, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.25s, transform 0.2s, box-shadow 0.2s' }}
+              <div key={product.slug} className="feat-small-card" style={{ background: '#ffffff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 18, overflow: 'hidden', display: 'flex', flexDirection: 'column', transition: 'border-color 0.25s, transform 0.2s, box-shadow 0.2s' }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(212,168,67,0.45)'; e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.boxShadow = '0 16px 40px rgba(212,168,67,0.10)'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.09)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
               >
                 <Link href={`/products/${product.slug}`} style={{ display: 'block', textDecoration: 'none', position: 'relative', background: '#f9f9fd' }}>
-                  <div style={{ position: 'relative', height: 160, padding: '1.25rem' }}>
+                  <div className="feat-small-img" style={{ position: 'relative', height: 160, padding: '1.25rem' }}>
                     <Image src={product.image} alt={product.name} fill style={{ objectFit: 'contain', padding: '0.75rem' }} sizes="280px" />
                   </div>
                   {product.tag && (
@@ -176,7 +176,7 @@ export default function HomePage() {
                   )}
                 </Link>
                 <div style={{ height: 1, background: 'rgba(0,0,0,0.06)' }} />
-                <div style={{ padding: '1rem 1.1rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                <div className="feat-small-body" style={{ padding: '1rem 1.1rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
                   <div style={{ fontSize: '0.6rem', fontWeight: 800, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#b08a2a', marginBottom: '0.25rem' }}>{product.category}</div>
                   <Link href={`/products/${product.slug}`} style={{ textDecoration: 'none' }}>
                     <h3 style={{ fontSize: '0.92rem', fontWeight: 800, color: '#111122', lineHeight: 1.25, marginBottom: '0.4rem', transition: 'color 0.15s' }}
@@ -289,7 +289,7 @@ export default function HomePage() {
 
           <div className="rg-5col">
             {cats.map(cat => (
-              <Link key={cat.label} href={cat.href}
+              <Link key={cat.label} href={cat.href} className="home-cat-card"
                 style={{ display: 'flex', flexDirection: 'column', padding: '2rem 1.75rem', background: cat.bg, border: `1px solid ${cat.border}`, borderRadius: 22, textDecoration: 'none', transition: 'transform 0.25s, box-shadow 0.25s, border-color 0.25s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-6px)'; e.currentTarget.style.boxShadow = `0 28px 70px ${cat.color}25`; e.currentTarget.style.borderColor = cat.color + '50'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = cat.border; }}
@@ -354,7 +354,7 @@ export default function HomePage() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
             {agonists.map(tier => (
-              <Link key={tier.slug} href={`/products/${tier.slug}`}
+              <Link key={tier.slug} href={`/products/${tier.slug}`} className="glp-tier-row"
                 style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', padding: '1.6rem 2rem', background: tier.best ? `${tier.color}0d` : '#f9f9fd', border: `1px solid ${tier.best ? tier.color + '40' : 'rgba(0,0,0,0.08)'}`, borderRadius: 18, textDecoration: 'none', transition: 'transform 0.2s, border-color 0.2s', position: 'relative' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateX(6px)'; e.currentTarget.style.borderColor = tier.color + '55'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'translateX(0)'; e.currentTarget.style.borderColor = tier.best ? tier.color + '40' : 'rgba(0,0,0,0.08)'; }}
@@ -364,7 +364,7 @@ export default function HomePage() {
                     Most Potent
                   </div>
                 )}
-                <div style={{ width: 52, height: 52, borderRadius: 15, background: `${tier.color}14`, border: `2px solid ${tier.color}30`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '1.25rem', color: tier.color, flexShrink: 0 }}>
+                <div className="glp-tier-icon" style={{ width: 52, height: 52, borderRadius: 15, background: `${tier.color}14`, border: `2px solid ${tier.color}30`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '1.25rem', color: tier.color, flexShrink: 0 }}>
                   {tier.receptors}
                 </div>
                 <div style={{ flex: 1 }}>
@@ -375,7 +375,7 @@ export default function HomePage() {
                   <div style={{ fontSize: '1.05rem', color: '#666688' }}>{tier.type}</div>
                 </div>
                 <div style={{ textAlign: 'right', flexShrink: 0 }}>
-                  <div style={{ fontSize: '2rem', fontWeight: 900, color: tier.color, letterSpacing: '-0.04em', lineHeight: 1 }}>{tier.loss}</div>
+                  <div className="glp-tier-loss" style={{ fontSize: '2rem', fontWeight: 900, color: tier.color, letterSpacing: '-0.04em', lineHeight: 1 }}>{tier.loss}</div>
                   <div style={{ fontSize: '1.05rem', color: '#9090a8', marginTop: 3 }}>clinical weight loss</div>
                 </div>
               </Link>
@@ -401,9 +401,9 @@ export default function HomePage() {
 
           <div className="rg-2col">
             {scienceCards.map(sc => (
-              <div key={sc.title} style={{ ...S.card, padding: '2.5rem', display: 'flex', gap: '1.5rem', position: 'relative', overflow: 'hidden' }}>
+              <div key={sc.title} className="home-science-card" style={{ ...S.card, padding: '2.5rem', display: 'flex', gap: '1.5rem', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, ${sc.color}, transparent)` }} />
-                <div style={{ width: 54, height: 54, borderRadius: 16, background: `${sc.color}10`, border: `1px solid ${sc.color}22`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: sc.color, flexShrink: 0 }}>
+                <div className="home-science-icon" style={{ width: 54, height: 54, borderRadius: 16, background: `${sc.color}10`, border: `1px solid ${sc.color}22`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: sc.color, flexShrink: 0 }}>
                   {sc.icon}
                 </div>
                 <div>
@@ -489,13 +489,13 @@ export default function HomePage() {
 
           <div className="rg-3col" style={{ marginBottom: '1.5rem' }}>
             {[cats[0], cats[1], cats[2]].map(cat => (
-              <Link key={cat.label} href={cat.href}
+              <Link key={cat.label} href={cat.href} className="home-deeplink-card"
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '2rem', background: `${cat.color}08`, border: `1px solid ${cat.border}`, borderRadius: 18, textDecoration: 'none', transition: 'transform 0.2s, border-color 0.2s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.borderColor = cat.color + '45'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = cat.border; }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-                  <div style={{ width: 52, height: 52, borderRadius: 14, background: `${cat.color}12`, border: `1px solid ${cat.color}25`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: cat.color, flexShrink: 0 }}>
+                  <div className="home-deeplink-icon" style={{ width: 52, height: 52, borderRadius: 14, background: `${cat.color}12`, border: `1px solid ${cat.color}25`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: cat.color, flexShrink: 0 }}>
                     {cat.icon}
                   </div>
                   <div>
@@ -510,13 +510,13 @@ export default function HomePage() {
 
           <div className="rg-2col" style={{ gap: '1.5rem' }}>
             {[cats[3], cats[4]].map(cat => (
-              <Link key={cat.label} href={cat.href}
+              <Link key={cat.label} href={cat.href} className="home-deeplink-card"
                 style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '2rem', background: `${cat.color}08`, border: `1px solid ${cat.border}`, borderRadius: 18, textDecoration: 'none', transition: 'transform 0.2s, border-color 0.2s' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; e.currentTarget.style.borderColor = cat.color + '45'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = cat.border; }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-                  <div style={{ width: 52, height: 52, borderRadius: 14, background: `${cat.color}12`, border: `1px solid ${cat.color}25`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: cat.color, flexShrink: 0 }}>
+                  <div className="home-deeplink-icon" style={{ width: 52, height: 52, borderRadius: 14, background: `${cat.color}12`, border: `1px solid ${cat.color}25`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: cat.color, flexShrink: 0 }}>
                     {cat.icon}
                   </div>
                   <div>

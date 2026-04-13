@@ -418,7 +418,31 @@ body {
 
   /* Homepage featured products: hero cards — stack image + info */
   .feat-hero-card { flex-direction: column !important; }
-  .feat-hero-card .feat-hero-img { width: 100% !important; height: 180px !important; border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.07) !important; }
+  .feat-hero-card .feat-hero-img { width: 100% !important; height: 180px !important; border-right: none !important; border-bottom: 1px solid rgba(0,0,0,0.08) !important; }
+  .feat-hero-info { padding: 1.25rem !important; }
+
+  /* Top Picks section header — stack label + button on mobile */
+  .home-picks-header { flex-direction: column !important; align-items: flex-start !important; gap: 1rem !important; margin-bottom: 1.75rem !important; }
+
+  /* Featured small product cards */
+  .feat-small-img { height: 130px !important; }
+  .feat-small-body { padding: 0.75rem 0.875rem !important; }
+
+  /* Category cards in 5-col grid — reduce padding */
+  .home-cat-card { padding: 1.25rem 1rem !important; border-radius: 16px !important; }
+
+  /* GLP tier rows */
+  .glp-tier-row { padding: 1rem 1rem !important; gap: 0.875rem !important; }
+  .glp-tier-icon { width: 40px !important; height: 40px !important; font-size: 1rem !important; border-radius: 11px !important; flex-shrink: 0 !important; }
+  .glp-tier-loss { font-size: 1.5rem !important; }
+
+  /* Science cards — tighter padding */
+  .home-science-card { padding: 1.5rem !important; gap: 1rem !important; flex-direction: column !important; }
+  .home-science-icon { width: 44px !important; height: 44px !important; border-radius: 12px !important; flex-shrink: 0 !important; }
+
+  /* Deep-link category cards */
+  .home-deeplink-card { padding: 1.25rem !important; border-radius: 14px !important; }
+  .home-deeplink-icon { width: 42px !important; height: 42px !important; border-radius: 11px !important; flex-shrink: 0 !important; }
 
   /* FeaturedProductsStrip inner container — allow negative margin for full-bleed scroll */
   .strip-scroll { margin-left: -1.25rem !important; margin-right: -1.25rem !important; padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
@@ -427,6 +451,17 @@ body {
 /* ── 480px — small phones ──────────────────────────────────── */
 @media (max-width: 480px) {
   body { font-size: 15px; }
+
+  /* Homepage: extra tight category cards on tiny screens */
+  .home-cat-card { padding: 1rem 0.75rem !important; border-radius: 14px !important; }
+  .home-deeplink-card { padding: 1rem !important; }
+  .home-deeplink-icon { width: 36px !important; height: 36px !important; }
+
+  /* Featured hero card info */
+  .feat-hero-info { padding: 1rem !important; }
+
+  /* Science cards keep column layout at 480 */
+  .home-science-card { padding: 1.25rem !important; }
 
   /* All page wrappers: tighter horizontal padding */
   section {
