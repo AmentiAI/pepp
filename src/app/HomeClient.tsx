@@ -315,7 +315,7 @@ export default function HomePage() {
           {[
             { n: '100+', l: 'Compounds', sub: 'Complete catalog' },
             { n: '>98%', l: 'Purity Standard', sub: 'Every batch, every time' },
-            { n: '$49–$150', l: 'Price Per Compound', sub: 'Competitive lab pricing' },
+            { n: '$40–$135', l: 'Price Per Compound', sub: '10% off — limited time' },
             { n: '100%', l: 'Third-Party Verified', sub: 'Independent lab testing' },
           ].map((s, i) => (
             <div key={s.l} style={{ textAlign: 'center', padding: '0.5rem', borderRight: i < 3 ? '1px solid rgba(0,0,0,0.06)' : 'none' }}>

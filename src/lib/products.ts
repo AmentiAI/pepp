@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     slug: 'ghk-cu-50mg', name: 'GHK-Cu 50mg', shortName: 'GHK-Cu',
     category: 'Skin & Anti-Aging', categorySlug: 'skin-anti-aging',
-    price: 50.00, size: '50mg',
+    price: 45.00, originalPrice: 50.00, size: '50mg',
     image: 'https://phiogen.is/images/products/ghk-cu-50mg.png',
     tag: 'Best Seller', tagColor: 'gold',
     headline: 'The Gold Standard Copper Peptide for Cellular Skin Regeneration',
@@ -54,7 +54,7 @@ export const products: Product[] = [
   {
     slug: 'ghk-cu-100mg', name: 'GHK-Cu 100mg', shortName: 'GHK-Cu',
     category: 'Skin & Anti-Aging', categorySlug: 'skin-anti-aging',
-    price: 89.99, size: '100mg',
+    price: 80.99, originalPrice: 89.99, size: '100mg',
     image: 'https://phiogen.is/images/products/ghk-cu-100mg.png',
     tag: 'Best Value', tagColor: 'green',
     headline: 'Maximum-Yield Copper Peptide for Extended Skin Regeneration Research',
@@ -74,7 +74,7 @@ export const products: Product[] = [
   {
     slug: 'snap-8-10mg', name: 'SNAP-8 10mg', shortName: 'SNAP-8',
     category: 'Skin & Anti-Aging', categorySlug: 'skin-anti-aging',
-    price: 45.00, size: '10mg',
+    price: 40.50, originalPrice: 45.00, size: '10mg',
     image: 'https://phiogen.is/images/products/snap-8-10mg.png',
     headline: 'The Botox-Alternative Peptide for Expression Line Reduction',
     summary: 'SNAP-8 is an octapeptide that inhibits the SNARE complex responsible for muscle contraction at the neuromuscular junction, reducing the depth of expression wrinkles by up to 63% in clinical studies. It is used in looksmaxxing protocols as a topical anti-wrinkle agent.',
@@ -93,7 +93,7 @@ export const products: Product[] = [
   {
     slug: 'melanotan-1-10mg', name: 'Melanotan I 10mg', shortName: 'Melanotan I',
     category: 'Skin & Anti-Aging', categorySlug: 'skin-anti-aging',
-    price: 59.99, size: '10mg',
+    price: 53.99, originalPrice: 59.99, size: '10mg',
     image: 'https://phiogen.is/images/products/melanotan-1-10mg.png',
     headline: 'Full-Body Melanogenesis Activator Without Central Stimulation',
     summary: 'Melanotan I (afamelanotide) is a synthetic α-MSH analogue that activates MC1R receptors to stimulate melanin production throughout the skin. Unlike Melanotan II, it lacks centrally mediated effects, making it the preferred compound for pure photoprotection and tanning research.',
@@ -112,7 +112,7 @@ export const products: Product[] = [
   {
     slug: 'melanotan-2-10mg', name: 'Melanotan II 10mg', shortName: 'Melanotan II',
     category: 'Skin & Anti-Aging', categorySlug: 'skin-anti-aging',
-    price: 59.99, size: '10mg', tag: 'Tanning',
+    price: 53.99, originalPrice: 59.99, size: '10mg', tag: 'Tanning',
     image: 'https://phiogen.is/images/products/melanotan-2-10mg.png',
     headline: 'Multi-Receptor Melanocortin Peptide for Tanning and Libido Research',
     summary: 'Melanotan II is a non-selective melanocortin agonist that activates MC1R, MC3R, MC4R, and MC5R receptors, producing rapid, deep skin pigmentation alongside centrally mediated effects including appetite suppression and libido enhancement in research models.',
@@ -131,7 +131,7 @@ export const products: Product[] = [
   {
     slug: 'ru-58841-50mg-x-30ml', name: 'RU-58841 50mg/mL 30mL', shortName: 'RU-58841',
     category: 'Skin & Anti-Aging', categorySlug: 'skin-anti-aging',
-    price: 79.99, size: '30mL', tag: 'Hair',
+    price: 71.99, originalPrice: 79.99, size: '30mL', tag: 'Hair',
     image: 'https://phiogen.is/images/products/ru-58841-50mg-x-30ml.png',
     headline: 'Potent Topical Androgen Blocker for Hair Loss Research',
     summary: 'RU-58841 is a non-steroidal antiandrogen applied topically to block DHT at the hair follicle receptor level, studied for androgenetic alopecia without the systemic side effect profile of oral 5-alpha reductase inhibitors.',
@@ -150,7 +150,7 @@ export const products: Product[] = [
   {
     slug: 'ru-58841-50mg-x-60ml', name: 'RU-58841 50mg/mL 60mL', shortName: 'RU-58841',
     category: 'Skin & Anti-Aging', categorySlug: 'skin-anti-aging',
-    price: 129.99, size: '60mL', tag: 'Best Value',
+    price: 116.99, originalPrice: 129.99, size: '60mL', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/ru-58841-50mg-x-60ml.png',
     headline: 'Extended Supply Topical DHT Blocker for Long-Term Hair Research',
     summary: 'The 60mL RU-58841 formulation doubles the research volume for long-duration androgenetic alopecia studies. Same 50mg/mL concentration at the best per-mL value for ongoing protocols.',
@@ -168,7 +168,7 @@ export const products: Product[] = [
   {
     slug: 'pt-141-10mg', name: 'PT-141 10mg', shortName: 'PT-141',
     category: 'Skin & Anti-Aging', categorySlug: 'skin-anti-aging',
-    price: 69.99, size: '10mg', tag: 'Libido',
+    price: 62.99, originalPrice: 69.99, size: '10mg', tag: 'Libido',
     image: 'https://phiogen.is/images/products/pt-141-10mg.png',
     headline: 'Central Melanocortin Agonist for Sexual Function Research',
     summary: 'PT-141 (bremelanotide) is an MC4R agonist studied for female hypoactive sexual desire disorder and male erectile dysfunction, working centrally through brain pathways rather than the vascular system. FDA-approved as Vyleesi for HSDD.',
@@ -188,7 +188,7 @@ export const products: Product[] = [
   {
     slug: 'epitalon-10mg', name: 'Epitalon 10mg', shortName: 'Epitalon',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 59.99, size: '10mg',
+    price: 53.99, originalPrice: 59.99, size: '10mg',
     image: 'https://phiogen.is/images/products/epitalon-10mg.png',
     headline: 'Pineal Telomere Peptide for Cellular Longevity Research',
     summary: 'Epitalon (Epithalone) is a synthetic tetrapeptide derived from the pineal gland that activates telomerase, extends telomere length, and restores circadian regulation. Research shows it reduces markers of biological aging and has demonstrated life-extension effects in animal models.',
@@ -208,7 +208,7 @@ export const products: Product[] = [
   {
     slug: 'epitalon-50mg', name: 'Epitalon 50mg', shortName: 'Epitalon',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 139.99, size: '50mg', tag: 'Longevity',
+    price: 125.99, originalPrice: 139.99, size: '50mg', tag: 'Longevity',
     image: 'https://phiogen.is/images/products/epitalon-50mg.png',
     headline: 'High-Yield Epitalon for Extended Longevity Cycle Research',
     summary: 'The 50mg Epitalon vial provides sufficient compound for a full 10–20 day research cycle at standard research doses, representing the best value entry point for serious longevity protocol investigation.',
@@ -226,7 +226,7 @@ export const products: Product[] = [
   {
     slug: 'na-epitalon-10mg', name: 'NA-Epitalon 10mg', shortName: 'NA-Epitalon',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 79.99, size: '10mg',
+    price: 71.99, originalPrice: 79.99, size: '10mg',
     image: 'https://phiogen.is/images/products/na-epitalon-10mg.png',
     headline: 'N-Acetylated Epitalon Variant with Enhanced Stability',
     summary: 'NA-Epitalon is the N-acetyl modified form of Epitalon, offering improved chemical stability and potentially enhanced bioavailability versus the unmodified tetrapeptide in research applications.',
@@ -244,7 +244,7 @@ export const products: Product[] = [
   {
     slug: 'nad-500mg', name: 'NAD+ 500mg', shortName: 'NAD+',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 79.99, size: '500mg', tag: 'Energy',
+    price: 71.99, originalPrice: 79.99, size: '500mg', tag: 'Energy',
     image: 'https://phiogen.is/images/products/nad-500mg.png',
     headline: 'The Master Longevity Coenzyme for Cellular Energy and Repair',
     summary: 'NAD+ (nicotinamide adenine dinucleotide) is the essential coenzyme for over 500 enzymatic reactions, declining up to 50% by age 50. Research shows replenishment activates sirtuins, supports DNA repair via PARP, and restores mitochondrial function in aging cells.',
@@ -264,7 +264,7 @@ export const products: Product[] = [
   {
     slug: 'nad-1000mg', name: 'NAD+ 1000mg', shortName: 'NAD+',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 139.99, size: '1000mg', tag: 'Best Value',
+    price: 125.99, originalPrice: 139.99, size: '1000mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/nad-1000mg.png',
     headline: 'Maximum-Yield NAD+ for Extended Longevity Protocol Research',
     summary: 'The 1000mg NAD+ vial provides double the research compound for extended longevity protocols at the best per-mg value. Ideal for multi-week infusion study designs or high-frequency research protocols.',
@@ -282,7 +282,7 @@ export const products: Product[] = [
   {
     slug: 'glutathione-200mg', name: 'Glutathione 200mg', shortName: 'Glutathione',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 49.99, size: '200mg',
+    price: 44.99, originalPrice: 49.99, size: '200mg',
     image: 'https://phiogen.is/images/products/glutathione-200mg.png',
     headline: 'The Master Antioxidant for Cellular Detox and Immune Support',
     summary: "Glutathione (GSH) is the body's most abundant intracellular antioxidant, protecting cells from oxidative damage, supporting liver detoxification, and modulating immune function. Levels decline with age, disease, and toxin exposure.",
@@ -301,7 +301,7 @@ export const products: Product[] = [
   {
     slug: 'glutathione-600mg', name: 'Glutathione 600mg', shortName: 'Glutathione',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 89.99, size: '600mg',
+    price: 80.99, originalPrice: 89.99, size: '600mg',
     image: 'https://phiogen.is/images/products/glutathione-600mg.png',
     headline: 'Clinical-Dose Glutathione for Sustained Antioxidant Research',
     summary: 'The 600mg glutathione vial matches common clinical infusion doses used in Parkinson\'s, liver disease, and immune support research. Provides 3x the compound of the entry 200mg vial.',
@@ -319,7 +319,7 @@ export const products: Product[] = [
   {
     slug: 'glutathione-1500mg', name: 'Glutathione 1500mg', shortName: 'Glutathione',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 179.99, size: '1500mg', tag: 'Best Value',
+    price: 161.99, originalPrice: 179.99, size: '1500mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/glutathione-1500mg.png',
     headline: 'Maximum-Supply Glutathione for Extended Longevity Protocols',
     summary: 'The 1500mg glutathione vial provides the best per-mg value for researchers running extended antioxidant, liver, or immune protocols. Enables 2-3 full clinical-dose sessions from a single vial.',
@@ -337,7 +337,7 @@ export const products: Product[] = [
   {
     slug: 'foxo4-dri-10mg', name: 'FOXO4-DRI 10mg', shortName: 'FOXO4-DRI',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 149.99, size: '10mg', tag: 'Senolytic',
+    price: 134.99, originalPrice: 149.99, size: '10mg', tag: 'Senolytic',
     image: 'https://phiogen.is/images/products/fox04-dri-10mg.png',
     headline: 'The Senolytic Peptide That Eliminates Aging Senescent Cells',
     summary: 'FOXO4-DRI is a D-retro-inverso peptide that disrupts the FOXO4-p53 interaction in senescent cells, triggering apoptosis specifically in these aged, harmful cells without affecting healthy tissue. It is one of the most exciting tools in senolytic longevity research.',
@@ -357,7 +357,7 @@ export const products: Product[] = [
   {
     slug: 'abaloparatide-3mg', name: 'Abaloparatide 3mg', shortName: 'Abaloparatide',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 149.99, size: '3mg',
+    price: 134.99, originalPrice: 149.99, size: '3mg',
     image: 'https://phiogen.is/images/products/abaloparatide-3mg.png',
     headline: 'PTH Receptor Agonist for Bone Density and Anabolic Research',
     summary: 'Abaloparatide (Tymlos) is an FDA-approved PTH-related protein analogue that activates the PTH1R receptor to stimulate osteoblast activity, increasing bone mineral density and reducing fracture risk with lower hypercalcemia risk than teriparatide.',
@@ -376,7 +376,7 @@ export const products: Product[] = [
   {
     slug: 'ace-031-1mg', name: 'ACE-031 1mg', shortName: 'ACE-031',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 199.99, size: '1mg', tag: 'New',
+    price: 179.99, originalPrice: 199.99, size: '1mg', tag: 'New',
     image: 'https://phiogen.is/images/products/ace-031-1mg.png',
     headline: 'ActRIIB Inhibitor for Muscle Mass and Bone Research',
     summary: 'ACE-031 is a soluble form of ActRIIB that acts as a myostatin and GDF-11 trap, blocking negative regulators of muscle growth. It demonstrated significant muscle and bone mass increases in clinical trials before development was halted for reasons unrelated to efficacy.',
@@ -395,7 +395,7 @@ export const products: Product[] = [
   {
     slug: 'methylene-blue-10mg-ml-50ml', name: 'Methylene Blue 10mg/mL 50mL', shortName: 'Methylene Blue',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 59.99, size: '50mL',
+    price: 53.99, originalPrice: 59.99, size: '50mL',
     image: 'https://phiogen.is/images/products/methylene-blue-10mg-ml-50ml.png',
     headline: 'Mitochondrial Electron Carrier for Cognitive and Longevity Research',
     summary: 'Methylene Blue is a redox-cycling compound that donates electrons directly to cytochrome c in the mitochondrial electron transport chain, improving ATP production and reducing oxidative stress. It is one of the oldest studied cognitive enhancers with modern longevity applications.',
@@ -415,7 +415,7 @@ export const products: Product[] = [
   {
     slug: 'p21-10mg', name: 'P21 10mg', shortName: 'P21',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 89.99, size: '10mg',
+    price: 80.99, originalPrice: 89.99, size: '10mg',
     image: 'https://phiogen.is/images/products/p21-10mg.png',
     headline: 'BDNF-Derived Neurogenic Peptide for Cognitive Research',
     summary: 'P21 is a peptide derived from CNTF (ciliary neurotrophic factor) that promotes neurogenesis, enhances BDNF expression, and has demonstrated significant pro-cognitive and anti-amyloid effects in animal models of neurodegenerative disease.',
@@ -434,7 +434,7 @@ export const products: Product[] = [
   {
     slug: 'pnc-27-30mg', name: 'PNC-27 30mg', shortName: 'PNC-27',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 119.99, size: '30mg',
+    price: 107.99, originalPrice: 119.99, size: '30mg',
     image: 'https://phiogen.is/images/products/pnc-27-30mg.png',
     headline: 'p53-Derived Peptide with Selective Cancer Cell Membrane Disruption',
     summary: 'PNC-27 is a peptide containing a p53 sequence that selectively disrupts the membranes of cancer cells expressing HDM-2 on their surface while leaving normal cells unaffected, representing a novel mechanism of anticancer peptide research.',
@@ -453,7 +453,7 @@ export const products: Product[] = [
   {
     slug: 'adamax-10mg', name: 'Adamax 10mg', shortName: 'Adamax',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 99.99, size: '10mg', tag: 'Nootropic',
+    price: 89.99, originalPrice: 99.99, size: '10mg', tag: 'Nootropic',
     image: 'https://phiogen.is/images/products/adamax-10mg.png',
     headline: 'Nootropic Peptide Blend for Cognitive Enhancement Research',
     summary: 'Adamax is a research nootropic peptide combination studied for cognitive enhancement, neuroprotection, and mental clarity. It targets multiple neurotrophic and neuroprotective pathways to support optimal brain function.',
@@ -471,7 +471,7 @@ export const products: Product[] = [
   {
     slug: 'dsip-5mg', name: 'DSIP 5mg', shortName: 'DSIP',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 49.99, size: '5mg',
+    price: 44.99, originalPrice: 49.99, size: '5mg',
     image: 'https://phiogen.is/images/products/dsip-delta-sleep-inducing-peptide-5mg.png',
     headline: 'Delta Sleep Inducing Peptide for Sleep Architecture Research',
     summary: 'DSIP (Delta Sleep Inducing Peptide) is a nonapeptide that modulates slow-wave sleep, reduces stress hormones, and has demonstrated anti-stress, analgesic, and neuromodulatory effects in research models.',
@@ -490,7 +490,7 @@ export const products: Product[] = [
   {
     slug: 'dsip-10mg', name: 'DSIP 10mg', shortName: 'DSIP',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 79.99, size: '10mg', tag: 'Sleep',
+    price: 71.99, originalPrice: 79.99, size: '10mg', tag: 'Sleep',
     image: 'https://phiogen.is/images/products/dsip-delta-sleep-inducing-peptide-10mg.png',
     headline: 'Mid-Range DSIP for Comprehensive Sleep and Stress Research',
     summary: 'The 10mg DSIP vial provides the optimal quantity for complete sleep architecture and HPA axis modulation protocols at superior value over the 5mg entry size.',
@@ -508,7 +508,7 @@ export const products: Product[] = [
   {
     slug: 'dsip-15mg', name: 'DSIP 15mg', shortName: 'DSIP',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 99.99, size: '15mg', tag: 'Best Value',
+    price: 89.99, originalPrice: 99.99, size: '15mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/dsip-delta-sleep-inducing-peptide-15mg.png',
     headline: 'Maximum Value DSIP for Extended Sleep Protocol Research',
     summary: 'The 15mg DSIP vial offers the best per-mg value for researchers running comprehensive sleep architecture and neuroendocrine modulation studies.',
@@ -526,7 +526,7 @@ export const products: Product[] = [
   {
     slug: 'na-selank-amidate-10mg', name: 'NA-Selank Amidate 10mg', shortName: 'NA-Selank',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 79.99, size: '10mg',
+    price: 71.99, originalPrice: 79.99, size: '10mg',
     image: 'https://phiogen.is/images/products/na-selank-amidate-10mg.png',
     headline: 'Enhanced Anxiolytic Selank Analogue for Anxiety Research',
     summary: 'NA-Selank Amidate is the N-acetylated, C-amidated form of Selank with improved stability and bioavailability. Research shows it reduces anxiety, enhances memory, and modulates immune function with a favorable safety profile.',
@@ -546,7 +546,7 @@ export const products: Product[] = [
   {
     slug: 'na-selank-amidate-30mg', name: 'NA-Selank Amidate 30mg', shortName: 'NA-Selank',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 179.99, size: '30mg', tag: 'Best Value',
+    price: 161.99, originalPrice: 179.99, size: '30mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/na-selank-amidate-30mg.png',
     headline: 'Best Value Extended NA-Selank Supply for Long Anxiety Research',
     summary: 'The 30mg NA-Selank Amidate vial provides the best per-mg value for comprehensive anxiety, cognitive, and immune modulation research protocols.',
@@ -564,7 +564,7 @@ export const products: Product[] = [
   {
     slug: 'n-acetyl-semax-amidate-30mg', name: 'N-Acetyl Semax Amidate 30mg', shortName: 'Semax',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 149.99, size: '30mg', tag: 'Nootropic',
+    price: 134.99, originalPrice: 149.99, size: '30mg', tag: 'Nootropic',
     image: 'https://phiogen.is/images/products/n-acetyl-semax-amidate-30mg.png',
     headline: 'The Most Potent Semax Variant for Peak Nootropic Research',
     summary: 'N-Acetyl Semax Amidate is the most bioavailable and longest-acting form of the ACTH-derived nootropic Semax, enhancing BDNF, NGF, and VEGF expression in the brain while providing significant cognitive enhancement, neuroprotection, and anti-stroke effects in research models.',
@@ -584,7 +584,7 @@ export const products: Product[] = [
   {
     slug: 'pe-22-28-10mg', name: 'PE-22-28 10mg', shortName: 'PE-22-28',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 79.99, size: '10mg', tag: 'Antidepressant',
+    price: 71.99, originalPrice: 79.99, size: '10mg', tag: 'Antidepressant',
     image: 'https://phiogen.is/images/products/pe-22-28-10mg.png',
     headline: 'Spadin-Derived TREK-1 Blocker for Antidepressant Research',
     summary: 'PE-22-28 is a synthetic analogue of Spadin that blocks TREK-1 (KCNK2) potassium channels in the brain, producing rapid antidepressant effects in animal models comparable to SSRIs but with a faster onset and unique mechanism.',
@@ -603,7 +603,7 @@ export const products: Product[] = [
   {
     slug: 'pinealon-10mg', name: 'Pinealon 10mg', shortName: 'Pinealon',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 69.99, size: '10mg',
+    price: 62.99, originalPrice: 69.99, size: '10mg',
     image: 'https://phiogen.is/images/products/pinealon-10mg.png',
     headline: 'Khavinson Pineal Peptide for Neuroprotection and Sleep Research',
     summary: 'Pinealon (Ala-Glu-Asp) is a short peptide bioregulator derived from the pineal gland, studied by Prof. Khavinson for neuroprotective, anti-aging, and circadian regulation effects in neuronal and retinal tissue.',
@@ -622,7 +622,7 @@ export const products: Product[] = [
   {
     slug: 'pinealon-20mg', name: 'Pinealon 20mg', shortName: 'Pinealon',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 119.99, size: '20mg',
+    price: 107.99, originalPrice: 119.99, size: '20mg',
     image: 'https://phiogen.is/images/products/pinealon-20mg.png',
     headline: 'Extended Supply Pinealon for Long-Duration Neuroprotection Research',
     summary: 'The 20mg Pinealon vial offers double the research quantity for extended neuroprotection, circadian restoration, and longevity protocols.',
@@ -639,7 +639,7 @@ export const products: Product[] = [
   {
     slug: 'selank-10mg', name: 'Selank 10mg', shortName: 'Selank',
     category: 'Longevity', categorySlug: 'longevity',
-    price: 69.99, size: '10mg', tag: 'Anxiolytic',
+    price: 62.99, originalPrice: 69.99, size: '10mg', tag: 'Anxiolytic',
     image: 'https://phiogen.is/images/products/selank-10mg.png',
     headline: 'Tuftsin-Derived Anxiolytic for Anxiety and Cognitive Research',
     summary: 'Selank is the base tuftsin-derived heptapeptide developed in Russia with documented anxiolytic, nootropic, and immune-modulating properties. Registered as an approved anxiolytic drug in Russia and Ukraine.',
@@ -659,7 +659,7 @@ export const products: Product[] = [
   {
     slug: 'bpc-157-10mg', name: 'BPC-157 10mg', shortName: 'BPC-157',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 59.99, size: '10mg', tag: 'Best Seller', tagColor: 'gold',
+    price: 53.99, originalPrice: 59.99, size: '10mg', tag: 'Best Seller', tagColor: 'gold',
     image: 'https://phiogen.is/images/products/bpc-157-10mg.png',
     headline: 'The Ultimate Healing Peptide for Tissue Repair and Recovery',
     summary: 'BPC-157 (Body Protection Compound 157) is a 15-amino acid synthetic peptide derived from a protein in gastric juice with remarkable systemic healing properties. Research demonstrates accelerated tendon, ligament, muscle, bone, and gut repair alongside neuroprotective and anti-inflammatory effects.',
@@ -681,7 +681,7 @@ export const products: Product[] = [
   {
     slug: 'bpc-157-capsules-500mcg-x60', name: 'BPC-157 Capsules 500mcg x60', shortName: 'BPC-157 Caps',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '500mcg x60',
+    price: 71.99, originalPrice: 79.99, size: '500mcg x60',
     image: 'https://phiogen.is/images/products/bpc-157-capsules-500mcg-x-60-capsules.png',
     headline: 'Oral BPC-157 for Gastrointestinal and Systemic Healing Research',
     summary: 'Encapsulated BPC-157 at 500mcg per capsule for oral administration research, particularly valuable for GI tract healing studies given the peptide\'s gastric juice origin and gut-specific healing effects.',
@@ -700,7 +700,7 @@ export const products: Product[] = [
   {
     slug: 'tb-500-10mg', name: 'TB-500 10mg', shortName: 'TB-500',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 59.99, size: '10mg', tag: 'Recovery',
+    price: 53.99, originalPrice: 59.99, size: '10mg', tag: 'Recovery',
     image: 'https://phiogen.is/images/products/tb-500-thymosin-beta-4-10mg.png',
     headline: 'Thymosin Beta-4 Peptide for Systemic Tissue Repair and Flexibility',
     summary: 'TB-500 (Thymosin Beta-4) is a ubiquitous actin-sequestering protein fragment studied for its profound effects on wound healing, angiogenesis, muscle repair, and flexibility — including cardiac and neurological tissue recovery that most peptides cannot reach.',
@@ -722,7 +722,7 @@ export const products: Product[] = [
   {
     slug: 'kpv-5mg', name: 'KPV 5mg', shortName: 'KPV',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 59.99, size: '5mg',
+    price: 53.99, originalPrice: 59.99, size: '5mg',
     image: 'https://phiogen.is/images/products/kpv-5mg.png',
     headline: 'Anti-Inflammatory Tripeptide for IBD and Wound Healing Research',
     summary: 'KPV (Lys-Pro-Val) is the C-terminal tripeptide of α-MSH with potent anti-inflammatory properties. Research shows it inhibits NF-κB activation, reduces inflammatory cytokines, and heals intestinal inflammation in IBD models.',
@@ -741,7 +741,7 @@ export const products: Product[] = [
   {
     slug: 'kpv-10mg', name: 'KPV 10mg', shortName: 'KPV',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 99.99, size: '10mg', tag: 'Anti-Inflammatory',
+    price: 89.99, originalPrice: 99.99, size: '10mg', tag: 'Anti-Inflammatory',
     image: 'https://phiogen.is/images/products/kpv-10mg.png',
     headline: 'Full-Protocol KPV for Comprehensive IBD and Inflammation Research',
     summary: 'The 10mg KPV vial provides the ideal quantity for complete inflammatory bowel disease and systemic anti-inflammatory research protocols.',
@@ -759,7 +759,7 @@ export const products: Product[] = [
   {
     slug: 'll-37-10mg', name: 'LL-37 10mg', shortName: 'LL-37',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 99.99, size: '10mg', tag: 'Antimicrobial',
+    price: 89.99, originalPrice: 99.99, size: '10mg', tag: 'Antimicrobial',
     image: 'https://phiogen.is/images/products/ll-37-10mg.png',
     headline: 'Human Cathelicidin Antimicrobial Peptide for Immune and Wound Research',
     summary: 'LL-37 is the only known human cathelicidin, providing broad-spectrum antimicrobial defense, modulating immune responses, and promoting wound healing. It plays a critical role in the innate immune system and has anti-biofilm, anti-inflammatory, and pro-angiogenic properties.',
@@ -779,7 +779,7 @@ export const products: Product[] = [
   {
     slug: 'thymosin-alpha-1-5mg', name: 'Thymosin Alpha-1 5mg', shortName: 'TA-1',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 69.99, size: '5mg',
+    price: 62.99, originalPrice: 69.99, size: '5mg',
     image: 'https://phiogen.is/images/products/thymosin-alpha-1-5mg.png',
     headline: 'Thymic Immune Modulator for Infection and Cancer Research',
     summary: 'Thymosin Alpha-1 (Thymalfasin) is FDA-approved as Zadaxin and used in over 35 countries for hepatitis B/C, immune deficiency, and cancer treatment. It activates dendritic cells, enhances T-cell proliferation, and restores immune competence in compromised patients.',
@@ -799,7 +799,7 @@ export const products: Product[] = [
   {
     slug: 'thymosin-alpha-1-10mg', name: 'Thymosin Alpha-1 10mg', shortName: 'TA-1',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 119.99, size: '10mg', tag: 'Immune',
+    price: 107.99, originalPrice: 119.99, size: '10mg', tag: 'Immune',
     image: 'https://phiogen.is/images/products/thymosin-alpha-1-10mg.png',
     headline: 'Full-Protocol TA-1 for Comprehensive Immune Research',
     summary: 'The 10mg Thymosin Alpha-1 vial provides the recommended quantity for full immune activation and antiviral research protocols, matching doses used in clinical studies.',
@@ -817,7 +817,7 @@ export const products: Product[] = [
   {
     slug: 'ara-290-10mg', name: 'ARA-290 10mg', shortName: 'ARA-290',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 89.99, size: '10mg',
+    price: 80.99, originalPrice: 89.99, size: '10mg',
     image: 'https://phiogen.is/images/products/ara-290-10mg.png',
     headline: 'Non-Hematopoietic EPO Peptide for Neuropathy and Repair Research',
     summary: 'ARA-290 is a peptide derived from the non-hematopoietic region of erythropoietin that activates the innate repair receptor without red blood cell stimulation. Research shows remarkable efficacy for neuropathic pain, small fiber neuropathy, and tissue repair.',
@@ -836,7 +836,7 @@ export const products: Product[] = [
   {
     slug: 'mots-c-10mg', name: 'MOTS-c 10mg', shortName: 'MOTS-c',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 129.99, size: '10mg',
+    price: 116.99, originalPrice: 129.99, size: '10mg',
     image: 'https://phiogen.is/images/products/mots-c-10mg.png',
     headline: 'Mitochondrial-Derived Peptide for Metabolic and Longevity Research',
     summary: 'MOTS-c is a mitochondrial-derived peptide (MDP) encoded in the 12S rRNA that regulates glucose and lipid metabolism, improves insulin sensitivity, and extends lifespan in animal models. It functions as a mitochondria-to-nucleus retrograde signal coordinating cellular stress responses.',
@@ -856,7 +856,7 @@ export const products: Product[] = [
   {
     slug: 'mots-c-20mg', name: 'MOTS-c 20mg', shortName: 'MOTS-c',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 219.99, size: '20mg',
+    price: 197.99, originalPrice: 219.99, size: '20mg',
     image: 'https://phiogen.is/images/products/mots-c-20mg.png',
     headline: 'Extended Supply MOTS-c for Comprehensive Metabolic Research',
     summary: 'The 20mg MOTS-c vial enables extended metabolic, longevity, and exercise biology research with double the compound of the entry 10mg vial.',
@@ -873,7 +873,7 @@ export const products: Product[] = [
   {
     slug: 'mots-c-40mg', name: 'MOTS-c 40mg', shortName: 'MOTS-c',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 379.99, size: '40mg', tag: 'Best Value',
+    price: 341.99, originalPrice: 379.99, size: '40mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/mots-c-40mg.png',
     headline: 'Maximum Value MOTS-c for Long-Duration Longevity Research',
     summary: 'The 40mg MOTS-c vial provides the best per-mg value and sufficient supply for 3-4 months of research protocols, ideal for serious longevity and metabolic research programs.',
@@ -888,7 +888,7 @@ export const products: Product[] = [
   {
     slug: 'ss-31-10mg', name: 'SS-31 10mg', shortName: 'SS-31',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 99.99, size: '10mg',
+    price: 89.99, originalPrice: 99.99, size: '10mg',
     image: 'https://phiogen.is/images/products/ss-31-10mg.png',
     headline: 'Mitochondria-Targeting Peptide for Cardiac and Aging Research',
     summary: 'SS-31 (Elamipretide/MTP-131) is a mitochondria-targeted tetrapeptide that binds cardiolipin, stabilizes cristae structure, and dramatically restores mitochondrial function in aging, ischemia, and disease models. It is in Phase 3 trials for Barth syndrome.',
@@ -908,7 +908,7 @@ export const products: Product[] = [
   {
     slug: 'ss-31-25mg', name: 'SS-31 25mg', shortName: 'SS-31',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 189.99, size: '25mg',
+    price: 170.99, originalPrice: 189.99, size: '25mg',
     image: 'https://phiogen.is/images/products/ss-31-25mg.png',
     headline: 'Mid-Size SS-31 for Extended Mitochondrial and Cardiac Research',
     summary: 'The 25mg SS-31 vial enables comprehensive multi-week mitochondrial protection and cardiac research protocols at superior per-mg value to the entry 10mg.',
@@ -923,7 +923,7 @@ export const products: Product[] = [
   {
     slug: 'ss-31-50mg', name: 'SS-31 50mg', shortName: 'SS-31',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 329.99, size: '50mg', tag: 'Best Value',
+    price: 296.99, originalPrice: 329.99, size: '50mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/ss-31-50mg.png',
     headline: 'Maximum Value SS-31 for Serious Mitochondrial Research Programs',
     summary: 'The 50mg SS-31 vial offers the best per-mg value for long-duration mitochondrial protection, cardiac, and aging research programs.',
@@ -938,7 +938,7 @@ export const products: Product[] = [
   {
     slug: 'vip-5mg', name: 'VIP 5mg', shortName: 'VIP',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '5mg',
+    price: 71.99, originalPrice: 79.99, size: '5mg',
     image: 'https://phiogen.is/images/products/vip-5mg.png',
     headline: 'Vasoactive Intestinal Peptide for Immune and Pulmonary Research',
     summary: 'VIP (Vasoactive Intestinal Peptide) is a 28-amino acid neuropeptide with broad anti-inflammatory, bronchodilatory, immunomodulatory, and neuroprotective properties. Studied for autoimmune disease, COPD, pulmonary hypertension, and autism spectrum disorder.',
@@ -958,7 +958,7 @@ export const products: Product[] = [
   {
     slug: 'vip-10mg', name: 'VIP 10mg', shortName: 'VIP',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 139.99, size: '10mg',
+    price: 125.99, originalPrice: 139.99, size: '10mg',
     image: 'https://phiogen.is/images/products/vip-10mg.png',
     headline: 'Full-Protocol VIP for Comprehensive Immunomodulatory Research',
     summary: 'The 10mg VIP vial provides double the compound for comprehensive pulmonary, autoimmune, and neuroprotective research protocols.',
@@ -973,7 +973,7 @@ export const products: Product[] = [
   {
     slug: 'oxytocin-8mg', name: 'Oxytocin 8mg', shortName: 'Oxytocin',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 69.99, size: '8mg',
+    price: 62.99, originalPrice: 69.99, size: '8mg',
     image: 'https://phiogen.is/images/products/oxytocin-8mg.png',
     headline: 'Bonding Neuropeptide for Social, Healing, and Metabolic Research',
     summary: 'Oxytocin is the social bonding neuropeptide with wide-ranging effects on trust, anxiety, wound healing, and metabolism. Research shows it reduces inflammation, accelerates wound repair, decreases food intake, and has anti-addiction properties.',
@@ -993,7 +993,7 @@ export const products: Product[] = [
   {
     slug: 'oxytocin-10mg', name: 'Oxytocin 10mg', shortName: 'Oxytocin',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '10mg',
+    price: 71.99, originalPrice: 79.99, size: '10mg',
     image: 'https://phiogen.is/images/products/oxytocin-10mg.png',
     headline: 'Extended Oxytocin Supply for Comprehensive Neurological Research',
     summary: 'The 10mg oxytocin vial provides optimal supply for comprehensive social, wound healing, metabolic, and neurological research protocols.',
@@ -1008,7 +1008,7 @@ export const products: Product[] = [
   {
     slug: 'thymulin-10mg', name: 'Thymulin 10mg', shortName: 'Thymulin',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 59.99, size: '10mg',
+    price: 53.99, originalPrice: 59.99, size: '10mg',
     image: 'https://phiogen.is/images/products/thymulin-10mg.png',
     headline: 'Thymic Nonapeptide for Immune Regulation and Inflammation Research',
     summary: 'Thymulin is a thymic nonapeptide (FTS) that requires zinc cofactor for biological activity, promoting T-cell differentiation, suppressing autoimmune responses, and showing analgesic and anti-inflammatory properties in research models.',
@@ -1028,7 +1028,7 @@ export const products: Product[] = [
   {
     slug: 'bronchogen-20mg', name: 'Bronchogen 20mg', shortName: 'Bronchogen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/bronchogen-20mg.png',
     headline: 'Bronchial Peptide Bioregulator for Lung Tissue Research',
     summary: 'Bronchogen is a Khavinson tetrapeptide bioregulator (Ala-Glu-Asp-Leu) that normalizes gene expression in bronchial and lung tissue. Research shows it supports respiratory epithelial regeneration and reduces pulmonary inflammation.',
@@ -1046,7 +1046,7 @@ export const products: Product[] = [
   {
     slug: 'cardiogen-20mg', name: 'Cardiogen 20mg', shortName: 'Cardiogen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/cardiogen-20mg.png',
     headline: 'Cardiac Peptide Bioregulator for Heart Tissue Research',
     summary: 'Cardiogen is a Khavinson tetrapeptide bioregulator (Ala-Glu-Asp-Arg) that normalizes gene expression in myocardial cells, supporting cardiac tissue repair and function in aging and post-injury models.',
@@ -1064,7 +1064,7 @@ export const products: Product[] = [
   {
     slug: 'cartalax-20mg', name: 'Cartalax 20mg', shortName: 'Cartalax',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/cartalax-20mg.png',
     headline: 'Cartilage and Bone Peptide Bioregulator for Joint Research',
     summary: 'Cartalax is a Khavinson tetrapeptide bioregulator targeting cartilage and bone tissue, normalizing chondrocyte and osteoblast gene expression to support joint health and skeletal repair.',
@@ -1082,7 +1082,7 @@ export const products: Product[] = [
   {
     slug: 'chonluten-20mg', name: 'Chonluten 20mg', shortName: 'Chonluten',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/chonluten-20mg.png',
     headline: 'Bronchial and Lung Mucosal Peptide Bioregulator',
     summary: 'Chonluten is a Khavinson short peptide bioregulator (Lys-Glu-Asp) targeting bronchial and lung mucosal cells, supporting respiratory mucosa repair and normal pulmonary epithelial function.',
@@ -1097,7 +1097,7 @@ export const products: Product[] = [
   {
     slug: 'cortagen-20mg', name: 'Cortagen 20mg', shortName: 'Cortagen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/cortagen-20mg.png',
     headline: 'Cerebral Cortex Peptide Bioregulator for Brain Tissue Research',
     summary: 'Cortagen is a Khavinson tetrapeptide bioregulator targeting cerebral cortex neurons, supporting neuronal function, neuroprotection, and healthy brain aging.',
@@ -1112,7 +1112,7 @@ export const products: Product[] = [
   {
     slug: 'crystagen-20mg', name: 'Crystagen 20mg', shortName: 'Crystagen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/crystagen-20mg.png',
     headline: 'Immune System Peptide Bioregulator for Immune Cell Research',
     summary: 'Crystagen is a Khavinson tetrapeptide bioregulator targeting immune cells of the lymphatic system, supporting immune cell gene expression normalization and immune function in aging models.',
@@ -1127,7 +1127,7 @@ export const products: Product[] = [
   {
     slug: 'livagen-20mg', name: 'Livagen 20mg', shortName: 'Livagen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/livagen-20mg.png',
     headline: 'Liver Tissue Peptide Bioregulator for Hepatic Research',
     summary: 'Livagen is a Khavinson tetrapeptide bioregulator targeting hepatic tissue, normalizing liver cell gene expression to support hepatocyte function and liver health in research models.',
@@ -1142,7 +1142,7 @@ export const products: Product[] = [
   {
     slug: 'ovagen-20mg', name: 'Ovagen 20mg', shortName: 'Ovagen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/ovagen-20mg.png',
     headline: 'Liver and GI Peptide Bioregulator for Digestive System Research',
     summary: 'Ovagen is a Khavinson tetrapeptide bioregulator targeting liver and gastrointestinal tissue, supporting digestive organ gene expression normalization and healing in research models.',
@@ -1157,7 +1157,7 @@ export const products: Product[] = [
   {
     slug: 'pancragen-20mg', name: 'Pancragen 20mg', shortName: 'Pancragen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/pancragen-20mg.png',
     headline: 'Pancreatic Peptide Bioregulator for Islet and Endocrine Research',
     summary: 'Pancragen is a Khavinson tetrapeptide bioregulator targeting pancreatic tissue, normalizing gene expression in islet and exocrine cells to support pancreatic function and metabolic health.',
@@ -1172,7 +1172,7 @@ export const products: Product[] = [
   {
     slug: 'prostamax-20mg', name: 'Prostamax 20mg', shortName: 'Prostamax',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/prostamax-20mg.png',
     headline: 'Prostate Tissue Peptide Bioregulator for Glandular Research',
     summary: 'Prostamax is a Khavinson tetrapeptide bioregulator targeting prostate gland tissue, normalizing gene expression in prostate cells to support prostate health and function.',
@@ -1187,7 +1187,7 @@ export const products: Product[] = [
   {
     slug: 'testagen-20mg', name: 'Testagen 20mg', shortName: 'Testagen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 89.99, size: '20mg',
+    price: 80.99, originalPrice: 89.99, size: '20mg',
     image: 'https://phiogen.is/images/products/testagen-20mg.png',
     headline: 'Testicular Peptide Bioregulator for Male Endocrine Research',
     summary: 'Testagen is a Khavinson tetrapeptide bioregulator targeting testicular tissue, normalizing gene expression in Leydig and Sertoli cells to support testosterone production and male reproductive health.',
@@ -1205,7 +1205,7 @@ export const products: Product[] = [
   {
     slug: 'thymogen-20mg', name: 'Thymogen 20mg', shortName: 'Thymogen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/thymogen-20mg.png',
     headline: 'Thymus Dipeptide Bioregulator for Immune Restoration Research',
     summary: 'Thymogen (Glu-Trp) is a short dipeptide bioregulator from the thymus with broad immunostimulatory properties, approved in Russia for immune deficiency and antiviral support.',
@@ -1223,7 +1223,7 @@ export const products: Product[] = [
   {
     slug: 'vesilute-20mg', name: 'Vesilute 20mg', shortName: 'Vesilute',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/vesilute-20mg.png',
     headline: 'Bladder Tissue Peptide Bioregulator for Urological Research',
     summary: 'Vesilute is a Khavinson tetrapeptide bioregulator targeting bladder and urological tissue, normalizing gene expression in urothelial cells to support bladder function and urinary tract health.',
@@ -1238,7 +1238,7 @@ export const products: Product[] = [
   {
     slug: 'vesugen-20mg', name: 'Vesugen 20mg', shortName: 'Vesugen',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/vesugen-20mg.png',
     headline: 'Vascular Peptide Bioregulator for Endothelial and Vessel Research',
     summary: 'Vesugen is a Khavinson tripeptide bioregulator (Lys-Glu-Asp) targeting vascular endothelial cells, normalizing gene expression to support vascular health, endothelial function, and blood vessel integrity.',
@@ -1256,7 +1256,7 @@ export const products: Product[] = [
   {
     slug: 'vilon-20mg', name: 'Vilon 20mg', shortName: 'Vilon',
     category: 'Recovery & Healing', categorySlug: 'recovery-healing',
-    price: 79.99, size: '20mg',
+    price: 71.99, originalPrice: 79.99, size: '20mg',
     image: 'https://phiogen.is/images/products/vilon-20mg.png',
     headline: 'Dipeptide Immune and Longevity Bioregulator for Aging Research',
     summary: 'Vilon (Lys-Glu) is one of the most studied Khavinson dipeptide bioregulators, showing broad immune modulation, tumor suppression, and longevity-extending properties in animal models with extensive Russian clinical data.',
@@ -1276,7 +1276,7 @@ export const products: Product[] = [
   {
     slug: 'bacteriostatic-water-30ml', name: 'Bacteriostatic Water 30mL', shortName: 'BAC Water',
     category: 'Science & Supplies', categorySlug: 'science-supplies',
-    price: 12.99, size: '30mL',
+    price: 11.69, originalPrice: 12.99, size: '30mL',
     image: 'https://phiogen.is/images/products/bacteriostatic-water-30ml.png',
     headline: 'Sterile Bacteriostatic Water for Peptide Reconstitution',
     summary: 'Standard 0.9% benzyl alcohol bacteriostatic water for safe multi-dose peptide vial reconstitution. Essential for any peptide research laboratory.',
@@ -1291,7 +1291,7 @@ export const products: Product[] = [
   {
     slug: 'usp-bacteriostatic-water-30ml', name: 'Bacteriostatic Water USP 30mL', shortName: 'USP BAC Water',
     category: 'Science & Supplies', categorySlug: 'science-supplies',
-    price: 14.99, size: '30mL',
+    price: 13.49, originalPrice: 14.99, size: '30mL',
     image: 'https://phiogen.is/images/products/usp-bacteriostatic-water-30ml.png',
     headline: 'USP-Grade Bacteriostatic Water for Premium Peptide Reconstitution',
     summary: 'United States Pharmacopeia grade bacteriostatic water meeting the highest pharmaceutical standards for peptide reconstitution.',
@@ -1307,7 +1307,7 @@ export const products: Product[] = [
   {
     slug: 'igf-1-lr3-1mg', name: 'IGF-1 LR3 1mg', shortName: 'IGF-1 LR3',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 79.99, size: '1mg', tag: 'Growth Factor',
+    price: 71.99, originalPrice: 79.99, size: '1mg', tag: 'Growth Factor',
     image: 'https://phiogen.is/images/products/igf-1-lr3-1mg.png',
     headline: 'Long-Acting IGF-1 Analogue for Muscle Growth and Anabolic Research',
     summary: 'IGF-1 LR3 is a modified analogue of insulin-like growth factor-1 with a 13-amino acid N-terminal extension and Arg3 substitution that blocks IGF-binding protein binding, extending its half-life from minutes to 20+ hours while maintaining full IGF-1 receptor potency.',
@@ -1328,7 +1328,7 @@ export const products: Product[] = [
   {
     slug: 'ipamorelin-10mg', name: 'Ipamorelin 10mg', shortName: 'Ipamorelin',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 59.99, size: '10mg', tag: 'Popular',
+    price: 53.99, originalPrice: 59.99, size: '10mg', tag: 'Popular',
     image: 'https://phiogen.is/images/products/ipamorelin-10mg.png',
     headline: 'The Cleanest GH Secretagogue for Selective Growth Hormone Release',
     summary: 'Ipamorelin is a selective GH secretagogue that stimulates pituitary GH release via the ghrelin receptor (GHS-R1a) without significantly raising cortisol or prolactin — making it the preferred selective GHRP for GH research protocols.',
@@ -1349,7 +1349,7 @@ export const products: Product[] = [
   {
     slug: 'cjc-1295-no-dac-5mg', name: 'CJC-1295 No DAC 5mg', shortName: 'CJC-1295',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 49.99, size: '5mg',
+    price: 44.99, originalPrice: 49.99, size: '5mg',
     image: 'https://phiogen.is/images/products/cjc-1295-no-dac-5mg.png',
     headline: 'Modified GRF(1-29) for Pulsatile GH Release Research',
     summary: 'CJC-1295 No DAC (Mod GRF 1-29) is a GHRH analogue with a 30-minute half-life that produces physiological pulsatile GH pulses, ideal for researching natural GH secretion patterns when paired with Ipamorelin.',
@@ -1368,7 +1368,7 @@ export const products: Product[] = [
   {
     slug: 'cjc-1295-no-dac-10mg', name: 'CJC-1295 No DAC 10mg', shortName: 'CJC-1295',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 79.99, size: '10mg', tag: 'Popular',
+    price: 71.99, originalPrice: 79.99, size: '10mg', tag: 'Popular',
     image: 'https://phiogen.is/images/products/cjc-1295-no-dac-10mg.png',
     headline: 'Full-Protocol CJC-1295 No DAC for Comprehensive GH Research',
     summary: 'The 10mg CJC-1295 No DAC vial provides the optimal research quantity for complete GH secretion and pituitary function protocols at the best value.',
@@ -1385,7 +1385,7 @@ export const products: Product[] = [
   {
     slug: 'cjc-1295-with-dac-10mg', name: 'CJC-1295 with DAC 10mg', shortName: 'CJC-1295 DAC',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 99.99, size: '10mg', tag: 'Long-Acting',
+    price: 89.99, originalPrice: 99.99, size: '10mg', tag: 'Long-Acting',
     image: 'https://phiogen.is/images/products/cjc-1295-with-dac-10mg.png',
     headline: 'Long-Acting GHRH Analogue for Sustained GH Elevation Research',
     summary: 'CJC-1295 with DAC uses a Drug Affinity Complex to covalently bind serum albumin after injection, extending its half-life to 6-8 days and producing sustained baseline GH elevation rather than pulsatile release.',
@@ -1404,7 +1404,7 @@ export const products: Product[] = [
   {
     slug: 'ghrp-2-10mg', name: 'GHRP-2 10mg', shortName: 'GHRP-2',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 49.99, size: '10mg',
+    price: 44.99, originalPrice: 49.99, size: '10mg',
     image: 'https://phiogen.is/images/products/ghrp-2-10mg.png',
     headline: 'Potent GH-Releasing Hexapeptide for GH Axis Research',
     summary: 'GHRP-2 is a synthetic hexapeptide that powerfully stimulates GH secretion via the ghrelin receptor, producing larger GH pulses than Ipamorelin with some cortisol and prolactin elevation at higher doses.',
@@ -1422,7 +1422,7 @@ export const products: Product[] = [
   {
     slug: 'ghrp-6-10mg', name: 'GHRP-6 10mg', shortName: 'GHRP-6',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 49.99, size: '10mg',
+    price: 44.99, originalPrice: 49.99, size: '10mg',
     image: 'https://phiogen.is/images/products/ghrp-6-10mg.png',
     headline: 'Classic GH-Releasing Peptide with Appetite-Stimulating Properties',
     summary: 'GHRP-6 is the original synthetic GH-releasing hexapeptide that stimulates GH secretion via the ghrelin receptor while producing the strongest appetite stimulation of all GHRPs — making it valuable for both GH axis and hunger/metabolism research.',
@@ -1441,7 +1441,7 @@ export const products: Product[] = [
   {
     slug: 'hexarelin-5mg', name: 'Hexarelin 5mg', shortName: 'Hexarelin',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 59.99, size: '5mg',
+    price: 53.99, originalPrice: 59.99, size: '5mg',
     image: 'https://phiogen.is/images/products/hexarelin-5mg.png',
     headline: 'Most Potent GHRP with Cardiac Protective Properties',
     summary: 'Hexarelin is the most potent synthetic GHRP available, producing the largest GH pulses among GHRPs. Uniquely, it also activates CD36 receptors independent of GH for direct cardioprotective and anti-atherogenic effects in cardiac research.',
@@ -1460,7 +1460,7 @@ export const products: Product[] = [
   {
     slug: 'sermorelin-2mg', name: 'Sermorelin 2mg', shortName: 'Sermorelin',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 39.99, size: '2mg',
+    price: 35.99, originalPrice: 39.99, size: '2mg',
     image: 'https://phiogen.is/images/products/sermorelin-2mg.png',
     headline: 'Natural GHRH(1-29) Analogue for GH Stimulation Research',
     summary: 'Sermorelin is the natural 29-amino acid N-terminal fragment of GHRH that retains full GH-stimulating activity. FDA-approved for childhood GH deficiency diagnosis, it produces a physiological GH pulse with a clean safety profile.',
@@ -1478,7 +1478,7 @@ export const products: Product[] = [
   {
     slug: 'sermorelin-5mg', name: 'Sermorelin 5mg', shortName: 'Sermorelin',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 69.99, size: '5mg',
+    price: 62.99, originalPrice: 69.99, size: '5mg',
     image: 'https://phiogen.is/images/products/sermorelin-5mg.png',
     headline: 'Mid-Supply Sermorelin for Extended GH Research Protocols',
     summary: 'The 5mg Sermorelin vial provides optimal quantity for complete GH axis and anti-aging research protocols at superior value to the entry 2mg.',
@@ -1493,7 +1493,7 @@ export const products: Product[] = [
   {
     slug: 'sermorelin-10mg', name: 'Sermorelin 10mg', shortName: 'Sermorelin',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 119.99, size: '10mg', tag: 'Popular',
+    price: 107.99, originalPrice: 119.99, size: '10mg', tag: 'Popular',
     image: 'https://phiogen.is/images/products/sermorelin-10mg.png',
     headline: 'Best Value Sermorelin for Long-Duration GH Anti-Aging Research',
     summary: 'The 10mg Sermorelin vial offers the best value for comprehensive, long-duration GH axis, anti-aging, and body composition research protocols.',
@@ -1508,7 +1508,7 @@ export const products: Product[] = [
   {
     slug: 'tesamorelin-10mg', name: 'Tesamorelin 10mg', shortName: 'Tesamorelin',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 119.99, size: '10mg',
+    price: 107.99, originalPrice: 119.99, size: '10mg',
     image: 'https://phiogen.is/images/products/tesamorelin-10mg.png',
     headline: 'FDA-Approved GHRH for Visceral Fat Reduction and GH Research',
     summary: 'Tesamorelin (Egrifta) is an FDA-approved GHRH analogue for HIV-associated lipodystrophy that reduces visceral adipose tissue by 15-20% while increasing IGF-1. It has a longer half-life than Sermorelin and is the only GHRH analogue with Phase 3 clinical approval for fat reduction.',
@@ -1527,7 +1527,7 @@ export const products: Product[] = [
   {
     slug: 'tesamorelin-20mg', name: 'Tesamorelin 20mg', shortName: 'Tesamorelin',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 199.99, size: '20mg', tag: 'Best Value',
+    price: 179.99, originalPrice: 199.99, size: '20mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/tesamorelin-20mg.png',
     headline: 'Best Value Tesamorelin for Extended Fat Loss and GH Research',
     summary: 'The 20mg Tesamorelin vial provides the best per-mg value for comprehensive visceral fat reduction, GH restoration, and metabolic body composition research protocols.',
@@ -1542,7 +1542,7 @@ export const products: Product[] = [
   {
     slug: 'kisspeptin-10-5mg', name: 'Kisspeptin-10 5mg', shortName: 'Kisspeptin-10',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 59.99, size: '5mg',
+    price: 53.99, originalPrice: 59.99, size: '5mg',
     image: 'https://phiogen.is/images/products/kisspeptin-10-5mg.png',
     headline: 'Master Reproductive Neuropeptide for HPG Axis Research',
     summary: 'Kisspeptin-10 is the decapeptide fragment of kisspeptin (metastin) that activates GnRH neurons in the hypothalamus, controlling the onset of puberty and regulating the reproductive HPG axis. Critical for LH/FSH and testosterone research.',
@@ -1561,7 +1561,7 @@ export const products: Product[] = [
   {
     slug: 'kisspeptin-10-10mg', name: 'Kisspeptin-10 10mg', shortName: 'Kisspeptin-10',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 99.99, size: '10mg',
+    price: 89.99, originalPrice: 99.99, size: '10mg',
     image: 'https://phiogen.is/images/products/kisspeptin-10-10mg.png',
     headline: 'Full-Protocol Kisspeptin for Comprehensive HPG Axis Research',
     summary: 'The 10mg Kisspeptin-10 vial provides optimal quantity for comprehensive HPG axis, testosterone production, and reproductive biology research protocols.',
@@ -1576,7 +1576,7 @@ export const products: Product[] = [
   {
     slug: 'peg-mgf-2mg', name: 'PEG-MGF 2mg', shortName: 'PEG-MGF',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 69.99, size: '2mg',
+    price: 62.99, originalPrice: 69.99, size: '2mg',
     image: 'https://phiogen.is/images/products/peg-mgf-2mg.png',
     headline: 'Long-Acting Mechano Growth Factor for Muscle Repair Research',
     summary: 'PEG-MGF (Pegylated Mechano Growth Factor) is the PEGylated form of MGF, an IGF-1 splice variant that activates satellite cells at injury sites. PEGylation extends its half-life from minutes to hours for sustained muscle repair activation.',
@@ -1595,7 +1595,7 @@ export const products: Product[] = [
   {
     slug: 'gonadorelin-acetate', name: 'Gonadorelin Acetate', shortName: 'Gonadorelin',
     category: 'Growth & Body Comp', categorySlug: 'growth-body-comp',
-    price: 49.99, size: '10mg',
+    price: 44.99, originalPrice: 49.99, size: '10mg',
     image: 'https://phiogen.is/images/products/gonadorelin-acetate.png',
     headline: 'Native GnRH for Reproductive Axis and Testosterone Research',
     summary: 'Gonadorelin is the synthetic form of native GnRH (Gonadotropin-Releasing Hormone) that stimulates LH and FSH release from the pituitary to drive testosterone and reproductive function. Used therapeutically and diagnostically for HPG axis evaluation.',
@@ -1615,7 +1615,7 @@ export const products: Product[] = [
   {
     slug: 'semaglutide-3mg', name: 'Semaglutide 3mg', shortName: 'Semaglutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 49.99, size: '3mg',
+    price: 44.99, originalPrice: 49.99, size: '3mg',
     image: 'https://phiogen.is/images/products/semaglutide-3mg.png',
     headline: 'Entry-Level Semaglutide for GLP-1 Receptor Research',
     summary: 'Semaglutide is the leading GLP-1 receptor agonist (Ozempic/Wegovy) proven to reduce body weight by 15-20% in clinical trials. The 3mg vial provides an entry quantity for dose-finding and initiation protocol research.',
@@ -1634,7 +1634,7 @@ export const products: Product[] = [
   {
     slug: 'semaglutide-6mg', name: 'Semaglutide 6mg', shortName: 'Semaglutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 79.99, size: '6mg', tag: 'Popular',
+    price: 71.99, originalPrice: 79.99, size: '6mg', tag: 'Popular',
     image: 'https://phiogen.is/images/products/semaglutide-6mg.png',
     headline: 'Popular Semaglutide Mid-Dose for Weight Loss Protocol Research',
     summary: 'The 6mg Semaglutide vial is the most popular format, ideal for maintenance-phase GLP-1 research protocols after dose escalation. Double the entry size at the best mid-range value.',
@@ -1649,7 +1649,7 @@ export const products: Product[] = [
   {
     slug: 'semaglutide-12mg', name: 'Semaglutide 12mg', shortName: 'Semaglutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 129.99, size: '12mg',
+    price: 116.99, originalPrice: 129.99, size: '12mg',
     image: 'https://phiogen.is/images/products/semaglutide-12mg.png',
     headline: 'Extended Supply Semaglutide for 6-Week Research Protocols',
     summary: 'The 12mg vial provides approximately 6 weeks of standard semaglutide research supply, ideal for extended weight loss protocol studies.',
@@ -1664,7 +1664,7 @@ export const products: Product[] = [
   {
     slug: 'semaglutide-20mg', name: 'Semaglutide 20mg', shortName: 'Semaglutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 189.99, size: '20mg', tag: 'Best Value',
+    price: 170.99, originalPrice: 189.99, size: '20mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/semaglutide-20mg.png',
     headline: 'Best Value Semaglutide for Long-Duration Metabolic Research',
     summary: 'The 20mg Semaglutide vial offers the best per-mg value, providing approximately 10 weeks of research supply for comprehensive longitudinal weight management and metabolic studies.',
@@ -1679,7 +1679,7 @@ export const products: Product[] = [
   {
     slug: 'semaglutide-30mg', name: 'Semaglutide 30mg', shortName: 'Semaglutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 249.99, size: '30mg',
+    price: 224.99, originalPrice: 249.99, size: '30mg',
     image: 'https://phiogen.is/images/products/semaglutide-30mg.png',
     headline: 'Maximum Supply Semaglutide for Extended Research Programs',
     summary: 'The 30mg Semaglutide vial provides the maximum single-vial supply for the most comprehensive and extended GLP-1 research programs.',
@@ -1694,7 +1694,7 @@ export const products: Product[] = [
   {
     slug: 'tirzepatide-15mg', name: 'Tirzepatide 15mg', shortName: 'Tirzepatide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 149.99, size: '15mg', tag: 'Best Seller', tagColor: 'gold',
+    price: 134.99, originalPrice: 149.99, size: '15mg', tag: 'Best Seller', tagColor: 'gold',
     image: 'https://phiogen.is/images/products/tirzepatide-15mg.png',
     headline: 'Dual GLP-1/GIP Agonist for Superior Weight Loss Research',
     summary: 'Tirzepatide (Mounjaro/Zepbound) is the first dual GLP-1/GIP receptor agonist, achieving 20-22% weight loss in SURMOUNT trials — surpassing semaglutide. FDA-approved for both diabetes and obesity, it represents the next generation of metabolic peptide research.',
@@ -1714,7 +1714,7 @@ export const products: Product[] = [
   {
     slug: 'tirzepatide-30mg', name: 'Tirzepatide 30mg', shortName: 'Tirzepatide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 249.99, size: '30mg', tag: 'Best Value',
+    price: 224.99, originalPrice: 249.99, size: '30mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/tirzepatide-30mg.png',
     headline: 'Extended Supply Tirzepatide for Comprehensive Dual Incretin Research',
     summary: 'The 30mg Tirzepatide vial provides extended research supply for comprehensive dual GLP-1/GIP receptor studies and long-duration metabolic research protocols.',
@@ -1729,7 +1729,7 @@ export const products: Product[] = [
   {
     slug: 'tirzepatide-60mg', name: 'Tirzepatide 60mg', shortName: 'Tirzepatide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 399.99, size: '60mg',
+    price: 359.99, originalPrice: 399.99, size: '60mg',
     image: 'https://phiogen.is/images/products/tirzepatide-60mg.png',
     headline: 'Maximum Supply Tirzepatide for Extended Metabolic Research Programs',
     summary: 'The 60mg Tirzepatide vial provides the maximum single-vial supply for long-duration dual GLP-1/GIP research programs and extended metabolic outcome studies.',
@@ -1744,7 +1744,7 @@ export const products: Product[] = [
   {
     slug: 'retatrutide-10mg', name: 'Retatrutide 10mg', shortName: 'Retatrutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 149.99, size: '10mg', tag: 'New',
+    price: 134.99, originalPrice: 149.99, size: '10mg', tag: 'New',
     image: 'https://phiogen.is/images/products/retatrutide-10mg.png',
     headline: 'Triple Incretin Agonist Showing 24% Weight Loss in Phase 2 Trials',
     summary: 'Retatrutide is the first triple GLP-1/GIP/glucagon receptor agonist in development, achieving unprecedented 24% body weight reduction in Phase 2 trials — the highest ever recorded for a pharmaceutical weight loss agent. It combines the GLP-1/GIP dual agonism of Tirzepatide with glucagon receptor activation for additional metabolic and energy expenditure benefits.',
@@ -1764,7 +1764,7 @@ export const products: Product[] = [
   {
     slug: 'retatrutide-15mg', name: 'Retatrutide 15mg', shortName: 'Retatrutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 199.99, size: '15mg',
+    price: 179.99, originalPrice: 199.99, size: '15mg',
     image: 'https://phiogen.is/images/products/retatrutide-15mg.png',
     headline: 'Extended Retatrutide for Comprehensive Triple Agonist Research',
     summary: 'The 15mg Retatrutide vial provides optimal quantity for complete triple GLP-1/GIP/glucagon receptor research protocols at superior value.',
@@ -1779,7 +1779,7 @@ export const products: Product[] = [
   {
     slug: 'retatrutide-20mg', name: 'Retatrutide 20mg', shortName: 'Retatrutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 249.99, size: '20mg',
+    price: 224.99, originalPrice: 249.99, size: '20mg',
     image: 'https://phiogen.is/images/products/retatrutide-20mg.png',
     headline: 'High-Volume Retatrutide for Multi-Session Triple Agonist Research',
     summary: 'The 20mg Retatrutide vial supports multi-session triple GLP-1/GIP/glucagon research programs at competitive per-mg value.',
@@ -1794,7 +1794,7 @@ export const products: Product[] = [
   {
     slug: 'retatrutide-30mg', name: 'Retatrutide 30mg', shortName: 'Retatrutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 329.99, size: '30mg', tag: 'Best Value',
+    price: 296.99, originalPrice: 329.99, size: '30mg', tag: 'Best Value',
     image: 'https://phiogen.is/images/products/retatrutide-30mg.png',
     headline: 'Maximum Value Retatrutide for Comprehensive Research Programs',
     summary: 'The 30mg Retatrutide vial offers the best per-mg value for long-duration triple agonist and metabolic outcome research programs.',
@@ -1809,7 +1809,7 @@ export const products: Product[] = [
   {
     slug: 'cagrilintide-5mg', name: 'Cagrilintide 5mg', shortName: 'Cagrilintide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 99.99, size: '5mg',
+    price: 89.99, originalPrice: 99.99, size: '5mg',
     image: 'https://phiogen.is/images/products/cagrilintide-5mg.png',
     headline: 'Long-Acting Amylin Analogue for Weight Loss and Satiety Research',
     summary: 'Cagrilintide is a long-acting amylin analogue that reduces food intake and body weight via central amylin receptor activation. Combined with semaglutide in CagriSema, it achieves up to 25% weight loss in clinical trials.',
@@ -1828,7 +1828,7 @@ export const products: Product[] = [
   {
     slug: 'cagrilintide-10mg', name: 'Cagrilintide 10mg', shortName: 'Cagrilintide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 169.99, size: '10mg',
+    price: 152.99, originalPrice: 169.99, size: '10mg',
     image: 'https://phiogen.is/images/products/cagrilintide-10mg.png',
     headline: 'Extended Supply Cagrilintide for Comprehensive Amylin Research',
     summary: 'The 10mg Cagrilintide vial provides extended research supply for comprehensive amylin receptor, satiety, and combination weight loss protocol studies.',
@@ -1843,7 +1843,7 @@ export const products: Product[] = [
   {
     slug: 'mazdutide-6mg', name: 'Mazdutide 6mg', shortName: 'Mazdutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 129.99, size: '6mg', tag: 'New',
+    price: 116.99, originalPrice: 129.99, size: '6mg', tag: 'New',
     image: 'https://phiogen.is/images/products/mazdutide-6mg.png',
     headline: 'Dual GLP-1/Glucagon Agonist for Next-Generation Metabolic Research',
     summary: 'Mazdutide is a dual GLP-1/glucagon receptor agonist developed in China showing significant weight loss and NASH improvement in Phase 2/3 trials, representing an alternative dual-mechanism approach to Retatrutide.',
@@ -1861,7 +1861,7 @@ export const products: Product[] = [
   {
     slug: 'survodutide-10mg', name: 'Survodutide 10mg', shortName: 'Survodutide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 159.99, size: '10mg', tag: 'New',
+    price: 143.99, originalPrice: 159.99, size: '10mg', tag: 'New',
     image: 'https://phiogen.is/images/products/survodutide-10mg.png',
     headline: 'BI Dual GLP-1/Glucagon Agonist for NASH and Obesity Research',
     summary: 'Survodutide (BI 456906) is a dual GLP-1/glucagon receptor agonist developed by Boehringer Ingelheim showing significant weight loss and liver fat reduction in Phase 2 trials for both obesity and NASH.',
@@ -1879,7 +1879,7 @@ export const products: Product[] = [
   {
     slug: 'aod9604-2mg', name: 'AOD9604 2mg', shortName: 'AOD9604',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 39.99, size: '2mg',
+    price: 35.99, originalPrice: 39.99, size: '2mg',
     image: 'https://phiogen.is/images/products/aod9604-2mg.png',
     headline: 'HGH Fragment for Fat Metabolism Without Insulin Resistance',
     summary: 'AOD9604 is the C-terminal fragment of human growth hormone (hGH 177-191) that retains GH\'s lipolytic activity without affecting blood glucose or insulin signaling, making it an ideal fat-specific research compound.',
@@ -1898,7 +1898,7 @@ export const products: Product[] = [
   {
     slug: 'aod9604-5mg', name: 'AOD9604 5mg', shortName: 'AOD9604',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 69.99, size: '5mg',
+    price: 62.99, originalPrice: 69.99, size: '5mg',
     image: 'https://phiogen.is/images/products/aod9604-5mg.png',
     headline: 'Mid-Supply AOD9604 for Extended Fat Loss Research',
     summary: 'The 5mg AOD9604 vial provides optimal quantity for comprehensive hGH fat fragment and lipolysis research protocols.',
@@ -1913,7 +1913,7 @@ export const products: Product[] = [
   {
     slug: 'aod9604-10mg', name: 'AOD9604 10mg', shortName: 'AOD9604',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 119.99, size: '10mg', tag: 'Popular',
+    price: 107.99, originalPrice: 119.99, size: '10mg', tag: 'Popular',
     image: 'https://phiogen.is/images/products/aod9604-10mg.png',
     headline: 'Best Value AOD9604 for Long-Duration Fat Research Programs',
     summary: 'The 10mg AOD9604 vial offers the best per-mg value for comprehensive, long-duration hGH fat fragment and lipolysis research programs.',
@@ -1928,7 +1928,7 @@ export const products: Product[] = [
   {
     slug: '5-amino-1mq-5mg', name: '5-Amino-1MQ 5mg', shortName: '5-Amino-1MQ',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 19.99, size: '5mg',
+    price: 17.99, originalPrice: 19.99, size: '5mg',
     image: 'https://phiogen.is/images/products/5-amino-1mq-5mg.png',
     headline: 'NNMT Inhibitor for Fat Cell Shrinkage and Metabolic Research',
     summary: '5-Amino-1MQ is a small molecule NNMT (nicotinamide N-methyltransferase) inhibitor that blocks fat cell expansion by increasing cellular NAD+ and SAM levels, reducing adipocyte size without increasing adipocyte number.',
@@ -1947,7 +1947,7 @@ export const products: Product[] = [
   {
     slug: '5-amino-1mq-50mg', name: '5-Amino-1MQ 50mg', shortName: '5-Amino-1MQ',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 79.99, size: '50mg',
+    price: 71.99, originalPrice: 79.99, size: '50mg',
     image: 'https://phiogen.is/images/products/5-amino-1mq-50mg.png',
     headline: 'Extended Supply 5-Amino-1MQ for Comprehensive NNMT Research',
     summary: 'The 50mg 5-Amino-1MQ vial provides extended supply for comprehensive NNMT inhibition, adipocyte biology, and NAD+ metabolism research.',
@@ -1962,7 +1962,7 @@ export const products: Product[] = [
   {
     slug: '5-amino-1mq-capsules-50mg-x60', name: '5-Amino-1MQ 50mg x60 Capsules', shortName: '5-Amino-1MQ',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 119.99, size: '50mg x60',
+    price: 107.99, originalPrice: 119.99, size: '50mg x60',
     image: 'https://phiogen.is/images/products/5-amino-1mq-capsules-50mg-x-60-capsules.png',
     headline: 'Oral 5-Amino-1MQ Capsules for Convenient NNMT Research',
     summary: '5-Amino-1MQ in convenient 50mg oral capsules (60 count) for oral administration research, enabling oral bioavailability and chronic dosing protocol studies.',
@@ -1980,7 +1980,7 @@ export const products: Product[] = [
   {
     slug: 'aicar-50mg', name: 'AICAR 50mg', shortName: 'AICAR',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 69.99, size: '50mg',
+    price: 62.99, originalPrice: 69.99, size: '50mg',
     image: 'https://phiogen.is/images/products/aicar-50mg.png',
     headline: 'AMPK Activator Exercise Mimetic for Metabolic Research',
     summary: 'AICAR (AICA Ribonucleotide) is a potent AMPK activator that mimics the metabolic effects of exercise — increasing fat oxidation, improving insulin sensitivity, and enhancing endurance capacity in animal models without physical exertion.',
@@ -2000,7 +2000,7 @@ export const products: Product[] = [
   {
     slug: 'adipotide-ftpp-5mg', name: 'Adipotide (FTPP) 5mg', shortName: 'Adipotide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 89.99, size: '5mg',
+    price: 80.99, originalPrice: 89.99, size: '5mg',
     image: 'https://phiogen.is/images/products/adipotide-fttp-5mg.png',
     headline: 'Pro-Apoptotic Fat Cell Peptide for Targeted Adipose Reduction',
     summary: 'Adipotide (FTPP) is a peptidomimetic that selectively targets vasculature feeding white adipose tissue, inducing apoptosis in fat cell blood vessels to cause selective fat tissue reduction. Showed 11% body fat loss in obese primates.',
@@ -2019,7 +2019,7 @@ export const products: Product[] = [
   {
     slug: 'adipotide-ftpp-10mg', name: 'Adipotide (FTPP) 10mg', shortName: 'Adipotide',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 149.99, size: '10mg',
+    price: 134.99, originalPrice: 149.99, size: '10mg',
     image: 'https://phiogen.is/images/products/adipotide-fttp-10mg.png',
     headline: 'Extended Adipotide for Comprehensive Targeted Fat Research',
     summary: 'The 10mg Adipotide vial provides extended research supply for comprehensive targeted adipose apoptosis and vascular targeting studies.',
@@ -2034,7 +2034,7 @@ export const products: Product[] = [
   {
     slug: 'bam-15-30mg-ml-30ml', name: 'BAM-15 30mg/mL 30mL', shortName: 'BAM-15',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 89.99, size: '30mL',
+    price: 80.99, originalPrice: 89.99, size: '30mL',
     image: 'https://phiogen.is/images/products/bam-15-30mg-ml-30ml.png',
     headline: 'Mitochondrial Uncoupler for Fat Loss Without Cardiovascular Risk',
     summary: 'BAM-15 is a mitochondrial proton carrier that uncouples respiration from ATP production, burning fat as heat without the cardiac toxicity associated with classic uncouplers like DNP. Reduces fat mass while preserving lean mass in animal studies.',
@@ -2053,7 +2053,7 @@ export const products: Product[] = [
   {
     slug: 'bam-15-50mg-ml-30ml', name: 'BAM-15 50mg/mL 30mL', shortName: 'BAM-15',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 129.99, size: '30mL',
+    price: 116.99, originalPrice: 129.99, size: '30mL',
     image: 'https://phiogen.is/images/products/bam-15-50mg-ml-30ml.png',
     headline: 'High-Concentration BAM-15 for Advanced Mitochondrial Uncoupling Research',
     summary: 'The 50mg/mL BAM-15 formulation provides higher concentration for researchers studying dose-dependent mitochondrial uncoupling and fat oxidation effects.',
@@ -2068,7 +2068,7 @@ export const products: Product[] = [
   {
     slug: 'l-carnitine-400mg-ml', name: 'L-Carnitine 400mg/mL', shortName: 'L-Carnitine',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 39.99, size: '400mg/mL',
+    price: 35.99, originalPrice: 39.99, size: '400mg/mL',
     image: 'https://phiogen.is/images/products/l-carnitine-400mg-ml.png',
     headline: 'Mitochondrial Fat Transport Molecule for Energy and Metabolism Research',
     summary: 'L-Carnitine is the essential transporter that carries long-chain fatty acids across the inner mitochondrial membrane for β-oxidation. Supplemental L-Carnitine research focuses on fat metabolism, exercise performance, and cognitive function.',
@@ -2087,7 +2087,7 @@ export const products: Product[] = [
   {
     slug: 'l-carnitine-600mg-ml', name: 'L-Carnitine 600mg/mL', shortName: 'L-Carnitine',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 49.99, size: '600mg/mL',
+    price: 44.99, originalPrice: 49.99, size: '600mg/mL',
     image: 'https://phiogen.is/images/products/l-carnitine-600mg-ml.png',
     headline: 'High-Concentration L-Carnitine for Advanced Fat Metabolism Research',
     summary: 'Higher concentration L-Carnitine at 600mg/mL for researchers requiring greater dose flexibility in fat metabolism and mitochondrial transport research.',
@@ -2102,7 +2102,7 @@ export const products: Product[] = [
   {
     slug: 'l-carnitine-5-pack-600mg', name: 'L-Carnitine 5-Pack 600mg', shortName: 'L-Carnitine',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 89.99, size: '5-Pack', tag: 'Value Pack',
+    price: 80.99, originalPrice: 89.99, size: '5-Pack', tag: 'Value Pack',
     image: 'https://phiogen.is/images/products/l-carnitine-5-pack-600mg.png',
     headline: 'Best Value L-Carnitine Bundle for Extended Research Programs',
     summary: 'Five 600mg/mL L-Carnitine vials bundled at the best per-vial value for long-duration fat metabolism and mitochondrial function research programs.',
@@ -2117,7 +2117,7 @@ export const products: Product[] = [
   {
     slug: 'o-304-atx-304-100mg-x60-capsules', name: 'O-304 (ATX-304) 100mg x60 Capsules', shortName: 'O-304',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 119.99, size: '100mg x60', tag: 'New',
+    price: 107.99, originalPrice: 119.99, size: '100mg x60', tag: 'New',
     image: 'https://phiogen.is/images/products/o-304-atx-304-100mg-x-60-capsules.png',
     headline: 'Pan-AMPK Activator for Diabetes, Fat Loss, and Heart Research',
     summary: 'O-304 (ATX-304) is a first-in-class pan-AMPK activator showing remarkable results in Phase 2 trials for T2D — reducing HbA1c, body weight, and heart failure markers simultaneously. It activates all AMPK subunit complexes across tissues.',
@@ -2137,7 +2137,7 @@ export const products: Product[] = [
   {
     slug: 'slu-pp-332-1mg-x30-capsules', name: 'SLU-PP-332 1mg x30 Capsules', shortName: 'SLU-PP-332',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 39.99, size: '1mg x30',
+    price: 35.99, originalPrice: 39.99, size: '1mg x30',
     image: 'https://phiogen.is/images/products/slu-pp-332-1mg-x-30-capsules.png',
     headline: 'ERR Agonist Exercise Mimetic for Metabolic and Endurance Research',
     summary: 'SLU-PP-332 is a pan-ERR (Estrogen-Related Receptor) agonist that activates ERRα, ERRβ, and ERRγ to mimic the metabolic adaptations of aerobic exercise — increasing mitochondrial biogenesis, fat oxidation, and endurance capacity.',
@@ -2156,7 +2156,7 @@ export const products: Product[] = [
   {
     slug: 'slu-pp-332-100mg-x30-capsules', name: 'SLU-PP-332 100mg x30 Capsules', shortName: 'SLU-PP-332',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 59.99, size: '100mg x30',
+    price: 53.99, originalPrice: 59.99, size: '100mg x30',
     image: 'https://phiogen.is/images/products/slu-pp-332-100mg-x-30-capsules.png',
     headline: 'Standard-Dose SLU-PP-332 Capsules for ERR Research',
     summary: 'SLU-PP-332 at the standard 100mg dose in 30-capsule format for comprehensive pan-ERR research and exercise mimetic protocol studies.',
@@ -2171,7 +2171,7 @@ export const products: Product[] = [
   {
     slug: 'slu-pp-332-100mg-x120-capsules', name: 'SLU-PP-332 100mg x120 Capsules', shortName: 'SLU-PP-332',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 159.99, size: '100mg x120',
+    price: 143.99, originalPrice: 159.99, size: '100mg x120',
     image: 'https://phiogen.is/images/products/slu-pp-332-100mg-x-120-capsules.png',
     headline: 'Best Value SLU-PP-332 for Extended ERR Research Programs',
     summary: 'The 120-capsule SLU-PP-332 format provides 4 months of research supply at the best per-capsule value for comprehensive exercise mimetic and ERR agonism research.',
@@ -2186,7 +2186,7 @@ export const products: Product[] = [
   {
     slug: 'slu-pp-332-1mg-ml-30ml', name: 'SLU-PP-332 1mg/mL 30mL', shortName: 'SLU-PP-332',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 79.99, size: '1mg/mL 30mL',
+    price: 71.99, originalPrice: 79.99, size: '1mg/mL 30mL',
     image: 'https://phiogen.is/images/products/slu-pp-332-1mg-ml-30ml.png',
     headline: 'Injectable SLU-PP-332 for Precise ERR Research Dosing',
     summary: 'SLU-PP-332 in injectable liquid format at 1mg/mL for precise dose-response research in ERR agonism and exercise mimetic studies.',
@@ -2201,7 +2201,7 @@ export const products: Product[] = [
   {
     slug: 'slu-pp-332-5mg-ml-30ml', name: 'SLU-PP-332 5mg/mL 30mL', shortName: 'SLU-PP-332',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 99.99, size: '5mg/mL 30mL',
+    price: 89.99, originalPrice: 99.99, size: '5mg/mL 30mL',
     image: 'https://phiogen.is/images/products/slu-pp-332-5mg-ml-30ml.png',
     headline: 'High-Concentration Injectable SLU-PP-332 for Advanced ERR Research',
     summary: 'Higher concentration SLU-PP-332 liquid at 5mg/mL for researchers requiring greater dose flexibility in injectable ERR agonism and exercise mimetic studies.',
@@ -2216,7 +2216,7 @@ export const products: Product[] = [
   {
     slug: 'tesofensine-500mcg-x30-capsules', name: 'Tesofensine 500mcg x30 Capsules', shortName: 'Tesofensine',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 99.99, size: '500mcg x30',
+    price: 89.99, originalPrice: 99.99, size: '500mcg x30',
     image: 'https://phiogen.is/images/products/tesofensine-500mcg-x-30-capsules.png',
     headline: 'Triple Monoamine Reuptake Inhibitor for Appetite and Weight Research',
     summary: 'Tesofensine is a presynaptic serotonin, dopamine, and noradrenaline reuptake inhibitor that achieved the largest Phase 2 weight loss of any non-surgery intervention (~10-12% in 6 months) by suppressing appetite through central monoamine enhancement.',
@@ -2235,7 +2235,7 @@ export const products: Product[] = [
   {
     slug: 'tesofensine-500mcg-x30-tablets', name: 'Tesofensine 500mcg x30 Tablets', shortName: 'Tesofensine',
     category: 'Metabolic & Fat Loss', categorySlug: 'metabolic-fat-loss',
-    price: 99.99, size: '500mcg x30',
+    price: 89.99, originalPrice: 99.99, size: '500mcg x30',
     image: 'https://phiogen.is/images/products/tesofensine-500mcg-x-30-tablets.png',
     headline: 'Tablet-Form Tesofensine for Oral Appetite Suppression Research',
     summary: 'Same Tesofensine triple monoamine reuptake inhibitor in tablet form for oral administration appetite and weight loss research protocols.',
@@ -2251,7 +2251,7 @@ export const products: Product[] = [
   {
     slug: 'bpc-157-tb-500-blend-10mg', name: 'BPC-157 + TB-500 Blend 10mg', shortName: 'Wolverine Stack',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 59.99, size: '10mg (5mg+5mg)', tag: 'Stack',
+    price: 53.99, originalPrice: 59.99, size: '10mg (5mg+5mg)', tag: 'Stack',
     image: 'https://phiogen.is/images/products/bpc-157-tb-500-blend-bpc-157-5mg-tb-500-5mg.png',
     headline: 'The Classic Wolverine Recovery Stack — Now in a Single Vial',
     summary: 'The BPC-157 + TB-500 blend combines the gut-derived site-specific healing of BPC-157 with the systemic tissue repair and angiogenesis of TB-500 in a single convenient vial. This is the most popular peptide stack in recovery research.',
@@ -2271,7 +2271,7 @@ export const products: Product[] = [
   {
     slug: 'bpc-157-tb-500-blend-20mg', name: 'BPC-157 + TB-500 Blend 20mg', shortName: 'Wolverine Stack',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 99.99, size: '20mg (10mg+10mg)', tag: 'Top Stack', tagColor: 'gold',
+    price: 89.99, originalPrice: 99.99, size: '20mg (10mg+10mg)', tag: 'Top Stack', tagColor: 'gold',
     image: 'https://phiogen.is/images/products/bpc-157-tb-500-blend-bpc-157-10mg-tb-500-10mg.png',
     headline: 'Full-Protocol Wolverine Stack for Comprehensive Recovery Research',
     summary: 'The 20mg Wolverine Stack provides double the compound for complete recovery protocol studies — 10mg BPC-157 and 10mg TB-500 pre-blended for the definitive healing peptide research combination.',
@@ -2289,7 +2289,7 @@ export const products: Product[] = [
   {
     slug: 'ipamorelin-cjc-1295-blend-10mg', name: 'Ipamorelin/CJC-1295 Blend 10mg', shortName: 'Ipa/CJC Blend',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 89.99, size: '10mg (5mg+5mg)', tag: 'Stack',
+    price: 80.99, originalPrice: 89.99, size: '10mg (5mg+5mg)', tag: 'Stack',
     image: 'https://phiogen.is/images/products/ipamorelin-cjc-1295-blend-cjc-1295-5mg-ipa-5mg.png',
     headline: 'The Premier GH Stack — Ipamorelin + CJC-1295 Pre-Blended',
     summary: 'The Ipamorelin + CJC-1295 No DAC blend combines the GHS-R1a ghrelin receptor agonism of Ipamorelin with the GHRH receptor activation of CJC-1295 for synergistic, amplified GH release in a single convenient vial.',
@@ -2308,7 +2308,7 @@ export const products: Product[] = [
   {
     slug: 'ipamorelin-tesamorelin-blend-13mg', name: 'Ipamorelin/Tesamorelin Blend 13mg', shortName: 'Ipa/Tesa 13mg',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 129.99, size: '13mg (3mg+10mg)', tag: 'Stack',
+    price: 116.99, originalPrice: 129.99, size: '13mg (3mg+10mg)', tag: 'Stack',
     image: 'https://phiogen.is/images/products/ipamorelin-tesamorelin-blend-ipa-3mg-tesa-10mg.png',
     headline: 'Entry Ipamorelin/Tesamorelin Stack for GH and Fat Loss Research',
     summary: 'Combines 3mg Ipamorelin with 10mg Tesamorelin to pair GHRP selectivity with the FDA-validated GHRH for GH restoration and visceral fat reduction research.',
@@ -2326,7 +2326,7 @@ export const products: Product[] = [
   {
     slug: 'ipamorelin-tesamorelin-blend-15mg', name: 'Ipamorelin/Tesamorelin Blend 15mg', shortName: 'Ipa/Tesa 15mg',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 149.99, size: '15mg (5mg+10mg)', tag: 'Stack',
+    price: 134.99, originalPrice: 149.99, size: '15mg (5mg+10mg)', tag: 'Stack',
     image: 'https://phiogen.is/images/products/ipamorelin-tesamorelin-blend-ipa-5mg-tesa-10mg.png',
     headline: 'Full-Ratio Ipamorelin/Tesamorelin Stack for Complete GH Research',
     summary: 'Balanced 5mg Ipamorelin + 10mg Tesamorelin blend for comprehensive GH restoration, visceral fat reduction, and body composition research with optimal GHRP:GHRH ratio.',
@@ -2344,7 +2344,7 @@ export const products: Product[] = [
   {
     slug: 'ipa-tesa-blend-15mg', name: 'IPA/TESA Blend 15mg', shortName: 'IPA/TESA',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 149.99, size: '15mg', tag: 'Stack',
+    price: 134.99, originalPrice: 149.99, size: '15mg', tag: 'Stack',
     image: 'https://phiogen.is/images/products/ipa-tesa-blend-ipa-5mg-tesa-10mg-15mg.png',
     headline: 'IPA/TESA Dual GH Secretagogue Stack for Research',
     summary: 'Pre-blended 5mg Ipamorelin + 10mg Tesamorelin for synergistic GH secretagogue research combining GHRP and GHRH mechanisms.',
@@ -2361,7 +2361,7 @@ export const products: Product[] = [
   {
     slug: 'cagri-reta-5mg', name: 'Cagri-Reta 5mg', shortName: 'Cagri-Reta',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 129.99, size: '5mg', tag: 'Stack',
+    price: 116.99, originalPrice: 129.99, size: '5mg', tag: 'Stack',
     image: 'https://phiogen.is/images/products/cagri-reta-5mg.png',
     headline: 'Cagrilintide + Retatrutide Stack for Next-Gen Weight Loss Research',
     summary: 'The Cagri-Reta blend combines the amylin agonism of Cagrilintide with the triple GLP-1/GIP/glucagon agonism of Retatrutide for potentially the most powerful multi-receptor weight loss combination in research.',
@@ -2379,7 +2379,7 @@ export const products: Product[] = [
   {
     slug: 'cagri-reta-10mg', name: 'Cagri-Reta 10mg', shortName: 'Cagri-Reta',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 189.99, size: '10mg',
+    price: 170.99, originalPrice: 189.99, size: '10mg',
     image: 'https://phiogen.is/images/products/cagri-reta-10mg.png',
     headline: 'Extended Supply Cagri-Reta for Comprehensive Combination Research',
     summary: 'The 10mg Cagri-Reta blend provides extended supply for comprehensive quad-mechanism weight loss and metabolic combination research.',
@@ -2394,7 +2394,7 @@ export const products: Product[] = [
   {
     slug: 'reta-cagri-5mg-5mg', name: 'Reta-Cagri 5mg/5mg', shortName: 'Reta-Cagri',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 149.99, size: '5mg/5mg', tag: 'Stack',
+    price: 134.99, originalPrice: 149.99, size: '5mg/5mg', tag: 'Stack',
     image: 'https://phiogen.is/images/products/reta-cagri-5mg-5mg.png',
     headline: 'Balanced Retatrutide/Cagrilintide Stack for Maximum Metabolic Research',
     summary: 'Equal 5mg/5mg Retatrutide + Cagrilintide combination for balanced triple agonist + amylin receptor research with the highest potential multi-receptor weight loss profile.',
@@ -2412,7 +2412,7 @@ export const products: Product[] = [
   {
     slug: 'cagri-sema-blend-10mg', name: 'Cagri-Sema Blend 10mg', shortName: 'CagriSema',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 179.99, size: '10mg', tag: 'Stack',
+    price: 161.99, originalPrice: 179.99, size: '10mg', tag: 'Stack',
     image: 'https://phiogen.is/images/products/cagri-sema-blend-5mg-cagrilintide-5mg-sema-10mg.png',
     headline: 'CagriSema — Amylin + GLP-1 Stack Showing 25% Weight Loss',
     summary: 'The CagriSema combination of Cagrilintide (amylin) + Semaglutide (GLP-1) demonstrated ~25% body weight reduction in Phase 2 trials — potentially superior to Semaglutide alone. This pre-blended stack replicates the combination being studied in Phase 3.',
@@ -2431,7 +2431,7 @@ export const products: Product[] = [
   {
     slug: 'glow-blend-50mg', name: 'GLOW Blend 50mg', shortName: 'GLOW Blend',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 89.99, size: '50mg', tag: 'Stack',
+    price: 80.99, originalPrice: 89.99, size: '50mg', tag: 'Stack',
     image: 'https://phiogen.is/images/products/glow-blend-50mg.png',
     headline: 'Phiogen Skin Radiance Peptide Blend for Anti-Aging Research',
     summary: 'The GLOW Blend is Phiogen\'s proprietary skin and radiance peptide combination, combining multiple anti-aging and skin regeneration compounds for comprehensive dermatological research.',
@@ -2449,7 +2449,7 @@ export const products: Product[] = [
   {
     slug: 'glow-blend-70mg', name: 'GLOW Blend 70mg', shortName: 'GLOW Blend',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 109.99, size: '70mg', tag: 'Stack',
+    price: 98.99, originalPrice: 109.99, size: '70mg', tag: 'Stack',
     image: 'https://phiogen.is/images/products/glow-blend-70mg.png',
     headline: 'Extended Supply GLOW Blend for Long-Duration Skin Research',
     summary: 'The 70mg GLOW Blend provides extended supply for long-duration skin anti-aging and radiance protocol research at superior value.',
@@ -2464,7 +2464,7 @@ export const products: Product[] = [
   {
     slug: 'klow-blend-80mg', name: 'KLOW Blend 80mg', shortName: 'KLOW Blend',
     category: 'Bundles & Stacks', categorySlug: 'bundles',
-    price: 119.99, size: '80mg', tag: 'Stack',
+    price: 107.99, originalPrice: 119.99, size: '80mg', tag: 'Stack',
     image: 'https://phiogen.is/images/products/klow-blend-80mg.png',
     headline: 'Phiogen Metabolic and Longevity Peptide Blend',
     summary: 'KLOW is Phiogen\'s proprietary metabolic and longevity peptide blend combining compounds targeting cellular energy, anti-aging, and metabolic optimization for comprehensive longevity protocol research.',
