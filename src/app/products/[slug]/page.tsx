@@ -18,15 +18,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const product = getProductBySlug(slug)
   if (!product) return {}
-  const titleStr = `${product.shortName}: ${product.headline} | StacksPeptide`
+  const titleStr = `Buy ${product.shortName} | ${product.headline} | StacksPeptide`
   const canonical = `https://www.stackspeptide.com/products/${product.slug}`
+  const descBase = product.summary.length > 75 ? product.summary.slice(0, 75) + '…' : product.summary
   return {
     title: { absolute: titleStr },
-    description: `${product.summary} Third-party HPLC tested >98% purity. Certificate of Analysis included.`,
+    description: `Buy ${product.shortName} for sale — trusted, third-party verified >98% purity. ${descBase}`,
     keywords: [
       ...product.keywords,
-      `${product.shortName} science`,
       `buy ${product.shortName}`,
+      `${product.shortName} for sale`,
+      `cheap ${product.shortName}`,
+      `trusted ${product.shortName}`,
+      `verified ${product.shortName}`,
       `${product.shortName} peptide`,
       `${product.category.toLowerCase()} peptides`,
       'third-party tested peptide',
@@ -35,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     openGraph: {
       title: titleStr,
-      description: product.summary,
+      description: `Buy ${product.shortName} for sale — trusted, third-party verified >98% purity. ${descBase}`,
       url: canonical,
       siteName: 'StacksPeptide',
       type: 'website',
