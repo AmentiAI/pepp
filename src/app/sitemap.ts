@@ -192,6 +192,67 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.83,
     },
+    // New high-quality content pages
+    {
+      url: `${baseUrl}/bpc-157-healing-protocol`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/peptide-reconstitution-guide`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
+      url: `${baseUrl}/retatrutide-weight-loss-guide`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/tb-500-injury-recovery`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
+      url: `${baseUrl}/best-peptides-beginners`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.89,
+    },
+    {
+      url: `${baseUrl}/igf-1-lr3-muscle-growth`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
+      url: `${baseUrl}/ipamorelin-cjc-1295-growth-hormone`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/peptides-for-fat-loss`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.89,
+    },
+    {
+      url: `${baseUrl}/epithalon-longevity-guide`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.87,
+    },
+    {
+      url: `${baseUrl}/peptide-injection-guide`,
+      lastModified: D_ARTICLE,
+      changeFrequency: 'monthly',
+      priority: 0.88,
+    },
   ]
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map(cat => ({
