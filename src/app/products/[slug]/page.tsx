@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactElement } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -7,6 +8,20 @@ import ProductCard from '@/components/ProductCard'
 import RelatedLinks from '@/components/RelatedLinks'
 import ResearchCard from '@/components/ResearchCard'
 import { products, getProductBySlug, getRelatedProducts, AFFILIATE_PRODUCT, AFFILIATE_BASE } from '@/lib/products'
+import {
+  getSectionOrder,
+  getSidebarOrder,
+  getResearchContextParagraph,
+  getMechanismExpansionParagraph,
+  getStackingParagraph,
+  getQualityParagraph,
+  getSizeVariantFraming,
+  getCategoryBonus,
+  getQualitySpecs,
+  getCategoryBonusPosition,
+  type SectionKey,
+  type SidebarKey,
+} from '@/lib/productPageVariance'
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -63,20 +78,17 @@ export default async function ProductPage({ params }: Props) {
   const related = getRelatedProducts(product.relatedSlugs)
   const buyUrl = AFFILIATE_PRODUCT(product.slug)
 
-  // ── Dynamic prose paragraphs ──────────────────────────────────────────────
-  const categoryLower = product.category.toLowerCase()
-  const benefitTitles = product.benefits.slice(0, 3).map(b => b.title)
+  // ── Per-product variance (deterministic, slug-hashed) ─────────────────────
+  const sectionOrder = getSectionOrder(product.slug)
+  const sidebarOrder = getSidebarOrder(product.slug)
+  const qualitySpecs = getQualitySpecs(product.slug)
+  const categoryBonus = getCategoryBonus(product)
+  const sizeVariantFraming = getSizeVariantFraming(product, products)
 
-  const p2ResearchContext = `As one of the most studied compounds in the ${categoryLower} research space, ${product.shortName} has attracted sustained scientific interest across ${product.idealFor.slice(0, 3).join(', ')}. ${product.researchHighlights[0] ? `Peer-reviewed evidence indicates that ${product.researchHighlights[0].charAt(0).toLowerCase() + product.researchHighlights[0].slice(1)}, which has positioned ${product.shortName} as a reference standard for researchers exploring ${product.idealFor[0]?.toLowerCase() ?? categoryLower} outcomes.` : `Its reproducible activity profile has made it a standard inclusion in ${categoryLower} research panels across multiple independent laboratory groups.`} The compound's selectivity and documented tolerability in preclinical models have contributed to a rapidly growing body of literature over the past decade.`
-
-  const p3MechanismExpansion = `The ${product.benefits.length} primary research pathways identified for ${product.shortName}${benefitTitles.length > 0 ? ` — ${benefitTitles.join(', ')} —` : ''} collectively point to a compound with pleiotropic activity across interconnected biological systems. ${product.researchHighlights[1] ? `Studies have further shown that ${product.researchHighlights[1].charAt(0).toLowerCase() + product.researchHighlights[1].slice(1)}, reinforcing the mechanistic picture established in earlier cell-line work.` : `This multi-target pharmacology means that research protocols can address several related endpoints simultaneously, reducing the compound count required in a given study design.`} Unlike single-pathway agents, ${product.shortName}'s broad receptor engagement profile continues to generate hypotheses for novel applications beyond its originally characterized use cases.`
-
-  const relatedNames = related.slice(0, 2).map(r => r.shortName)
-  const p4StackingContext = relatedNames.length > 0
-    ? `${product.shortName} is routinely studied alongside ${relatedNames.join(' and ')} in ${categoryLower}-focused compound panels. Researchers investigating ${product.idealFor[0]?.toLowerCase() ?? 'this area'} have found that pairing compounds with complementary receptor profiles can produce additive results while keeping individual doses within well-characterized ranges. ${product.researchHighlights[2] ? `Preliminary evidence that ${product.researchHighlights[2].charAt(0).toLowerCase() + product.researchHighlights[2].slice(1)} has informed several of these multi-compound protocol designs.` : `This synergy-based methodology is now standard practice in preclinical ${categoryLower} research and mirrors increasingly common patterns in translational study designs.`}`
-    : `${product.shortName} functions effectively as both a standalone reference compound and as part of larger ${categoryLower} research panels. Its well-characterized ${product.idealFor[0]?.toLowerCase() ?? categoryLower} profile makes it a common inclusion in head-to-head comparative studies. Investigators designing multi-endpoint protocols often anchor a panel around ${product.shortName} due to its consistent inter-laboratory reproducibility and the depth of existing baseline data available in published literature.`
-
-  const p5QualityContext = `All ${product.shortName} research material offered through this catalog is manufactured under controlled conditions and independently verified by a third-party laboratory prior to release. Each lot undergoes High-Performance Liquid Chromatography (HPLC) analysis to confirm ≥98% purity, with identity confirmed via mass spectrometry. The accompanying Certificate of Analysis (CoA) documents the exact purity, molecular weight confirmation, and lot-specific testing date — data that should accompany any reproducible research protocol. Lyophilized powder formulation ensures maximum stability during shipping and storage at −20°C long-term or 4°C for short-term use.`
+  const p2ResearchContext = getResearchContextParagraph(product)
+  const p3MechanismExpansion = getMechanismExpansionParagraph(product)
+  const p4StackingContext = getStackingParagraph(product, related.map(r => r.shortName))
+  const p5QualityContext = getQualityParagraph(product)
 
   const productSchema = {
     '@context': 'https://schema.org',
@@ -216,33 +228,15 @@ export default async function ProductPage({ params }: Props) {
           </div>
         </div>
 
-        {/* Content + sidebar */}
-        <div className="rg-product-content" style={{ marginBottom: '5rem', alignItems: 'start' }}>
-
-          {/* Main content */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
-
-            {/* Description — paragraphs 1 & 2 */}
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
-                <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
-                  <FlaskConical size={16} />
-                </div>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>{product.headline}</h2>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
-                <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{product.description}</p>
-                <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p2ResearchContext}</p>
-              </div>
-            </div>
-
-            {/* Benefits */}
-            <div>
+        {/* Content + sidebar — sections render in a slug-hash-determined order to avoid boilerplate structural duplication across products */}
+        {(() => {
+          const benefitsSection = (
+            <div key="benefits">
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
                 <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
                   <CheckCircle size={16} />
                 </div>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>{product.shortName} Documented Benefits: {product.benefits.length} Documented Mechanisms</h2>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>{product.shortName} {product.category} Benefits: {product.benefits.length} Documented Mechanisms</h2>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {product.benefits.map((b, i) => (
@@ -258,14 +252,15 @@ export default async function ProductPage({ params }: Props) {
                 ))}
               </div>
             </div>
+          )
 
-            {/* Mechanism — paragraph 3 */}
-            <div>
+          const mechanismSection = (
+            <div key="mechanism">
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
                 <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
                   <Zap size={16} />
                 </div>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>How {product.shortName} Works: Molecular Mechanism & Pathway</h2>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>How {product.shortName} Engages {product.idealFor[0] ?? product.category} Pathways</h2>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
                 <div style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.06)', borderLeft: '3px solid rgba(212,168,67,0.5)', borderRadius: '0 16px 16px 0', padding: '1.5rem 1.75rem' }}>
@@ -274,37 +269,63 @@ export default async function ProductPage({ params }: Props) {
                 <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p3MechanismExpansion}</p>
               </div>
             </div>
+          )
 
-            {/* Stacking & Combinations — paragraph 4 */}
-            <div>
+          const stackingSection = (
+            <div key="stacking">
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
                 <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
                   <FlaskConical size={16} />
                 </div>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>Research Protocols & Compound Combinations</h2>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>{product.shortName} Stacking Protocols & {product.category} Compound Pairings</h2>
               </div>
               <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p4StackingContext}</p>
             </div>
+          )
 
-            {/* Quality & Purity — paragraph 5 */}
-            <div>
+          const qualitySection = (
+            <div key="quality">
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
                 <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
                   <Shield size={16} />
                 </div>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>Purity, Testing & Research Grade Standards</h2>
+                <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>{product.shortName} ≥98% HPLC Purity & Lot-Specific CoA{product.casNumber ? ` (CAS ${product.casNumber})` : ''}</h2>
               </div>
               <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p5QualityContext}</p>
             </div>
-          </div>
+          )
 
-          {/* Sidebar */}
-          <div className="product-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', position: 'sticky', top: 80 }}>
+          const sectionElements: Record<SectionKey, ReactElement> = {
+            benefits: benefitsSection,
+            mechanism: mechanismSection,
+            stacking: stackingSection,
+            quality: qualitySection,
+          }
 
-            {/* Research highlights */}
-            <div style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 18, padding: '1.5rem' }}>
+          const middleSections: ReactElement[] = sectionOrder.map(k => sectionElements[k])
+
+          // Inject category-specific bonus section at a hash-determined position
+          if (categoryBonus) {
+            const bonusElement = (
+              <div key="category-bonus">
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
+                  <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(167,139,250,0.12)', border: '1px solid rgba(167,139,250,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#a78bfa' }}>
+                    <FlaskConical size={16} />
+                  </div>
+                  <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>{categoryBonus.heading}</h2>
+                </div>
+                <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{categoryBonus.body}</p>
+              </div>
+            )
+            const pos = getCategoryBonusPosition(product.slug, middleSections.length)
+            middleSections.splice(pos, 0, bonusElement)
+          }
+
+          // Sidebar cards
+          const highlightsCard = (
+            <div key="highlights" style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 18, padding: '1.5rem' }}>
               <h3 style={{ fontWeight: 700, color: '#0a0a14', marginBottom: '1.25rem', fontSize: '1rem', display: 'flex', alignItems: 'center', gap: 8 }}>
-                <span style={{ color: '#d4a843' }}>◈</span> Key Highlights
+                <span style={{ color: '#d4a843' }}>◈</span> {product.shortName} Key Findings
               </h3>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {product.researchHighlights.map(h => (
@@ -315,10 +336,11 @@ export default async function ProductPage({ params }: Props) {
                 ))}
               </ul>
             </div>
+          )
 
-            {/* Ideal for */}
-            <div style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 18, padding: '1.5rem' }}>
-              <h3 style={{ fontWeight: 700, color: '#0a0a14', marginBottom: '1.25rem', fontSize: '1rem' }}>Ideal For</h3>
+          const idealForCard = (
+            <div key="ideal-for" style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 18, padding: '1.5rem' }}>
+              <h3 style={{ fontWeight: 700, color: '#0a0a14', marginBottom: '1.25rem', fontSize: '1rem' }}>{product.shortName} Research Applications</h3>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 {product.idealFor.map(item => (
                   <li key={item} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -328,9 +350,10 @@ export default async function ProductPage({ params }: Props) {
                 ))}
               </ul>
             </div>
+          )
 
-            {/* Sticky buy box */}
-            <div style={{ background: 'linear-gradient(135deg, #fffbf0 0%, #f9f9fd 100%)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 18, padding: '1.5rem' }}>
+          const buyBoxCard = (
+            <div key="buy-box" style={{ background: 'linear-gradient(135deg, #fffbf0 0%, #f9f9fd 100%)', border: '1px solid rgba(212,168,67,0.2)', borderRadius: 18, padding: '1.5rem' }}>
               <div style={{ fontSize: '0.62rem', fontWeight: 700, color: '#d4a843', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '0.3rem' }}>Research Grade</div>
               <div style={{ fontSize: '2.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.04em', lineHeight: 1, marginBottom: '1.25rem' }}>${product.price.toFixed(2)}</div>
               <a href={buyUrl} target="_blank" rel="sponsored noopener noreferrer" className="hover-dim"
@@ -345,16 +368,55 @@ export default async function ProductPage({ params }: Props) {
               </a>
               <p style={{ fontSize: '1rem', color: '#9090a8', textAlign: 'center', marginTop: '0.75rem' }}>Third-party tested · CoA included</p>
             </div>
+          )
 
-            {/* Disclaimer */}
-            <div style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 18, padding: '1.25rem' }}>
+          const disclaimerCard = (
+            <div key="disclaimer" style={{ background: '#f7f8fc', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 18, padding: '1.25rem' }}>
               <div style={{ fontSize: '0.6rem', fontWeight: 700, color: '#9090a8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>⚠ For Lab Use Only</div>
               <p style={{ fontSize: '0.97rem', color: '#777788', lineHeight: 1.65 }}>
                 Intended for laboratory use only. Not for human or animal consumption. Not FDA approved. Handle in appropriate lab settings only.
               </p>
             </div>
-          </div>
-        </div>
+          )
+
+          const sidebarElements: Record<SidebarKey, ReactElement> = {
+            highlights: highlightsCard,
+            'ideal-for': idealForCard,
+            'buy-box': buyBoxCard,
+            disclaimer: disclaimerCard,
+          }
+
+          return (
+            <div className="rg-product-content" style={{ marginBottom: '5rem', alignItems: 'start' }}>
+              {/* Main content */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+                {/* Description — always first (introduces the compound) */}
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: '1.5rem' }}>
+                    <div style={{ width: 36, height: 36, borderRadius: 10, background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#d4a843' }}>
+                      <FlaskConical size={16} />
+                    </div>
+                    <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.02em' }}>{product.headline}</h2>
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
+                    <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{product.description}</p>
+                    <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{p2ResearchContext}</p>
+                    {sizeVariantFraming && (
+                      <p style={{ fontSize: '1.05rem', color: '#555570', lineHeight: 1.85 }}>{sizeVariantFraming}</p>
+                    )}
+                  </div>
+                </div>
+
+                {middleSections}
+              </div>
+
+              {/* Sidebar */}
+              <div className="product-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', position: 'sticky', top: 80 }}>
+                {sidebarOrder.map(k => sidebarElements[k])}
+              </div>
+            </div>
+          )
+        })()}
 
         {/* Research Findings Section */}
         {product.researchHighlights.length > 0 && (
@@ -363,7 +425,7 @@ export default async function ProductPage({ params }: Props) {
               <div>
                 <div className="section-label">Published Evidence</div>
                 <h2 style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.03em', marginBottom: '0.75rem' }}>
-                  What the Research Shows
+                  Peer-Reviewed Evidence for {product.shortName} in {product.category} Research
                 </h2>
                 <p style={{ fontSize: '1rem', color: '#666688', lineHeight: 1.8, marginBottom: '2rem' }}>
                   The following data points are derived from peer-reviewed preclinical and clinical studies on {product.shortName}.
@@ -415,19 +477,14 @@ export default async function ProductPage({ params }: Props) {
               <div>
                 <div className="section-label">Quality Assurance</div>
                 <h2 style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 900, color: '#0a0a14', letterSpacing: '-0.03em', marginBottom: '0.75rem' }}>
-                  Third-Party Verified Every Batch
+                  {product.shortName} Third-Party HPLC Testing & Certificate of Analysis
                 </h2>
                 <p style={{ fontSize: '1rem', color: '#666688', lineHeight: 1.8, marginBottom: '2rem' }}>
                   Each vial of {product.shortName} is independently tested by a third-party laboratory before fulfillment.
                   You receive the actual CoA (Certificate of Analysis) documentation with your order.
                 </p>
                 <div className="rg-2col" style={{ gap: '1rem' }}>
-                  {[
-                    { label: 'Purity Standard', value: '≥98% HPLC', color: '#d4a843' },
-                    { label: 'Identity Confirm', value: 'Mass Spec (MS)', color: '#a78bfa' },
-                    { label: 'Documentation', value: 'CoA Every Order', color: '#22d3ee' },
-                    { label: 'Testing Type', value: 'Third-Party Lab', color: '#34d399' },
-                  ].map((spec) => (
+                  {qualitySpecs.map((spec) => (
                     <div
                       key={spec.label}
                       style={{
@@ -469,7 +526,7 @@ export default async function ProductPage({ params }: Props) {
             <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
               <div>
                 <div className="section-label">You May Also Like</div>
-                <h2 className="heading-lg" style={{ color: '#0a0a14' }}>Related Peptides</h2>
+                <h2 className="heading-lg" style={{ color: '#0a0a14' }}>Peptides Commonly Studied With {product.shortName}</h2>
               </div>
               <Link href="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: '0.97rem', color: '#d4a843', textDecoration: 'none', fontWeight: 600 }}>
                 View All <ArrowRight size={14} />
